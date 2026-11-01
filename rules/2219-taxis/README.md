@@ -1,5 +1,7 @@
 # Taxis — IDCC 2219
 
+La version `2026.1` modélise l'accord du **28 avril 2026** relatif aux rémunérations minimales, étendu par arrêté du 24 août 2026 (JORF du 4 septembre 2026) et applicable au **1er octobre 2026** (premier jour du mois suivant la publication, article 8) à toutes les entreprises du champ. Mêmes onze lignes que `2025.2`, nouveaux montants : roulants 1 865,43 € (niveau 1), 1 881,14 € (niveau 2) et 1 897,00 € (niveau 3, titulaires de la carte) ; non roulants de 12,51 € à 18,85 € de l'heure. L'article 6 prévoit un second accord au plus tard le 15 septembre 2026 pour +1 % : aucun texte n'est publié au 1er novembre 2026, il n'est pas modélisé. Les descriptions ci-dessous détaillent `2025.2`, dont les règles sont reprises à l'identique.
+
 La version `2025.2` modélise l'accord du **20 juin 2025** relatif aux rémunérations minimales, applicable au **1er juin 2025** et étendu par arrêté du **9 octobre 2025**, publié au Journal officiel du **15 octobre 2025**. Elle remplace `2025.1` (même date d'effet), qui ne modélisait qu'une ligne sur onze.
 
 ## Périmètre modélisé
