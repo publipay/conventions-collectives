@@ -8,7 +8,7 @@ const value = "ports de plaisance";
 const namespace = `salarié . convention collective . ${value}`;
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS["1182-ports-plaisance"]?.find((v) => v.version === "2025.1");
+  const version = COMPILED_VERSIONS["1182-ports-plaisance"]?.find((v) => v.version === "2025.2");
   assert.ok(version);
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };
@@ -29,6 +29,15 @@ describe("IDCC 1182 ports de plaisance", () => {
     assert.equal(engine.evaluate(`${namespace} . valeur du point`).nodeValue, 11.88);
     assert.equal(engine.evaluate(`${namespace} . grille mensuelle`).nodeValue, 2673);
     assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 1336.5);
+  });
+
+  it("computes the minimum of employee coefficients below 225 and rejects those under 155", async () => {
+    const engine = await makeEngine();
+    engine.setSituation({ "salarié . convention collective": `'${value}'`, [`${namespace} . coefficient`]: 170 });
+    assert.equal(engine.evaluate(`${namespace} . coefficient hors grille`).nodeValue, false);
+    assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 2019.6);
+    engine.setSituation({ "salarié . convention collective": `'${value}'`, [`${namespace} . coefficient`]: 150 });
+    assert.equal(engine.evaluate(`${namespace} . coefficient hors grille`).nodeValue, true);
   });
 
   it("exposes the official 60/40 health and protection split without inventing a total rate", async () => {

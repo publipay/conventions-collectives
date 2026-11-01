@@ -1,5 +1,7 @@
 # Personnels des ports de plaisance — IDCC 1182
 
+La version `2025.2` remplace `2025.1` (même date d'effet) et élargit la plage des coefficients aux employés de 155 à 220 ; la grille indiciaire de l'avenant du 18 octobre 2017 (article 6) les prévoit, et `2025.1` les rejetait. L'avenant de 2023 promet une revalorisation de 5 points des coefficients, dont aucun texte n'est publié sur Légifrance au 1er novembre 2026 : elle n'est pas modélisée.
+
 La version `2025.1` modélise l'accord du **22 mai 2025 relatif aux mesures salariales**, étendu par arrêté du 9 octobre 2025. La valeur du point est fixée à **11,88 € à compter du 1er mai 2025**.
 
 ## Règles implémentées
@@ -8,7 +10,7 @@ La version `2025.1` modélise l'accord du **22 mai 2025 relatif aux mesures sala
 - `valeur du point` expose le paramètre officiel de 11,88 € ;
 - `grille mensuelle` calcule le minimum par coefficient × valeur du point ;
 - `salaire minimum conventionnel` prorate le minimum selon la quotité ;
-- les coefficients hors de la plage explicitement publiée par la classification (225 à 605) sont signalés.
+- les coefficients hors de la plage explicitement publiée par la classification (155 à 605) sont signalés.
 
 ## Audit explicite des rubriques de paie
 
