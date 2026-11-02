@@ -1,0 +1,96 @@
+# Personnel des institutions de retraite complémentaire (IDCC 1794).
+# Version 2025.1 : Rémunération mensuelle minimale garantie 2025 par classe.
+validFrom: 2025-01-01
+extension: 2025-05-31
+sources:
+  - >-
+    Accord du 21 mars 2025 relatif à la rémunération mensuelle minimale garantie pour l'année 2025 (RMMG par classe), applicable au 1er janvier 2025, étendu par arrêté du 27 mai 2025 (JORF du 31 mai 2025) ; la clause de garantie de l'article 9.1 de l'annexe IV est suspendue pour 2025. Aucun accord de salaires postérieur n'est publié sur Légifrance au 2 novembre 2026.
+  - >-
+    https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000051787131
+  - >-
+    Convention collective nationale de travail du personnel des institutions de retraite complémentaire, conteneur KALICONT000005635698.
+---
+salarié . convention collective . institutions de retraite complémentaire:
+  titre: Personnel des institutions de retraite complémentaire (IDCC 1794)
+  valeur: convention collective = 'institutions de retraite complémentaire'
+
+salarié . convention collective . institutions de retraite complémentaire . classe:
+  titre: Classe
+  description: >-
+    Classe de la grille (1A à 8D ; pas de 7A, et les classes 8A et 8B n'ont pas de minimum publié).
+  applicable si: convention collective = 'institutions de retraite complémentaire'
+  par défaut: "'non renseigné'"
+
+salarié . convention collective . institutions de retraite complémentaire . salaire minimum conventionnel:
+  titre: Salaire minimum mensuel conventionnel
+  description: Minimum brut à temps plein de la grille, proratisé selon la quotité de travail.
+  applicable si: convention collective = 'institutions de retraite complémentaire'
+  unité: €/mois
+  valeur: grille * contrat . temps de travail . quotité
+
+salarié . convention collective . institutions de retraite complémentaire . salaire minimum conventionnel . grille:
+  titre: Minimum brut à temps plein
+  unité: €/mois
+  variations:
+    - si: classe = '1A'
+      alors: 1803 €/mois
+    - si: classe = '1B'
+      alors: 1803 €/mois
+    - si: classe = '1C'
+      alors: 1819 €/mois
+    - si: classe = '2A'
+      alors: 1829 €/mois
+    - si: classe = '2B'
+      alors: 1854 €/mois
+    - si: classe = '2C'
+      alors: 1874 €/mois
+    - si: classe = '2D'
+      alors: 1959 €/mois
+    - si: classe = '3A'
+      alors: 1877 €/mois
+    - si: classe = '3B'
+      alors: 1952 €/mois
+    - si: classe = '3C'
+      alors: 2069 €/mois
+    - si: classe = '3D'
+      alors: 2211 €/mois
+    - si: classe = '4A'
+      alors: 2068 €/mois
+    - si: classe = '4B'
+      alors: 2151 €/mois
+    - si: classe = '4C'
+      alors: 2297 €/mois
+    - si: classe = '4D'
+      alors: 2344 €/mois
+    - si: classe = '5A'
+      alors: 2365 €/mois
+    - si: classe = '5B'
+      alors: 2436 €/mois
+    - si: classe = '5C'
+      alors: 2698 €/mois
+    - si: classe = '5D'
+      alors: 3085 €/mois
+    - si: classe = '6A'
+      alors: 2955 €/mois
+    - si: classe = '6B'
+      alors: 3072 €/mois
+    - si: classe = '6C'
+      alors: 3189 €/mois
+    - si: classe = '6D'
+      alors: 3380 €/mois
+    - si: classe = '7B'
+      alors: 4056 €/mois
+    - si: classe = '7C'
+      alors: 4299 €/mois
+    - si: classe = '7D'
+      alors: 4601 €/mois
+    - si: classe = '8C'
+      alors: 5337 €/mois
+    - si: classe = '8D'
+      alors: 5551 €/mois
+    - sinon: 0 €/mois
+
+salarié . convention collective . institutions de retraite complémentaire . classe hors grille:
+  titre: Classification absente de la grille
+  applicable si: convention collective = 'institutions de retraite complémentaire'
+  valeur: salaire minimum conventionnel . grille = 0 €/mois

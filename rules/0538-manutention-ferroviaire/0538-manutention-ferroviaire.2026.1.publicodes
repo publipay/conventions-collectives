@@ -1,0 +1,206 @@
+# Manutention ferroviaire et travaux connexes (IDCC 538).
+# Version 2026.1 : Grilles de l'accord du 27 novembre 2025 au 1er mars 2026. Pour les agents de maîtrise et cadres, l'ancienneté en années révolues remplace les tranches du texte ; avant un an, le montant retenu est celui de la première tranche publiée (0 à 6 mois pour le contremaître, 6 mois à 1 an pour les autres emplois).
+validFrom: 2026-03-01
+sources:
+  - >-
+    Accord du 27 novembre 2025 relatif aux salaires garantis et aux autres éléments de rémunération pour l'année 2026, annexe 1 (grilles de salaires : taux horaires des ouvriers par coefficient, nettoyage et manutention ; salaires mensuels des employés de chantiers ; salaires mensuels des agents de maîtrise et cadres par ancienneté), applicable le premier jour du mois suivant la publication de l'arrêté d'extension, étendu par arrêté du 5 février 2026 (JORF du 10 février 2026), soit le 1er mars 2026. Les taux horaires sont convertis en minima mensuels pour 151,67 heures, arrondis au centime.
+  - >-
+    https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000053504132
+  - >-
+    Convention collective nationale du personnel des entreprises de manutention ferroviaire et travaux connexes du 6 janvier 1970, conteneur KALICONT000005635702.
+---
+salarié . convention collective . manutention ferroviaire:
+  titre: Manutention ferroviaire et travaux connexes (IDCC 538)
+  valeur: convention collective = 'manutention ferroviaire'
+
+salarié . convention collective . manutention ferroviaire . classification:
+  titre: Classification
+  description: >-
+    « ouvrier 156 » à « ouvrier 196 » (coefficient de l'ouvrier, qui intègre son ancienneté dans la catégorie), « employé niveau 1 » à « employé niveau 7 », ou un emploi de maîtrise et d'encadrement : « contremaître », « chef de bordée », « chef de chantier », « chef de service ».
+  applicable si: convention collective = 'manutention ferroviaire'
+  par défaut: "'non renseigné'"
+
+salarié . convention collective . manutention ferroviaire . ancienneté:
+  titre: Ancienneté en années révolues
+  description: Ancienneté dans l'entreprise en années révolues, qui fixe la tranche de la grille.
+  applicable si: convention collective = 'manutention ferroviaire'
+  unité: année
+  par défaut: 0
+
+salarié . convention collective . manutention ferroviaire . salaire minimum conventionnel:
+  titre: Salaire minimum mensuel conventionnel
+  description: Minimum brut à temps plein de la grille, proratisé selon la quotité de travail.
+  applicable si: convention collective = 'manutention ferroviaire'
+  unité: €/mois
+  valeur: grille * contrat . temps de travail . quotité
+
+salarié . convention collective . manutention ferroviaire . salaire minimum conventionnel . grille:
+  titre: Minimum brut à temps plein
+  unité: €/mois
+  variations:
+    - si: classification = 'ouvrier 156'
+      alors: 1841.27 €/mois
+    - si: classification = 'ouvrier 157'
+      alors: 1845.82 €/mois
+    - si: classification = 'ouvrier 158'
+      alors: 1847.34 €/mois
+    - si: classification = 'ouvrier 159'
+      alors: 1851.89 €/mois
+    - si: classification = 'ouvrier 160'
+      alors: 1853.41 €/mois
+    - si: classification = 'ouvrier 161'
+      alors: 1857.96 €/mois
+    - si: classification = 'ouvrier 162'
+      alors: 1862.51 €/mois
+    - si: classification = 'ouvrier 163'
+      alors: 1867.06 €/mois
+    - si: classification = 'ouvrier 164'
+      alors: 1871.61 €/mois
+    - si: classification = 'ouvrier 165'
+      alors: 1876.16 €/mois
+    - si: classification = 'ouvrier 166'
+      alors: 1880.71 €/mois
+    - si: classification = 'ouvrier 167'
+      alors: 1883.74 €/mois
+    - si: classification = 'ouvrier 168'
+      alors: 1888.29 €/mois
+    - si: classification = 'ouvrier 169'
+      alors: 1892.84 €/mois
+    - si: classification = 'ouvrier 170'
+      alors: 1897.39 €/mois
+    - si: classification = 'ouvrier 171'
+      alors: 1901.94 €/mois
+    - si: classification = 'ouvrier 172'
+      alors: 1903.46 €/mois
+    - si: classification = 'ouvrier 173'
+      alors: 1908.01 €/mois
+    - si: classification = 'ouvrier 174'
+      alors: 1912.56 €/mois
+    - si: classification = 'ouvrier 175'
+      alors: 1917.11 €/mois
+    - si: classification = 'ouvrier 176'
+      alors: 1923.18 €/mois
+    - si: classification = 'ouvrier 177'
+      alors: 1927.73 €/mois
+    - si: classification = 'ouvrier 178'
+      alors: 1932.28 €/mois
+    - si: classification = 'ouvrier 179'
+      alors: 1938.34 €/mois
+    - si: classification = 'ouvrier 180'
+      alors: 1942.89 €/mois
+    - si: classification = 'ouvrier 181'
+      alors: 1947.44 €/mois
+    - si: classification = 'ouvrier 182'
+      alors: 1948.96 €/mois
+    - si: classification = 'ouvrier 183'
+      alors: 1953.51 €/mois
+    - si: classification = 'ouvrier 184'
+      alors: 1961.09 €/mois
+    - si: classification = 'ouvrier 185'
+      alors: 1964.13 €/mois
+    - si: classification = 'ouvrier 186'
+      alors: 1971.71 €/mois
+    - si: classification = 'ouvrier 187'
+      alors: 1976.26 €/mois
+    - si: classification = 'ouvrier 188'
+      alors: 1982.33 €/mois
+    - si: classification = 'ouvrier 189'
+      alors: 1986.88 €/mois
+    - si: classification = 'ouvrier 190'
+      alors: 1991.43 €/mois
+    - si: classification = 'ouvrier 191'
+      alors: 1997.49 €/mois
+    - si: classification = 'ouvrier 192'
+      alors: 2003.56 €/mois
+    - si: classification = 'ouvrier 193'
+      alors: 2008.11 €/mois
+    - si: classification = 'ouvrier 194'
+      alors: 2012.66 €/mois
+    - si: classification = 'ouvrier 195'
+      alors: 2018.73 €/mois
+    - si: classification = 'ouvrier 196'
+      alors: 2023.28 €/mois
+    - si: classification = 'employé niveau 1'
+      alors: 1840.62 €/mois
+    - si: classification = 'employé niveau 2'
+      alors: 1873.19 €/mois
+    - si: classification = 'employé niveau 3'
+      alors: 1902.79 €/mois
+    - si: classification = 'employé niveau 4'
+      alors: 1932.39 €/mois
+    - si: classification = 'employé niveau 5'
+      alors: 1964.95 €/mois
+    - si: classification = 'employé niveau 6'
+      alors: 2012.32 €/mois
+    - si: classification = 'employé niveau 7'
+      alors: 2058.19 €/mois
+    - si: classification = 'contremaître'
+      alors:
+        variations:
+          - si: ancienneté >= 15
+            alors: 2657.51 €/mois
+          - si: ancienneté >= 12
+            alors: 2589.94 €/mois
+          - si: ancienneté >= 9
+            alors: 2522.38 €/mois
+          - si: ancienneté >= 6
+            alors: 2454.81 €/mois
+          - si: ancienneté >= 3
+            alors: 2387.24 €/mois
+          - si: ancienneté >= 1
+            alors: 2319.68 €/mois
+          - sinon: 2156.50 €/mois
+    - si: classification = 'chef de bordée'
+      alors:
+        variations:
+          - si: ancienneté >= 15
+            alors: 2867.02 €/mois
+          - si: ancienneté >= 12
+            alors: 2794.13 €/mois
+          - si: ancienneté >= 9
+            alors: 2721.23 €/mois
+          - si: ancienneté >= 6
+            alors: 2648.35 €/mois
+          - si: ancienneté >= 3
+            alors: 2575.46 €/mois
+          - si: ancienneté >= 1
+            alors: 2502.57 €/mois
+          - sinon: 2429.69 €/mois
+    - si: classification = 'chef de chantier'
+      alors:
+        variations:
+          - si: ancienneté >= 15
+            alors: 3146.36 €/mois
+          - si: ancienneté >= 12
+            alors: 3066.37 €/mois
+          - si: ancienneté >= 9
+            alors: 2986.38 €/mois
+          - si: ancienneté >= 6
+            alors: 2906.38 €/mois
+          - si: ancienneté >= 3
+            alors: 2826.40 €/mois
+          - si: ancienneté >= 1
+            alors: 2746.40 €/mois
+          - sinon: 2666.41 €/mois
+    - si: classification = 'chef de service'
+      alors:
+        variations:
+          - si: ancienneté >= 15
+            alors: 3527.78 €/mois
+          - si: ancienneté >= 12
+            alors: 3438.09 €/mois
+          - si: ancienneté >= 9
+            alors: 3348.40 €/mois
+          - si: ancienneté >= 6
+            alors: 3258.72 €/mois
+          - si: ancienneté >= 3
+            alors: 3169.03 €/mois
+          - si: ancienneté >= 1
+            alors: 3079.34 €/mois
+          - sinon: 2989.65 €/mois
+    - sinon: 0 €/mois
+
+salarié . convention collective . manutention ferroviaire . classification hors grille:
+  titre: Classification absente de la grille
+  applicable si: convention collective = 'manutention ferroviaire'
+  valeur: salaire minimum conventionnel . grille = 0 €/mois

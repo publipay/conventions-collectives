@@ -1,0 +1,153 @@
+# Enseignement privé indépendant (IDCC 2691).
+# Version 2026.1 : Minima annuels des annexes 1-A, 1-B et 1-C de l'avenant n° 69 au 1er mars 2026 ; les annexes 1-D et 1-E ne sont pas modélisées.
+validFrom: 2026-03-01
+sources:
+  - >-
+    Avenant n° 69 du 13 juin 2025 relatif à la négociation annuelle obligatoire (revalorisation de 1,8 % des grilles), annexes 1-A (personnel administratif et de service), 1-B (encadrement pédagogique, valeurs identiques) et 1-C (personnel enseignant) : minima annuels bruts par échelon A, B et C, les montants mensuels étant indicatifs ; article 3 : entrée en vigueur le premier jour du mois suivant la publication de l'arrêté d'extension, arrêté du 6 février 2026 (JORF du 12 février 2026), soit le 1er mars 2026. Les annexes 1-D (enseignants des cycles diplômants avec obligation de recherche) et 1-E (enseignement à distance) ne sont pas modélisées.
+  - >-
+    https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000052531975
+  - >-
+    Convention collective nationale de l'enseignement privé indépendant du 27 novembre 2007, conteneur KALICONT000019593660.
+---
+salarié . convention collective . enseignement privé indépendant:
+  titre: Enseignement privé indépendant (IDCC 2691)
+  valeur: convention collective = 'enseignement privé indépendant'
+
+salarié . convention collective . enseignement privé indépendant . catégorie et échelon:
+  titre: Catégorie et échelon
+  description: >-
+    Personnel administratif et de service ou d'encadrement pédagogique : E1 à C3 et échelon A, B ou C (par exemple T2.B) ; personnel enseignant : « enseignant 1.A » à « enseignant 10.C » (niveau 1 à 10 de l'annexe 1-C).
+  applicable si: convention collective = 'enseignement privé indépendant'
+  par défaut: "'non renseigné'"
+
+salarié . convention collective . enseignement privé indépendant . salaire minimum annuel conventionnel:
+  titre: Salaire minimum annuel conventionnel
+  description: Minimum brut à temps plein de la grille, proratisé selon la quotité de travail.
+  applicable si: convention collective = 'enseignement privé indépendant'
+  unité: €/an
+  valeur: grille * contrat . temps de travail . quotité
+
+salarié . convention collective . enseignement privé indépendant . salaire minimum annuel conventionnel . grille:
+  titre: Minimum brut à temps plein
+  unité: €/an
+  variations:
+    - si: catégorie et échelon = 'E1.A'
+      alors: 22986.11 €/an
+    - si: catégorie et échelon = 'E1.B'
+      alors: 23864.81 €/an
+    - si: catégorie et échelon = 'E1.C'
+      alors: 25034.74 €/an
+    - si: catégorie et échelon = 'E2.A'
+      alors: 23279.79 €/an
+    - si: catégorie et échelon = 'E2.B'
+      alors: 24434.81 €/an
+    - si: catégorie et échelon = 'E2.C'
+      alors: 25664.72 €/an
+    - si: catégorie et échelon = 'E3.A'
+      alors: 23909.77 €/an
+    - si: catégorie et échelon = 'E3.B'
+      alors: 25009.69 €/an
+    - si: catégorie et échelon = 'E3.C'
+      alors: 26369.82 €/an
+    - si: catégorie et échelon = 'T1.A'
+      alors: 25184.75 €/an
+    - si: catégorie et échelon = 'T1.B'
+      alors: 26459.73 €/an
+    - si: catégorie et échelon = 'T1.C'
+      alors: 27381.06 €/an
+    - si: catégorie et échelon = 'T2.A'
+      alors: 26534.74 €/an
+    - si: catégorie et échelon = 'T2.B'
+      alors: 27454.97 €/an
+    - si: catégorie et échelon = 'T2.C'
+      alors: 28829.88 €/an
+    - si: catégorie et échelon = 'T3.A'
+      alors: 27927.97 €/an
+    - si: catégorie et échelon = 'T3.B'
+      alors: 29332.57 €/an
+    - si: catégorie et échelon = 'T3.C'
+      alors: 30795.93 €/an
+    - si: catégorie et échelon = 'C1.A'
+      alors: 35246.34 €/an
+    - si: catégorie et échelon = 'C1.B'
+      alors: 36259.16 €/an
+    - si: catégorie et échelon = 'C1.C'
+      alors: 38069.82 €/an
+    - si: catégorie et échelon = 'C2.A'
+      alors: 42705.67 €/an
+    - si: catégorie et échelon = 'C2.B'
+      alors: 44864.12 €/an
+    - si: catégorie et échelon = 'C2.C'
+      alors: 47095 €/an
+    - si: catégorie et échelon = 'C3.A'
+      alors: 50325.40 €/an
+    - si: catégorie et échelon = 'C3.B'
+      alors: 52889.42 €/an
+    - si: catégorie et échelon = 'C3.C'
+      alors: 55468.09 €/an
+    - si: catégorie et échelon = 'enseignant 1.A'
+      alors: 25284.68 €/an
+    - si: catégorie et échelon = 'enseignant 1.B'
+      alors: 26069.80 €/an
+    - si: catégorie et échelon = 'enseignant 1.C'
+      alors: 26981.85 €/an
+    - si: catégorie et échelon = 'enseignant 2.A'
+      alors: 25284.68 €/an
+    - si: catégorie et échelon = 'enseignant 2.B'
+      alors: 26069.80 €/an
+    - si: catégorie et échelon = 'enseignant 2.C'
+      alors: 26981.85 €/an
+    - si: catégorie et échelon = 'enseignant 3.A'
+      alors: 25284.68 €/an
+    - si: catégorie et échelon = 'enseignant 3.B'
+      alors: 26069.80 €/an
+    - si: catégorie et échelon = 'enseignant 3.C'
+      alors: 26981.85 €/an
+    - si: catégorie et échelon = 'enseignant 4.A'
+      alors: 25284.68 €/an
+    - si: catégorie et échelon = 'enseignant 4.B'
+      alors: 26069.80 €/an
+    - si: catégorie et échelon = 'enseignant 4.C'
+      alors: 26981.85 €/an
+    - si: catégorie et échelon = 'enseignant 5.A'
+      alors: 25844.66 €/an
+    - si: catégorie et échelon = 'enseignant 5.B'
+      alors: 26760.13 €/an
+    - si: catégorie et échelon = 'enseignant 5.C'
+      alors: 28090.69 €/an
+    - si: catégorie et échelon = 'enseignant 6.A'
+      alors: 26922.72 €/an
+    - si: catégorie et échelon = 'enseignant 6.B'
+      alors: 28268.07 €/an
+    - si: catégorie et échelon = 'enseignant 6.C'
+      alors: 29687.32 €/an
+    - si: catégorie et échelon = 'enseignant 7.A'
+      alors: 28903.79 €/an
+    - si: catégorie et échelon = 'enseignant 7.B'
+      alors: 30352.73 €/an
+    - si: catégorie et échelon = 'enseignant 7.C'
+      alors: 31860.67 €/an
+    - si: catégorie et échelon = 'enseignant 8.A'
+      alors: 30677.19 €/an
+    - si: catégorie et échelon = 'enseignant 8.B'
+      alors: 32215.42 €/an
+    - si: catégorie et échelon = 'enseignant 8.C'
+      alors: 33841.86 €/an
+    - si: catégorie et échelon = 'enseignant 9.A'
+      alors: 30677.19 €/an
+    - si: catégorie et échelon = 'enseignant 9.B'
+      alors: 32215.42 €/an
+    - si: catégorie et échelon = 'enseignant 9.C'
+      alors: 33841.86 €/an
+    - si: catégorie et échelon = 'enseignant 10.A'
+      alors: 34276.14 €/an
+    - si: catégorie et échelon = 'enseignant 10.B'
+      alors: 36136.76 €/an
+    - si: catégorie et échelon = 'enseignant 10.C'
+      alors: 38951.94 €/an
+    - sinon: 0 €/an
+
+salarié . convention collective . enseignement privé indépendant . catégorie et échelon hors grille:
+  titre: Classification absente de la grille
+  applicable si: convention collective = 'enseignement privé indépendant'
+  valeur: salaire minimum annuel conventionnel . grille = 0 €/an

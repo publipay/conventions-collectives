@@ -6,7 +6,7 @@ Le dépôt contient les modèles de conventions collectives, leurs références 
 
 > **Bêta.** Le package est en cours de constitution : tant que dure la bêta, une version déjà publiée (version de modèle ou version npm) peut encore être corrigée ou réécrite. Les versions npm portent le suffixe `-beta` (par exemple `2026.10.1-beta`), où `2026.10` est l’année et le mois de publication.
 
-**Cent quatre-vingt-dix conventions** sont actuellement représentées, avec **trois cent soixante-treize versions de modèles**. Leur couverture porte sur les salaires minima, la classification nécessaire à leur calcul et certains compléments de rémunération ; la présence d’une convention ne signifie pas que toutes ses dispositions sont déjà modélisées. Elles sont regroupées par thème, puis classées par numéro IDCC.
+**Deux cent deux conventions** sont actuellement représentées, avec **trois cent quatre-vingt-cinq versions de modèles**. Leur couverture porte sur les salaires minima, la classification nécessaire à leur calcul et certains compléments de rémunération ; la présence d’une convention ne signifie pas que toutes ses dispositions sont déjà modélisées. Elles sont regroupées par thème, puis classées par numéro IDCC.
 
 **Les contributions sont les bienvenues !** Vous pouvez proposer une nouvelle convention, enrichir une convention existante, ajouter des tests, améliorer les références aux textes ou la documentation.
 
@@ -17,16 +17,16 @@ Le détail de chaque thème (convention, IDCC, versions et dates d’effet, règ
 | Thème | IDCC couvertes |
 |---|---|
 | [Services, ingénierie & numérique](themes/services-ingenierie-numerique/README.md) | 32 |
-| [Hôtellerie, restauration & alimentation](themes/hotellerie-restauration-alimentation/README.md) | 21 |
+| [Hôtellerie, restauration & alimentation](themes/hotellerie-restauration-alimentation/README.md) | 22 |
 | [Commerce & distribution (non alimentaire)](themes/commerce-distribution-non-alimentaire/README.md) | 24 |
-| [Industrie, métallurgie & chimie](themes/industrie-metallurgie-chimie/README.md) | 25 |
+| [Industrie, métallurgie & chimie](themes/industrie-metallurgie-chimie/README.md) | 30 |
 | [Bâtiment & travaux publics](themes/batiment-travaux-publics/README.md) | 13 |
-| [Transport & logistique](themes/transport-logistique/README.md) | 7 |
+| [Transport & logistique](themes/transport-logistique/README.md) | 8 |
 | [Santé & action sociale](themes/sante-action-sociale/README.md) | 14 |
-| [Banque, assurance & finance](themes/banque-assurance-finance/README.md) | 17 |
-| [Culture, médias & autres](themes/culture-medias-autres/README.md) | 35 |
+| [Banque, assurance & finance](themes/banque-assurance-finance/README.md) | 19 |
+| [Culture, médias & autres](themes/culture-medias-autres/README.md) | 38 |
 | [Immobilier & habitat](themes/immobilier-habitat/README.md) | 2 |
-| **Total** | **190** |
+| **Total** | **202** |
 
 Les références des accords et de leurs arrêtés d’extension figurent dans les métadonnées de chaque fichier source.
 

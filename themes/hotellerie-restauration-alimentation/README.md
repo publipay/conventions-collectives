@@ -1,11 +1,12 @@
 # Hôtellerie, restauration & alimentation
 
-21 IDCC couvertes. Retour au [README principal](../../README.md#conventions-déjà-présentes).
+22 IDCC couvertes. Retour au [README principal](../../README.md#conventions-déjà-présentes).
 
 | Convention | IDCC | Versions et dates d’effet | Règles présentes |
 |---|---|---|---|
 | [Industrie laitière](../../rules/0112-industrie-laitiere/README.md) | 0112 | `2026.1` : 1er février 2026 ; `2026.2` : 1er février 2026 (RAM au 1er janvier 2026) | Grilles mensuelle et annuelle de 28 positions, minima annuels distincts pour l'encadrement au forfait annuel, prorata mensuel conservé ; détection des classifications hors grille |
 | [Boulangerie-pâtisserie (entreprises artisanales)](../../rules/0843-boulangerie-patisserie-artisanale/README.md) | 843 | `2026.1` : 1er février 2026 | Taux horaires minima de 10 coefficients selon trois zones (national, Île-de-France, Bouches-du-Rhône), appliqués aux heures du contrat, et minima annuels des cadres 1 et 2 convertis en minima mensuels ; détection des niveaux hors grille |
+| [Charcuterie de détail](../../rules/0953-charcuterie-detail/README.md) | 953 | `2026.1` : 1er janvier 2026, autres employeurs à partir du 23 juillet 2026 | Taux horaires de l'avenant n° 64 (de 12,27 € à 20,43 €), convertis en minima mensuels. Proratisation selon la quotité de travail ; détection des classifications hors grille |
 | [Restauration de collectivités](../../rules/1266-restauration-collective/README.md) | 1266 | `2025.1` : 1er juillet 2025 (effet général après extension) | Neuf niveaux horaires, mensuels et annuels distincts ; ancienneté employés, PAC/PSM conditionnelles, treizième mois, intermittence, coupures et détachement ; paritarisme annuel entreprise, SMIC et contrôles de champ/date |
 | [Pâtisserie](../../rules/1267-patisserie/README.md) | 1267 | `2025.1` : 1er janvier 2025 ; `2026.1` : 1er janvier 2026 | Grille nationale mensuelle de 16 coefficients (160 à 350), avenants n° 112 et n° 114 étendus, proratisée selon la quotité de travail ; détection des coefficients hors grille |
 | [Restauration rapide](../../rules/1501-restauration-rapide/README.md) | 1501 | `2025.1` : 1er juin 2025 ; `2026.2` : 1er janvier 2026 (prévoyance, avenant n° 10) ; `2026.1` : 4 juin 2026 (mêmes règles que 2026.2, lendemain de l'arrêté d'extension) | 11 taux horaires minima des niveaux I à IV, appliqués aux heures du contrat, et 3 minima annuels du niveau V (cadres) convertis en minima mensuels ; prévoyance conventionnelle ; détection des niveaux et échelons hors grille |

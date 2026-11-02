@@ -1,0 +1,159 @@
+# Banque populaire (IDCC 3210).
+# Version 2024.1 : Salaires annuels minima de l'article 40 au 1er janvier 2024, par niveau et ancienneté (en années révolues).
+validFrom: 2024-01-01
+extension: 2024-03-16
+sources:
+  - >-
+    Avenant n° 3 du 21 décembre 2023 relatif aux salaires minima conventionnels au 1er janvier 2024 (article 40 de la convention : salaires annuels minima de branche par niveau, hors ancienneté et après 5, 10, 15 et 20 ans), étendu par arrêté du 27 février 2024 (JORF du 16 mars 2024). Les accords de négociation annuelle obligatoire de 2025 et 2026 (non étendus) prévoient des augmentations générales sans modifier l'article 40.
+  - >-
+    https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000049259047
+  - >-
+    Convention collective de la Banque populaire, conteneur KALICONT000031197865.
+---
+salarié . convention collective . banque populaire:
+  titre: Banque populaire (IDCC 3210)
+  valeur: convention collective = 'banque populaire'
+
+salarié . convention collective . banque populaire . niveau:
+  titre: Niveau
+  description: >-
+    Niveau A à K de la classification.
+  applicable si: convention collective = 'banque populaire'
+  par défaut: "'non renseigné'"
+
+salarié . convention collective . banque populaire . ancienneté:
+  titre: Ancienneté en années révolues
+  description: Ancienneté dans l'entreprise en années révolues, qui fixe la tranche de la grille.
+  applicable si: convention collective = 'banque populaire'
+  unité: année
+  par défaut: 0
+
+salarié . convention collective . banque populaire . salaire minimum annuel conventionnel:
+  titre: Salaire minimum annuel conventionnel
+  description: Minimum brut à temps plein de la grille, proratisé selon la quotité de travail.
+  applicable si: convention collective = 'banque populaire'
+  unité: €/an
+  valeur: grille * contrat . temps de travail . quotité
+
+salarié . convention collective . banque populaire . salaire minimum annuel conventionnel . grille:
+  titre: Minimum brut à temps plein
+  unité: €/an
+  variations:
+    - si: niveau = 'A'
+      alors:
+        variations:
+          - si: ancienneté >= 20
+            alors: 24264 €/an
+          - si: ancienneté >= 15
+            alors: 23560 €/an
+          - si: ancienneté >= 10
+            alors: 22882 €/an
+          - si: ancienneté >= 5
+            alors: 22213 €/an
+          - sinon: 21976 €/an
+    - si: niveau = 'B'
+      alors:
+        variations:
+          - si: ancienneté >= 20
+            alors: 24669 €/an
+          - si: ancienneté >= 15
+            alors: 23954 €/an
+          - si: ancienneté >= 10
+            alors: 23251 €/an
+          - si: ancienneté >= 5
+            alors: 22573 €/an
+          - sinon: 22332 €/an
+    - si: niveau = 'C'
+      alors:
+        variations:
+          - si: ancienneté >= 20
+            alors: 25184 €/an
+          - si: ancienneté >= 15
+            alors: 24459 €/an
+          - si: ancienneté >= 10
+            alors: 23743 €/an
+          - si: ancienneté >= 5
+            alors: 23050 €/an
+          - sinon: 22804 €/an
+    - si: niveau = 'D'
+      alors:
+        variations:
+          - si: ancienneté >= 20
+            alors: 26301 €/an
+          - si: ancienneté >= 15
+            alors: 25535 €/an
+          - si: ancienneté >= 10
+            alors: 24795 €/an
+          - si: ancienneté >= 5
+            alors: 24071 €/an
+          - sinon: 23826 €/an
+    - si: niveau = 'E'
+      alors:
+        variations:
+          - si: ancienneté >= 20
+            alors: 27560 €/an
+          - si: ancienneté >= 15
+            alors: 26757 €/an
+          - si: ancienneté >= 10
+            alors: 25977 €/an
+          - si: ancienneté >= 5
+            alors: 25219 €/an
+          - sinon: 24953 €/an
+    - si: niveau = 'F'
+      alors:
+        variations:
+          - si: ancienneté >= 15
+            alors: 29189 €/an
+          - si: ancienneté >= 10
+            alors: 28338 €/an
+          - si: ancienneté >= 5
+            alors: 27512 €/an
+          - sinon: 27218 €/an
+    - si: niveau = 'G'
+      alors:
+        variations:
+          - si: ancienneté >= 15
+            alors: 32351 €/an
+          - si: ancienneté >= 10
+            alors: 31380 €/an
+          - si: ancienneté >= 5
+            alors: 30464 €/an
+          - sinon: 30163 €/an
+    - si: niveau = 'H'
+      alors:
+        variations:
+          - si: ancienneté >= 10
+            alors: 34613 €/an
+          - si: ancienneté >= 5
+            alors: 33605 €/an
+          - sinon: 33271 €/an
+    - si: niveau = 'I'
+      alors:
+        variations:
+          - si: ancienneté >= 10
+            alors: 42286 €/an
+          - si: ancienneté >= 5
+            alors: 41058 €/an
+          - sinon: 40652 €/an
+    - si: niveau = 'J'
+      alors:
+        variations:
+          - si: ancienneté >= 10
+            alors: 51095 €/an
+          - si: ancienneté >= 5
+            alors: 49604 €/an
+          - sinon: 49115 €/an
+    - si: niveau = 'K'
+      alors:
+        variations:
+          - si: ancienneté >= 10
+            alors: 60799 €/an
+          - si: ancienneté >= 5
+            alors: 59030 €/an
+          - sinon: 58437 €/an
+    - sinon: 0 €/an
+
+salarié . convention collective . banque populaire . niveau hors grille:
+  titre: Classification absente de la grille
+  applicable si: convention collective = 'banque populaire'
+  valeur: salaire minimum annuel conventionnel . grille = 0 €/an
