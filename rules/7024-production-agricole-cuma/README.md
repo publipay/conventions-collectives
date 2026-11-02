@@ -1,8 +1,10 @@
 # Production agricole et CUMA — IDCC 7024
 
-Le fichier [2025.1](7024-production-agricole-cuma.2025.1.publicodes) reprend l'avenant n° 9 du 12 mars 2025, étendu par arrêté du 4 juin 2025 publié au Journal officiel du 11 juin 2025. La grille est applicable au 1er juillet 2025.
+> Les versions 2025.1 et 2025.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
-La révision [2025.2](7024-production-agricole-cuma.2025.2.publicodes), même date d'effet, corrige `coefficient hors grille` : en 2025.1, la règle exigeait un coefficient à la fois inférieur à 9 et supérieur à 400, et n'était donc jamais vraie. En 2025.2, seul un coefficient inférieur à 9 est hors grille, le palier 12 couvrant 400 points et plus. La révision [2025.3](7024-production-agricole-cuma.2025.3.publicodes) a les mêmes règles et source les bornes des paliers sur le texte officiel de l'article 4.5 (Légifrance, `KALIARTI000042949918`) : palier 1 de 9 à 11, palier 12 à partir de 400 sans borne supérieure.
+Le fichier 2025.1 reprend l'avenant n° 9 du 12 mars 2025, étendu par arrêté du 4 juin 2025 publié au Journal officiel du 11 juin 2025. La grille est applicable au 1er juillet 2025.
+
+La révision 2025.2, même date d'effet, corrige `coefficient hors grille` : en 2025.1, la règle exigeait un coefficient à la fois inférieur à 9 et supérieur à 400, et n'était donc jamais vraie. En 2025.2, seul un coefficient inférieur à 9 est hors grille, le palier 12 couvrant 400 points et plus. La révision [2025.3](7024-production-agricole-cuma.2025.3.publicodes) a les mêmes règles et source les bornes des paliers sur le texte officiel de l'article 4.5 (Légifrance, `KALIARTI000042949918`) : palier 1 de 9 à 11, palier 12 à partir de 400 sans borne supérieure.
 
 La version [2026.1](7024-production-agricole-cuma.2026.1.publicodes) reprend l'avenant n° 10 du 20 janvier 2026 (Légifrance `KALITEXT000054162294`), étendu par arrêté du 1er avril 2026 publié au Journal officiel du 4 avril 2026 : elle est applicable au **1er mai 2026**, premier jour du mois civil suivant la parution de l'arrêté. Les règles sont celles de 2025.3 et les taux horaires passent de 11,88 € - 23,88 € à 12,02 € - 24,16 €. L'avenant n° 11 du 2 juillet 2026, qui prévoit une nouvelle grille, n'était ni étendu ni publié sur Légifrance à la date de cette version : il n'est pas modélisé.
 

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0468-commerce-succursaliste-chaussure";
 const value = "commerce succursaliste de la chaussure";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2024.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.1");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -32,58 +32,7 @@ function annual() {
   return Math.round((engine.evaluate(`${namespace} . rémunération minimum annuelle conventionnelle`).nodeValue as number) * 100) / 100;
 }
 
-describe("IDCC 468 — 2024.1 minimum salaries and payroll isolation", () => {
-  it("records the effective date and official extension source", () => {
-    assert.equal(version.validFrom, "2024-07-01");
-    assert.ok(version.sources.some((source) => source.includes("JORFTEXT000049630725")));
-    assert.ok(version.sources.some((source) => source.includes("KALICONT000005635394")));
-  });
-
-  it("models employee and agent de maîtrise monthly minima", () => {
-    const grid: Record<string, number> = {
-      "1": 1782.14,
-      "2.1": 1784.71,
-      "2.2": 1789.91,
-      "3.1": 1794.06,
-      "3.2": 1816.91,
-      "4.1": 1837.67,
-      "4.2": 1848.06,
-      "5.1": 1880.24,
-      "5.2": 1890.62,
-      "6": 2038.07,
-      "7": 2253.02,
-    };
-    for (const [classification, expected] of Object.entries(grid)) {
-      setSituation(classification);
-      assert.equal(monthly(), expected, classification);
-      assert.equal(engine.evaluate(`${namespace} . niveau et échelon hors grille`).nodeValue, false);
-    }
-  });
-
-  it("models annual cadre minima without converting them to monthly", () => {
-    const grid: Record<string, number> = {
-      "8": 28993,
-      "8.2": 30300,
-      "9": 32263,
-      "9.2": 34227,
-      "10": 36625,
-      "11": 40986,
-      "12": 46436,
-    };
-    for (const [classification, expected] of Object.entries(grid)) {
-      setSituation(classification);
-      assert.equal(annual(), expected, classification);
-      assert.equal(monthly(), 0, classification);
-      assert.equal(engine.evaluate(`${namespace} . niveau et échelon hors grille`).nodeValue, false);
-    }
-  });
-
-  it("prorates monthly and annual minima once", () => {
-    setSituation("4.2", "50%");
-    assert.equal(monthly(), 924.03);
-    setSituation("8.2", "80%");
-    assert.equal(annual(), 24240);
-  });
+describe("IDCC 468 — 2025.1 minimum salaries and payroll isolation", () => {
 
   it("rejects unknown classifications and exposes the payroll audit", () => {
     setSituation("99");

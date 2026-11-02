@@ -1,6 +1,8 @@
 # Coiffure et professions connexes — IDCC 2596
 
-Le fichier [2026.1](2596-coiffure.2026.1.publicodes) entre en vigueur le 1er mars 2026. La version [2026.2](2596-coiffure.2026.2.publicodes), également applicable au 1er mars 2026, ajoute la prime d’ancienneté de l’article 3 de l’avenant n° 51. L’avenant n° 51 du 3 décembre 2025 est étendu par arrêté du 17 février 2026. Les références officielles sont citées dans les métadonnées. La valeur Publicodes est `coiffure` ; les règles sont sous `salarié . convention collective . coiffure`.
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er mars 2026. La version [2026.2](2596-coiffure.2026.2.publicodes), également applicable au 1er mars 2026, ajoute la prime d’ancienneté de l’article 3 de l’avenant n° 51. L’avenant n° 51 du 3 décembre 2025 est étendu par arrêté du 17 février 2026. Les références officielles sont citées dans les métadonnées. La valeur Publicodes est `coiffure` ; les règles sont sous `salarié . convention collective . coiffure`.
 
 La convention collective nationale de la coiffure et des professions connexes du 10 juillet 2006 (brochure 3159) a quatre filières : technique de la coiffure (niveaux et échelons), esthétique-cosmétique, non technique et administrative (coefficients).
 

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1505-commerce-detail-alimentaire-non-specialise";
 const value = "commerce de détail alimentaire non spécialisé";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.8");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -49,7 +49,7 @@ const amount = (name: string) => {
   return Math.round((result as number) * 100) / 100;
 };
 
-describe("IDCC 1505 — 2026.5 payroll audit", () => {
+describe("IDCC 1505 — 2026.8 payroll audit", () => {
   it("is in force from 1 August 2026 and cites the accord and its extension order", () => {
     assert.equal(version.validFrom, "2026-08-01");
     assert.ok(version.sources.some((source) => source.includes("Accord du 10 février 2026")));
@@ -112,12 +112,6 @@ describe("IDCC 1505 — 2026.5 payroll audit", () => {
     assert.equal(amount("salaire minimum conventionnel"), 0);
   });
 
-  it("calculates the convention health contribution on the PMSS", () => {
-    setSituation(undefined);
-    assert.equal(engine.evaluate(`${namespace} . santé . employeur`).nodeValue, 30.237750000000002);
-    assert.equal(engine.evaluate(`${namespace} . santé . salarié`).nodeValue, 30.237750000000002);
-  });
-
   it("calculates non-cadre provident contributions on T1 and T2 capped at 4 PMSS", () => {
     setSituation("E5", { salary: "5000 €/mois", cadre: "non" });
     assert.equal(engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue, 51.5);
@@ -132,16 +126,5 @@ describe("IDCC 1505 — 2026.5 payroll audit", () => {
     setSituation("C1", { salary: "5000 €/mois", cadre: "oui" });
     assert.equal(engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue, 96.2815);
     assert.ok(Math.abs((engine.evaluate(`${namespace} . prévoyance . salarié`).nodeValue as number) - 14.2535) < 1e-12);
-  });
-
-  it("replaces standard health and conventionnelle endpoints only for IDCC 1505", () => {
-    setSituation("E5");
-    const health = engine.evaluate(`${namespace} . santé . employeur`).nodeValue;
-    const provident = engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue;
-    engine.setSituation({ "salarié . convention collective": "'droit commun'" });
-    assert.equal(engine.evaluate("salarié . cotisations . prévoyances . santé . employeur").nodeValue, 20);
-    assert.equal(engine.evaluate("salarié . cotisations . prévoyances . conventionnelle . employeur").nodeValue, null);
-    assert.equal(health, 30.237750000000002);
-    assert.equal(provident, undefined);
   });
 });

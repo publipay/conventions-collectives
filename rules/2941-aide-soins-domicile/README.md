@@ -1,6 +1,8 @@
 # Modèle aide et soins à domicile — IDCC 2941
 
-Source Publicodes : [version 2026.1](2941-aide-soins-domicile.2026.1.publicodes).
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Source Publicodes : version 2026.1.
 
 Le modèle `2941-aide-soins-domicile`, valeur Publicodes `aide et soins à domicile`, reprend les coefficients de l’[avenant 75/2026](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054880770/), avec effet au 1er juin 2026 après l’agrément publié le 29 mai. Pour les employeurs non adhérents, cette date est prévue sous réserve de l’extension, publiée le 23 juillet 2026. Cette version ne fournit pas les grilles antérieures à juin 2026.
 

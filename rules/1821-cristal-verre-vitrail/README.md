@@ -1,5 +1,7 @@
 # Professions regroupées du cristal, du verre et du vitrail — IDCC 1821
 
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le fichier [2026.3](1821-cristal-verre-vitrail.2026.3.publicodes) entre en vigueur le 1er janvier 2026 et remplace les révisions 2026.1 et 2026.2, dont les montants ne correspondaient pas au texte. Il reprend l'article 2 (salaire minimum garanti mensuel) de l'accord du 3 mars 2026 relatif aux salaires minima pour l'année 2026 (Légifrance `KALITEXT000054426625`), étendu par arrêté du 11 juin 2026 (JORF du 27 juin 2026) à l'exclusion des entreprises de l'annexe B (industrie du vitrail). La valeur Publicodes est `cristal verre vitrail` ; les règles sont sous `salarié . convention collective . cristal verre vitrail`.
 
 ## Règles implémentées

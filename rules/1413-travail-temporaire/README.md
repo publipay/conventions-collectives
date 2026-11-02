@@ -1,6 +1,8 @@
 # Salariés permanents des entreprises de travail temporaire — IDCC 1413
 
-La version [2026.1](1413-travail-temporaire.2026.1.publicodes) prend effet le **1er février 2026**. Elle modélise l’accord du 20 février 2026 relatif aux salaires minima conventionnels des salariés permanents des entreprises de travail temporaire, étendu par arrêté du 4 mai 2026 publié au Journal officiel le 10 mai 2026. Les références officielles sont dans les métadonnées du fichier source.
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+La version 2026.1 prend effet le **1er février 2026**. Elle modélise l’accord du 20 février 2026 relatif aux salaires minima conventionnels des salariés permanents des entreprises de travail temporaire, étendu par arrêté du 4 mai 2026 publié au Journal officiel le 10 mai 2026. Les références officielles sont dans les métadonnées du fichier source.
 
 ## Règles
 

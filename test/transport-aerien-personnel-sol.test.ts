@@ -39,12 +39,6 @@ describe("IDCC 275 — transport aérien personnel au sol", () => {
     assert.equal(get(engine, "salaire minimum conventionnel").nodeValue, 1052.5);
   });
 
-  it("applies the September grid at its effective date", async () => {
-    const engine = await makeEngine("2025.3");
-    set(engine, { [`${ns} . coefficient`]: 245 });
-    assert.equal(get(engine, "salaire minimum conventionnel").nodeValue, 2096);
-  });
-
   it("reports an unknown coefficient instead of inventing a minimum", async () => {
     const engine = await makeEngine();
     set(engine, { [`${ns} . coefficient`]: 999 });

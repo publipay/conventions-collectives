@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0112-industrie-laitiere";
 const value = "industrie laitière";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
 const payrollVersion = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
 assert.ok(version);
 assert.ok(payrollVersion);
@@ -65,7 +65,7 @@ function annualMinimumAtForfait() {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 0112 — 2026.1 minimum salaries", () => {
+describe("IDCC 0112 — 2026.2 minimum salaries", () => {
   it("is in force from 1 February 2026 and cites the avenant and its extension order", () => {
     assert.equal(version.validFrom, "2026-02-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 57 du 22 janvier 2026")));

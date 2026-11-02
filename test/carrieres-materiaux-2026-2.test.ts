@@ -9,7 +9,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const model = "3249-carrieres-materiaux";
 const value = "carrières et matériaux de construction";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.3");
 assert.ok(version);
 const released = version;
 
@@ -44,7 +44,7 @@ function situation(classification: string, extra: Record<string, unknown> = {}) 
   } as Record<string, string>;
 }
 
-describe("IDCC 3249 revision 2026.2 (Île-de-France accord of 19 March 2026)", () => {
+describe("IDCC 3249 revision 2026.3 (Île-de-France accord of 19 March 2026)", () => {
   it("applies from 1 January 2026, like the revision it supersedes", () => {
     assert.equal(released.validFrom, "2026-01-01");
   });

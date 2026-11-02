@@ -1,6 +1,8 @@
 # Télédiffusion — IDCC 3241
 
-Les fichiers [2026.1](3241-telediffusion.2026.1.publicodes) et [2026.2](3241-telediffusion.2026.2.publicodes) entrent en vigueur le **1er juin 2026**, conformément aux accords du 11 mai 2026. La version 2026.2 corrige le barème CDDU et complète la colonne M2.
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Les fichiers 2026.1 et 2026.2 entrent en vigueur le **1er juin 2026**, conformément aux accords du 11 mai 2026. La version 2026.2 corrige le barème CDDU et complète la colonne M2.
 
 La valeur Publicodes est `télédiffusion` et les règles sont sous `salarié . convention collective . télédiffusion`.
 

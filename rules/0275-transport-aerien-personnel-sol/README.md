@@ -1,5 +1,7 @@
 # Personnel au sol des entreprises de transport aérien — IDCC 0275
 
+> Les versions 2025.2 et 2025.3 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Les modèles `2025.2`, `2025.3` et `2025.4` transposent l'avenant n° 100 du **2 avril 2025** relatif aux salaires de la convention collective nationale du personnel au sol des entreprises de transport aérien (brochure 3177). Cet avenant a été **étendu par arrêté du 2 juin 2025** (JORF du 27 juin 2025) : la grille s'applique à tous les employeurs du champ, signataires ou non.
 
 | Version | Date d'effet | Grille |

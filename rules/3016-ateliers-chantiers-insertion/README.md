@@ -1,6 +1,8 @@
 # Ateliers et chantiers d'insertion — IDCC 3016
 
-Les fichiers [2026.1](3016-ateliers-chantiers-insertion.2026.1.publicodes) et [2026.2](3016-ateliers-chantiers-insertion.2026.2.publicodes) reprennent l'avenant n° 39 du 25 novembre 2025 relatif à la classification et aux salaires minima, applicable au 1er juin 2026 après extension (arrêté du 4 mai 2026, JORF du 8 mai 2026).
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Les fichiers 2026.1 et [2026.2](3016-ateliers-chantiers-insertion.2026.2.publicodes) reprennent l'avenant n° 39 du 25 novembre 2025 relatif à la classification et aux salaires minima, applicable au 1er juin 2026 après extension (arrêté du 4 mai 2026, JORF du 8 mai 2026).
 
 La version `2026.2` remplace `2026.1` pour la même date d'effet : la formule est inchangée, mais la liste des coefficients admis est corrigée. Elle contient les 19 coefficients des emplois-repères de la branche (article 5.1.4), obtenus en additionnant les points des paliers de l'article 5.1.3 : 240, 263, 274, 281, 297, 303, 312, 313, 322, 334, 393, 395, 400, 430, 434, 492, 494, 564 et 670. La liste de la version `2026.1` comportait 16 valeurs absentes du texte. Les emplois-repères créés par une structure peuvent avoir un autre coefficient : ils sont signalés `coefficient hors grille`. Le tableau des minima publié au BOCC 2025/52 (page 144) n'a pas pu être lu ; seule la formule de l'article 5.2.2 est modélisée.
 

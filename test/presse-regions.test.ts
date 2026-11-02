@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3242-presse-regions";
 const value = "presse en régions";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2023.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2023.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -54,7 +54,7 @@ const amount = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 3242 — 2023.2 minimum salaries", () => {
+describe("IDCC 3242 — 2023.5 minimum salaries", () => {
   it("is in force from 1 July 2023 and cites the accord and its extension order", () => {
     assert.equal(version.validFrom, "2023-07-01");
     assert.ok(version.sources.some((source) => source.includes("KALITEXT000048558839")));

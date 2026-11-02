@@ -1,5 +1,7 @@
 # Entreprises d'installation sans fabrication de matériel aéraulique, thermique et frigorifique — IDCC 1412
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le fichier [2026.2](1412-installation-aeraulique-thermique-frigorifique.2026.2.publicodes) est applicable au 1er janvier 2026 et remplace la révision 2026.1 (même date d'effet), dont la grille annuelle était le mensuel multiplié par douze au lieu de la colonne « forfait annuel heures, base 1 607 heures » de l'annexe, et sans la colonne « forfait annuel jours, base 218 jours ». Il reprend l'avenant n° 77 du 26 mars 2026 relatif aux salaires minima, étendu par arrêté du 11 juin 2026 publié au Journal officiel du 27 juin 2026 (NOR TRST2615573A). Les références officielles figurent dans les métadonnées du fichier source.
 
 La valeur Publicodes est `installation aeraulique thermique frigorifique` ; les règles sont sous `salarié . convention collective . installation aeraulique thermique frigorifique`.

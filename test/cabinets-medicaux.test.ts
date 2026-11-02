@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1147-cabinets-medicaux";
 const value = "cabinets médicaux";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2024.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2024.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -52,7 +52,7 @@ const amount = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 1147 — 2024.1 minimum salaries", () => {
+describe("IDCC 1147 — 2024.2 minimum salaries", () => {
   it("is in force from 1 January 2024 and cites the avenant and its extension order", () => {
     assert.equal(version.validFrom, "2024-01-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 90 du 14 décembre 2023")));

@@ -1,8 +1,10 @@
 # Industries de jeux, jouets, articles de fêtes et ornements de Noël, articles de puériculture, voitures d'enfants et modèles réduits — IDCC 1607
 
-Le fichier [2026.1](1607-jeux-jouets.2026.1.publicodes) entre en vigueur le 1er avril 2026 pour les entreprises relevant d'une organisation d'employeurs signataire. Il est fondé sur l'avenant n° 100 du 3 mars 2026 relatif aux salaires minima et sur l'arrêté d'extension du 20 mai 2026, NOR TRST2612672A, cités dans ses métadonnées. Les textes ont été consultés sur Légifrance.
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
-Le fichier [2026.2](1607-jeux-jouets.2026.2.publicodes) entre en vigueur le 1er juillet 2026 et ajoute la contribution conventionnelle étendue de formation professionnelle issue de l'avenant n° 97 du 16 décembre 2025.
+Le fichier 2026.1 entre en vigueur le 1er avril 2026 pour les entreprises relevant d'une organisation d'employeurs signataire. Il est fondé sur l'avenant n° 100 du 3 mars 2026 relatif aux salaires minima et sur l'arrêté d'extension du 20 mai 2026, NOR TRST2612672A, cités dans ses métadonnées. Les textes ont été consultés sur Légifrance.
+
+Le fichier 2026.2 entre en vigueur le 1er juillet 2026 et ajoute la contribution conventionnelle étendue de formation professionnelle issue de l'avenant n° 97 du 16 décembre 2025.
 
 La valeur Publicodes est `jeux jouets articles fêtes ornements noël puériculture voitures enfants modélisme`; les règles sont sous `salarié . convention collective . jeux jouets articles fêtes ornements noël puériculture voitures enfants modélisme`.
 

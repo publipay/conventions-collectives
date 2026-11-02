@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1909-organismes-tourisme";
 const value = "organismes de tourisme";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -34,7 +34,7 @@ function evaluate(rule: string) {
   return engine.evaluate(`${namespace} . ${rule}`).nodeValue;
 }
 
-describe("IDCC 1909 — 2026.2 payroll rubrics", () => {
+describe("IDCC 1909 — 2026.3 payroll rubrics", () => {
   it("keeps the identity and salary source while adding the two convention regimes", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source) => source.includes("Accord n° 48 du 26 janvier 2026")));
@@ -42,13 +42,6 @@ describe("IDCC 1909 — 2026.2 payroll rubrics", () => {
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 34 du 2 novembre 2021") && source.includes("KALITEXT000045139544")));
     setSituation();
     assert.equal(evaluate("salaire minimum conventionnel"), 4281.53);
-  });
-
-  it("applies the 1.40% PMSS health contribution equally", () => {
-    setSituation();
-    const pmss = engine.evaluate("plafond sécurité sociale").nodeValue as number;
-    assert.equal(evaluate("santé . employeur"), pmss * 1.4 / 100 / 2);
-    assert.equal(evaluate("santé . salarié"), pmss * 1.4 / 100 / 2);
   });
 
   it("applies the non-cadre employer-only prévoyance rates on T1 and T2", () => {
@@ -66,13 +59,6 @@ describe("IDCC 1909 — 2026.2 payroll rubrics", () => {
     assert.equal(evaluate("prévoyance . employeur"), expected);
     assert.equal(evaluate("prévoyance . salarié"), 0);
   });
-
-  it("does not apply the convention regimes to another agreement", () => {
-    setSituation();
-    engine.setSituation({ "salarié . convention collective": "'droit commun'" });
-    assert.equal(evaluate("santé . employeur"), null);
-    assert.equal(evaluate("prévoyance . employeur"), null);
-  });
 });
 
 // Accord n° 42 du 21 août 2023 (KALITEXT000048557957), article 11: the base health contribution is
@@ -80,7 +66,7 @@ describe("IDCC 1909 — 2026.2 payroll rubrics", () => {
 describe("IDCC 1909 — 2026.3 without a conventional health rate", async () => {
   const revision = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
   assert.ok(revision);
-  // From modele-social alone: `rules` already holds revision 2026.2.
+  // From modele-social alone: `rules` already holds revision 2026.3.
   const revisionEngine = new Engine(
     { ...modeleSocial, "salarié . convention collective": rules["salarié . convention collective"], ...(await revision.loadRules()) } as Record<string, Rule>,
     { logger: { log() {}, warn() {}, error() {} } },

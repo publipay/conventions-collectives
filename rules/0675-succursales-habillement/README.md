@@ -1,5 +1,7 @@
 # Maisons à succursales de vente au détail d'habillement — IDCC 675
 
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le fichier [2026.3](0675-succursales-habillement.2026.3.publicodes) entre en vigueur le 1er mai 2026 et remplace les fichiers `2026.1` et `2026.2` (même date d'effet). Il reprend l'accord du 16 avril 2026 relatif aux salaires mensuels minima garantis (`KALITEXT000054871910`, BO 2026-21), étendu par arrêté du 6 juillet 2026 (JORF du 10 juillet 2026, NOR TRST2616915A). La valeur Publicodes est `succursales habillement` ; les règles sont sous `salarié . convention collective . succursales habillement`.
 
 La convention collective nationale des maisons à succursales de vente au détail d'habillement du 30 juin 1972 (brochure 3065) ne doit pas être confondue avec la convention [1483](../1483-commerce-detail-habillement-textiles/README.md), celle du commerce de détail de l'habillement et des articles textiles.

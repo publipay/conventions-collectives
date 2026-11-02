@@ -1,5 +1,7 @@
 # Bâtiment — ETAM Île-de-France (IDCC 2707)
 
+> La version 2018.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 **Modèle plus utilisé.** Les accords de salaires des ETAM du bâtiment d'Île-de-France sont rattachés
 à la convention nationale des ETAM (IDCC 2609) depuis l'avenant n° 10 du 4 décembre 2018
 (Île-de-France hors Seine-et-Marne, [KALITEXT000038632356](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000038632356)) ;

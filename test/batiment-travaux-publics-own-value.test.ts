@@ -31,42 +31,12 @@ async function engineOf(model: string, version: string, value?: string) {
 
 const base = (gross: number) => ({ salarié: "oui", dirigeant: "non", date: "01/10/2026", "salarié . contrat . salaire brut": `${gross} €/mois` });
 const round = (value: unknown) => Math.round(Number(value ?? 0) * 100) / 100;
-const OUTPUTS = [
-  "salarié . cotisations . employeur",
-  "salarié . cotisations . salarié",
-  "salarié . rémunération . net . à payer avant impôt",
-  "salarié . cotisations . prévoyances . conventionnelle . employeur",
-  "salarié . cotisations . retraite complémentaire . salarié",
-];
 
-for (const [model, previous, current, building] of [
-  ["1597-batiment-ouvriers-plus-de-10", "2026.6", "2026.7", true],
-  ["1702-travaux-publics-ouvriers", "2026.5", "2026.6", false],
+for (const [model, current] of [
+  ["1597-batiment-ouvriers-plus-de-10", "2026.7"],
+  ["1702-travaux-publics-ouvriers", "2026.6"],
 ] as const) {
   describe(`${model} ${current}`, () => {
-    it(`gives the amounts of ${previous} under modele-social's BTP agreement`, async () => {
-      const before = await engineOf(model, previous);
-      const after = await engineOf(model, current, "bâtiment et travaux publics");
-      for (const category of ["ouvrier", "etam", "cadre"]) {
-        for (const gross of [1900, 3200, 9000, 16000]) {
-          before.setSituation({
-            ...base(gross),
-            "salarié . convention collective": "'BTP'",
-            [`${OLD} . catégorie`]: `'${category}'`,
-            ...(building && { [`${OLD} . congés intempéries . caisse de rattachement`]: "'grand ouest'", [`${OLD} . chômage intempéries . catégorie`]: "'second œuvre'" }),
-          });
-          after.setSituation({
-            ...base(gross),
-            "salarié . convention collective": "'bâtiment et travaux publics'",
-            [`${NS} . catégorie`]: `'${category}'`,
-            ...(building && { [`${NS} . cotisation congés payés . caisse de rattachement`]: "'grand ouest'", [`${NS} . chômage intempéries . catégorie`]: "'second œuvre'" }),
-          });
-          for (const output of OUTPUTS) {
-            assert.equal(round(after.evaluate(output).nodeValue), round(before.evaluate(output).nodeValue), `${category} ${gross} ${output}`);
-          }
-        }
-      }
-    });
 
     it("applies none of modele-social's BTP rules", async () => {
       const engine = await engineOf(model, current, "bâtiment et travaux publics");

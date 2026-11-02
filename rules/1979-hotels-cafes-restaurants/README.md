@@ -1,6 +1,8 @@
 # Hôtels, cafés, restaurants — IDCC 1979 (HCR)
 
-Le fichier [2024.1](1979-hotels-cafes-restaurants.2024.1.publicodes) entre en vigueur le 1er décembre 2024. Ses métadonnées citent l’avenant salarial n° 33 du 19 juin 2024 et son arrêté d’extension. Les règles ci-dessous complètent l’espace `salarié . convention collective . HCR` déjà présent dans `modele-social` ; elles s’appliquent uniquement lorsque la convention `HCR` est sélectionnée.
+> Les versions 2024.1, 2024.2, 2024.3, 2024.4, 2026.1, 2026.2 et 2026.3 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2024.1 entre en vigueur le 1er décembre 2024. Ses métadonnées citent l’avenant salarial n° 33 du 19 juin 2024 et son arrêté d’extension. Les règles ci-dessous complètent l’espace `salarié . convention collective . HCR` déjà présent dans `modele-social` ; elles s’appliquent uniquement lorsque la convention `HCR` est sélectionnée.
 
 ## Versions
 
@@ -33,7 +35,7 @@ L'avenant n° 36 du 4 juin 2026 relatif aux salaires est étendu par arrêté du
 
 ## Congés payés
 
-Les révisions [2024.3](1979-hotels-cafes-restaurants.2024.3.publicodes) et [2026.2](1979-hotels-cafes-restaurants.2026.2.publicodes), aux mêmes dates que 2024.2 et 2026.1, ajoutent `congés payés . jours supplémentaires`, les 6 jours ouvrables de congés conventionnels par année de référence de l'article 11 de l'avenant n° 1 du 13 juillet 2004, quand le `congé légal` acquis atteint un mois de travail (2,5 jours). L'application les proratise par le congé légal, les réserve aux adhérents d'une organisation signataire (l'arrêté d'extension du 30 décembre 2004 a été annulé sur ce point par le Conseil d'État le 18 octobre 2006) et paie ceux qui ne sont pas pris à l'issue de leur période ; ils n'ouvrent pas droit au fractionnement.
+Les révisions 2024.3 et 2026.2, aux mêmes dates que 2024.2 et 2026.1, ajoutent `congés payés . jours supplémentaires`, les 6 jours ouvrables de congés conventionnels par année de référence de l'article 11 de l'avenant n° 1 du 13 juillet 2004, quand le `congé légal` acquis atteint un mois de travail (2,5 jours). L'application les proratise par le congé légal, les réserve aux adhérents d'une organisation signataire (l'arrêté d'extension du 30 décembre 2004 a été annulé sur ce point par le Conseil d'État le 18 octobre 2006) et paie ceux qui ne sont pas pris à l'issue de leur période ; ils n'ouvrent pas droit au fractionnement.
 
 ## Maintien de salaire
 

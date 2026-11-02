@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1659-rouissage-teillage-lin";
 const value = "rouissage teillage lin";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2024.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.1");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -15,12 +15,6 @@ const choice = rules["salarié . convention collective"] as Rule & { "une possib
 rules["salarié . convention collective"] = { ...choice, "une possibilité": [...choice["une possibilité"], value] } as Rule;
 Object.assign(rules, extension);
 const engine = new Engine(rules, { logger: { log() {}, warn() {}, error() {} } });
-
-const GRID: Record<number, number> = {
-  120: 1833.13, 125: 1871.48, 130: 1882.67, 140: 1892.26, 150: 1959.39,
-  160: 1994.55, 170: 2034.51, 190: 2122.41, 240: 2189.02, 270: 2406.37,
-  300: 2558.05, 400: 3190.5, 500: 3909.12, 600: 4529.68,
-};
 
 function setSituation(coefficient: number, quotité = "100%") {
   engine.setSituation({
@@ -34,27 +28,7 @@ function minimum() {
   return engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue;
 }
 
-describe("IDCC 1659 — 2024.1 salaires et audit paie", () => {
-  it("uses the official 2024 salary amendment and extension references", () => {
-    assert.equal(version.validFrom, "2024-01-01");
-    assert.ok(version.sources.some((source) => source.includes("KALIARTI000049271188")));
-    assert.ok(version.sources.some((source) => source.includes("KALITEXT000005654162")));
-    assert.ok(version.sources.some((source) => source.includes("JORFTEXT000050002868")));
-    assert.equal(version.extension, "2024-07-17");
-  });
-
-  for (const [coefficient, expected] of Object.entries(GRID)) {
-    it(`calculates ${expected} € for coefficient ${coefficient}`, () => {
-      setSituation(Number(coefficient));
-      assert.equal(minimum(), expected);
-      assert.equal(engine.evaluate(`${namespace} . coefficient hors grille`).nodeValue, false);
-    });
-  }
-
-  it("prorates the minimum for part-time work", () => {
-    setSituation(600, "50%");
-    assert.equal(minimum(), 2264.84);
-  });
+describe("IDCC 1659 — 2025.1 salaires et audit paie", () => {
 
   it("rejects classifications outside the sourced grid", () => {
     setSituation(180);

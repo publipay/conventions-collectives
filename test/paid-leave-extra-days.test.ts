@@ -30,8 +30,8 @@ async function engineOf(model: string, revision: string, value: string) {
   };
 }
 
-describe("Syntec seniority days (1486 revision 2026.3)", async () => {
-  const days = await engineOf("1486-syntec", "2026.3", "syntec");
+describe("Syntec seniority days (1486 revision 2026.5)", async () => {
+  const days = await engineOf("1486-syntec", "2026.5", "syntec");
   const at = (years: number) => days({ "salarié . convention collective . syntec . congés payés . ancienneté": `${years} an` });
 
   it("grants 1 to 4 jours ouvrés after 5, 10, 15 and 20 years", () => {
@@ -39,8 +39,8 @@ describe("Syntec seniority days (1486 revision 2026.3)", async () => {
   });
 });
 
-describe("Commerce alimentaire seniority days (2216 revisions 2025.2 and 2026.4)", async () => {
-  for (const revision of ["2025.2", "2026.4"]) {
+describe("Commerce alimentaire seniority days (2216 revisions 2025.2 and 2026.6)", async () => {
+  for (const revision of ["2025.2", "2026.6"]) {
     const days = await engineOf("2216-commerce-detail-gros-predominance-alimentaire", revision, "commerce alimentaire");
     const at = (years: number) =>
       days({ "salarié . convention collective . commerce alimentaire . congés payés . ancienneté": `${years} an` });
@@ -51,8 +51,8 @@ describe("Commerce alimentaire seniority days (2216 revisions 2025.2 and 2026.4)
   }
 });
 
-describe("Banque 26th day (2120 revision 2026.2)", async () => {
-  const days = await engineOf("2120-banque", "2026.2", "banque");
+describe("Banque 26th day (2120 revision 2026.4)", async () => {
+  const days = await engineOf("2120-banque", "2026.4", "banque");
   const rule = "salarié . convention collective . banque . congés payés . période de référence complète";
 
   it("grants one jour ouvré for a complete reference period only", () => {
@@ -62,8 +62,8 @@ describe("Banque 26th day (2120 revision 2026.2)", async () => {
   });
 });
 
-describe("Métallurgie extra days (3248 revision 2026.4)", async () => {
-  const days = await engineOf("3248-metallurgie", "2026.4", "métallurgie");
+describe("Métallurgie extra days (3248 revision 2026.6)", async () => {
+  const days = await engineOf("3248-metallurgie", "2026.6", "métallurgie");
   const ns = "salarié . convention collective . métallurgie . congés payés";
   const at = (seniority: number, age: number, packageOrDirector = false) =>
     days({
@@ -89,8 +89,8 @@ describe("Métallurgie extra days (3248 revision 2026.4)", async () => {
   });
 });
 
-describe("HCR conventional days (1979 revisions 2024.3 and 2026.2)", async () => {
-  for (const revision of ["2024.3", "2026.2"]) {
+describe("HCR conventional days (1979 revisions 2024.5 and 2026.4)", async () => {
+  for (const revision of ["2024.5", "2026.4"]) {
     const days = await engineOf("1979-hotels-cafes-restaurants", revision, "hôtels cafés restaurants");
     const rule = "salarié . convention collective . hôtels cafés restaurants . congés payés . congé légal";
 

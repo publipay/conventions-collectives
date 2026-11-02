@@ -1,5 +1,7 @@
 # Grands magasins et magasins populaires — IDCC 2156
 
+> La version 2024.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le fichier [2026.1](2156-grands-magasins.2026.1.publicodes) entre en vigueur le 1er juin 2024. Il corrige la proratisation de la rémunération minimale annuelle pour les salariés à temps partiel. Il est fondé sur l’avenant du 17 avril 2024 relatif aux rémunérations minimales garanties, étendu par arrêté du 28 juin 2024 (JORF du 6 juillet 2024, BOCC 2024-21), cités dans ses métadonnées. La valeur Publicodes est `grands magasins` ; les règles sont sous `salarié . convention collective . grands magasins`.
 
 La convention collective nationale des grands magasins et des magasins populaires du 30 juin 2000 (brochure 3082) fixe, pour chaque niveau, une rémunération minimale mensuelle et une rémunération minimale annuelle.

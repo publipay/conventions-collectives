@@ -1,5 +1,7 @@
 # Espaces de loisirs, d'attractions et culturels — IDCC 1790
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 L'avenant n° **76 du 13 mars 2026** relatif aux rémunérations conventionnelles s'applique au **1er avril 2026** (article 3) ; il a été étendu par arrêté du **6 juillet 2026** (JORF du 10 juillet 2026), sous réserve du SMIC. Les versions `2026.2` (1er avril 2026) et `2026.3` (6 juillet 2026, même grille) portent la grille de l'avenant n° 76. La version `2026.1` reprenait par erreur la grille du 1er mars 2025 (avenant n° 73) : elle est remplacée, et `2026.3` n'existe que pour la supplanter à partir de sa date d'effet (6 juillet 2026).
 
 La valeur Publicodes est `espaces loisirs` et les règles sont sous `salarié . convention collective . espaces loisirs`.

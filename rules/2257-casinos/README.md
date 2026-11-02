@@ -1,5 +1,7 @@
 # Casinos — IDCC 2257
 
+> Les versions 2025.1 et 2026.1 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2026.2` remplace `2026.1` (même date d'effet, 1er avril 2026) et ajoute les deux autres grilles de l'**avenant n° 40 du 7 janvier 2026** (`KALITEXT000054040478`, étendu par arrêté du 10 mars 2026) : annexe 1 (machines à sous, accueil, gestion, technique et spectacle, indices 100 à 230) et annexe 2 (restauration-hôtellerie). La grille se choisit avec l'entrée `filière` (`jeux traditionnels` par défaut, `machines à sous et autres filières`, `restauration-hôtellerie`). Les montants de l'annexe 2 sont ceux de l'annexe 1 aux mêmes indices ; l'annexe 2 n'a pas d'indice 135.
 
 Trois versions modélisent la grille des rémunérations minimales mensuelles du personnel des jeux traditionnels :

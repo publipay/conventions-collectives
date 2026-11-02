@@ -1,5 +1,7 @@
 # Courtage d’assurances et de réassurances — IDCC 2247
 
+> La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le fichier [2026.2](2247-courtage-assurances.2026.2.publicodes), applicable depuis le 1er juillet 2025, corrige la conversion mensuelle de la grille et expose le minimum annuel. Il est fondé sur l’avenant du 19 juin 2025 relatif aux salaires, étendu par arrêté du 2 septembre 2025 (JORF du 4 septembre 2025), cités dans ses métadonnées. La valeur Publicodes est `courtage assurances` ; les règles sont sous `salarié . convention collective . courtage assurances`.
 
 La convention collective nationale des entreprises de courtage d’assurances et/ou de réassurances du 18 janvier 2002 (brochure 3110) fixe un salaire annuel minimum par classe, de A à H, qui inclut selon les pages consultées la part variable de la rémunération.

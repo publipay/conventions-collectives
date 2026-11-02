@@ -17,7 +17,7 @@ const GRID_2026 = [1877.13, 1898.37, 1924.18, 1941.34, 1984.24, 2020.24, 2049.34
 const VERSIONS = {
   "2025.1": { validFrom: "2025-01-01", grid: GRID_2025, health: false },
   "2026.3": { validFrom: "2025-09-01", grid: GRID_2025, health: true },
-  "2026.4": { validFrom: "2026-01-01", grid: GRID_2026, health: true },
+  "2026.6": { validFrom: "2026-01-01", grid: GRID_2026, health: true },
 } as const;
 
 async function engineOf(revision: string) {
@@ -109,7 +109,7 @@ describe("IDCC 44 — periods: 2025 grid, then 2025 grid with health, then 2026 
   it("keeps hard-coded boundary amounts", async () => {
     assert.equal(minimum((await engineOf("2026.3")).engine, 130), 1855.01);
     assert.equal(minimum((await engineOf("2026.3")).engine, 880), 7675.85);
-    assert.equal(minimum((await engineOf("2026.4")).engine, 130), 1877.13);
-    assert.equal(minimum((await engineOf("2026.4")).engine, 880), 7764.57);
+    assert.equal(minimum((await engineOf("2026.6")).engine, 130), 1877.13);
+    assert.equal(minimum((await engineOf("2026.6")).engine, 880), 7764.57);
   });
 });

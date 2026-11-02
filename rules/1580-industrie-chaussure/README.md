@@ -1,5 +1,7 @@
 # Industrie de la chaussure — IDCC 1580
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le fichier [2026.2](1580-industrie-chaussure.2026.2.publicodes) entre en vigueur le 1er janvier 2026 et remplace la révision 2026.1 (même date d'effet), dont les clés mensuelles étaient décalées : un niveau 1.3 inexistant, 2.1 à 3.2 décalés d'un cran et 3.3 absent. La grille de l'accord compte 8 lignes mensuelles : niveau 1 (échelons 1 et 2), niveau 2 (échelons 1 à 3) et niveau 3 (échelons 1 à 3). Il modélise l'accord du 26 mars 2026 relatif aux salaires minima, étendu par arrêté du 11 juin 2026 publié au Journal officiel le 27 juin 2026. Les références officielles figurent dans les métadonnées du fichier source.
 
 La valeur Publicodes est `industrie chaussure` ; les règles sont sous `salarié . convention collective . industrie chaussure`.

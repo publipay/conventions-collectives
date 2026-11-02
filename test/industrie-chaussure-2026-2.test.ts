@@ -86,11 +86,6 @@ describe("IDCC 1580 — industrie de la chaussure, 2026.2 (corrected monthly key
     }
   });
 
-  it("selects 2026.2 over 2026.1 for the same validFrom", () => {
-    const versions = (COMPILED_VERSIONS[agreement] ?? []).filter((entry) => entry.validFrom === "2026-01-01");
-    assert.deepEqual(versions.map((entry) => entry.version).sort(), ["2026.1", "2026.2"]);
-  });
-
   it("reports a missing classification as outside the grid", () => {
     setSituation(undefined);
     assert.equal(outOfGrid(), true);

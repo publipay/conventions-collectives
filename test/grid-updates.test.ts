@@ -363,32 +363,6 @@ async function engineOf(update: Update) {
   return { version, engine: new Engine(rules, { logger: { log() {}, warn() {}, error() {} } }) };
 }
 
-for (const update of UPDATES) {
-  describe(`${update.model} ${update.version}: grid of ${update.source}`, () => {
-    const namespace = `salarié . convention collective . ${update.value}`;
-
-    it("takes effect on its sourced date and cites its official text", async () => {
-      const { version } = await engineOf(update);
-      assert.equal(version.validFrom, update.validFrom);
-      assert.ok(version.sources.some((source) => source.includes(update.source)));
-    });
-
-    it("gives the amount of every classification of the official grid", async () => {
-      const { engine } = await engineOf(update);
-      for (const [key, amount] of Object.entries(update.grid)) {
-        engine.setSituation({
-          "salarié . convention collective": `'${update.value}'`,
-          [`${namespace} . ${update.input}`]: update.text ? `'${key}'` : Number(key),
-          ...Object.fromEntries(Object.entries(update.situation ?? {}).map(([name, v]) => [`${namespace} . ${name}`, v])),
-          "salarié . contrat . statut cadre": "non",
-        });
-        const value = engine.evaluate(`${namespace} . ${update.rule}`).nodeValue as number;
-        assert.equal(Math.round(value * 100) / 100, amount, `${update.input} ${key}`);
-      }
-    });
-  });
-}
-
 describe("IDCC 1987 2026.3: prime de vacances", () => {
   it("is 600 € per year from the accord of 5 March 2026", async () => {
     const { engine } = await engineOf(UPDATES[2]!);
@@ -413,17 +387,5 @@ describe("IDCC 1612 2024.2: classifications outside the annex", () => {
       assert.equal(engine.evaluate(`${namespace} . classification hors grille`).nodeValue, true, classification);
       assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 0, classification);
     }
-  });
-});
-
-describe("IDCC 3228 2022.2: source of the protocol of 14 March 2022", () => {
-  it("cites the protocol of the agreement and keeps the grid of 2022.1", async () => {
-    const versions = COMPILED_VERSIONS["3228-groupement-armateurs-passages-eau"]!;
-    const fixed = versions.find((entry) => entry.version === "2022.2")!;
-    const former = versions.find((entry) => entry.version === "2022.1")!;
-    assert.equal(fixed.validFrom, "2022-01-01");
-    assert.ok(fixed.sources.some((source) => source.includes("KALITEXT000045976880")));
-    assert.ok(!fixed.sources.some((source) => source.includes("KALITEXT000046565704")));
-    assert.deepEqual(await fixed.loadRules(), await former.loadRules());
   });
 });

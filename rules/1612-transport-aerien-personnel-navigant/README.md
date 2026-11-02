@@ -1,5 +1,7 @@
 # Travail aérien, personnel navigant des essais et réceptions — IDCC 1612
 
+> La version 2024.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La convention collective nationale du travail aérien du 21 janvier 1991 couvre le personnel navigant des essais et réceptions (pilotes d'essais, ingénieurs et mécaniciens navigants d'essais). Conteneur Légifrance `KALICONT000005635916`.
 
 ## Versions

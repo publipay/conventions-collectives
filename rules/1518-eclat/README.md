@@ -1,5 +1,7 @@
 # ÉCLAT — IDCC 1518
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le modèle `1518-eclat` expose la version `2026.2` sous l'espace de noms
 `salarié . convention collective . éclat`.
 

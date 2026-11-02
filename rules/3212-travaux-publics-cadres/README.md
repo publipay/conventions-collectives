@@ -1,9 +1,11 @@
 # Travaux publics — cadres (IDCC 3212)
 
+> Les versions 2024.1, 2026.4 et 2026.5 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 ## Version en vigueur : `2026.5`, commune aux trois conventions des travaux publics
 
 Les versions `2026.4` et `2026.5` (qui ajoute les indemnités de petits déplacements) sont publiées à l'identique pour les IDCC 1702, 2614 et 3212, depuis le fichier
-commun [`rules/commun/travaux-publics/travaux-publics.2026.4.publicodes`](../commun/travaux-publics/travaux-publics.2026.4.publicodes)
+commun `rules/commun/travaux-publics/travaux-publics.2026.4.publicodes`
 (voir son [README](../commun/travaux-publics/README.md)). Elle complète et corrige les règles du
 BTP de modele-social pour les travaux publics : cotisation congés payés de la CNETP, cotisation
 chômage intempéries, prévoyance des cadres (RNPC) comptée une seule fois, et salaires minima

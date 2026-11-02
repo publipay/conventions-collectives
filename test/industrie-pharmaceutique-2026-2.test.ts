@@ -41,13 +41,6 @@ const article3 = { ...article1, "1A": 1844.57, "1B": 1844.57, "1C": 1863.36, "2A
 
 const minimum = (engine: Engine) => engine.evaluate(`${ns} . salaire minimum conventionnel`).nodeValue;
 
-describe("IDCC 176 — 2026.2 selection", () => {
-  it("is the highest revision for validFrom 2026-01-01", () => {
-    const versions = (COMPILED_VERSIONS[id] ?? []).filter((v) => v.validFrom === "2026-01-01");
-    assert.deepEqual(versions.map((v) => v.version).sort(), ["2026.1", "2026.2"]);
-  });
-});
-
 describe("IDCC 176 — article 1 grid (seniority unknown or under 18 months)", () => {
   for (const [groupe, expected] of Object.entries(article1)) {
     it(`${groupe}: ${expected}`, async () => {

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3017-ports-manutention";
 const value = "ports et manutention";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2024.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2025.1");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -25,18 +25,7 @@ function setSituation(classification: string, seniority: number, quotité = "100
   });
 }
 
-describe("IDCC 3017 — 2024.1 salaires et audit paie", () => {
-  it("uses the official extended salary agreement", () => {
-    assert.equal(version.validFrom, "2024-01-01");
-    assert.ok(version.sources.some((source: string) => source.includes("KALITEXT000049508746")));
-  });
-
-  it("calculates the published B grid and seniority step", () => {
-    setSituation("B", 0);
-    assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 1914);
-    setSituation("B", 33, "50%");
-    assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 1291.5);
-  });
+describe("IDCC 3017 — 2025.1 salaires et audit paie", () => {
 
   it("marks other classifications outside this deliberately scoped model", () => {
     setSituation("C.1", 0);

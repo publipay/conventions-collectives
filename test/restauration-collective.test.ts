@@ -4,7 +4,7 @@ import Engine, { type Rule } from "publicodes";
 import modeleSocial from "modele-social";
 import { COMPILED_VERSIONS } from "../src/index.ts";
 const namespace = "salarié . convention collective . restauration collective";
-const version = COMPILED_VERSIONS["1266-restauration-collective"]?.find(v => v.version === "2025.1");
+const version = COMPILED_VERSIONS["1266-restauration-collective"]?.find(v => v.version === "2025.3");
 assert.ok(version, "Agreement version must be exported");
 const extension = await version.loadRules();
 const rules = { ...modeleSocial, ...extension } as Record<string, Rule>;

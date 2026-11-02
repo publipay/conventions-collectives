@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const name = "1512-promotion-immobiliere";
 const value = "promotion immobilière";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[name]?.find((candidate) => candidate.version === "2026.1");
+const version = COMPILED_VERSIONS[name]?.find((candidate) => candidate.version === "2026.6");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };

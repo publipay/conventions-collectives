@@ -1,5 +1,7 @@
 # Industries textiles — IDCC 18
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La convention collective nationale de l’industrie textile du 1er février 1951 (brochure 3106) ne doit pas être confondue avec la convention [1483](../1483-commerce-detail-habillement-textiles/README.md), celle du commerce de détail de l’habillement et des articles textiles. La valeur Publicodes est `industries textiles` ; les règles sont sous `salarié . convention collective . industries textiles`.
 
 Depuis l’accord du 18 juin 2024 de rapprochement avec la convention des textiles artificiels et synthétiques et produits assimilés du 6 juin 1996, la convention a deux barèmes de salaires minima : celui de l’industrie textile et celui du secteur des textiles artificiels et synthétiques, dont les classifications sont maintenues jusqu’au 31 décembre 2026.
@@ -8,7 +10,6 @@ Depuis l’accord du 18 juin 2024 de rapprochement avec la convention des textil
 
 | Version | Date d’effet | Extension | Contenu |
 |---|---|---|---|
-| [2026.1](0018-industries-textiles.2026.1.publicodes) | 1er juin 2026 | — | Grille de l’industrie textile de l’accord du 17 juin 2026, sans secteur. Remplacée par 2026.3. |
 | [2026.2](0018-industries-textiles.2026.2.publicodes) | 1er janvier 2026 | 17 avril 2026 | Accord du 15 janvier 2026 (KALITEXT000054161832) pour l’industrie textile, accord du 12 janvier 2026 (KALITEXT000053973002) pour le secteur artificiel. |
 | [2026.3](0018-industries-textiles.2026.3.publicodes) | 1er juin 2026 | 4 septembre 2026 | Grille de l’industrie textile de 2026.1 et barème du secteur artificiel du 12 janvier 2026. |
 

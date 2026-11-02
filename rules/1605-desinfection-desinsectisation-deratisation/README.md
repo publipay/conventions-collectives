@@ -1,6 +1,8 @@
 # Convention collective nationale des entreprises de désinfection, désinsectisation, dératisation (3D) — IDCC 1605
 
-Le fichier [2026.2](1605-desinfection-desinsectisation-deratisation.2026.2.publicodes) est applicable à compter du **18 mars 2026**, date de publication au Journal officiel de l'arrêté d'extension du 9 mars 2026. Il reprend l'intégralité de l'annexe 1 de l'accord du 17 décembre 2025 relatif à la revalorisation salariale pour 2026 (KALITEXT000054040312) : les douze niveaux des trois groupes et la prime d'ancienneté. Il remplace le fichier [2026.1](1605-desinfection-desinsectisation-deratisation.2026.1.publicodes), de même date d'effet, qui ne modélisait que les niveaux 1 à 4 du groupe 1.
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier [2026.2](1605-desinfection-desinsectisation-deratisation.2026.2.publicodes) est applicable à compter du **18 mars 2026**, date de publication au Journal officiel de l'arrêté d'extension du 9 mars 2026. Il reprend l'intégralité de l'annexe 1 de l'accord du 17 décembre 2025 relatif à la revalorisation salariale pour 2026 (KALITEXT000054040312) : les douze niveaux des trois groupes et la prime d'ancienneté. Il remplace le fichier 2026.1, de même date d'effet, qui ne modélisait que les niveaux 1 à 4 du groupe 1.
 
 ## Règles implémentées
 

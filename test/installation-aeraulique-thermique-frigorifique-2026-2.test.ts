@@ -46,10 +46,6 @@ const MONTHLY: Record<number, number> = {
 };
 
 describe("IDCC 1412 — 2026.2 annex grid (avenant n° 77)", () => {
-  it("is the highest revision for validFrom 2026-01-01", () => {
-    const versions = (COMPILED_VERSIONS[id] ?? []).filter((v) => v.validFrom === "2026-01-01");
-    assert.deepEqual(versions.map((v) => v.version).sort(), ["2026.1", "2026.2"]);
-  });
 
   for (const [coefficient, expected] of Object.entries(MONTHLY)) {
     it(`coefficient ${coefficient}: monthly ${expected}`, async () => {

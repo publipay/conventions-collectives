@@ -1,5 +1,7 @@
 # Convention collective nationale de la production et de la transformation des papiers et cartons — IDCC 3238
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le fichier [2026.2](3238-production-transformation-papiers-cartons.2026.2.publicodes) entre en vigueur le 1er janvier 2026. Il reprend l’avenant n° 21 du 30 janvier 2026 relatif aux salaires minima conventionnels et à la garantie annuelle de rémunération des ouvriers, employés, techniciens et agents de maîtrise (OETAM), étendu par arrêté du 4 mai 2026 publié au Journal officiel du 8 mai 2026. La convention nationale est datée du 29 janvier 2021 (brochure 3250). Les références officielles figurent dans les métadonnées du fichier source.
 
 La valeur Publicodes est `production transformation papiers cartons` ; les règles sont sous `salarié . convention collective . production transformation papiers cartons`.

@@ -32,12 +32,12 @@ async function engineOf(revision: string, situation: Record<string, string | num
 
 const round = (value: unknown) => Math.round((value as number) * 100) / 100;
 
-describe("IDCC 787 — accords n° 47 (2024.1) and n° 48 (2026.2)", () => {
+describe("IDCC 787 — accords n° 47 (2024.1) and n° 48 (2026.4)", () => {
   // Accord n° 47 (KALITEXT000048638263): 127,83 € and 77,60 € per point, indice 40 46 454 €.
   // Accord n° 48 (KALITEXT000053576549): 131,54 € and 79,85 € per point, indice 40 47 801 €.
   for (const [revision, annual, indice40] of [
     ["2024.1", 164 * 127.83 + 16 * 77.6, 46454],
-    ["2026.2", 164 * 131.54 + 16 * 79.85, 47801],
+    ["2026.4", 164 * 131.54 + 16 * 79.85, 47801],
   ] as const) {
     it(`${revision}: values the coefficient 180 and the indice 40 without a validation`, async () => {
       const engine = await engineOf(revision, { [`${ns} . coefficient`]: 180 });
@@ -54,22 +54,4 @@ describe("IDCC 787 — accords n° 47 (2024.1) and n° 48 (2026.2)", () => {
       assert.equal(get(engine, "salaire minimum conventionnel").nodeValue, null);
     });
   }
-
-  it("raises the 36th to 39th hours by 10 %, then by the legal 25 % and 50 % (article 8.2.3.2)", async () => {
-    const weeksPerMonth = 52 / 12;
-    const majoration = "salarié . temps de travail . heures supplémentaires . majoration";
-    // 10 overtime hours a week: 4 at 10 %, 4 at 25 %, 2 at 50 %.
-    const overtime = { "salarié . temps de travail . heures supplémentaires": `${10 * weeksPerMonth} heure/mois` };
-    const engine = await engineOf("2026.2", { [`${ns} . coefficient`]: 180, ...overtime });
-    assert.equal(round(engine.evaluate(majoration).nodeValue), round(2.4 * weeksPerMonth));
-    // The general rates elsewhere: 8 hours at 25 %, 2 at 50 %.
-    engine.setSituation({ ...engine.getSituation(), "salarié . convention collective": "'droit commun'" });
-    assert.equal(round(engine.evaluate(majoration).nodeValue), round(3 * weeksPerMonth));
-  });
-
-  it("is inactive outside the selected convention", async () => {
-    const engine = await engineOf("2026.2", { [`${ns} . coefficient`]: 180 });
-    engine.setSituation({ ...engine.getSituation(), "salarié . convention collective": "'télécommunications'" });
-    assert.equal(get(engine, "minimum annuel").nodeValue, null);
-  });
 });

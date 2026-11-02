@@ -1,6 +1,8 @@
 # Boulangerie-pâtisserie artisanale — IDCC 843
 
-Le fichier [2026.1](0843-boulangerie-patisserie-artisanale.2026.1.publicodes) entre en vigueur le 1er février 2026. Le fichier [2026.2](0843-boulangerie-patisserie-artisanale.2026.2.publicodes) ajoute la composante de rente éducation de prévoyance déjà étendue, sans modifier la grille salariale.
+> Les versions 2026.1, 2026.2 et 2026.3 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er février 2026. Le fichier 2026.2 ajoute la composante de rente éducation de prévoyance déjà étendue, sans modifier la grille salariale.
 
 - l’avenant n° 139 du 14 janvier 2026 (grille nationale, applicable le 1er janvier 2026), étendu par arrêté du 10 avril 2026 (JORF n° 0091 du 17 avril 2026, NOR TRST2608824A) ;
 - l’accord Île-de-France n° 61 du 22 janvier 2026 (applicable le 1er février 2026), étendu par arrêté du 8 avril 2026 (JORF n° 0091 du 17 avril 2026, texte n° 80) ;

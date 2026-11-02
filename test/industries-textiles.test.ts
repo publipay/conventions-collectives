@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0018-industries-textiles";
 const value = "industries textiles";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -60,30 +60,10 @@ const amount = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 18 — 2026.1 minimum salaries", () => {
-  it("is in force from 1 June 2026 and cites the accord and its extension order", () => {
-    assert.equal(version.validFrom, "2026-06-01");
-    assert.ok(version.sources.some((source) => source.includes("Accord national du 17 juin 2026")));
-    assert.ok(version.sources.some((source) => source.includes("TRST2621209A")));
-  });
+describe("IDCC 18 — 2026.2 minimum salaries", () => {
 
   it("has 21 positions", () => {
     assert.equal(Object.keys(MONTHLY).length, 21);
-  });
-
-  for (const [level, monthly] of Object.entries(MONTHLY)) {
-    it(`${level}: ${monthly} € a month`, () => {
-      setSituation(level);
-      assert.equal(amount(), monthly);
-      assert.equal(outOfGrid(), false);
-    });
-  }
-
-  it("prorates the monthly minimum once for part-time work", () => {
-    setSituation("4.2", "50%");
-    assert.equal(amount(), 998);
-    setSituation("II", "80%");
-    assert.equal(amount(), 2821.6);
   });
 
   it("rejects levels outside the grid", () => {

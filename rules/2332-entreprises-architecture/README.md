@@ -1,5 +1,7 @@
 # Entreprises d'architecture — IDCC 2332
 
+> Les versions 2025.1, 2025.2, 2025.3 et 2026.1 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 ## Version `2025.1`
 
 La version `2025.1` modélise l'accord Rhône-Alpes du **11 février 2025** relatif à la valeur du point. Elle est limitée aux employeurs signataires ou adhérents à cet accord régional ; elle ne constitue pas une extrapolation aux autres territoires.

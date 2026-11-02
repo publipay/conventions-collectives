@@ -1,5 +1,7 @@
 # Convention collective nationale de la répartition pharmaceutique — IDCC 1621
 
+> La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Les fichiers `2025.1` et `2025.2` reprennent l’accord du 22 avril 2025 relatif aux salaires pour l’année 2025, avec les grilles applicables au 1er janvier et au 1er juillet 2025 pour 151,67 heures.
 
 ## Règles implémentées

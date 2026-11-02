@@ -1,6 +1,8 @@
 # Distribution, logistique et services des énergies de proximité (IDCC 1408)
 
-Les fichiers [2025.1](1408-distribution-logistique-energies.2025.1.publicodes) et [2025.2](1408-distribution-logistique-energies.2025.2.publicodes) entrent en vigueur le **1er mai 2025** pour l'accord du **13 mars 2025** relatif à la revalorisation des salaires minima conventionnels au 1er mai 2025 (+ 2 %), étendu par arrêté du 27 mai 2025 (JORF du 31 mai 2025). La version `2025.2` remplace `2025.1` (même date d'effet) : la grille est identique, la prime d'ancienneté est corrigée. La valeur Publicodes est `distribution logistique énergies`.
+> Les versions 2025.1 et 2025.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Les fichiers 2025.1 et 2025.2 entrent en vigueur le **1er mai 2025** pour l'accord du **13 mars 2025** relatif à la revalorisation des salaires minima conventionnels au 1er mai 2025 (+ 2 %), étendu par arrêté du 27 mai 2025 (JORF du 31 mai 2025). La version `2025.2` remplace `2025.1` (même date d'effet) : la grille est identique, la prime d'ancienneté est corrigée. La valeur Publicodes est `distribution logistique énergies`.
 
 La version [2025.3](1408-distribution-logistique-energies.2025.3.publicodes) reprend les règles de `2025.2` et déclare la publication de l'arrêté d'extension (`extension: 2025-05-31`), à partir de laquelle l'accord de 2025 lie aussi les entreprises non adhérentes aux organisations signataires.
 

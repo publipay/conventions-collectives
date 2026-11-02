@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1480-journalistes";
 const value = "journalistes";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -46,7 +46,7 @@ const amount = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . groupe hors grille`).nodeValue;
 
-describe("IDCC 1480 — 2025.1 minimum salaries", () => {
+describe("IDCC 1480 — 2025.2 minimum salaries", () => {
   it("cites the amendment and extension order", () => {
     assert.equal(version.validFrom, "2025-09-01");
     assert.ok(version.sources.some((source) => source.includes("KALIARTI000052299406")));

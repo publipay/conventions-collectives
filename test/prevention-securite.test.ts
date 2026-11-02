@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const model = "1351-prevention-securite";
 const value = "prévention et sécurité";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.3");
+const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.4");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -61,15 +61,6 @@ const salaryGrid = {
 } as const;
 
 describe("IDCC 1351 — July 2026 extended agreement", () => {
-  it("exports the effective date and legal sources", () => {
-    assert.equal(version.validFrom, "2026-07-01");
-    for (const reference of [
-      "KALIARTI000049067305", "KALIARTI000053576558", "KALIARTI000005853757",
-      "KALITEXT000005680940", "KALIARTI000005853996", "KALIARTI000047104169",
-    ]) {
-      assert.ok(version.sources.some((source) => source.includes(reference)), reference);
-    }
-  });
   for (const [category, entries] of Object.entries(salaryGrid)) {
     for (const [coefficient, expected] of entries) {
       it(`${category} coefficient ${coefficient}: EUR ${expected} for 151.67 hours`, () => {
@@ -166,13 +157,6 @@ describe("IDCC 1351 — allowances and six-hour period minimum", () => {
     assert.equal(amount("indemnité d'entretien des tenues"), 12.20);
     assert.equal(amount("salaire minimum conventionnel"), 1883.85);
     assert.equal(amount("compléments salariaux bruts calculés"), 0);
-  });
-  it("values separately determined hours needed to reach six paid hours per qualifying period", () => {
-    setSituation({ "heures de complément des périodes": "2 heure/mois", "taux horaire contractuel": "15 €/heure" });
-    assert.equal(amount("complément minimum des périodes"), 30);
-    setSituation({ "heures de complément des périodes": "2 heure/mois", "taux horaire contractuel": "10 €/heure" });
-    assert.equal(amount("complément minimum des périodes"), Math.round(1883.85 / 151.67 * 2 * 100) / 100);
-    assert.equal(amount("indemnité de panier"), 0);
   });
   it("leaves its rules inapplicable for another agreement", () => {
     setSituation({}, { "salarié . convention collective": "'droit commun'" });

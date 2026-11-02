@@ -1,5 +1,7 @@
 # Navigation intérieure — IDCC 3229
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2026.2` modélise l'intégralité des huit tableaux annexés au protocole d'accord du **17 décembre 2025** relatif aux salaires minima conventionnels (majoration de 1,0 % au 1er janvier 2026), applicables au **1er janvier 2026** et étendus par arrêté du **18 mai 2026** (JORF du 29 mai 2026). Elle remplace la version `2026.1` (même date d'effet), qui ne couvrait que la ligne Matelot, coefficient 001, de la flotte classique.
 
 Le minimum est une **rémunération annuelle** brute, toutes primes incluses, hors primes de sujétions particulières (nuit, heures supplémentaires, compensations liées à l'organisation du temps de travail) et primes à caractère annuel. Les règles sont sous `salarié . convention collective . navigation intérieure`.

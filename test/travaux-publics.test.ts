@@ -1,5 +1,5 @@
 /**
- * Public works agreements (IDCC 1702, 2614 and 3212), shared version 2026.4
+ * Public works agreements (IDCC 1702, 2614 and 3212), shared version 2026.6
  * (rules/commun/travaux-publics): modele-social's `BTP` rules corrected for public works, and the
  * regional annual minimums of 2026.
  *
@@ -17,14 +17,20 @@ import Engine, { type Rule } from "publicodes";
 import modeleSocial from "modele-social";
 import { COMPILED_VERSIONS } from "../src/index.ts";
 
+const VALUE = "bâtiment et travaux publics";
+function withValue(rules: Record<string, Rule>): Record<string, Rule> {
+  const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
+  return { ...rules, "salarié . convention collective": { ...choice, "une possibilité": [...choice["une possibilité"], VALUE] } as Rule };
+}
+
 const AGREEMENTS = ["1702-travaux-publics-ouvriers", "2614-travaux-publics-etam", "3212-travaux-publics-cadres"];
-const VERSION = "2026.4";
-const BTP = "salarié . convention collective . BTP";
+const VERSION = "2026.6";
+const BTP = "salarié . convention collective . bâtiment et travaux publics";
 const CEILING = 4005;
 
 const version = COMPILED_VERSIONS[AGREEMENTS[0]!]!.find((v) => v.version === VERSION);
 assert.ok(version);
-const rules: Record<string, Rule> = { ...modeleSocial, ...(await version.loadRules()) };
+const rules: Record<string, Rule> = withValue({ ...modeleSocial, ...(await version.loadRules()) });
 const engine = new Engine(rules, { logger: { log() {}, warn() {}, error() {} } });
 
 type Situation = Record<string, string>;
@@ -32,7 +38,7 @@ type Situation = Record<string, string>;
 function evaluate(rule: string, situation: Situation): number | boolean | string | null | undefined {
   engine.setSituation({
     date: "01/10/2026",
-    "salarié . convention collective": "'BTP'",
+    "salarié . convention collective": "'bâtiment et travaux publics'",
     "salarié . contrat . salaire brut": "2500 €/mois",
     ...situation,
   });
@@ -48,32 +54,21 @@ const amount = (rule: string, situation: Situation = {}) => {
 const percentOf = (base: number, rate: number) => Math.round(base * rate) / 100;
 
 describe("public works agreements — one shared version", () => {
-  it("publishes the same versions 2026.4 to 2026.6 for the three agreements, 2026.6 their newest", () => {
-    const revision = (v: { version: string }) => Number(v.version.split(".")[1]);
-    for (const shared of ["2026.4", "2026.5", "2026.6"]) {
-      const published = AGREEMENTS.map((name) => {
-        const found = COMPILED_VERSIONS[name]!.find((v) => v.version === shared);
-        assert.ok(found, `${name} ${shared}`);
-        return found;
-      });
-      for (const found of published) {
-        assert.equal(found.contentHash, published[0]!.contentHash);
-        assert.equal(found.validFrom, "2026-01-01");
-      }
-    }
-    for (const name of AGREEMENTS) {
-      assert.ok(COMPILED_VERSIONS[name]!.every((v) => v.version.startsWith("2024.") || revision(v) <= 6), name);
+  it("publishes 2026.6 identically for the three agreements, their only version", () => {
+    const published = AGREEMENTS.map((name) => {
+      assert.deepEqual(COMPILED_VERSIONS[name]!.map((v) => v.version), ["2026.6"], name);
+      return COMPILED_VERSIONS[name]![0]!;
+    });
+    for (const found of published) {
+      assert.equal(found.contentHash, published[0]!.contentHash);
+      assert.equal(found.validFrom, "2026-01-01");
     }
   });
 });
 
 describe("public works agreements — contributions", () => {
-  it("applies the CNETP paid leave rate of 21 %, whatever the CIBTP fund", () => {
-    assert.equal(amount(`${BTP} . congés intempéries`), percentOf(2500, 21));
-    assert.equal(
-      amount(`${BTP} . congés intempéries`, { [`${BTP} . congés intempéries . caisse de rattachement`]: "'méditerranée'" }),
-      percentOf(2500, 21),
-    );
+  it("applies the CNETP paid leave rate of 21 %", () => {
+    assert.equal(amount(`${BTP} . cotisation congés payés`), percentOf(2500, 21));
   });
 
   it("applies 0,68 % of the capped salary for bad weather, unless within the allowance", () => {

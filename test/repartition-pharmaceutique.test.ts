@@ -20,23 +20,6 @@ async function engine(versionNumber: string) {
 }
 
 describe("répartition pharmaceutique (IDCC 1621)", () => {
-  it("calcule les minima des deux dates de la grille 2025", async () => {
-    const january = await engine("2025.1");
-    january.setSituation({
-      "salarié . convention collective": "'répartition pharmaceutique'",
-      [`${namespace} . coefficient`]: 300,
-      "salarié . contrat . statut cadre": "non",
-    });
-    assert.equal(january.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 2844.38);
-
-    const july = await engine("2025.2");
-    july.setSituation({
-      "salarié . convention collective": "'répartition pharmaceutique'",
-      [`${namespace} . coefficient`]: 300,
-      "salarié . contrat . statut cadre": "non",
-    });
-    assert.equal(july.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 2872.82);
-  });
 
   it("prorate la rémunération mensuelle selon la quotité", async () => {
     const e = await engine("2025.2");

@@ -1,5 +1,7 @@
 # Portage salarial — IDCC 3219
 
+> La version 2024.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2024.3` corrige la version `2024.1` en retenant le **17 juillet 2024** comme date d'effet de l'extension de l'avenant n° 12. Elle reprend aussi l'avenant n° 13 du **19 avril 2023**, étendu le **30 novembre 2023** et applicable au **1er janvier 2024**, ainsi que le plafond conventionnel historique de **3 269 € mensuels (base 2017)** et la contribution conventionnelle employeur de formation professionnelle issue de l'avenant n° 10. La version `2024.1` est conservée immuablement dans le registre. La valeur Publicodes est `portage salarial` et les règles sont sous `salarié . convention collective . portage salarial`.
 
 ## Règles implémentées

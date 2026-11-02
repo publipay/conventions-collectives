@@ -1,5 +1,7 @@
 # Personnels des ports de plaisance — IDCC 1182
 
+> La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2025.2` remplace `2025.1` (même date d'effet) et élargit la plage des coefficients aux employés de 155 à 220 ; la grille indiciaire de l'avenant du 18 octobre 2017 (article 6) les prévoit, et `2025.1` les rejetait. L'avenant de 2023 promet une revalorisation de 5 points des coefficients, dont aucun texte n'est publié sur Légifrance au 1er novembre 2026 : elle n'est pas modélisée.
 
 La version `2025.1` modélise l'accord du **22 mai 2025 relatif aux mesures salariales**, étendu par arrêté du 9 octobre 2025. La valeur du point est fixée à **11,88 € à compter du 1er mai 2025**.

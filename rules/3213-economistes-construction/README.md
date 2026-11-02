@@ -1,8 +1,10 @@
 # Économistes de la construction et métreurs-vérificateurs — IDCC 3213
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 L'accord du 8 avril 2026 s'applique à tous les employeurs et salariés du champ à compter du **11 juillet 2026**, lendemain de la publication au Journal officiel du 10 juillet 2026 de l'arrêté d'extension du 6 juillet 2026.
 
-- [2026.1](3213-economistes-construction.2026.1.publicodes), à compter du 11 juillet 2026 : la grille comparait la règle booléenne `zone` à `'IDF'`, si bien que la grille nationale s'appliquait toujours et que `région` restait sans effet. Ne plus l'utiliser.
+- 2026.1, à compter du 11 juillet 2026 : la grille comparait la règle booléenne `zone` à `'IDF'`, si bien que la grille nationale s'appliquait toujours et que `région` restait sans effet. Ne plus l'utiliser.
 - [2026.2](3213-economistes-construction.2026.2.publicodes), à compter du 1er janvier 2026 : corrige ce défaut, la grille d'Île-de-France étant choisie par `région`. La version part du 1er janvier 2026 pour remplacer la 2026.1 dès sa date d'effet ; la grille ne s'applique qu'à partir du 11 juillet 2026 (`grille applicable`), le minimum valant `0` auparavant.
 
 ## Règles implémentées

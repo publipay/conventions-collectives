@@ -1,5 +1,7 @@
 # Sport — IDCC 2511
 
+> Les versions 2026.1, 2026.2, 2026.3, 2026.4 et 2026.5 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 ## Version et périmètre
 
 `2026.1`, applicable au **1er janvier 2026**, couvre les groupes 1 à 8 du chapitre IX de la convention collective nationale du sport. Les références et leurs arrêtés d'extension sont exportés dans les métadonnées du modèle. Audit des textes au **11 octobre 2026**.
@@ -63,9 +65,9 @@ La fusion avec `modele-social@11.1.0` doit accepter exactement ces **quatre** cl
 3. `salarié . convention collective . sport . exonération cotisation AT` : retirer le `rend non applicable` structurel qui exonérait automatiquement tous les salariés Sport.
 4. `salarié . convention collective . sport . cotisations . assiette forfaitaire` : retirer le remplacement automatique de l'assiette ordinaire fondé uniquement sur une rémunération faible.
 
-Ces exceptions sont autorisées par nom exact, pour les versions `2026.1` et `2026.2` seulement, dans `test/models.test.ts`.
+Ces exceptions ne concernaient que les versions `2026.1` et `2026.2`, supprimées : aucune version restante n'en a besoin.
 
-La version `2026.3` n'en a plus besoin : une application qui refuse toute collision peut la fusionner. Elle rend non applicable toute la branche `salarié . convention collective . sport . cotisations` de `modele-social` : une règle rendue non applicable garde ses propres `remplace`, mais ses descendants sont désactivés avec elle. Elle définit à la place, sous de nouveaux noms, la prévoyance (`prévoyance 2025 . part employeur` et `. part salarié`), le montant de santé (`santé 2025 . montant`), la formation (`formation professionnelle 2025`, avec son supplément) et l'ajout du paritarisme au total employeur (`cotisations employeur avec paritarisme`). Elle refuse l'exonération AT en remplaçant `refus exonération cotisation AT` par `oui`. Les règles désactivées avec la branche (`cotisations . franchise`, `cotisations . financement du paritarisme`, `cotisations . assiette forfaitaire`) sont non applicables. `test/sport.test.ts` vérifie les mêmes montants sur `2026.1` et `2026.3`. Toutes les autres collisions restent interdites ; aucune règle standard hors du namespace Sport n'est redéfinie. La santé, la franchise, le paritarisme et les autres neutralisations utilisent `remplace` ou `rend non applicable`. Des tests différentiels vérifient que les contributions hors Sport restent identiques au modèle de base.
+La version `2026.3` n'en a plus besoin : une application qui refuse toute collision peut la fusionner. Elle rend non applicable toute la branche `salarié . convention collective . sport . cotisations` de `modele-social` : une règle rendue non applicable garde ses propres `remplace`, mais ses descendants sont désactivés avec elle. Elle définit à la place, sous de nouveaux noms, la prévoyance (`prévoyance 2025 . part employeur` et `. part salarié`), le montant de santé (`santé 2025 . montant`), la formation (`formation professionnelle 2025`, avec son supplément) et l'ajout du paritarisme au total employeur (`cotisations employeur avec paritarisme`). Elle refuse l'exonération AT en remplaçant `refus exonération cotisation AT` par `oui`. Les règles désactivées avec la branche (`cotisations . franchise`, `cotisations . financement du paritarisme`, `cotisations . assiette forfaitaire`) sont non applicables. Toutes les autres collisions restent interdites ; aucune règle standard hors du namespace Sport n'est redéfinie. La santé, la franchise, le paritarisme et les autres neutralisations utilisent `remplace` ou `rend non applicable`. Des tests différentiels vérifient que les contributions hors Sport restent identiques au modèle de base.
 
 ## Audit de l'héritage et limites explicites
 

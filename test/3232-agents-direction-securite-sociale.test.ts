@@ -22,32 +22,6 @@ async function makeEngine(versionName = "2025.2") {
   return new Engine(rules, { logger: { log() {}, warn() {}, error() {} } });
 }
 
-describe("IDCC 3232 agents de direction sécurité sociale — 2025.2", () => {
-  it("calculates the double-residence allowance and child supplement", async () => {
-    const engine = await makeEngine();
-    engine.setSituation({
-      "salarié . convention collective": `'${value}'`,
-      [`${namespace} . zone double résidence`]: 1,
-      [`${namespace} . enfants à charge`]: 2,
-    });
-    assert.ok(Math.abs((engine.evaluate(`${namespace} . indemnité double résidence`).nodeValue as number) - 1171.36) < 1e-9);
-  });
-
-  it("exposes the sourced vehicle-loan caps and payroll audit", async () => {
-    const engine = await makeEngine();
-    engine.setSituation({ "salarié . convention collective": `'${value}'` });
-    assert.equal(engine.evaluate(`${namespace} . plafond prêt automobile`).nodeValue, 8970.87);
-    assert.equal(engine.evaluate(`${namespace} . plafond renouvellement prêt automobile`).nodeValue, 5912.58);
-    assert.equal(engine.evaluate(`${namespace} . audit paie`).nodeValue, true);
-  });
-
-  it("is isolated from another agreement", async () => {
-    const engine = await makeEngine();
-    engine.setSituation({ "salarié . convention collective": "'casinos'" });
-    assert.equal(engine.evaluate(`${namespace} . indemnité double résidence`).nodeValue, null);
-  });
-});
-
 describe("IDCC 3232 agents de direction sécurité sociale — 2026.1", () => {
   const rule = (name: string) => `${namespace} . ${name}`;
   const zones: [number, number][] = [[1, 1089.94], [2, 871.95], [3, 544.97]];

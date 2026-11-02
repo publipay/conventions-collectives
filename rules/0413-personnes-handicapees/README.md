@@ -1,6 +1,8 @@
 # Établissements et services pour personnes inadaptées et handicapées — IDCC 413 (CCN 66)
 
-Le fichier [2022.1](0413-personnes-handicapees.2022.1.publicodes) entre en vigueur le 1er juillet 2022 ; le fichier [2026.1](0413-personnes-handicapees.2026.1.publicodes) corrige le modèle à cette même date sans modifier la version publiée. Il s’appuie sur l’avenant n° 361 du 9 juin 2021 (point à 3,82 € depuis le 1er février 2021), la recommandation patronale Nexem du 23 novembre 2022 (point à 3,93 €, plancher d’indice 403 ou 413 avec sujétion d’internat) et l’indemnité de sujétion spéciale de 9,21 %. La valeur Publicodes est `personnes handicapées et inadaptées` ; les règles sont sous `salarié . convention collective . personnes handicapées et inadaptées`.
+> La version 2022.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2022.1 entre en vigueur le 1er juillet 2022 ; le fichier [2026.1](0413-personnes-handicapees.2026.1.publicodes) corrige le modèle à cette même date sans modifier la version publiée. Il s’appuie sur l’avenant n° 361 du 9 juin 2021 (point à 3,82 € depuis le 1er février 2021), la recommandation patronale Nexem du 23 novembre 2022 (point à 3,93 €, plancher d’indice 403 ou 413 avec sujétion d’internat) et l’indemnité de sujétion spéciale de 9,21 %. La valeur Publicodes est `personnes handicapées et inadaptées` ; les règles sont sous `salarié . convention collective . personnes handicapées et inadaptées`.
 
 La convention collective nationale du 15 mars 1966 (CCN 66, brochure 3116) ne fixe pas une grille de salaires par niveau : chaque emploi a un coefficient, qui évolue avec l’ancienneté, et le salaire indiciaire est le coefficient multiplié par la valeur du point.
 

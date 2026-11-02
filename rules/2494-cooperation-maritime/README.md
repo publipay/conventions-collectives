@@ -1,5 +1,7 @@
 # Coopération maritime — IDCC 2494
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Les versions `2026.1` et `2026.2` modélisent l'accord du **31 mars 2026** relatif aux salaires minima conventionnels au 1er avril 2026. L'accord a été étendu par arrêté du **11 juin 2026**, publié au Journal officiel le **27 juin 2026** ; son application générale est donc modélisée à compter du **1er juillet 2026**.
 
 La version `2026.2` corrige la version `2026.1` (même date d'effet, la révision la plus haute l'emporte) : le niveau 7, échelon A, est de **37 220 €** par an selon l'article 2 de l'accord (et non 36 220 €). Les 14 autres montants sont inchangés.

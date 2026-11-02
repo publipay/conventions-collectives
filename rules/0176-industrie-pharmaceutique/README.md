@@ -1,5 +1,7 @@
 # Industrie pharmaceutique — IDCC 176
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2026.2` modélise l'accord du 13 novembre 2025 relatif aux salaires minima conventionnels applicables au **1er janvier 2026** (articles 1 et 3). Elle remplace la révision `2026.1` (même date d'effet), qui ignorait la grille différenciée de l'article 3 pour les salariés ayant au moins 18 mois d'ancienneté.
 
 La valeur Publicodes est `industrie pharmaceutique` et les règles sont sous `salarié . convention collective . industrie pharmaceutique`.

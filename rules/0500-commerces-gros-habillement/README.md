@@ -1,10 +1,12 @@
 # Commerces de gros de l'habillement, de la mercerie, de la chaussure et du jouet — IDCC 500
 
-Le fichier [2024.1](0500-commerces-gros-habillement.2024.1.publicodes) entre en vigueur le 1er décembre 2024, le mois suivant la signature de l'avenant n° 56 A du 26 novembre 2024. L'avenant a ensuite été étendu par arrêté du 29 janvier 2025, publié le 14 février 2025.
+> Les versions 2024.1 et 2026.1 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2024.1 entre en vigueur le 1er décembre 2024, le mois suivant la signature de l'avenant n° 56 A du 26 novembre 2024. L'avenant a ensuite été étendu par arrêté du 29 janvier 2025, publié le 14 février 2025.
 
 Le fichier [2024.2](0500-commerces-gros-habillement.2024.2.publicodes), à la même date, reprend les mêmes montants avec des codes de classification sans espace, que les applications peuvent saisir plus sûrement : `E-IA` à `E-VB` pour les employés, `AM-VIA` à `AM-VII` pour les agents de maîtrise et `C-IA` à `C-III` pour les cadres. Les anciens libellés (`employés I A`…) ne sont plus reconnus.
 
-Le fichier [2026.1](0500-commerces-gros-habillement.2026.1.publicodes) entre en vigueur le 20 septembre 2026 avec la grille de l'annexe 56/A du 25 juin 2026. Cette grille s'applique au 1er juillet 2026 dans les entreprises adhérentes à l'organisation patronale signataire, et à tous les employeurs le lendemain de la publication de l'arrêté d'extension du 7 septembre 2026 (JO du 19 septembre 2026). **Les montants viennent du communiqué de la CFDT du 2 juillet 2026** : le texte de l'annexe n'était pas encore dans la base KALI de Légifrance et doit encore être contrôlé. Ils sont cohérents avec les hausses annoncées (3 % pour les employés, 1,5 % pour les agents de maîtrise, 1 % pour les cadres).
+Le fichier 2026.1 entre en vigueur le 20 septembre 2026 avec la grille de l'annexe 56/A du 25 juin 2026. Cette grille s'applique au 1er juillet 2026 dans les entreprises adhérentes à l'organisation patronale signataire, et à tous les employeurs le lendemain de la publication de l'arrêté d'extension du 7 septembre 2026 (JO du 19 septembre 2026). **Les montants viennent du communiqué de la CFDT du 2 juillet 2026** : le texte de l'annexe n'était pas encore dans la base KALI de Légifrance et doit encore être contrôlé. Ils sont cohérents avec les hausses annoncées (3 % pour les employés, 1,5 % pour les agents de maîtrise, 1 % pour les cadres).
 
 Le fichier [2026.2](0500-commerces-gros-habillement.2026.2.publicodes), à la même date, a les mêmes règles et remplace la source : le texte de l'avenant du 25 juin 2026 à l'annexe 56 A, publié au BOCC 2026-30 (texte n° 4, NOR ASET2650737M), donne exactement les 19 montants du communiqué de la CFDT.
 

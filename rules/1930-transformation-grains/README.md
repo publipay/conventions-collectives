@@ -1,6 +1,8 @@
 # Métiers de la transformation des grains — IDCC 1930
 
-Le fichier [2026.1](1930-transformation-grains.2026.1.publicodes) est applicable au 1er février 2026. Le fichier [2026.3](1930-transformation-grains.2026.3.publicodes) est applicable au 1er juin 2026 et ajoute la prime d’ancienneté de l’avenant n° 31 du 9 février 2026. Le fichier [2026.4](1930-transformation-grains.2026.4.publicodes), à la même date d’effet, la remplace : la prime dépend du régime de l’entreprise et d’un éventuel montant individuel du salarié, et l’ancienneté peut être saisie. Les avenants n° 30 et n° 31 ont été étendus par arrêté du 4 mai 2026 publié au Journal officiel du 10 mai 2026.
+> La version 2026.3 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier [2026.1](1930-transformation-grains.2026.1.publicodes) est applicable au 1er février 2026. Le fichier 2026.3 est applicable au 1er juin 2026 et ajoute la prime d’ancienneté de l’avenant n° 31 du 9 février 2026. Le fichier [2026.4](1930-transformation-grains.2026.4.publicodes), à la même date d’effet, la remplace : la prime dépend du régime de l’entreprise et d’un éventuel montant individuel du salarié, et l’ancienneté peut être saisie. Les avenants n° 30 et n° 31 ont été étendus par arrêté du 4 mai 2026 publié au Journal officiel du 10 mai 2026.
 
 La convention collective nationale des métiers de la transformation des grains du 9 novembre 2016 (brochure 3060) couvre les entreprises relevant de l’IDCC 1930.
 

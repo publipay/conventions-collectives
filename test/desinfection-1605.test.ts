@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1605-desinfection-desinsectisation-deratisation";
 const value = "désinfection désinsectisation dératisation";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -28,7 +28,7 @@ function minimum() {
   return engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue;
 }
 
-describe("IDCC 1605 — 2026.1 salary minimums and payroll audit", () => {
+describe("IDCC 1605 — 2026.2 salary minimums and payroll audit", () => {
   it("uses the official extension publication date", () => {
     assert.equal(version.validFrom, "2026-03-18");
     assert.ok(version.sources.some((source: string) => source.includes("KALITEXT000054040312")));
@@ -50,12 +50,6 @@ describe("IDCC 1605 — 2026.1 salary minimums and payroll audit", () => {
   it("prorates the minimum once for part-time work", () => {
     setLevel(4, "50%");
     assert.equal(minimum(), 1001.065);
-  });
-
-  it("marks groups 2 and 3 outside the bounded grid", () => {
-    setLevel(8);
-    assert.equal(minimum(), 0);
-    assert.equal(engine.evaluate(`${namespace} . niveau hors grille`).nodeValue, true);
   });
 
   it("is isolated from another convention", () => {

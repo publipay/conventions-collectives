@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1501-restauration-rapide";
 const value = "restauration rapide";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -56,13 +56,13 @@ function minimum(): number {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 1501 — 2026.2 minimum salaries", () => {
+describe("IDCC 1501 — 2026.5 minimum salaries", () => {
   it("is in force from 1 January 2026 (effect date of avenant n° 10) and keeps the avenant n° 72 grid", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 10 du 5 décembre 2025")));
   });
 
-  it("is selected until 3 June 2026, then 2026.1 (same rules) takes over; 2025.1 covers June to December 2025", () => {
+  it("is selected until 3 June 2026, then 2026.5 (same rules) takes over; 2025.1 covers June to December 2025", () => {
     const list = COMPILED_VERSIONS[agreement]!;
     const inForce = (date: string) => {
       const eligible = list.filter((entry) => entry.validFrom <= date);
@@ -71,7 +71,7 @@ describe("IDCC 1501 — 2026.2 minimum salaries", () => {
     };
     assert.equal(inForce("2025-06-01"), "2025.1");
     assert.equal(inForce("2025-12-31"), "2025.1");
-    // 2026.3 and 2026.4 add the salary maintenance to 2026.2 and 2026.1, at the same dates; 2026.5
+    // 2026.5 and 2026.5 add the salary maintenance to 2026.5 and 2026.5, at the same dates; 2026.5
     // and 2026.6 add the termination indemnities to them.
     assert.equal(inForce("2026-01-01"), "2026.5");
     assert.equal(inForce("2026-06-03"), "2026.5");

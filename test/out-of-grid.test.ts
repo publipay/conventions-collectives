@@ -80,10 +80,10 @@ const FIXED: {
   situation?: Situation;
 }[] = [
   { model: "0993-prothesistes-dentaires", version: "2026.2", rule: "niveau hors grille", input: "niveau", valid: "'PHQ1'", invalid: ["'PHQ9'", "'non renseigné'"] },
-  { model: "1606-bricolage", version: "2025.2", rule: "coefficient hors grille", input: "coefficient", valid: 250, invalid: [0, 251] },
-  { model: "3013-librairie", version: "2026.2", rule: "niveau hors grille", input: "niveau", valid: "'8'", invalid: ["'99'", "'non renseigné'"] },
+  { model: "1606-bricolage", version: "2025.4", rule: "coefficient hors grille", input: "coefficient", valid: 250, invalid: [0, 251] },
+  { model: "3013-librairie", version: "2026.3", rule: "niveau hors grille", input: "niveau", valid: "'8'", invalid: ["'99'", "'non renseigné'"] },
   { model: "3243-quincaillerie", version: "2026.2", rule: "niveau et échelon hors grille", input: "niveau et échelon", valid: "'VI.3'", invalid: ["'VI.9'", "'non renseigné'"] },
-  { model: "1512-promotion-immobiliere", version: "2026.3", rule: "coefficient hors grille", input: "coefficient", valid: 100, invalid: [0, 101, 900] },
+  { model: "1512-promotion-immobiliere", version: "2026.6", rule: "coefficient hors grille", input: "coefficient", valid: 100, invalid: [0, 101, 900] },
   { model: "0897-services-prevention-sante-travail-interentreprises", version: "2026.2", rule: "classe hors grille", input: "classe", valid: "'M'", invalid: ["'N'", "'non renseigné'"] },
   // Palier 1 starts at coefficient 9 and palier 12 covers 400 and above.
   { model: "7024-production-agricole-cuma", version: "2026.1", rule: "coefficient hors grille", input: "coefficient", valid: 1000, invalid: [0, 8] },
@@ -110,7 +110,7 @@ const FIXED: {
   { model: "1558-industries-ceramiques", version: "2026.1", rule: "niveau hors grille", input: "classification", valid: "'J'", invalid: ["'ZZ-E9'", "'non renseigné'"] },
   // The general grid starts at coefficient 170; 40 is the index of the members of the Ordre.
   { model: "0787-experts-comptables", version: "2024.1", rule: "coefficient hors grille", input: "coefficient", valid: 170, invalid: [0, 39, 169] },
-  { model: "0787-experts-comptables", version: "2026.2", rule: "coefficient hors grille", input: "coefficient", valid: 40, invalid: [0, 41, 169] },
+  { model: "0787-experts-comptables", version: "2026.4", rule: "coefficient hors grille", input: "coefficient", valid: 40, invalid: [0, 41, 169] },
 ];
 
 describe("out-of-grid rules fixed by a new revision", () => {

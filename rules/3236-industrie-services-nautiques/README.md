@@ -1,5 +1,7 @@
 # Industrie et services nautiques — IDCC 3236
 
+> La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2025.2` (qui remplace `2025.1`, de même date d'effet) modélise l'avenant du **16 avril 2025** relatif aux salaires minima mensuels, applicable au **1er avril 2025** et étendu par arrêté du 19 juin 2025 publié au Journal officiel du 2 juillet 2025.
 
 ## Correction par rapport à `2025.1`

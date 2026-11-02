@@ -6,7 +6,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 
 describe("IDCC 3229 — navigation intérieure", () => {
   it("evaluates the sourced matelot minima, prorates, rejects other classifications, and stays isolated", async () => {
-    const version = COMPILED_VERSIONS["3229-navigation-interieure"]?.find((v) => v.version === "2026.1");
+    const version = COMPILED_VERSIONS["3229-navigation-interieure"]?.find((v) => v.version === "2026.2");
     assert.ok(version);
     const extension = await version.loadRules();
     const rules: Record<string, Rule> = { ...modeleSocial };

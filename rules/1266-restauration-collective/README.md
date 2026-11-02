@@ -1,5 +1,7 @@
 # Restauration de collectivités — IDCC 1266
 
+> Les versions 2025.1 et 2025.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 ## Version et champ
 
 `2025.1` retient le **1er juillet 2025** pour l'application générale de l'avenant n° 68 du 14 février 2025 : l'article 11 distingue le 1er mars 2025 pour les organisations patronales signataires et le premier jour du mois suivant la publication de l'extension pour les autres entreprises.[11] L'arrêté du 30 avril 2025 est publié au JORF du 13 juin 2025 (référence dans les métadonnées) ; la date du 13 juin n'est donc pas la date d'effet générale. Cette version ne couvre pas l'application anticipée aux signataires. Les règles de calcul sont non applicables avant le 1er juillet 2025, même si cette version est chargée par erreur.

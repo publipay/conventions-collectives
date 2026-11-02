@@ -40,8 +40,8 @@ async function engineOf(revision: string) {
 
 const formation = "salarié . cotisations . formation professionnelle";
 
-describe("IDCC 1486 — 2026.1", async () => {
-  const { version, engine, setSituation } = await engineOf("2026.1");
+describe("IDCC 1486 — 2026.5, grid and sources", async () => {
+  const { version, engine, setSituation } = await engineOf("2026.5");
 
   it("keeps the 2025 salary grid and exposes the legal sources", () => {
     assert.equal(version.validFrom, "2026-01-01");
@@ -51,30 +51,16 @@ describe("IDCC 1486 — 2026.1", async () => {
     assert.ok(version.sources.some((source) => source.includes("prévoyance lourde")));
   });
 
-  it("replaces the legal formation rate below and at the 50-employee threshold", () => {
-    setSituation({ "entreprise . salariés . effectif": 20 });
-    assert.equal(engine.evaluate(formation).nodeValue, 1.5);
-    setSituation({ "entreprise . salariés . effectif": 50 });
-    assert.equal(engine.evaluate(formation).nodeValue, 3);
-  });
-
   it("does not alter the standard formation endpoint for another agreement", () => {
     setSituation({ "salarié . convention collective": "'droit commun'", "entreprise . salariés . effectif": 50 });
     assert.equal(engine.evaluate(formation).nodeValue, 30);
   });
 });
 
-// 2026.1 replaced the legal contribution with the agreement's own rate, which the agreement adds
-// to it: 2026.2 adds the 0.05 % (0.10 % from 50 employees) to the legal 0.55 % (1 % from 11).
-describe("IDCC 1486 — 2026.2", async () => {
-  const { version, engine, setSituation } = await engineOf("2026.2");
-
-  it("keeps the 2026.1 grid, effective date and sources", () => {
-    assert.equal(version.validFrom, "2026-01-01");
-    setSituation();
-    assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 2045);
-    assert.ok(version.sources.some((source) => source.includes("formation professionnelle")));
-  });
+// The agreement's own rate is added to the legal contribution: 0.05 % (0.10 % from 50 employees)
+// on top of the legal 0.55 % (1 % from 11).
+describe("IDCC 1486 — 2026.5, formation contribution", async () => {
+  const { engine, setSituation } = await engineOf("2026.5");
 
   it("adds the agreement contribution to the legal formation contribution", () => {
     // 3 000 € × (0.55 % + 0.05 %), 3 000 € × (1 % + 0.05 %), 3 000 € × (1 % + 0.10 %).
@@ -92,13 +78,13 @@ describe("IDCC 1486 — 2026.2", async () => {
 });
 
 // Articles 9.2 and 9.3 (KALIARTI000047513889 and KALIARTI000053769476).
-describe("IDCC 1486 — 2026.4, salary maintenance", async () => {
-  const { version, engine, setSituation } = await engineOf("2026.4");
+describe("IDCC 1486 — 2026.5, salary maintenance", async () => {
+  const { version, engine, setSituation } = await engineOf("2026.5");
   const maintenance = (motive: Motive, months: number, context: Record<string, string | number> = {}) =>
     maintenanceOf(engine, setSituation, namespace, motive, months, {}, context);
   const cadre = { "salarié . contrat . statut cadre": "oui" };
 
-  it("keeps the 2026.3 date and cites the articles", () => {
+  it("keeps the 2026.5 date and cites the articles", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source) => source.includes("KALIARTI000047513889")));
   });

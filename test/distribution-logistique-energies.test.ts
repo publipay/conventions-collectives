@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1408-distribution-logistique-energies";
 const value = "distribution logistique énergies";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.3");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -33,7 +33,7 @@ function setSituation(coefficient: string | undefined, quota?: string, seniority
 const amount = () => engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue;
 const seniority = () => engine.evaluate(`${namespace} . prime d'ancienneté`).nodeValue;
 
-describe("IDCC 1408 — 2025.1 minimum salaries", () => {
+describe("IDCC 1408 — 2025.3 minimum salaries", () => {
   it("cites the extended salary agreement", () => {
     assert.equal(version.validFrom, "2025-05-01");
     assert.ok(version.sources.some((source) => source.includes("KALITEXT000051787046")));

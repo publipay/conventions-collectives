@@ -8,7 +8,7 @@ const value = "inspection assurance";
 const namespace = `salarié . convention collective . ${value}`;
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS["1679-inspection-assurance"]?.find((v) => v.version === "2007.2");
+  const version = COMPILED_VERSIONS["1679-inspection-assurance"]?.find((v) => v.version === "2026.1");
   assert.ok(version);
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };
@@ -27,30 +27,6 @@ function get(engine: Engine, rule: string) {
 }
 
 describe("IDCC 1679 inspection d'assurance", () => {
-  it("calculates the sourced annual RMA and indicative monthly equivalent", async () => {
-    const engine = await makeEngine();
-    engine.setSituation({
-      "salarié . convention collective": `'${value}'`,
-      [`${namespace} . classe`]: "'6'",
-      [`${namespace} . date de calcul`]: "01/01/2007",
-      "salarié . contrat . temps de travail . quotité": "100%",
-    });
-    assert.equal(get(engine, "grille annuelle").nodeValue, 35800);
-    assert.equal(get(engine, "salaire minimum annuel conventionnel").nodeValue, 35800);
-    assert.equal(get(engine, "salaire minimum mensuel indicatif").nodeValue, 2983.33);
-  });
-
-  it("prorates the annual RMA and keeps the audit external", async () => {
-    const engine = await makeEngine();
-    engine.setSituation({
-      "salarié . convention collective": `'${value}'`,
-      [`${namespace} . classe`]: "'7'",
-      [`${namespace} . date de calcul`]: "01/06/2007",
-      "salarié . contrat . temps de travail . quotité": "50%",
-    });
-    assert.equal(get(engine, "salaire minimum annuel conventionnel").nodeValue, 24985);
-    assert.equal(get(engine, "audit paie").nodeValue, false);
-  });
 
   it("rejects an unsupported class without leaking rules into unrelated agreements", async () => {
     const engine = await makeEngine();

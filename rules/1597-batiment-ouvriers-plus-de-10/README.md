@@ -1,5 +1,7 @@
 # Bâtiment — ouvriers des entreprises de plus de 10 salariés (IDCC 1597)
 
+> Les versions 2026.1, 2026.3, 2026.4, 2026.5 et 2026.6 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 ## Version en vigueur : `2026.6`, commune aux quatre conventions du bâtiment
 
 Les versions `2026.4`, `2026.5` et `2026.6` sont publiées à l'identique pour les IDCC 1596, 1597,

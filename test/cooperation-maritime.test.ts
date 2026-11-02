@@ -9,7 +9,7 @@ const value = "coopération maritime";
 const namespace = `salarié . convention collective . ${value}`;
 
 async function engineOf() {
-  const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.1");
+  const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.2");
   assert.ok(version);
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };

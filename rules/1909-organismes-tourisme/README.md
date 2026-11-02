@@ -1,5 +1,7 @@
 # Organismes de tourisme — IDCC 1909
 
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 ## Modèles 2026.1 à 2026.3
 
 - **Texte salarial :** accord n° 48 du 26 janvier 2026 relatif à la valeur du point.

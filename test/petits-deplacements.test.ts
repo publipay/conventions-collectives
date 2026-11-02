@@ -1,6 +1,6 @@
 /**
  * Small travel allowances (indemnités de petits déplacements) of the building agreements (shared
- * version 2026.6) and of the public works agreements (shared version 2026.5): the daily travel
+ * version 2026.7) and of the public works agreements (shared version 2026.6): the daily travel
  * time (trajet) and transport allowances of each zone and the meal allowance, from the scale of
  * the company's département, each from the publication of its extension order (or its effective
  * date if later), from 1 January 2026.
@@ -15,7 +15,13 @@ import Engine, { type Rule } from "publicodes";
 import modeleSocial from "modele-social";
 import { COMPILED_VERSIONS } from "../src/index.ts";
 
-const BTP = "salarié . convention collective . BTP";
+const VALUE = "bâtiment et travaux publics";
+function withValue(rules: Record<string, Rule>): Record<string, Rule> {
+  const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
+  return { ...rules, "salarié . convention collective": { ...choice, "une possibilité": [...choice["une possibilité"], VALUE] } as Rule };
+}
+
+const BTP = "salarié . convention collective . bâtiment et travaux publics";
 const P = `${BTP} . petits déplacements`;
 
 type Scale = {
@@ -97,18 +103,18 @@ const PUBLIC_WORKS_SCALES: Scale[] = [
 async function engineOf(agreement: string, version: string) {
   const found = COMPILED_VERSIONS[agreement]!.find((v) => v.version === version);
   assert.ok(found, `${agreement} ${version}`);
-  const rules: Record<string, Rule> = { ...modeleSocial, ...(await found.loadRules()) };
+  const rules: Record<string, Rule> = withValue({ ...modeleSocial, ...(await found.loadRules()) });
   return new Engine(rules, { logger: { log() {}, warn() {}, error() {} } });
 }
 
-const building = await engineOf("1597-batiment-ouvriers-plus-de-10", "2026.6");
-const publicWorks = await engineOf("1702-travaux-publics-ouvriers", "2026.5");
+const building = await engineOf("1597-batiment-ouvriers-plus-de-10", "2026.7");
+const publicWorks = await engineOf("1702-travaux-publics-ouvriers", "2026.6");
 
 type Situation = Record<string, string>;
 
 function evaluate(engine: Engine, rule: string, situation: Situation) {
   engine.setSituation({
-    "salarié . convention collective": "'BTP'",
+    "salarié . convention collective": "'bâtiment et travaux publics'",
     "salarié . contrat . salaire brut": "2500 €/mois",
     [`${BTP} . catégorie`]: "'ouvrier'",
     ...situation,

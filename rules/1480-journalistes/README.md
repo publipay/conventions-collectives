@@ -1,6 +1,8 @@
 # Journalistes — IDCC 1480
 
-Le fichier [2025.1](1480-journalistes.2025.1.publicodes) entre en vigueur le **1er septembre 2025** pour les entreprises signataires et à compter du **19 septembre 2025** pour les autres entreprises, conformément à l'avenant n° 4 du 4 juillet 2025 et à son extension publiée au Journal officiel le 19 septembre 2025. La valeur Publicodes est `journalistes` ; les règles sont sous `salarié . convention collective . journalistes`.
+> La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2025.1 entre en vigueur le **1er septembre 2025** pour les entreprises signataires et à compter du **19 septembre 2025** pour les autres entreprises, conformément à l'avenant n° 4 du 4 juillet 2025 et à son extension publiée au Journal officiel le 19 septembre 2025. La valeur Publicodes est `journalistes` ; les règles sont sous `salarié . convention collective . journalistes`.
 
 ## Versions
 

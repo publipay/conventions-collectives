@@ -1,16 +1,13 @@
 # Presse quotidienne et hebdomadaire en régions — IDCC 3242
 
+> Les versions 2023.1, 2023.2, 2023.3, 2023.4, 2024.1 et 2024.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 La convention collective nationale de la presse quotidienne et hebdomadaire en régions du 9 août 2021 (KALITEXT000044339983), en vigueur le 1er janvier 2022, fixe les salaires minima par forme de presse (article 5.6). Le paquet modélise ses trois formes : la presse quotidienne régionale (PQR), la presse hebdomadaire régionale (PHR) et la presse quotidienne départementale (PQD). Les journalistes relèvent de la convention des journalistes ([1480](../1480-journalistes/README.md)), pas de celle-ci. La valeur Publicodes est `presse en régions` ; les règles sont sous `salarié . convention collective . presse en régions`.
 
 ## Versions
 
 | Version | Date d’effet | Extension | Contenu |
 |---|---|---|---|
-| [2023.1](3242-presse-regions.2023.1.publicodes), [2023.2](3242-presse-regions.2023.2.publicodes) | 1er juillet 2023 | — | Grille de la PQR seulement. Remplacées par 2023.3. |
-| [2023.3](3242-presse-regions.2023.3.publicodes) | 1er juillet 2023 | 1er novembre 2025 | PQR : accord du 30 juin 2023 (KALITEXT000048558839). PHR : accord du 2 juin 2023 (KALITEXT000048052775). |
-| [2023.4](3242-presse-regions.2023.4.publicodes) | 1er juillet 2023 | 1er novembre 2025 | 2023.3 et la PQD : annexe 3 de la convention (KALISCTA000044340086). |
-| [2024.1](3242-presse-regions.2024.1.publicodes) | 1er décembre 2024 | — (non étendu) | Employés de la PHR : avenant n° 1 du 15 novembre 2024 (KALITEXT000051352524). Le reste est inchangé. |
-| [2024.2](3242-presse-regions.2024.2.publicodes) | 1er décembre 2024 | — (non étendu) | 2024.1 et la PQD. |
 | [2023.5](3242-presse-regions.2023.5.publicodes) | 1er juillet 2023 | 1er novembre 2025 | 2023.4 et la prime d’ancienneté de la PQD. |
 | [2024.3](3242-presse-regions.2024.3.publicodes) | 1er décembre 2024 | — (non étendu) | 2024.2, la prime d’ancienneté de la PQD, et celle des employés de la PHR, versée en plus du minimum au lieu de le majorer. |
 

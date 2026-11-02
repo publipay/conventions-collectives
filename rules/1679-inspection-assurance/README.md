@@ -1,5 +1,7 @@
 # Inspection d'assurance — IDCC 1679
 
+> Les versions 2007.2, 2008.1, 2009.1, 2010.1, 2011.1, 2012.1, 2013.1, 2014.1, 2015.1, 2016.1, 2017.1, 2018.1, 2019.1, 2020.1, 2021.1, 2022.1, 2023.1, 2024.1 et 2025.1 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2007.2` modélise le protocole d'accord du **21 mars 2007** relatif aux rémunérations minimales annuelles (RMA), avec effet au **1er janvier 2007**. L'accord est publié par Légifrance comme texte **en vigueur non étendu**. Il concerne les inspecteurs encore en fonction à la date de signature ; le modèle conserve cette limite dans sa documentation et ne présente pas cette grille historique comme une garantie actuelle universelle.
 
 La version `2026.1` reprend le protocole d'accord du **10 juin 2026** relatif aux rémunérations minimales pour l'année 2026 (Légifrance `KALITEXT000054887714`), avec effet au **1er janvier 2026** : classes 5, 6 et 7 à 35 500 €, 45 030 € et 62 560 €. Le texte est « en vigueur non étendu » : il s'applique aux entreprises liées par la FFA.

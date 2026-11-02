@@ -1,8 +1,10 @@
 # Librairie — IDCC 3013
 
-Le fichier [2026.1](3013-librairie.2026.1.publicodes) entre en vigueur le **1er avril 2026**, soit le premier jour du mois suivant la publication de l'arrêté d'extension du 24 février 2026 au Journal officiel du 5 mars 2026. La valeur Publicodes est `librairie` ; les règles sont sous `salarié . convention collective . librairie`.
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
-Le fichier [2026.2](3013-librairie.2026.2.publicodes), en vigueur à la même date, corrige `niveau hors grille` : dans la version 2026.1, la règle comparait `grille` à zéro, une référence que publicodes résout vers la règle elle-même, si bien qu’elle ne valait jamais vrai. Elle compare désormais `salaire minimum conventionnel . grille`.
+Le fichier 2026.1 entre en vigueur le **1er avril 2026**, soit le premier jour du mois suivant la publication de l'arrêté d'extension du 24 février 2026 au Journal officiel du 5 mars 2026. La valeur Publicodes est `librairie` ; les règles sont sous `salarié . convention collective . librairie`.
+
+Le fichier 2026.2, en vigueur à la même date, corrige `niveau hors grille` : dans la version 2026.1, la règle comparait `grille` à zéro, une référence que publicodes résout vers la règle elle-même, si bien qu’elle ne valait jamais vrai. Elle compare désormais `salaire minimum conventionnel . grille`.
 
 Le fichier [2026.3](3013-librairie.2026.3.publicodes), en vigueur à la même date et qui remplace `2026.2`, corrige la grille et la source. Les versions précédentes citaient un « avenant n° 14 du 5 novembre 2025 » (KALITEXT000053926509) sans contenu sur Légifrance et une grille inexacte aux niveaux 2 à 7 et 9 à 12 ; le texte réel est l'**accord du 25 novembre 2025 relatif aux salaires minima et à la prime d'ancienneté** (KALITEXT000054034034), étendu par arrêté du 24 février 2026 (JORF du 5 mars 2026) et applicable le 1er avril 2026 (article 7). Les clés et les noms de règles ne changent pas. La prime d'ancienneté des articles 4.1 et 4.2 n'est pas modélisée.
 

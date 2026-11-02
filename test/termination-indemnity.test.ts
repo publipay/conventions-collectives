@@ -375,7 +375,7 @@ describe("second lot of agreements", async () => {
   });
 
   it("1505, 1527, 1606: retirement and dismissal indemnities", async () => {
-    const food = await lot("1505-commerce-detail-alimentaire-non-specialise", "2026.7", "commerce de détail alimentaire non spécialisé");
+    const food = await lot("1505-commerce-detail-alimentaire-non-specialise", "2026.8", "commerce de détail alimentaire non spécialisé");
     near(food.of(23).voluntaryRetirement, 0, "under 2 years");
     near(food.of(years(10)).voluntaryRetirement, 1, "10 years");
     near(food.of(years(40)).voluntaryRetirement, 3, "capped at 3 months");

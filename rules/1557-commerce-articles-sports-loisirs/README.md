@@ -1,5 +1,7 @@
 # Commerce des articles de sports et équipements de loisirs — IDCC 1557
 
+> La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2025.2` modélise les accords du **4 mars 2025** relatifs aux salaires minima conventionnels, applicables au **1er mars 2025**. Ils ont été étendus par arrêté du **13 mai 2025**, publié au Journal officiel du **24 mai 2025**. Elle remplace la version `2025.1` (même date d'effet) dont la grille générale reprenait par erreur les montants de l'accord du 9 février 2024 ; la grille ouvriers (O1 à O4) était exacte et reste identique. Les clés de classification (`'130'` à `'550'`, `'O1'` à `'O4'`) et les noms de règles sont inchangés.
 
 La valeur Publicodes est `commerce articles sports loisirs`. Les règles sont sous `salarié . convention collective . commerce articles sports loisirs`.

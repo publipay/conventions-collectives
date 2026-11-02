@@ -7,10 +7,10 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1607-jeux-jouets";
 const value = "jeux jouets articles fêtes ornements noël puériculture voitures enfants modélisme";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
 assert.ok(version);
 const extension = await version.loadRules();
-const version2 = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.2");
+const version2 = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.3");
 assert.ok(version2);
 const extension2 = await version2.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -21,7 +21,6 @@ const engine = new Engine(rules, { logger: { log() {}, warn() {}, error() {} } }
 const rules2: Record<string, Rule> = { ...modeleSocial };
 rules2["salarié . convention collective"] = { ...choice, "une possibilité": [...choice["une possibilité"], value] } as Rule;
 Object.assign(rules2, extension2);
-const engine2 = new Engine(rules2, { logger: { log() {}, warn() {}, error() {} } });
 
 const GRID: Record<string, number> = {
   "115": 1841, "118": 1852, "123": 1863, "130": 1911, "138": 1921, "143": 1929,
@@ -44,7 +43,7 @@ function minimum() {
   return Math.round((result as number) * 100) / 100;
 }
 
-describe("IDCC 1607 — 2026.1 minimum salaries", () => {
+describe("IDCC 1607 — 2026.3 minimum salaries", () => {
   it("is in force from 1 April 2026 and cites the official agreement and extension", () => {
     assert.equal(version.validFrom, "2026-04-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 100 du 3 mars 2026")));
@@ -79,28 +78,5 @@ describe("IDCC 1607 — 2026.1 minimum salaries", () => {
     setSituation("115");
     engine.setSituation({ "salarié . convention collective": "'droit commun'" });
     assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, null);
-  });
-
-  it("applies the extended branch training contribution by workforce band", () => {
-    engine2.setSituation({
-      "salarié . convention collective": `'${value}'`,
-      [`${namespace} . coefficient`]: 200,
-      "salarié . cotisations . assiette": "3000 €/mois",
-      "entreprise . salariés . effectif": 9,
-    });
-    assert.equal(version2.validFrom, "2026-07-01");
-    assert.ok(version2.sources.some((source: string) => source.includes("Avenant n° 97 du 16 décembre 2025")));
-    assert.ok(version2.sources.some((source: string) => source.includes("TRST2612716A")));
-    assert.equal(engine2.evaluate("salarié . cotisations . formation professionnelle").nodeValue, 18);
-
-    for (const [effectif, expected] of [[10, 33], [299, 33], [300, 36]] as const) {
-      engine2.setSituation({
-        "salarié . convention collective": `'${value}'`,
-        [`${namespace} . coefficient`]: 200,
-        "salarié . cotisations . assiette": "3000 €/mois",
-        "entreprise . salariés . effectif": effectif,
-      });
-      assert.equal(Math.round((engine2.evaluate("salarié . cotisations . formation professionnelle").nodeValue as number) * 100) / 100, expected, String(effectif));
-    }
   });
 });

@@ -56,11 +56,6 @@ describe("IDCC 675 — 2026.3 payroll rules", () => {
     assert.ok(version.sources.some((source) => source.includes("TRST2616915A")));
   });
 
-  it("supersedes 2026.2 for the same date", () => {
-    const versions = (COMPILED_VERSIONS[agreement] ?? []).filter((entry) => entry.validFrom === "2026-05-01").map((entry) => entry.version);
-    assert.deepEqual(versions.sort(), ["2026.1", "2026.2", "2026.3"]);
-  });
-
   for (const [level, expected] of Object.entries(MINIMUM)) {
     it(`gives ${expected} € for ${level}`, () => {
       const engine = engineFor(level);

@@ -7,8 +7,8 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const model = "2098-prestataires-tertiaire";
 const value = "prestataires tertiaires";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.2");
-assert.ok(version, "IDCC 2098 version 2026.2 must be compiled");
+const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.4");
+assert.ok(version, "IDCC 2098 version 2026.4 must be compiled");
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
 const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
@@ -42,7 +42,7 @@ function amount(name: string) {
   return Math.round((result as number) * 100) / 100;
 }
 
-describe("IDCC 2098 — 2026.2 prestataires de services tertiaires", () => {
+describe("IDCC 2098 — 2026.4 prestataires de services tertiaires", () => {
   it("is effective from 1 August 2026 and cites the extended salary agreement", () => {
     assert.equal(version.validFrom, "2026-08-01");
     assert.ok(version.sources.some((source) => source.includes("Accord du 27 mai 2026")));

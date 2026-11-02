@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1261-acteurs-lien-social-familial";
 const value = "acteurs du lien social et familial";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.9");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.10");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -63,12 +63,6 @@ describe("IDCC 1261 — 2026 classification and minimum salary", () => {
     setSituation();
     engine.setSituation({ "salarié . convention collective": "'droit commun'" });
     assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, null);
-  });
-
-  it("calculates the convention health contribution on the PMSS", () => {
-    setSituation();
-    assert.equal(engine.evaluate(`${namespace} . santé . employeur`).nodeValue, 38.448);
-    assert.equal(engine.evaluate(`${namespace} . santé . salarié`).nodeValue, 25.631999999999998);
   });
 
 });

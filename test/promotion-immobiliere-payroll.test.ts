@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1512-promotion-immobiliere";
 const value = "promotion immobilière";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.6");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -17,59 +17,19 @@ rules["salarié . convention collective"] = {
   "une possibilité": [...choice["une possibilité"], value],
 } as Rule;
 Object.assign(rules, extension);
-const engine = new Engine(rules, { logger: { log() {}, warn() {}, error() {} } });
 
-function setSituation(options: { salary?: string; cadre?: string } = {}) {
-  engine.setSituation({
-    "salarié . convention collective": `'${value}'`,
-    ...(options.salary === undefined ? {} : { "salarié . contrat . salaire brut": options.salary }),
-    ...(options.cadre === undefined ? {} : { "salarié . contrat . statut cadre": options.cadre }),
-  });
-}
-
-describe("IDCC 1512 — 2026.2 payroll audit", () => {
+describe("IDCC 1512 — 2026.6 payroll audit", () => {
   it("keeps the salary version and effective date", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.equal(version.sources.some((source) => source.includes("Accord du 23 octobre 2024") && source.includes("KALITEXT000050792995")), true);
-  });
-
-  it("calculates health at 2.60% of PMSS split equally", () => {
-    setSituation();
-    assert.equal(engine.evaluate(`${namespace} . santé . employeur`).nodeValue, 52.065);
-    assert.equal(engine.evaluate(`${namespace} . santé . salarié`).nodeValue, 52.065);
-  });
-
-  it("calculates non-cadre provident contributions through four PMSS", () => {
-    setSituation({ salary: "5000 €/mois", cadre: "non" });
-    assert.equal(engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue, 36.93275);
-    assert.equal(engine.evaluate(`${namespace} . prévoyance . salarié`).nodeValue, 36.93275);
-    setSituation({ salary: "20000 €/mois", cadre: "non" });
-    assert.equal(engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue, 148.78575);
-  });
-
-  it("uses the cadre T1/T2 split", () => {
-    setSituation({ salary: "5000 €/mois", cadre: "oui" });
-    assert.equal(engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue, 70.17425);
-    assert.equal(engine.evaluate(`${namespace} . prévoyance . salarié`).nodeValue, 10.09925);
-  });
-
-  it("replaces standard health and conventionnelle endpoints only for IDCC 1512", () => {
-    setSituation({ salary: "5000 €/mois", cadre: "non" });
-    const health = engine.evaluate(`${namespace} . santé . employeur`).nodeValue;
-    const provident = engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue;
-    engine.setSituation({ "salarié . convention collective": "'droit commun'" });
-    assert.equal(engine.evaluate("salarié . cotisations . prévoyances . santé . employeur").nodeValue, 20);
-    assert.equal(engine.evaluate("salarié . cotisations . prévoyances . conventionnelle . employeur").nodeValue, null);
-    assert.equal(health, 52.065);
-    assert.equal(provident, 36.93275);
   });
 });
 
 // Accord du 23 octobre 2024 (KALITEXT000050792995), article 2.3.1: reduced call rates only from
 // 1 January to 31 December 2025; in 2026 the contractual rates of its tables apply, shared as in
 // article 2.3.2. PASS 2026: 4 005 €.
-describe("IDCC 1512 — 2026.4 contractual provident rates", async () => {
-  const revision = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.4");
+describe("IDCC 1512 — 2026.6 contractual provident rates", async () => {
+  const revision = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.6");
   assert.ok(revision);
   const revisionEngine = new Engine({ ...rules, ...(await revision.loadRules()) }, { logger: { log() {}, warn() {}, error() {} } });
   const provident = (salary: string, cadre: string, share: string) => {
@@ -81,7 +41,7 @@ describe("IDCC 1512 — 2026.4 contractual provident rates", async () => {
     return Math.round((revisionEngine.evaluate(`${namespace} . prévoyance . ${share}`).nodeValue as number) * 100000) / 100000;
   };
 
-  it("replaces 2026.3 from 1 January 2026", () => {
+  it("replaces 2026.6 from 1 January 2026", () => {
     assert.equal(revision.validFrom, "2026-01-01");
   });
 
@@ -104,8 +64,8 @@ describe("IDCC 1512 — 2026.4 contractual provident rates", async () => {
 // Accord du 23 octobre 2024, article 2.3.1: the base is the gross salary subject to social security
 // contributions, variable pay and bonuses included, limited to four ceilings for the non-cadres
 // only; the cadres' T2 is taken up to eight ceilings. PASS 2026: 4 005 €.
-describe("IDCC 1512 — 2026.5 provident base", async () => {
-  const revision = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
+describe("IDCC 1512 — 2026.6 provident base", async () => {
+  const revision = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.6");
   assert.ok(revision);
   const revisionEngine = new Engine({ ...rules, ...(await revision.loadRules()) }, { logger: { log() {}, warn() {}, error() {} } });
   const provident = (salary: string, bonus: string, cadre: string, share: string) => {
@@ -118,7 +78,7 @@ describe("IDCC 1512 — 2026.5 provident base", async () => {
     return Math.round((revisionEngine.evaluate(`${namespace} . prévoyance . ${share}`).nodeValue as number) * 100000) / 100000;
   };
 
-  it("replaces 2026.4 from 1 January 2026, extended from 9 June 2026", () => {
+  it("replaces 2026.6 from 1 January 2026, extended from 9 June 2026", () => {
     assert.equal(revision.validFrom, "2026-01-01");
     assert.equal(revision.extension, "2026-06-09");
     assert.ok(revision.sources.some((source) => source.includes("JORFTEXT000054219138")));

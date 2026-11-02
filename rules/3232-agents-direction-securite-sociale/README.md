@@ -1,5 +1,7 @@
 # Agents de direction des organismes du régime général de sécurité sociale — IDCC 3232
 
+> La version 2025.2 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2026.1` est applicable au **1er janvier 2026** (avenants du 10 février 2026, KALITEXT000054092344 et KALITEXT000054092339) ; la version `2025.2` reste applicable du 1er janvier au 31 décembre 2025 (avenants du 31 janvier 2025). Elles modélisent uniquement les montants chiffrés et calculables : l'indemnité de double résidence et les plafonds du prêt automobile.
 
 ## Règles calculées

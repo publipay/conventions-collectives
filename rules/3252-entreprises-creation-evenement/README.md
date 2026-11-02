@@ -1,5 +1,7 @@
 # Entreprises au service de la création et de l'événement — IDCC 3252
 
+> Les versions 2025.1 et 2025.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Modèle `3252-entreprises-creation-evenement`, versions `2025.1`, `2025.2`, `2025.3` et `2026.1`, espace de noms
 `salarié . convention collective . entreprises au service de la création et de l'événement`.
 

@@ -1,5 +1,7 @@
 # Cabinets d'experts-comptables et de commissaires aux comptes (IDCC 787)
 
+> Les versions 2026.2 et 2026.3 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 | Version | Date d'effet | Texte |
 |---|---|---|
 | `2024.1` | 1er janvier 2024 | Accord n° 47 du 5 octobre 2023 ([KALITEXT000048638263](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000048638263)), étendu par arrêté du 11 décembre 2023 (JORF du 14 décembre 2023) |

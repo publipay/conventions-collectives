@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0897-services-prevention-sante-travail-interentreprises";
 const value = "services prévention santé travail interentreprises";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -28,7 +28,7 @@ function minimum() {
   return engine.evaluate(`${namespace} . salaire minimum annuel conventionnel`).nodeValue;
 }
 
-describe("IDCC 897 — 2026.1 annual minimums and payroll audit", () => {
+describe("IDCC 897 — 2026.2 annual minimums and payroll audit", () => {
   it("uses the official 1 January 2026 effective date and legal references", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source) => source.includes("KALITEXT000054303796")));

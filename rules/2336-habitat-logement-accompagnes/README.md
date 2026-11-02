@@ -1,5 +1,7 @@
 # Habitat et logement accompagnés — IDCC 2336
 
+> Les versions 2025.1 et 2026.1 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2025.1` (historique) prend effet le **1er janvier 2025** et couvre les montants calculables des textes salaires publiés sur Légifrance : l'accord n° 30 du 19 novembre 2024 pour les personnels PACT ARIM et l'avenant n° 66 du 19 novembre 2024 pour les structures FSJT.
 
 ## Versions 2026.2 et 2026.3 : système HLA et anciens systèmes

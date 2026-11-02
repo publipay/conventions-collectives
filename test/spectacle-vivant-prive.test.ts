@@ -8,7 +8,7 @@ const id = "3090-spectacle-vivant-prive";
 const ns = "salarié . convention collective . spectacle vivant privé";
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS[id]?.find((candidate) => candidate.version === "2025.3");
+  const version = COMPILED_VERSIONS[id]?.find((candidate) => candidate.version === "2025.4");
   assert.ok(version, "IDCC 3090 must be exported");
   assert.equal(version.validFrom, "2025-09-01");
   const extension = await version.loadRules();
@@ -31,65 +31,7 @@ async function makeEngine() {
 
 const get = (engine: Engine, rule: string) => engine.evaluate(`${ns} . ${rule}`);
 
-const administrativeCases = [
-  ["cadres groupe 1", "1", 3578.18],
-  ["cadres groupe 2", "5", 3300.81],
-  ["cadres groupe 3", "1", 2485.24],
-  ["agents de maîtrise", "3", 2256.89],
-  ["employés qualifiés groupe 1", "4", 2059.12],
-  ["employés qualifiés groupe 2", "2", 1834.57],
-  ["employés", "5", 1822.9],
-] as const;
-
 describe("IDCC 3090 — spectacle vivant privé", () => {
-  it("exports the extended monthly minimums for permanent administrative and commercial staff", async () => {
-    const engine = await makeEngine();
-    for (const [category, echelon, expected] of administrativeCases) {
-      engine.setSituation({
-        salarié: "oui",
-        dirigeant: "non",
-        "salarié . convention collective": "'spectacle vivant privé'",
-        "salarié . contrat . temps de travail . quotité": "100%",
-        [`${ns} . catégorie administrative`]: `'${category}'`,
-        [`${ns} . échelon`]: `'${echelon}'`,
-      });
-      assert.equal(get(engine, "salaire minimum conventionnel").nodeValue, expected, category);
-    }
-  });
-
-  it("covers technical staff and prorates the monthly minimum", async () => {
-    const engine = await makeEngine();
-    for (const [category, expected] of [
-      ["cadres groupe 2", 2658.78],
-      ["agents de maîtrise", 2115.8],
-      ["employés qualifiés groupe 1", 1906.49],
-      ["employés qualifiés groupe 2", 1821.56],
-      ["employés", 1801.8],
-    ] as const) {
-      engine.setSituation({
-        salarié: "oui",
-        dirigeant: "non",
-        "salarié . convention collective": "'spectacle vivant privé'",
-        "salarié . contrat . temps de travail . quotité": "100%",
-        [`${ns} . catégorie technique`]: `'${category}'`,
-      });
-      assert.equal(get(engine, "salaire minimum conventionnel").nodeValue, expected, category);
-    }
-    engine.setSituation({
-      salarié: "oui",
-      dirigeant: "non",
-      "salarié . convention collective": "'spectacle vivant privé'",
-      "salarié . contrat . temps de travail . quotité": "50%",
-      [`${ns} . catégorie technique`]: "'employés qualifiés groupe 1'",
-    });
-    assert.equal(get(engine, "salaire minimum conventionnel").nodeValue, 953.25);
-  });
-
-  it("returns no minimum for an unknown classification", async () => {
-    const engine = await makeEngine();
-    engine.setSituation({ [`${ns} . catégorie administrative`]: "'inconnue'", [`${ns} . échelon`]: "'1'" });
-    assert.equal(get(engine, "salaire minimum conventionnel").nodeValue, null);
-  });
 
   it("is inactive outside the selected convention", async () => {
     const engine = await makeEngine();

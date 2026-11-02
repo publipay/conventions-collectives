@@ -1,6 +1,8 @@
 # Sociétés d’assurances — IDCC 1672
 
-Le fichier [2026.4](1672-societes-assurances.2026.4.publicodes) entre en vigueur le 1er janvier 2026. Il est fondé sur le protocole d’accord du 10 juin 2026 relatif aux rémunérations minimales annuelles (RMA) du personnel administratif, applicable à compter du 1er janvier 2026, publié par Légifrance comme texte en vigueur non étendu. La valeur Publicodes est `sociétés assurances` ; les règles sont sous `salarié . convention collective . sociétés assurances`.
+> Les versions 2026.4 et 2026.5 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.4 entre en vigueur le 1er janvier 2026. Il est fondé sur le protocole d’accord du 10 juin 2026 relatif aux rémunérations minimales annuelles (RMA) du personnel administratif, applicable à compter du 1er janvier 2026, publié par Légifrance comme texte en vigueur non étendu. La valeur Publicodes est `sociétés assurances` ; les règles sont sous `salarié . convention collective . sociétés assurances`.
 
 ## Version 2026.4 (correction)
 

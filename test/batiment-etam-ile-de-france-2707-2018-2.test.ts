@@ -69,12 +69,6 @@ describe("IDCC 2707 — 2018.2 salaires et audit paie", () => {
     assert.equal(Object.keys(extension).some((name) => /cotisations|prévoyance|santé|formation professionnelle|retraite|AT/.test(name)), false);
   });
 
-  it("supersedes 2018.1 for the same validFrom", () => {
-    const first = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2018.1");
-    assert.ok(first);
-    assert.equal(first.validFrom, version.validFrom);
-  });
-
   it("is inapplicable for another collective agreement", () => {
     setSituation("A");
     engine.setSituation({ "salarié . convention collective": "'droit commun'" });

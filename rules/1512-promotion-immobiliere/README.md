@@ -1,5 +1,7 @@
 # Promotion immobilière — IDCC 1512
 
+> Les versions 2026.1, 2026.2, 2026.3, 2026.4 et 2026.5 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Modèle `1512-promotion-immobiliere`, version `2026.6`, espace de noms
 `salarié . convention collective . promotion immobilière`.
 

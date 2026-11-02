@@ -6,7 +6,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 
 describe("IDCC 1431 optique-lunetterie de détail", () => {
   it("calculates the 2024 extended agreement grids and work-time prorating", async () => {
-    const version = COMPILED_VERSIONS["1431-optique-lunetterie-detail"]?.find((candidate) => candidate.version === "2024.2");
+    const version = COMPILED_VERSIONS["1431-optique-lunetterie-detail"]?.find((candidate) => candidate.version === "2024.4");
     assert.ok(version);
     const extension = await version.loadRules();
     const rules: Record<string, Rule> = { ...modeleSocial };
@@ -48,7 +48,7 @@ describe("IDCC 1431 optique-lunetterie de détail", () => {
   });
 
   it("applies the extended non-cadre pension plan to standard endpoints and leaves cadres unchanged", async () => {
-    const version = COMPILED_VERSIONS["1431-optique-lunetterie-detail"]?.find((candidate) => candidate.version === "2024.2");
+    const version = COMPILED_VERSIONS["1431-optique-lunetterie-detail"]?.find((candidate) => candidate.version === "2024.4");
     assert.ok(version);
     const extension = await version.loadRules();
     const rules: Record<string, Rule> = { ...modeleSocial };

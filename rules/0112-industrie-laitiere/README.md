@@ -1,6 +1,8 @@
 # Industrie laitière — IDCC 0112
 
-Le fichier [2026.1](0112-industrie-laitiere.2026.1.publicodes) est applicable à partir du 1er février 2026 et couvre les salaires minima mensuels. Le fichier [2026.2](0112-industrie-laitiere.2026.2.publicodes) ajoute les rémunérations annuelles minimales et les minima de l'encadrement au forfait annuel, applicables au 1er janvier 2026, sans convertir les montants annuels en mensualités. Les textes sont étendus par arrêté du 4 mai 2026 (JORF du 10 mai 2026) ; les références figurent dans les métadonnées. La valeur Publicodes est `industrie laitière` ; les règles sont sous `salarié . convention collective . industrie laitière`.
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 est applicable à partir du 1er février 2026 et couvre les salaires minima mensuels. Le fichier [2026.2](0112-industrie-laitiere.2026.2.publicodes) ajoute les rémunérations annuelles minimales et les minima de l'encadrement au forfait annuel, applicables au 1er janvier 2026, sans convertir les montants annuels en mensualités. Les textes sont étendus par arrêté du 4 mai 2026 (JORF du 10 mai 2026) ; les références figurent dans les métadonnées. La valeur Publicodes est `industrie laitière` ; les règles sont sous `salarié . convention collective . industrie laitière`.
 
 La convention collective nationale de l'industrie laitière du 20 mai 1955 (brochure 3124) couvre les entreprises relevant de l'IDCC 0112.
 

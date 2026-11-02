@@ -48,11 +48,6 @@ describe("IDCC 1557 — 2025.2 corrected grids of the accords du 4 mars 2025", (
     assert.ok(!version.sources.some((source) => source.includes("KALITEXT000051694875")));
   });
 
-  it("selects 2025.2 over 2025.1 for the same effective date", () => {
-    const entries = COMPILED_VERSIONS[agreement]!.filter((entry) => entry.validFrom === "2025-03-01");
-    assert.deepEqual(entries.map((entry) => entry.version).sort(), ["2025.1", "2025.2"]);
-  });
-
   for (const [classification, expected] of Object.entries(GRID)) {
     it(`gives ${expected} € for classification ${classification}`, () => {
       assert.deepEqual(evaluate(classification), { amount: expected, outOfGrid: false });

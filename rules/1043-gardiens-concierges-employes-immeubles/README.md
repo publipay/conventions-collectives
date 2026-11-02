@@ -1,5 +1,7 @@
 # Convention collective nationale des gardiens, concierges et employés d'immeubles — IDCC 1043
 
+> Les versions 2025.1, 2025.2, 2026.0, 2026.1, 2026.2, 2026.4 et 2026.5 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 ## Révisions 2025.2, 2026.3 et 2026.4 : prime d'ancienneté et 13e mois
 
 - **Dates d'effet :** celles des versions qu'elles remplacent, avec les mêmes règles : 2025.2 au 1er mai 2025 (2025.1), 2026.3 au 1er janvier 2026 (2026.0), 2026.4 au 1er mai 2026 (2026.2).

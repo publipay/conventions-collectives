@@ -1,6 +1,8 @@
 # Services de l’automobile — IDCC 1090
 
-Le fichier [2026.1](1090-services-automobile.2026.1.publicodes) entre en vigueur le 1er mai 2026. Il est fondé sur l’avenant n° 110 du 22 janvier 2026 relatif aux salaires minima, étendu par arrêté du 2 avril 2026 (JORF n° 0090 du 16 avril 2026, NOR TRST2609049A), cités dans ses métadonnées. La valeur Publicodes est `services automobile` ; les règles sont sous `salarié . convention collective . services automobile`.
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er mai 2026. Il est fondé sur l’avenant n° 110 du 22 janvier 2026 relatif aux salaires minima, étendu par arrêté du 2 avril 2026 (JORF n° 0090 du 16 avril 2026, NOR TRST2609049A), cités dans ses métadonnées. La valeur Publicodes est `services automobile` ; les règles sont sous `salarié . convention collective . services automobile`.
 
 La convention collective nationale des services de l’automobile du 15 janvier 1981 (brochure 3034) couvre notamment le commerce et la réparation de l’automobile, du cycle et du motocycle, les activités connexes, le contrôle technique automobile et la formation des conducteurs (écoles de conduite).
 

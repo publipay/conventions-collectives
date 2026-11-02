@@ -1,5 +1,7 @@
 # Miroiterie, transformation et négoce du verre — IDCC 1499
 
+> La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Trois versions, espace de noms `salarié . convention collective . miroiterie transformation négoce verre` (valeur Publicodes `miroiterie transformation négoce verre`) :
 
 - `2025.1` : accord du **26 mars 2025** (KALITEXT000051910288), minima au **1er mai 2025**, étendu par arrêté du 13 juin 2025 (JORF du 19 juin 2025). Conservée telle quelle (version publiée) ;

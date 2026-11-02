@@ -9,7 +9,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3248-metallurgie";
 const value = "métallurgie";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.6");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -65,8 +65,8 @@ function situation(level: string, extra: Record<string, string> = {}) {
 const evaluate = (name: string) => engine.evaluate(`${namespace} . ${name}`).nodeValue;
 const round2 = (n: unknown) => Math.round((n as number) * 100) / 100;
 
-describe("IDCC 3248 revision 2026.3", () => {
-  it("keeps the 2026.1 and 2026.2 effective date", () => {
+describe("IDCC 3248 revision 2026.6", () => {
+  it("keeps the 2026.6 and 2026.6 effective date", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source) => source.includes("KALITEXT000054254725")));
   });

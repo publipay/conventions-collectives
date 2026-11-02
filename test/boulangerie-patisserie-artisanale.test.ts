@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0843-boulangerie-patisserie-artisanale";
 const value = "boulangerie-pâtisserie artisanale";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.4");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -66,7 +66,7 @@ function minimum(): number {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 843 — 2026.1 minimum salaries", () => {
+describe("IDCC 843 — 2026.4 minimum salaries", () => {
   it("is in force from 1 February 2026 and cites the three texts and their extension orders", () => {
     assert.equal(version.validFrom, "2026-02-01");
     for (const reference of [

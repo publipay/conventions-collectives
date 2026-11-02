@@ -1,5 +1,7 @@
 # Ports et manutention — IDCC 3017
 
+> Les versions 2024.1 et 2024.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 La convention collective nationale unifiée ports et manutention du 15 avril 2011 (IDCC 3017, conteneur `KALICONT000029142476`) est modélisée par une version par avenant salarial étendu. Chaque version contient les **trois grilles complètes** de salaires bruts minima hiérarchiques (SBMH) de l'annexe, de 0 à 33 ans d'ancienneté :
 
 | Version | Effet | Texte | Extension |

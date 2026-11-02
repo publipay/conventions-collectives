@@ -1,5 +1,7 @@
 # Assainissement et maintenance industrielle — IDCC 2272
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2026.2` (qui remplace `2026.1`, même date d'effet) modélise la grille des salaires minima conventionnels mensuels applicable au **1er avril 2026** pour 151,67 heures. Elle reprend l'avenant n° 45 du 20 février 2026, étendu par arrêté du 5 mai 2026 publié au Journal officiel le 16 mai 2026.
 
 La valeur Publicodes est `assainissement et maintenance industrielle` et les règles sont sous `salarié . convention collective . assainissement et maintenance industrielle`.

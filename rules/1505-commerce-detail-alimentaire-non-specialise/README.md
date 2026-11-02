@@ -1,6 +1,8 @@
 # Commerce de détail alimentaire non spécialisé — IDCC 1505
 
-Le fichier [2026.1](1505-commerce-detail-alimentaire-non-specialise.2026.1.publicodes) entre en vigueur le 1er août 2026. Le fichier [2026.5](1505-commerce-detail-alimentaire-non-specialise.2026.5.publicodes) conserve cette grille et ajoute les rubriques de paie de l’audit du 12 octobre 2026. Les textes et identifiants officiels sont cités dans les métadonnées. La valeur Publicodes est `commerce de détail alimentaire non spécialisé` ; les règles sont sous `salarié . convention collective . commerce de détail alimentaire non spécialisé`.
+> Les versions 2026.1, 2026.5, 2026.6 et 2026.7 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er août 2026. Le fichier 2026.5 conserve cette grille et ajoute les rubriques de paie de l’audit du 12 octobre 2026. Les textes et identifiants officiels sont cités dans les métadonnées. La valeur Publicodes est `commerce de détail alimentaire non spécialisé` ; les règles sont sous `salarié . convention collective . commerce de détail alimentaire non spécialisé`.
 
 La convention collective nationale du commerce de détail alimentaire non spécialisé (brochure 3244) est l’ancienne convention du commerce de détail de fruits et légumes, épicerie et produits laitiers. Elle ne doit pas être confondue avec la convention [2216](../2216-commerce-detail-gros-predominance-alimentaire/README.md), celle du commerce de détail et de gros à prédominance alimentaire.
 

@@ -1,7 +1,7 @@
 /**
- * Building agreements (IDCC 1596, 1597, 2609 and 2420), shared versions 2026.4 and 2026.5
- * (rules/commun/batiment): modele-social's `BTP` rules corrected, and the regional grids (four in
- * 2026.4, every region in 2026.5).
+ * Building agreements (IDCC 1596, 1597, 2609 and 2420), shared version 2026.7
+ * (rules/commun/batiment), under its own rule value `bâtiment et travaux publics`: the BTP schemes
+ * and the regional grids of every region.
  *
  * Expected amounts come from the sources, independently of the YAML:
  * - CIBTP paid leave rates, read on the funds' sites (October 2026);
@@ -15,7 +15,7 @@
  * - ETAM of Corse: accord du 15 décembre 2025 (KALITEXT000054092314), extended in the JORF of
  *   6 June 2026; ETAM of Occitanie: accord du 13 février 2026 (KALITEXT000054337649), extended in
  *   the JORF of 29 May 2026.
- * - 2026.5: the regional accords listed in REGIONAL_GRIDS below, read on Légifrance on
+ * - the regional accords listed in REGIONAL_GRIDS below, read on Légifrance on
  *   20 October 2026, each from the publication of its extension order.
  */
 import assert from "node:assert/strict";
@@ -24,31 +24,36 @@ import Engine, { type Rule } from "publicodes";
 import modeleSocial from "modele-social";
 import { COMPILED_VERSIONS } from "../src/index.ts";
 
+const VALUE = "bâtiment et travaux publics";
+function withValue(rules: Record<string, Rule>): Record<string, Rule> {
+  const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
+  return { ...rules, "salarié . convention collective": { ...choice, "une possibilité": [...choice["une possibilité"], VALUE] } as Rule };
+}
+
 const AGREEMENTS = [
   "1596-batiment-ouvriers-petites-entreprises",
   "1597-batiment-ouvriers-plus-de-10",
   "2609-batiment-etam",
   "2420-batiment-cadres",
 ];
-const VERSION = "2026.5";
-const BTP = "salarié . convention collective . BTP";
+const VERSION = "2026.7";
+const BTP = "salarié . convention collective . bâtiment et travaux publics";
 const CEILING = 4005;
 
 async function engineOf(versionName: string) {
   const found = COMPILED_VERSIONS[AGREEMENTS[0]!]!.find((v) => v.version === versionName);
   assert.ok(found, versionName);
-  const rules: Record<string, Rule> = { ...modeleSocial, ...(await found.loadRules()) };
+  const rules: Record<string, Rule> = withValue({ ...modeleSocial, ...(await found.loadRules()) });
   return new Engine(rules, { logger: { log() {}, warn() {}, error() {} } });
 }
 const engine = await engineOf(VERSION);
-const previous = await engineOf("2026.4");
 
 type Situation = Record<string, string>;
 
 function evaluate(rule: string, situation: Situation, on = engine): number | boolean | string | null | undefined {
   on.setSituation({
     date: "01/10/2026",
-    "salarié . convention collective": "'BTP'",
+    "salarié . convention collective": "'bâtiment et travaux publics'",
     "salarié . contrat . salaire brut": "2500 €/mois",
     ...situation,
   });
@@ -64,31 +69,22 @@ const amount = (rule: string, situation: Situation = {}) => {
 const percentOf = (base: number, rate: number) => Math.round(base * rate) / 100;
 
 describe("building agreements — one shared version", () => {
-  it("publishes the same versions 2026.4 to 2026.7 for the four agreements, 2026.7 their newest", () => {
-    // Sorted by effective date, they come first (2020): a consumer selects 2026.4 as the first
-    // version to use, and leaves the older revisions of each agreement aside.
-    const revision = (v: { version: string }) => Number(v.version.split(".")[1]);
-    for (const shared of ["2026.4", "2026.5", "2026.6", "2026.7"]) {
-      const published = AGREEMENTS.map((name) => {
-        const found = COMPILED_VERSIONS[name]!.find((v) => v.version === shared);
-        assert.ok(found, `${name} ${shared}`);
-        return found;
-      });
-      for (const found of published) {
-        assert.equal(found.contentHash, published[0]!.contentHash);
-        assert.equal(found.validFrom, "2020-01-01");
-        assert.deepEqual(found.sources, published[0]!.sources);
-      }
-    }
-    for (const name of AGREEMENTS) {
-      assert.ok(COMPILED_VERSIONS[name]!.every((v) => revision(v) <= 7), name);
+  it("publishes 2026.7 identically for the four agreements, their only version", () => {
+    const published = AGREEMENTS.map((name) => {
+      assert.deepEqual(COMPILED_VERSIONS[name]!.map((v) => v.version), ["2026.7"], name);
+      return COMPILED_VERSIONS[name]![0]!;
+    });
+    for (const found of published) {
+      assert.equal(found.contentHash, published[0]!.contentHash);
+      assert.equal(found.validFrom, "2020-01-01");
+      assert.deepEqual(found.sources, published[0]!.sources);
     }
   });
 });
 
 describe("building agreements — CIBTP paid leave", () => {
   const paidLeave = (fund: string, date: string) =>
-    amount(`${BTP} . congés intempéries`, { date, [`${BTP} . congés intempéries . caisse de rattachement`]: `'${fund}'` });
+    amount(`${BTP} . cotisation congés payés`, { date, [`${BTP} . cotisation congés payés . caisse de rattachement`]: `'${fund}'` });
 
   it("applies the rate of each fund in October 2026", () => {
     const rates: Record<string, number> = {
@@ -271,11 +267,9 @@ describe("building agreements — regional grids", () => {
     }
   });
 
-  it("applies the Nouvelle-Aquitaine workers' grid to companies up to 10 employees from 2026.5", () => {
+  it("applies the Nouvelle-Aquitaine workers' grid to companies of any size", () => {
     assert.equal(minimum(worker("nouvelle aquitaine", 10, "270")), 2560.19);
-    // 2026.4 applied it above 10 employees only.
-    assert.equal(applies(worker("nouvelle aquitaine", 10, "270"), previous), false);
-    assert.equal(minimum(worker("nouvelle aquitaine", 11, "270"), previous), 2560.19);
+    assert.equal(minimum(worker("nouvelle aquitaine", 11, "270")), 2560.19);
   });
 
   it("prorates the minimum by working time", () => {

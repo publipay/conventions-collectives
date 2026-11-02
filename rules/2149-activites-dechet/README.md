@@ -1,5 +1,7 @@
 # Activités du déchet — IDCC 2149
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le fichier [2026.2](2149-activites-dechet.2026.2.publicodes) entre en vigueur le 1er janvier 2026. Il retient la dernière valeur du point officiellement publiée, 18,67 € au 1er janvier 2025, faute de texte officiel 2026 opposable à l'ensemble du champ. La convention distingue les minima mensuels des coefficients 100 à 132 et les minima annuels des coefficients 150 à 170.
 
 La convention collective nationale des activités du déchet du 16 avril 2019 (brochure 3156) classe les emplois par coefficient, de 100 à 170. La valeur Publicodes est `activités du déchet` ; les règles sont sous `salarié . convention collective . activités du déchet`.

@@ -1,6 +1,8 @@
 # Industries céramiques de France — IDCC 1558
 
-Le fichier [2025.1](1558-industries-ceramiques.2025.1.publicodes) reprend l'accord du 14 janvier 2025 relatif à l'évolution des salaires minima conventionnels, applicable au 1er janvier 2025 et étendu par arrêté du 17 avril 2025 publié le 26 avril 2025.
+> La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2025.1 reprend l'accord du 14 janvier 2025 relatif à l'évolution des salaires minima conventionnels, applicable au 1er janvier 2025 et étendu par arrêté du 17 avril 2025 publié le 26 avril 2025.
 
 La révision [2025.2](1558-industries-ceramiques.2025.2.publicodes), même date d'effet, corrige deux défauts de 2025.1 : `niveau hors grille` ne testait que la grille mensuelle, si bien que les cadres NG à J étaient hors grille, et la grille annuelle comparait `forfait annuel en jours` aux textes `'oui'` et `'non'` alors que sa valeur par défaut est le booléen `non`. En 2025.2, l'entrée est comparée comme un booléen et seule une classification absente des deux barèmes est hors grille.
 

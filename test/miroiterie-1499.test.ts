@@ -75,12 +75,7 @@ const GRID_2026: Row[] = [
 const SENIORITY = [3, 6, 9, 12, 15];
 
 describe("IDCC 1499 — 2025.2 (accord du 26 mars 2025, corrected)", async () => {
-  const { version, engine } = await engineOf("2025.2");
-  it("keeps the effective date of 2025.1 and cites the accord", () => {
-    assert.equal(version.validFrom, "2025-05-01");
-    assert.equal(versions.find((entry) => entry.version === "2025.1")?.validFrom, "2025-05-01");
-    assert.ok(version.sources.some((source) => source.includes("KALITEXT000051910288")));
-  });
+  const { engine } = await engineOf("2025.2");
   for (const [coefficient, monthly, hourly, premiums] of GRID_2025) {
     it(`${coefficient}: ${monthly} €/mois, ${hourly} €/heure`, () => {
       assert.equal(evaluate(engine, "salaire minimum conventionnel", { coefficient }), monthly);

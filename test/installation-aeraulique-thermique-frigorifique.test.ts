@@ -8,7 +8,7 @@ const id = "1412-installation-aeraulique-thermique-frigorifique";
 const ns = "salarié . convention collective . installation aeraulique thermique frigorifique";
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.1");
+  const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.2");
   assert.ok(version, "IDCC 1412 must be exported");
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };
@@ -37,14 +37,6 @@ describe("IDCC 1412 — 2026 minimum salaries", () => {
     assert.equal(get(engine, "salaire minimum conventionnel").nodeValue, 2471.98);
     set(engine, { coefficient: 300, "salarié . contrat . temps de travail . quotité": "50 %" });
     assert.equal(get(engine, "salaire minimum conventionnel").nodeValue, 1235.99);
-  });
-
-  it("keeps the annual remuneration in euros per year", async () => {
-    const engine = await makeEngine();
-    set(engine, { coefficient: 500 });
-    const result = get(engine, "salaire minimum annuel conventionnel");
-    assert.equal(result.nodeValue, 52755.12);
-    assert.equal(result.unit?.denominators?.includes("an"), true);
   });
 
   it("rejects classifications absent from the published grid", async () => {

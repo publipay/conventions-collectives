@@ -37,14 +37,7 @@ function minimum(engine: Engine, classification: string, quota = "100%"): number
 }
 
 describe("IDCC 2494 — revision 2026.2 (level 7.A corrected)", async () => {
-  const { version, engine } = await engineOf("2026.2");
-
-  it("keeps the validFrom of 2026.1 (same date, higher revision supersedes it)", () => {
-    assert.equal(version.validFrom, "2026-07-01");
-    const previous = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.1");
-    assert.equal(previous?.validFrom, version.validFrom);
-    assert.ok(version.sources.some((source: string) => source.includes("KALITEXT000054426738")));
-  });
+  const { engine } = await engineOf("2026.2");
 
   for (const [classification, amount] of Object.entries(grid)) {
     it(`level ${classification} = ${amount} €/an`, () => {

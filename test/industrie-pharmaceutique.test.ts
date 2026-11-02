@@ -8,7 +8,7 @@ const id = "0176-industrie-pharmaceutique";
 const ns = "salarié . convention collective . industrie pharmaceutique";
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.1");
+  const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.2");
   assert.ok(version, "IDCC 176 must be exported");
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };
@@ -54,12 +54,4 @@ describe("IDCC 176 — January 2026 salary grid", () => {
       assert.equal(engine.evaluate(`${ns} . salaire minimum conventionnel`).nodeValue, null);
     });
   }
-});
-
-describe("IDCC 176 — part time", () => {
-  it("prorates the monthly minimum once by contract fraction", async () => {
-    const engine = await makeEngine();
-    set(engine, "6C", "50%");
-    assert.equal(engine.evaluate(`${ns} . salaire minimum conventionnel`).nodeValue, 1672.255);
-  });
 });

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1501-restauration-rapide";
 const value = "restauration rapide";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -26,7 +26,7 @@ function setSituation(salary: number, convention = value) {
   });
 }
 
-describe("IDCC 1501 — 2026.1 prévoyance", () => {
+describe("IDCC 1501 — 2026.5 prévoyance", () => {
   it("uses the 0.50% branch rate split equally on T1 and T2", () => {
     setSituation(2000);
     assert.equal(engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue, 5);

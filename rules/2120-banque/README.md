@@ -1,6 +1,8 @@
 # Banque — IDCC 2120
 
-Le fichier [2026.1](2120-banque.2026.1.publicodes) entre en vigueur le 1er avril 2026. Il est fondé sur l’accord du 16 avril 2026 relatif aux salaires minima annuels de branche (revalorisation de 1,1 %, avec une augmentation minimale de 450 € par case), cité dans ses métadonnées. La valeur Publicodes est `banque` ; les règles sont sous `salarié . convention collective . banque`.
+> Les versions 2026.1, 2026.2 et 2026.3 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er avril 2026. Il est fondé sur l’accord du 16 avril 2026 relatif aux salaires minima annuels de branche (revalorisation de 1,1 %, avec une augmentation minimale de 450 € par case), cité dans ses métadonnées. La valeur Publicodes est `banque` ; les règles sont sous `salarié . convention collective . banque`.
 
 La convention collective nationale de la banque du 10 janvier 2000 (brochure 3161) fixe des salaires annuels minima de branche pour les niveaux A à G (techniciens des métiers de la banque) et H à K (cadres), hors ancienneté puis à partir de 5, 10, 15 et 20 ans d’ancienneté. Le salaire annuel est versé en 13 mensualités égales.
 
@@ -24,7 +26,7 @@ Les minima mensuels vont de 1 799,00 € (niveaux A à D hors ancienneté) à 4 
 
 ## Congés payés
 
-À partir de la révision [2026.2](2120-banque.2026.2.publicodes), à la même date que 2026.1, `congés payés . jours supplémentaires` donne le 26e jour de congé de l'article 64 (1 jour ouvré pour une période de référence complète, quand l'application renseigne `congés payés . période de référence complète`). Il ne se cumule pas avec un avantage individuel acquis au titre des congés payés, que le fichier ne connaît pas.
+À partir de la révision 2026.2, à la même date que 2026.1, `congés payés . jours supplémentaires` donne le 26e jour de congé de l'article 64 (1 jour ouvré pour une période de référence complète, quand l'application renseigne `congés payés . période de référence complète`). Il ne se cumule pas avec un avantage individuel acquis au titre des congés payés, que le fichier ne connaît pas.
 
 ## Maintien de salaire
 

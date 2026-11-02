@@ -1,8 +1,10 @@
 # Industries de carrières et matériaux de construction — IDCC 3249
 
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version [2026.4](3249-carrieres-materiaux.2026.4.publicodes) s'applique à partir du **1er juillet 2026** (avenant n° 2 du 30 avril 2026, étendu par arrêté du 24 août 2026, JORF du 4 septembre 2026). Elle reprend les règles de 2026.3 et ajoute, pour les entreprises de la **préfabrication béton** (code 2361Z, exclues des accords régionaux), les grilles régionales harmonisées de l'annexe 2 de l'avenant, choisies par l'entrée `préfabrication béton` (`non` par défaut). Les niveaux III à VII encore à rattraper le seront au plus tard au 1er juillet 2027.
 
-La version [2026.3](3249-carrieres-materiaux.2026.3.publicodes) modélise les douze accords régionaux du début de 2026 relatifs aux salaires minimaux des ouvriers et ETAM, tous en vigueur au 1er janvier 2026 et étendus. Elle remplace la version [2026.2](3249-carrieres-materiaux.2026.2.publicodes), de même date d'effet, qui ne modélisait que l'accord Île-de-France (sa grille est reprise à l'identique). La 2026.2 remplaçait elle-même la [2026.1](3249-carrieres-materiaux.2026.1.publicodes), dont la grille inventait un échelon 1.3 et décalait toutes les clés suivantes. Les révisions antérieures restent publiées telles quelles (leurs empreintes sont verrouillées) mais ne sont plus sélectionnées.
+La version [2026.3](3249-carrieres-materiaux.2026.3.publicodes) modélise les douze accords régionaux du début de 2026 relatifs aux salaires minimaux des ouvriers et ETAM, tous en vigueur au 1er janvier 2026 et étendus. Elle remplace la version 2026.2, de même date d'effet, qui ne modélisait que l'accord Île-de-France (sa grille est reprise à l'identique). La 2026.2 remplaçait elle-même la 2026.1, dont la grille inventait un échelon 1.3 et décalait toutes les clés suivantes. Les révisions antérieures restent publiées telles quelles (leurs empreintes sont verrouillées) mais ne sont plus sélectionnées.
 
 ## Règles implémentées
 

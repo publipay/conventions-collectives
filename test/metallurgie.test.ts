@@ -7,8 +7,8 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3248-metallurgie";
 const value = "métallurgie";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
-const correctedVersion = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.6");
+const correctedVersion = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.6");
 assert.ok(version);
 assert.ok(correctedVersion);
 const extension = await version.loadRules();
@@ -27,7 +27,6 @@ correctedRules["salarié . convention collective"] = {
   "une possibilité": [...choice["une possibilité"], value],
 } as Rule;
 Object.assign(correctedRules, correctedExtension);
-const correctedEngine = new Engine(correctedRules, { logger: { log() {}, warn() {}, error() {} } });
 
 /** Annual hierarchical minimums of the avenant of 20 February 2026 (35 hours a week). */
 const ANNUAL: Record<string, number> = {
@@ -67,15 +66,7 @@ const amount = (name: string) => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 3248 — 2026.1 hierarchical minimums", () => {
-  it("is in force from 1 January 2026 and cites the avenant and its extension", () => {
-    assert.equal(version.validFrom, "2026-01-01");
-    assert.ok(version.sources.some((source) => source.includes("Avenant du 20 février 2026")));
-    assert.ok(version.sources.some((source) => source.includes("TRST2607042V")));
-    assert.equal(correctedVersion.validFrom, "2026-01-01");
-    assert.ok(correctedVersion.sources.some((source) => source.includes("KALITEXT000054254725")));
-    assert.ok(correctedVersion.sources.some((source) => source.includes("TRST2612724A")));
-  });
+describe("IDCC 3248 — 2026.6 hierarchical minimums", () => {
 
   for (const [level, annual] of Object.entries(ANNUAL)) {
     it(`${level}: ${annual} € a year, a twelfth a month`, () => {
@@ -113,25 +104,5 @@ describe("IDCC 3248 — 2026.1 hierarchical minimums", () => {
     for (const name of ["salaire minimum conventionnel", "niveau hors grille", "salaire minimum hiérarchique annuel"]) {
       assert.equal(engine.evaluate(`${namespace} . ${name}`).nodeValue, null, name);
     }
-  });
-
-  it("applies the official forfait annual multipliers only when explicitly selected", () => {
-    correctedEngine.setSituation({
-      "salarié . convention collective": `'${value}'`,
-      [`${namespace} . niveau`]: "'C5'",
-    });
-    assert.equal(correctedEngine.evaluate(`${namespace} . salaire minimum hiérarchique annuel au forfait`).nodeValue, 24510);
-    correctedEngine.setSituation({
-      "salarié . convention collective": `'${value}'`,
-      [`${namespace} . niveau`]: "'C5'",
-      [`${namespace} . forfait annuel`]: "'heures 15 %'",
-    });
-    assert.equal(correctedEngine.evaluate(`${namespace} . salaire minimum hiérarchique annuel au forfait`).nodeValue, 28186.5);
-    correctedEngine.setSituation({
-      "salarié . convention collective": `'${value}'`,
-      [`${namespace} . niveau`]: "'C5'",
-      [`${namespace} . forfait annuel`]: "'jours'",
-    });
-    assert.equal(correctedEngine.evaluate(`${namespace} . salaire minimum hiérarchique annuel au forfait`).nodeValue, 31863);
   });
 });

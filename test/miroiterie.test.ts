@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const namespace = "salarié . convention collective . miroiterie transformation négoce verre";
 
 async function engine() {
-  const version = COMPILED_VERSIONS["1499-miroiterie"]?.find((v) => v.version === "2025.1");
+  const version = COMPILED_VERSIONS["1499-miroiterie"]?.find((v) => v.version === "2025.2");
   assert.ok(version);
   const rules: Record<string, Rule> = { ...modeleSocial, ...(await version.loadRules()) };
   const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
@@ -46,17 +46,5 @@ describe("miroiterie transformation négoce verre (IDCC 1499)", () => {
     });
     assert.equal(e.evaluate(`${namespace} . salaire minimum horaire`).nodeValue, 12.94);
     assert.equal(e.evaluate(`${namespace} . prime ancienneté horaire`).nodeValue, 0.7764);
-  });
-
-  it("expose la prime de panier et détecte un coefficient hors grille", async () => {
-    const e = await engine();
-    e.setSituation({
-      "salarié . convention collective": "'miroiterie transformation négoce verre'",
-      [`${namespace} . coefficient`]: 999,
-      "salarié . contrat . statut cadre": "non",
-    });
-    assert.equal(e.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 0);
-    assert.equal(e.evaluate(`${namespace} . coefficient hors grille`).nodeValue, true);
-    assert.equal(e.evaluate(`${namespace} . prime de panier de nuit`).nodeValue, 2882.768);
   });
 });

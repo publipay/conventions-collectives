@@ -1,14 +1,14 @@
 # Travaux publics — fichier commun aux IDCC 1702, 2614 et 3212
 
-Les fichiers [2026.4](travaux-publics.2026.4.publicodes) et [2026.5](travaux-publics.2026.5.publicodes) sont publiés à l'identique comme versions `2026.4` et `2026.5` (la `2026.5`, de même date d'effet, l'emporte : elle ajoute les indemnités de petits déplacements, voir plus bas) des trois conventions des travaux publics : ouvriers ([1702](../../1702-travaux-publics-ouvriers/README.md)), ETAM ([2614](../../2614-travaux-publics-etam/README.md)) et cadres ([3212](../../3212-travaux-publics-cadres/README.md)). Ses métadonnées listent ces conventions (`agreements`) ; `versions.lock.json` a une entrée par convention, avec la même empreinte.
+Le fichier 2026.6 est publié à l'identique comme version `2026.6` des trois conventions des travaux publics : ouvriers ([1702](../../1702-travaux-publics-ouvriers/README.md)), ETAM ([2614](../../2614-travaux-publics-etam/README.md)) et cadres ([3212](../../3212-travaux-publics-cadres/README.md)). Ses métadonnées listent ces conventions (`agreements`) ; `versions.lock.json` a une entrée par convention, avec la même empreinte. C'est leur seule version : les versions antérieures (les communes 2026.4 et 2026.5, qui complétaient la convention `BTP` de modele-social, et celles de chaque convention) ont été supprimées pendant la bêta, le 2 novembre 2026, car aucune période à partir du 1er janvier 2026 ne les choisissait plus.
 
-modele-social n'a pas de convention des travaux publics. Ses règles du bâtiment (`salarié . convention collective . BTP`, valeur `BTP`, catégories `ouvrier`, `etam` et `cadre`) portent les régimes communs au BTP : prévoyance PRO BTP (RNPO, RNPE, RNPC, les mêmes pour le bâtiment et les travaux publics d'après la notice PRO BTP 2026), répartition de la retraite complémentaire des ETAM, OPPBTP. La version les complète et les corrige pour les travaux publics, sans redéfinir de règle de modele-social. Elle partage les noms de règles de la version commune du bâtiment (`rules/commun/batiment`) : une entreprise relève de l'une ou de l'autre.
+modele-social n'a pas de convention des travaux publics. Ses règles du bâtiment (`salarié . convention collective . BTP`, valeur `BTP`, catégories `ouvrier`, `etam` et `cadre`) portent les régimes communs au BTP : prévoyance PRO BTP (RNPO, RNPE, RNPC, les mêmes pour le bâtiment et les travaux publics d'après la notice PRO BTP 2026), répartition de la retraite complémentaire des ETAM, OPPBTP. La version les reprend et les corrige pour les travaux publics. Elle partage les noms de règles de la version commune du bâtiment (`rules/commun/batiment`) : une entreprise relève de l'une ou de l'autre.
 
-`validFrom` est le 1er janvier 2026, date du taux de la CNETP repris. Les versions antérieures de chaque convention ne sont plus utilisées : un consommateur qui choisit la version par date doit partir de `2026.4`.
+`validFrom` est le 1er janvier 2026, date du taux de la CNETP repris.
 
-## Valeur de convention propre (2026.6)
+## Valeur de convention propre
 
-La version `2026.6` (même `validFrom`, elle l'emporte sur la `2026.5`, dont elle reprend les grilles, les taux et les petits déplacements) a sa propre valeur de convention, `salarié . convention collective = 'bâtiment et travaux publics'`, et ses règles sont sous `salarié . convention collective . bâtiment et travaux publics` : elle s'utilise à la place de la convention `BTP` de modele-social, dont aucune règle ne s'applique alors. Les règles ont les mêmes noms pour le bâtiment et les travaux publics (une entreprise relève de l'un ou de l'autre). Elle reprend les règles du BTP de modele-social, vérifiées sur Légifrance :
+La version a sa propre valeur de convention, `salarié . convention collective = 'bâtiment et travaux publics'`, et ses règles sont sous `salarié . convention collective . bâtiment et travaux publics` : elle s'utilise à la place de la convention `BTP` de modele-social, dont aucune règle ne s'applique alors. Les règles ont les mêmes noms pour le bâtiment et les travaux publics (une entreprise relève de l'un ou de l'autre). Elle reprend les règles du BTP de modele-social, vérifiées sur Légifrance :
 
 - `catégorie` (`ouvrier`, `etam` ou `cadre`) ; un cadre a le statut cadre.
 - `catégorie . ouvrier . prévoyance RNPO` : 1,72 % pour l'employeur et 0,87 % pour l'ouvrier (taux de référence de 2,59 %, articles 5.1 et 5.3 de l'accord du 31 juillet 1968 dans la rédaction de l'avenant n° 59 du 20 mars 2018, [KALITEXT000037482425](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000037482425)).
@@ -47,9 +47,9 @@ Non repris : le taux AT/MP des fonctions support propre au BTP (un taux de tarif
 
 Les identifiants KALITEXT des accords et leurs arrêtés d'extension sont dans les sources de la version ; les montants de chaque coefficient et de chaque niveau dans la description de chaque règle `grille . …`.
 
-## Petits déplacements (version `2026.5`)
+## Petits déplacements
 
-La version `2026.5` ajoute le régime des petits déplacements des travaux publics (chapitre VIII-1 de la convention collective nationale des ouvriers du 15 décembre 1992) : pour chaque jour de chantier, une indemnité de trajet et une indemnité de transport selon la zone concentrique du chantier, et une indemnité de repas ; les ETAM non sédentaires perçoivent l'indemnité de repas et l'indemnité de transport (article 7.1.9 de la convention des ETAM). Mêmes entrées et même traitement social que pour le bâtiment (voir le README de `rules/commun/batiment`).
+La version porte le régime des petits déplacements des travaux publics (chapitre VIII-1 de la convention collective nationale des ouvriers du 15 décembre 1992) : pour chaque jour de chantier, une indemnité de trajet et une indemnité de transport selon la zone concentrique du chantier, et une indemnité de repas ; les ETAM non sédentaires perçoivent l'indemnité de repas et l'indemnité de transport (article 7.1.9 de la convention des ETAM). Mêmes entrées et même traitement social que pour le bâtiment (voir le README de `rules/commun/batiment`).
 
 Les accords fixent les barèmes pour 2026 : chacun s'applique de la publication de son arrêté d'extension au 31 décembre 2026. Aucun barème en Auvergne-Rhône-Alpes, en Provence-Alpes-Côte d'Azur et en Corse (derniers accords pour 2024), ni avant l'extension de l'accord de 2026 de chaque région.
 

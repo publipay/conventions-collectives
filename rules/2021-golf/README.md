@@ -1,5 +1,7 @@
 # Golf — IDCC 2021
 
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 ## Version et périmètre
 
 `2026.1` est applicable au **1er avril 2026** et `2026.2` corrige les sources et le minimum annuel du groupe 6 à la suite de l'avenant n° 96 du 21 janvier 2026, étendu le 17 avril 2026. L'audit s'appuie exclusivement sur les références officielles Légifrance/JORF indiquées dans les règles.

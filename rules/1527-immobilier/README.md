@@ -1,5 +1,7 @@
 # Immobilier — IDCC 1527
 
+> Les versions 2026.1, 2026.2 et 2026.3 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Modèle `1527-immobilier`, versions `2026.1` et `2026.2`, espace de noms
 `salarié . convention collective . immobilier`.
 

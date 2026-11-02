@@ -9,7 +9,7 @@ const value = "distribution logistique énergies";
 const namespace = `salarié . convention collective . ${value}`;
 const versions = COMPILED_VERSIONS[agreement];
 assert.ok(versions);
-const version = versions.find((entry) => entry.version === "2025.2");
+const version = versions.find((entry) => entry.version === "2025.3");
 assert.ok(version);
 const rules: Record<string, Rule> = { ...modeleSocial };
 const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
@@ -49,10 +49,10 @@ const PREMIUM: Record<string, number[]> = {
   "320": [83.06, 166.12, 249.18, 276.87, 304.55, 332.24, 359.93, 387.61, 415.30],
 };
 
-describe("IDCC 1408 — 2025.2 minimum salaries and seniority premium", () => {
-  it("supersedes 2025.1 on the same effective date and cites the right text", () => {
+describe("IDCC 1408 — 2025.3 minimum salaries and seniority premium", () => {
+  it("supersedes 2025.3 on the same effective date and cites the right text", () => {
     assert.equal(version.validFrom, "2025-05-01");
-    const first = versions.find((entry) => entry.version === "2025.1");
+    const first = versions.find((entry) => entry.version === "2025.3");
     assert.equal(first?.validFrom, "2025-05-01");
     assert.ok(version.sources.some((source) => source.includes("KALITEXT000051787046")));
     assert.ok(version.sources.some((source) => source.includes("13 mars 2025")));

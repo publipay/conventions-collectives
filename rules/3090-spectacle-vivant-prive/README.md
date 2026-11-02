@@ -1,5 +1,7 @@
 # Entreprises privées du spectacle vivant (IDCC 3090)
 
+> La version 2025.3 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 | Version | Date d'effet | Contenu |
 |---|---|---|
 | `2025.3` | 1er septembre 2025 | Grilles de l'avenant du 21 juillet 2025, dont le niveau technique « Cadres groupe 3 » (conseiller(ière) technique) |

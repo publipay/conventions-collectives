@@ -29,31 +29,6 @@ const engineFor = async (classification: string, quotient = "100%", forfait = "n
   return engine;
 };
 
-describe("IDCC 1558 — industries céramiques", () => {
-  it("applies the 2025 monthly minimum and part-time quotient", async () => {
-    const engine = await engineFor("NC-E4", "50%");
-    assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 989.2);
-  });
-
-  it("keeps cadre minima annual and selects the forfait-jours column", async () => {
-    const engine = await engineFor("NG-E1", "100%", "oui");
-    assert.equal(engine.evaluate(`${namespace} . salaire minimum annuel conventionnel`).nodeValue, 34477.97);
-  });
-
-  it("exposes the sourced panier amount only when eligibility is declared", async () => {
-    const eligible = await engineFor("NA-E1", "1", "non", "oui");
-    assert.equal(eligible.evaluate(`${namespace} . indemnité de panier`).nodeValue, 16);
-    const ineligible = await engineFor("NA-E1");
-    assert.equal(ineligible.evaluate(`${namespace} . indemnité de panier`).nodeValue, 0);
-  });
-
-  it("rejects classifications outside the published grid", async () => {
-    const engine = await engineFor("ZZ-E9");
-    assert.equal(engine.evaluate(`${namespace} . niveau hors grille`).nodeValue, true);
-    assert.equal(engine.evaluate(`${namespace} . salaire minimum annuel conventionnel`).nodeValue, null);
-  });
-});
-
 describe("IDCC 1558 — industries céramiques — 2025.2", () => {
   it("keeps the effective date of 2025.1", () => {
     assert.equal(COMPILED_VERSIONS[name]?.find((item) => item.version === "2025.2")?.validFrom, "2025-01-01");

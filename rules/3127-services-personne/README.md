@@ -1,5 +1,7 @@
 # Entreprises de services à la personne — IDCC 3127
 
+> La version 2024.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Ce répertoire contient le modèle Publicodes de la convention collective nationale des entreprises de services à la personne du 20 septembre 2012 (IDCC 3127).
 
 ## Version `2024.2`

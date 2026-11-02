@@ -8,7 +8,7 @@ const namespace = "salarié . convention collective . commerce articles sports l
 
 describe("IDCC 1557 commerce des articles de sports et équipements de loisirs", () => {
   async function engine(classification: string) {
-    const version = COMPILED_VERSIONS["1557-commerce-articles-sports-loisirs"]?.find((v) => v.version === "2025.1");
+    const version = COMPILED_VERSIONS["1557-commerce-articles-sports-loisirs"]?.find((v) => v.version === "2025.2");
     assert.ok(version);
     const rules: Record<string, Rule> = { ...modeleSocial, ...(await version.loadRules()) };
     const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
@@ -24,11 +24,6 @@ describe("IDCC 1557 commerce des articles de sports et équipements de loisirs",
     });
     return result;
   }
-
-  it("evaluates the 2025 general grid and prorates it", async () => {
-    const result = await engine("250");
-    assert.equal(result.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 2089 * 0.8);
-  });
 
   it("evaluates the 2025 workers grid", async () => {
     const result = await engine("O3");

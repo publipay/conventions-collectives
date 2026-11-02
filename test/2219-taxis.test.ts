@@ -6,7 +6,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 
 describe("IDCC 2219 — taxis", () => {
   it("evaluates the sourced minimum, prorates, rejects other classifications, and stays isolated", async () => {
-    const version = COMPILED_VERSIONS["2219-taxis"]?.find((v) => v.version === "2025.1");
+    const version = COMPILED_VERSIONS["2219-taxis"]?.find((v) => v.version === "2025.2");
     assert.ok(version);
     const extension = await version.loadRules();
     const rules: Record<string, Rule> = { ...modeleSocial };

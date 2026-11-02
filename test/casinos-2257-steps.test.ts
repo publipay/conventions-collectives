@@ -16,11 +16,6 @@ const STEPS: Record<string, { validFrom: string; source: string; grid: Record<nu
     source: "KALITEXT000051447213",
     grid: { 100: 1827, 105: 1838, 110: 1848, 120: 1873, 130: 1888, 140: 2001, 150: 2144, 160: 2287, 170: 2430, 175: 2529, 180: 2591, 190: 2727, 200: 2892 },
   },
-  "2026.1": {
-    validFrom: "2026-04-01",
-    source: "KALITEXT000054040443",
-    grid: { 100: 1850, 105: 1860, 110: 1870, 120: 1896, 130: 1916, 140: 2031, 150: 2176, 160: 2321, 170: 2467, 175: 2567, 180: 2630, 190: 2768, 200: 2935 },
-  },
 };
 
 async function engineOf(revision: string) {
@@ -77,16 +72,4 @@ describe("IDCC 2257 — jeux traditionnels steps after avenant n° 24 first colu
       });
     });
   }
-
-  it("keeps hard-coded boundary amounts of the legal texts", async () => {
-    assert.equal(minimum((await engineOf("2025.2")).engine, 100), 1827);
-    assert.equal(minimum((await engineOf("2025.2")).engine, 200), 2892);
-    assert.equal(minimum((await engineOf("2026.1")).engine, 100), 1850);
-    assert.equal(minimum((await engineOf("2026.1")).engine, 200), 2935);
-  });
-
-  it("orders the versions by effective date", () => {
-    const versions = COMPILED_VERSIONS[agreement]!.map((entry) => `${entry.validFrom} ${entry.version}`).sort();
-    assert.deepEqual(versions, ["2025-05-01 2025.1", "2025-07-01 2025.2", "2026-04-01 2026.1", "2026-04-01 2026.2"]);
-  });
 });

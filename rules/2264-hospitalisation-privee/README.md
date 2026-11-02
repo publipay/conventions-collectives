@@ -1,5 +1,7 @@
 # Hospitalisation privée — IDCC 2264
 
+> La version 2023.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le fichier [2023.3](2264-hospitalisation-privee.2023.3.publicodes) entre en vigueur le 1er janvier 2023. Il reprend la grille de l’avenant n° 32 du 10 novembre 2022 pour les coefficients 176 à 242 et l’avenant du 22 février 2023 pour la valeur du point à 7,26 € à partir du coefficient 243. La valeur Publicodes est `hospitalisation privée` ; les règles sont sous `salarié . convention collective . hospitalisation privée`.
 
 La convention collective nationale de l’hospitalisation privée du 18 avril 2002 (brochure 3307, FHP, cliniques privées à but lucratif) ne fixe pas une grille par niveau : chaque emploi a un coefficient et le salaire de base est le coefficient multiplié par la valeur du point.

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0044-industries-chimiques";
 const value = "industries chimiques";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.6");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -69,12 +69,7 @@ function minimum() {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . coefficient hors grille`).nodeValue;
 
-describe("IDCC 44 — 2026.2 payroll audit and minimum salaries", () => {
-  it("is in force from 1 September 2025 for the extended health agreement and cites its source", () => {
-    assert.equal(version.validFrom, "2025-09-01");
-    assert.ok(version.sources.some((source) => source.includes("Accord du 3 décembre 2025")));
-    assert.ok(version.sources.some((source) => source.includes("Avenant n° 4 du 2 septembre 2025")));
-  });
+describe("IDCC 44 — 2026.6 payroll audit and minimum salaries", () => {
 
   it("has 23 coefficients", () => {
     assert.equal(Object.keys(GRID).length, 23);

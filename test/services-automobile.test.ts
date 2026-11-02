@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1090-services-automobile";
 const value = "services automobile";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -51,7 +51,7 @@ function minimum() {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 1090 — 2026.1 minimum salaries", () => {
+describe("IDCC 1090 — 2026.3 minimum salaries", () => {
   it("is in force from 1 May 2026 and cites the avenant and its extension order", () => {
     assert.equal(version.validFrom, "2026-05-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 110 du 22 janvier 2026")));

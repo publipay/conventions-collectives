@@ -1,6 +1,8 @@
 # Industrie du pétrole — IDCC 1388
 
-Le fichier [2026.1](1388-industrie-petrole.2026.1.publicodes) entre en vigueur le 1er janvier 2026. Le fichier [2026.2](1388-industrie-petrole.2026.2.publicodes) conserve la grille et ajoute la ressource minimale annuelle garantie (RMAG), applicable à la même date. Les deux fichiers reposent sur l’accord du 27 novembre 2025 relatif aux salaires minima, étendu par arrêté du 27 janvier 2026 (JORF n° 0030 du 5 février 2026), cités dans leurs métadonnées. La valeur Publicodes est `industrie pétrole` ; les règles sont sous `salarié . convention collective . industrie pétrole`.
+> La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er janvier 2026. Le fichier [2026.2](1388-industrie-petrole.2026.2.publicodes) conserve la grille et ajoute la ressource minimale annuelle garantie (RMAG), applicable à la même date. Les deux fichiers reposent sur l’accord du 27 novembre 2025 relatif aux salaires minima, étendu par arrêté du 27 janvier 2026 (JORF n° 0030 du 5 février 2026), cités dans leurs métadonnées. La valeur Publicodes est `industrie pétrole` ; les règles sont sous `salarié . convention collective . industrie pétrole`.
 
 La convention collective nationale de l’industrie du pétrole du 3 septembre 1985 (brochure 3001) ne fixe pas une grille de montants mais une formule, appliquée au coefficient du salarié.
 

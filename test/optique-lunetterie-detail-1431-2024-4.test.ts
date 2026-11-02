@@ -33,10 +33,6 @@ const situation = (coefficient: string, { seniority = 0, quotité = "100%", cadr
 });
 
 describe("IDCC 1431 — 2024.4", () => {
-  it("supersedes 2024.3 for the same validFrom", () => {
-    const dates = (COMPILED_VERSIONS[id] ?? []).filter((v) => ["2024.3", "2024.4"].includes(v.version)).map((v) => v.validFrom);
-    assert.deepEqual(dates, ["2024-01-01", "2024-01-01"]);
-  });
 
   it("deduces the classification from the coefficient", async () => {
     const engine = await makeEngine();

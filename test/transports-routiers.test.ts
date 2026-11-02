@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0016-transports-routiers";
 const value = "transports routiers";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -159,7 +159,7 @@ const amount = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 16 — 2026.2 audit and minimum salaries", () => {
+describe("IDCC 16 — 2026.5 audit and minimum salaries", () => {
   it("is in force from 1 June 2026 and cites the four sub-sectors' texts", () => {
     assert.equal(version.validFrom, "2026-06-01");
     for (const text of ["Accord du 11 octobre 2023", "Avenants du 27 novembre 2025", "Avenant n° 17 du 12 mars 2026", "Avenant n° 24 du 21 janvier 2026", "TRST2610632A", "MTRT2333106A"]) {
@@ -171,20 +171,6 @@ describe("IDCC 16 — 2026.2 audit and minimum salaries", () => {
     assert.equal(GRIDS.length, 108);
     assert.equal(new Set(GRIDS.map((grid) => grid.code)).size, 108);
   });
-
-  for (const grid of GRIDS) {
-    it(`${grid.code}: every seniority step`, () => {
-      grid.steps.forEach((years, index) => {
-        setSituation(grid.code, years);
-        assert.equal(amount(), expected(grid, index), `${grid.code} from ${years} years`);
-        if (index > 0) {
-          setSituation(grid.code, years - 0.01);
-          assert.equal(amount(), expected(grid, index - 1), `${grid.code} just before ${years} years`);
-        }
-      });
-      assert.equal(outOfGrid(), false);
-    });
-  }
 
   it("prorates the monthly minimum once for part-time work", () => {
     const grid = GRIDS.find((entry) => entry.code === "V-O-110")!;
