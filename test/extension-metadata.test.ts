@@ -106,7 +106,7 @@ const EXTENSIONS: Record<string, Record<string, string>> = {
   "1000-cabinets-avocats": { "2025.1": "2025-04-26" },
   "1077-negoce-produits-du-sol-engrais": { "2025.1": "2025-06-12" },
   "1147-cabinets-medicaux": { "2024.1": "2024-06-01", "2024.2": "2024-06-01" },
-  "1182-ports-plaisance": { "2025.1": "2025-10-15" },
+  "1182-ports-plaisance": { "2025.1": "2025-10-15", "2025.2": "2025-10-15" },
   "1267-patisserie": { "2025.1": "2025-04-26", "2026.1": "2026-04-17" },
   "1307-exploitation-cinematographique": { "2025.1": "2025-06-07" },
   "1316-tourisme-social-familial": { "2026.1": "2026-02-24" },
@@ -176,9 +176,22 @@ const EXTENSIONS: Record<string, Record<string, string>> = {
   "3238-production-transformation-papiers-cartons": { "2026.1": "2026-05-08", "2026.2": "2026-05-08" },
   "3245-operateurs-voyages-guides": { "2025.1": "2025-04-24" },
   "3248-metallurgie": { "2026.1": "2026-06-05", "2026.2": "2026-06-05", "2026.3": "2026-06-05", "2026.4": "2026-06-05", "2026.5": "2026-06-05", "2026.6": "2026-06-05" },
+  "3249-carrieres-materiaux": { "2026.4": "2026-09-04" }, // avenant n° 2 du 30 avril 2026 (préfabrication béton)
   "3251-bijouterie-joaillerie-horlogerie": { "2025.1": "2025-09-19" },
   "3255-boulangerie-industrielle": { "2026.1": "2026-04-17" },
   "3256-etablissements-soins-veterinaires": { "2026.1": "2026-04-17" },
+  // Agreements added in November 2026 (extension orders read on Légifrance).
+  "0303-couture-parisienne": { "2024.1": "2024-06-20" },
+  "0614-serigraphie": { "2023.1": "2023-09-22" },
+  "0637-industries-commerce-recuperation": { "2026.1": "2026-01-17" },
+  "0953-charcuterie-detail": { "2026.1": "2026-07-23" },
+  "0998-exploitation-equipements-thermiques": { "2025.1": "2025-12-20" },
+  "1256-cadres-exploitation-equipements-thermiques": { "2025.1": "2025-12-20" },
+  "1285-entreprises-artistiques-culturelles": { "2026.1": "2026-09-19" },
+  "1794-institutions-retraite-complementaire": { "2025.1": "2025-05-31" },
+  // avenant du 15 février 2024: first day of the month after the publication (JORF du 31 mai 2024)
+  "3168-professions-photographie": { "2024.1": "2024-06-01" },
+  "3210-banque-populaire": { "2024.1": "2024-03-16" },
 };
 
 // Agreements whose latest accord is in force but not extended (as of October 2026).

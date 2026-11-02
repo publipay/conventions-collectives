@@ -87,6 +87,6 @@ describe("IDCC 2257 — jeux traditionnels steps after avenant n° 24 first colu
 
   it("orders the versions by effective date", () => {
     const versions = COMPILED_VERSIONS[agreement]!.map((entry) => `${entry.validFrom} ${entry.version}`).sort();
-    assert.deepEqual(versions, ["2025-05-01 2025.1", "2025-07-01 2025.2", "2026-04-01 2026.1"]);
+    assert.deepEqual(versions, ["2025-05-01 2025.1", "2025-07-01 2025.2", "2026-04-01 2026.1", "2026-04-01 2026.2"]);
   });
 });
