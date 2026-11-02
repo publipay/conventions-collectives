@@ -1,5 +1,5 @@
 /**
- * Reads the `maintien de salaire` rules of an agreement version as JourDePaye does: for a motive
+ * Reads the `maintien de salaire` rules of an agreement version as a payroll application does: for a motive
  * and a seniority in months, the eligibility, waiting days, the two periods, the window, the base
  * and the net cap.
  */

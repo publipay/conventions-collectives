@@ -2,7 +2,7 @@
 
 L’objectif de ce projet est de mettre à disposition **l’ensemble des conventions collectives françaises en langage [publicodes](https://publi.codes)**, sous une forme lisible, versionnée et réutilisable dans des outils de calcul.
 
-Le dépôt contient les modèles de conventions collectives, leurs références juridiques, leur compilateur et leurs tests. Il produit le package [`conventions-collectives`](https://www.npmjs.com/package/conventions-collectives), utilisé notamment par JourDePaye pour compléter les règles de [`modele-social`](https://www.npmjs.com/package/modele-social).
+Le dépôt contient les modèles de conventions collectives, leurs références juridiques, leur compilateur et leurs tests. Il produit le package [`conventions-collectives`](https://www.npmjs.com/package/conventions-collectives), qui complète les règles de [`modele-social`](https://www.npmjs.com/package/modele-social).
 
 > **Bêta.** Le package est en cours de constitution : tant que dure la bêta, une version déjà publiée (version de modèle ou version npm) peut encore être corrigée ou réécrite. Les versions npm portent le suffixe `-beta` (par exemple `2026.10.1-beta`), où `2026.10` est l’année et le mois de publication.
 
@@ -64,7 +64,7 @@ Le package expose `COMPILED_VERSIONS`. Chaque version fournit `version`, `validF
 
 `rules/versions.lock.json` conserve l’empreinte de chaque version. Une version publiée ne doit jamais être modifiée ou supprimée : une correction ou une nouvelle grille donne lieu à un nouveau fichier, par exemple `1486-syntec.2025.2.publicodes`.
 
-L’empreinte est calculée à partir de la date d’effet et des règles : SHA-256 de `JSON.stringify({ validFrom, rules })`, tronqué à 16 caractères hexadécimaux. Ce format conserve les empreintes historiques de JourDePaye. Les références juridiques sont exportées, mais ne font pas partie de cette empreinte.
+L’empreinte est calculée à partir de la date d’effet et des règles : SHA-256 de `JSON.stringify({ validFrom, rules })`, tronqué à 16 caractères hexadécimaux. Ce format conserve les empreintes historiques. Les références juridiques sont exportées, mais ne font pas partie de cette empreinte.
 
 Une nouvelle version est ajoutée au verrou lors de sa première compilation. Pendant son développement, vous pouvez retirer son entrée du verrou pour poursuivre les modifications, **uniquement si elle n’a jamais été publiée**. La compilation refuse une modification des règles ou de la date d’effet d’une version verrouillée, ainsi que la disparition de son fichier.
 
@@ -87,7 +87,7 @@ npm install conventions-collectives
 Chaque étiquette Git `v*` publie une version : `v2026.10.1-beta` publie `2026.10.1-beta` sous l’étiquette npm `latest`. Une plage comme `^2026.10.1-beta` n’inclut pas les versions bêta suivantes : épinglez une version exacte. Les versions `2026.11.0` à `2026.11.12-beta`, numérotées par erreur avec le mois de novembre, sont dépréciées : elles restent supérieures aux versions `2026.10.x-beta` dans l’ordre de npm, mais l’étiquette `latest` désigne toujours la dernière version publiée. Le package peut aussi être installé depuis le dépôt public ; pour une installation reproductible, remplacez `<commit>` par le hash complet du commit choisi :
 
 ```sh
-npm install "git+https://github.com/JourDePaye/conventions-collectives.git#<commit>"
+npm install "git+https://github.com/publipay/conventions-collectives.git#<commit>"
 ```
 
 L’installation depuis Git construit le package grâce au script `prepare`. Elle nécessite Node.js 24 ou plus récent, npm et Git. Les applications consommatrices doivent également disposer de versions compatibles de `publicodes` et de `modele-social` ; les tests actuels utilisent `publicodes@1.10.3` et `modele-social@11.1.0`.
@@ -112,7 +112,7 @@ Le package distribue les règles JSON, le JavaScript, les déclarations TypeScri
 Avec Node.js 24 ou plus récent :
 
 ```sh
-git clone https://github.com/JourDePaye/conventions-collectives.git
+git clone https://github.com/publipay/conventions-collectives.git
 cd conventions-collectives
 npm ci
 npm test

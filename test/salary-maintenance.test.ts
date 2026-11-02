@@ -1,5 +1,5 @@
 /**
- * The `maintien de salaire` rules of the agreements that have them, as JourDePaye reads them: every
+ * The `maintien de salaire` rules of the agreements that have them, as a payroll application reads them: every
  * output evaluates for every motive and seniority, and figures of each text (read on Légifrance on
  * 24 October 2026, see each version's sources).
  */

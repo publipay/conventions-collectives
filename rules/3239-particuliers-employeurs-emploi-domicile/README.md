@@ -27,7 +27,7 @@ En mode `réel`, pour un salarié à durée irrégulière ou un accueil occasion
 
 Pour le salarié à domicile, `prestation en nature repas` expose 4,70 € par repas et `prestation en nature logement` 71 €/mois (montant minimal, éventuellement supérieur au contrat). Ces valeurs servent aux déductions **du net**, pas à la diminution du minimum brut ni à l’évaluation sociale automatique des avantages en nature.
 
-Les congés payés et leur régularisation, absences, jours fériés, repos compensateurs, présence de nuit, garde malade de nuit, garde partagée entre employeurs, frais, indemnités d’entretien, majoration liée aux difficultés particulières de l’enfant, prévoyance, ruptures et règles spécifiques aux jeunes travailleurs restent à modéliser. Le package fournit les règles conventionnelles ci-dessus ; JourDePaye conserve leur mapping, la sélection de version, la validation des plannings et l’intégration au bulletin.
+Les congés payés et leur régularisation, absences, jours fériés, repos compensateurs, présence de nuit, garde malade de nuit, garde partagée entre employeurs, frais, indemnités d’entretien, majoration liée aux difficultés particulières de l’enfant, prévoyance, ruptures et règles spécifiques aux jeunes travailleurs restent à modéliser. Le package fournit les règles conventionnelles ci-dessus ; l'application de paie conserve leur mapping, la sélection de version, la validation des plannings et l’intégration au bulletin.
 
 ## Maintien de salaire
 

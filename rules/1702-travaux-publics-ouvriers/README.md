@@ -94,7 +94,7 @@ Ces droits nationaux sont contrôlés par catégorie ouvrière, statut non cadre
 - Le modèle n'active pas la convention partagée `BTP` de `modele-social` : aucune collision de clé ni reprise de ses taux de caisse, intempéries ou OPPBTP. La prévoyance ouvriers est toutefois redéfinie dans la version `2026.3` : 1,72 % employeur, plafonné à trois plafonds de la sécurité sociale, conformément au régime national TP. Les cotisations de caisse et intempéries nécessitent toujours une caisse de rattachement et des taux vérifiés ; elles ne sont pas calculées ici. Préserver les endpoints de droit commun **n'est pas** une validation des cotisations particulières TP.
 - Pas de remplacement des heures supplémentaires légales par un seuil historique de 39 heures. Les endpoints standards de SMIC, majoration d'heures supplémentaires et formation restent inchangés ; la prévoyance employeur est l'exception explicitement redéfinie ci-dessus. Le consommateur conserve les contrôles légaux et gère les accords d'entreprise applicables.
 - L'application anticipée aux signataires, les grilles antérieures aux dates d'ouverture et les grilles postérieures à 2026 ne sont pas fournies.
-- La publication de ce modèle dans le package ne réalise pas son intégration dans JourDePaye. Catalogue applicatif, sélection de version, champs annuels/caisse et lignes du bulletin nécessitent un travail séparé.
+- La publication de ce modèle dans le package ne réalise pas son intégration dans une application de paie. Catalogue applicatif, sélection de version, champs annuels/caisse et lignes du bulletin nécessitent un travail séparé.
 
 ## Provenance et vérification
 

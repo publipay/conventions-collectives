@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "Beta: versioned French collective agreement publicodes rules for modele-social; published versions may still be rewritten",
   "license": "MIT",
-  "author": "JourDePaye",
+  "author": "Publipay",
   "type": "module",
   "engines": {
     "node": ">=24"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JourDePaye/conventions-collectives.git"
+    "url": "git+https://github.com/publipay/conventions-collectives.git"
   },
   "exports": {
     ".": {

@@ -16,7 +16,7 @@ La valeur Publicodes est `maisons d'étudiants` et les règles sont sous `salari
 
 - `classe` accepte les classes 1 à 20 ; la grille associe chaque classe à son coefficient conventionnel ;
 - `valeur annuelle du point` vaut `68,80 €/an` en `2026.3` et `67,78 €/an` en `2025.1` et `2026.2` ;
-- JourDePaye choisit la version selon l'adhésion de l'employeur, les règles n'ont plus d'entrée d'adhésion ni de date ;
+- L'application de paie choisit la version selon l'adhésion de l'employeur, les règles n'ont plus d'entrée d'adhésion ni de date ;
 - `salaire minimum annuel conventionnel` calcule le minimum brut annuel à temps plein et le prorata selon la quotité ;
 - `salaire minimum mensuel indicatif` expose seulement l'équivalent de la garantie annuelle (`minimum annuel / 12`) ;
 - `treizième mois annuel` applique la montée en charge de l'avenant n° 74 : un tiers en 2026, deux tiers en 2027, puis la totalité à partir de 2028, sur une assiette annuelle fournie par l'application ;

@@ -2,7 +2,7 @@
  * Compiles rules/<idcc>-<agreement>/<idcc>-<agreement>.<year>.<revision>.publicodes, and the
  * shared files rules/commun/<name>/<name>.<year>.<revision>.publicodes, whose metadata lists the
  * agreements (`agreements`) that publish the same version.
- * Rule hashes retain the original JourDePaye algorithm for historical payroll results.
+ * Rule hashes retain the original algorithm for historical payroll results.
  * The browser and server load compiled JSON without a YAML parser.
  */
 import { createHash } from "node:crypto";

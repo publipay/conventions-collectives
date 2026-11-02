@@ -345,7 +345,7 @@ salarié . convention collective . propreté . indemnité de transport conventio
 salarié . convention collective . propreté . maintien de salaire:
   titre: Maintien de salaire conventionnel
   description: |
-    Indemnisation complémentaire de l'employeur pendant une absence (article 4.9.1 a). JourDePaye
+    Indemnisation complémentaire de l'employeur pendant une absence (article 4.9.1 a). L'application de paie
     renseigne le motif et l'ancienneté de chaque absence, lit les durées, taux et modalités
     ci-dessous, et retient pour chaque arrêt le plus favorable du maintien légal et du maintien
     conventionnel.

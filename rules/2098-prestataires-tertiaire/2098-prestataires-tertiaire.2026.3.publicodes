@@ -145,7 +145,7 @@ salarié . convention collective . prestataires tertiaires . taux de majoration 
 salarié . convention collective . prestataires tertiaires . maintien de salaire:
   titre: Maintien de salaire conventionnel
   description: |
-    Indemnisation complémentaire de l'employeur pendant une absence (article 18.1 B). JourDePaye
+    Indemnisation complémentaire de l'employeur pendant une absence (article 18.1 B). L'application de paie
     renseigne le motif et l'ancienneté de chaque absence, lit les durées, taux et modalités
     ci-dessous, et retient pour chaque arrêt le plus favorable du maintien légal et du maintien
     conventionnel.

@@ -13,7 +13,7 @@ La version `2026.3` reprend l'accord du **5 mars 2026** (Légifrance `KALITEXT00
 - 31 salaires minima horaires des coefficients 135 à 600 ; conversion en minimum mensuel sur 151,67 heures et proratisation selon la quotité.
 - Prime d’ancienneté de 3 % à 15 % selon 3 à 15 ans d’ancienneté, calculée sur le barème horaire de base de la prime (règle `base prime ancienneté`, coefficients 135 à 340), et non sur le salaire minimum horaire (versions 2024.3 et 2026.3).
 - Prime de vacances de 575 €/an (2024.3) ou 600 €/an (2026.3), indemnité journalière de poste de 5,20 €/jour et panier de nuit de 11 €/nuit.
-- Détection des coefficients hors grille (plus d'entrée d'adhésion : JourDePaye choisit la version selon l'employeur).
+- Détection des coefficients hors grille (plus d'entrée d'adhésion : l'application de paie choisit la version selon l'employeur).
 
 ## Audit paie
 

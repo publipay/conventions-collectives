@@ -39,7 +39,7 @@ Préfixe : `salarié . convention collective . restauration collective` ; valeur
 - **Détachement temporaire** : jours validés, prime entreprise au moins égale à 4 €/jour, dès le premier jour. Les exclusions (fermeture provisoire et tournants), l'écrit, les durées maximales et accords de prolongation, les limites de périodes et le remboursement des transports doivent être contrôlés séparément. Le modèle ne plafonne pas artificiellement la rémunération des jours effectivement dus.[14]
 - **Paritarisme** : sortie **annuelle par entreprise**, 0,016 % de la masse salariale N−1 obligatoire. Ce n'est ni une cotisation mensuelle par salarié ni un montant automatiquement ajouté au total employeur ; la collecte et toute allocation interne sont à gérer séparément.[15]
 
-Les booléens d'éligibilité sont `non` par défaut : le consommateur doit les renseigner, et non conclure que l'obligation est inexistante. Les sorties de primes sont autonomes : elles ne fixent pas automatiquement le brut ni les rubriques d'un bulletin JourDePaye.
+Les booléens d'éligibilité sont `non` par défaut : le consommateur doit les renseigner, et non conclure que l'obligation est inexistante. Les sorties de primes sont autonomes : elles ne fixent pas automatiquement le brut ni les rubriques d'un bulletin de paie.
 
 ## Protection sociale, héritage et limites
 

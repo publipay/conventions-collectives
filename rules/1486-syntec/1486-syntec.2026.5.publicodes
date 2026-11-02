@@ -4,7 +4,7 @@
 # Version 2026.4, fusionnée avec modele-social.
 # Révision 2026.4 : ajoute à la version 2026.3, à date d'effet identique, le maintien de salaire
 # des articles 9.2 et 9.3 (maladie, accident, maternité, adoption, paternité), décrit par les
-# règles `maintien de salaire` que JourDePaye évalue pour chaque absence.
+# règles `maintien de salaire` que l'application de paie évalue pour chaque absence.
 # Révision 2026.3 : ajoute à la version 2026.2, à date d'effet identique, les congés d'ancienneté
 # de l'article 5.1 (en jours ouvrés).
 # Révision 2026.5 : ajoute à la version 2026.4, à date d'effet identique, les indemnités de
@@ -193,7 +193,7 @@ salarié . convention collective . syntec . maintien de salaire:
   titre: Maintien de salaire conventionnel
   description: |
     Indemnisation complémentaire de l'employeur pendant une absence pour maladie, accident,
-    maternité, adoption ou paternité (articles 9.2 et 9.3). JourDePaye renseigne le motif et
+    maternité, adoption ou paternité (articles 9.2 et 9.3). L'application de paie renseigne le motif et
     l'ancienneté de chaque absence, lit les durées, taux et modalités ci-dessous, et retient pour
     chaque arrêt le plus favorable du maintien légal et du maintien conventionnel.
   applicable si: convention collective = 'syntec'

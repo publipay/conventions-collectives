@@ -91,7 +91,7 @@ salarié . convention collective . bricolage . coefficient hors grille:
 salarié . convention collective . bricolage . maintien de salaire:
   titre: Maintien de salaire conventionnel
   description: |
-    Indemnisation complémentaire de l'employeur pendant une absence (articles 7.1 et 7.2, annexes agents de maîtrise et cadres). JourDePaye
+    Indemnisation complémentaire de l'employeur pendant une absence (articles 7.1 et 7.2, annexes agents de maîtrise et cadres). L'application de paie
     renseigne le motif et l'ancienneté de chaque absence, lit les durées, taux et modalités
     ci-dessous, et retient pour chaque arrêt le plus favorable du maintien légal et du maintien
     conventionnel.

@@ -7,7 +7,7 @@
 # par erreur le barème 2025 (22 230 € à 60 690 €) : même validFrom, révision supérieure.
 #
 # Le protocole est « en vigueur non étendu » : il lie les employeurs signataires (FFA) ou
-# adhérents, pas les autres : JourDePaye ne charge cette version que pour un employeur adhérent
+# adhérents, pas les autres : l'application de paie ne charge cette version que pour un employeur adhérent
 # (pas de métadonnée `extension`).
 
 # Date d'application du protocole : « à effet du 1er janvier 2026 » (article 1er).
@@ -110,7 +110,7 @@ salarié . convention collective . sociétés assurances . niveau hors grille:
 salarié . convention collective . sociétés assurances . maintien de salaire:
   titre: Maintien de salaire conventionnel
   description: |
-    Indemnisation complémentaire de l'employeur pendant une absence (articles 82 c et 86 c). JourDePaye
+    Indemnisation complémentaire de l'employeur pendant une absence (articles 82 c et 86 c). L'application de paie
     renseigne le motif et l'ancienneté de chaque absence, lit les durées, taux et modalités
     ci-dessous, et retient pour chaque arrêt le plus favorable du maintien légal et du maintien
     conventionnel.
