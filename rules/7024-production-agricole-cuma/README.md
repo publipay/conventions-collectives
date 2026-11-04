@@ -18,6 +18,8 @@ La source fixe un minimum horaire. Aucune conversion automatique en minimum mens
 
 ## Audit paie et limites
 
+Les salariés de cette convention relèvent du régime agricole (Mutualité sociale agricole). Ce modèle ne couvre que la grille conventionnelle : combiné à `modele-social`, il donne les cotisations du régime général, et non celles de la MSA.
+
 L'avenant salarial, le conteneur officiel IDCC 7024, les accords de protection sociale et de formation professionnelle ainsi que leurs éventuels arrêtés d'extension ont été recherchés pour les changements de cotisations salarié et employeur, assiettes, taux, plafonds, tranches, forfaits, santé, prévoyance, retraite complémentaire, formation professionnelle, AT/MP, primes, indemnités, frais et avantages en nature. Aucun taux ou assiette conventionnel générique supplémentaire, applicable à toute la branche et calculable avec les seules entrées de ce modèle, n'a été retenu. Les cotisations légales, la santé, la prévoyance, la retraite, la formation, l'AT/MP et les contributions conventionnelles éventuelles restent externes et ne sont pas remplacées par zéro.
 
 Les primes d'ancienneté, primes et indemnités liées aux travaux agricoles, déplacements, repas, astreintes, heures supplémentaires, congés, avantages en nature et frais dépendent de la situation et des accords territoriaux ou filières ; ils ne sont pas extrapolés. Les accords régionaux ou départementaux et les filières agricoles ayant des garanties plus favorables nécessitent une entrée de périmètre distincte.
