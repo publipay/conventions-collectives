@@ -90,7 +90,7 @@ Chaque étiquette Git `v*` publie une version : `v2026.10.1-beta` publie `2026.1
 npm install "git+https://github.com/publipay/conventions-collectives.git#<commit>"
 ```
 
-L’installation depuis Git construit le package grâce au script `prepare`. Elle nécessite Node.js 24 ou plus récent, npm et Git. Les applications consommatrices doivent également disposer de versions compatibles de `publicodes` et de `modele-social` ; les tests actuels utilisent `publicodes@1.10.3` et `modele-social@11.1.0`.
+L’installation depuis Git construit le package grâce au script `prepare`. Elle nécessite Node.js 24 ou plus récent, npm et Git. Les applications consommatrices doivent également disposer de versions compatibles de `publicodes` et de `modele-social` ; les tests actuels utilisent `publicodes@1.10.4` et `modele-social@11.1.0`.
 
 Exemple de chargement d’une version précise :
 
