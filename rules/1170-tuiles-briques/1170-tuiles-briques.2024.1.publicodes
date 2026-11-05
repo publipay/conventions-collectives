@@ -1,0 +1,268 @@
+# Industrie des tuiles et briques (IDCC 1170).
+# Version 2024.1 : garantie annuelle des ouvriers et ETAM au 1er janvier 2024, salaires des cadres de 2020.
+validFrom: 2024-01-01
+extension: 2024-11-07
+sources:
+  - >-
+    Avenant n° 18 du 26 juin 2024 à l'accord du 13 février 2004 : rémunérations minimales annuelles garanties des ouvriers et ETAM à compter du 1er janvier 2024 (article 1er) et barème de la prime d'ancienneté (article 2), étendu par arrêté du 5 novembre 2024 (JORF du 7 novembre 2024).
+  - >-
+    https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000050427949
+  - >-
+    Avenant n° 52 du 8 octobre 2020, article 1er : salaires mensuels minima des cadres à partir du 1er janvier 2020, point à 6,269 €, étendu par arrêté du 8 février 2021 (JORF du 17 février 2021), le dernier barème des cadres publié sur Légifrance au 5 novembre 2026.
+  - >-
+    https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000043251334
+  - >-
+    Accord du 13 février 2004 relatif à la réforme de la classification, articles 5 à 7 : définition de la garantie annuelle, dont la prime d'ancienneté est exclue.
+  - >-
+    https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000005657492
+  - >-
+    Convention collective nationale de l'industrie des tuiles et briques du 17 février 1982, conteneur KALICONT000005635251.
+---
+salarié . convention collective . tuiles et briques:
+  titre: Industrie des tuiles et briques (IDCC 1170)
+  valeur: convention collective = 'tuiles et briques'
+
+salarié . convention collective . tuiles et briques . niveau:
+  titre: Classification
+  description: Groupe et niveau des ouvriers et ETAM, de 1.A à 5.D, ou coefficient des cadres, de cadre 300 à cadre 652.
+  applicable si: convention collective = 'tuiles et briques'
+  par défaut: "''"
+
+salarié . convention collective . tuiles et briques . ancienneté dans l'entreprise:
+  titre: Ancienneté dans l'entreprise
+  description: Ancienneté retenue par la prime, avec des paliers à 3, 6, 9, 12 et 15 ans.
+  applicable si: convention collective = 'tuiles et briques'
+  unité: an
+  par défaut: 0 an
+
+salarié . convention collective . tuiles et briques . rémunération minimale annuelle garantie:
+  titre: Rémunération minimale annuelle garantie des ouvriers et ETAM
+  description: Montant annuel brut à temps plein du groupe et du niveau, 0 pour les cadres.
+  applicable si: convention collective = 'tuiles et briques'
+  unité: €/an
+  variations:
+    - si: niveau = '1.A'
+      alors: 23018 €/an
+    - si: niveau = '1.B'
+      alors: 23552 €/an
+    - si: niveau = '1.C'
+      alors: 23646 €/an
+    - si: niveau = '1.D'
+      alors: 24205 €/an
+    - si: niveau = '2.A'
+      alors: 24224 €/an
+    - si: niveau = '2.B'
+      alors: 24902 €/an
+    - si: niveau = '2.C'
+      alors: 25830 €/an
+    - si: niveau = '2.D'
+      alors: 27018 €/an
+    - si: niveau = '3.A'
+      alors: 27070 €/an
+    - si: niveau = '3.B'
+      alors: 27648 €/an
+    - si: niveau = '3.C'
+      alors: 29017 €/an
+    - si: niveau = '3.D'
+      alors: 30646 €/an
+    - si: niveau = '4.A'
+      alors: 30700 €/an
+    - si: niveau = '4.B'
+      alors: 31550 €/an
+    - si: niveau = '4.C'
+      alors: 33295 €/an
+    - si: niveau = '4.D'
+      alors: 35660 €/an
+    - si: niveau = '5.A'
+      alors: 35709 €/an
+    - si: niveau = '5.B'
+      alors: 37045 €/an
+    - si: niveau = '5.C'
+      alors: 39854 €/an
+    - si: niveau = '5.D'
+      alors: 43257 €/an
+    - sinon: 0 €/an
+
+salarié . convention collective . tuiles et briques . salaire minimum des cadres:
+  titre: Salaire mensuel minimum des cadres
+  description: Montant brut à temps plein du coefficient, 0 pour les ouvriers et ETAM.
+  applicable si: convention collective = 'tuiles et briques'
+  unité: €/mois
+  variations:
+    - si: niveau = 'cadre 300'
+      alors: 1880.70 €/mois
+    - si: niveau = 'cadre 322'
+      alors: 2018.62 €/mois
+    - si: niveau = 'cadre 344'
+      alors: 2156.54 €/mois
+    - si: niveau = 'cadre 366'
+      alors: 2294.45 €/mois
+    - si: niveau = 'cadre 388'
+      alors: 2432.37 €/mois
+    - si: niveau = 'cadre 410'
+      alors: 2570.29 €/mois
+    - si: niveau = 'cadre 432'
+      alors: 2708.21 €/mois
+    - si: niveau = 'cadre 454'
+      alors: 2846.13 €/mois
+    - si: niveau = 'cadre 476'
+      alors: 2984.04 €/mois
+    - si: niveau = 'cadre 498'
+      alors: 3121.96 €/mois
+    - si: niveau = 'cadre 520'
+      alors: 3259.88 €/mois
+    - si: niveau = 'cadre 542'
+      alors: 3397.80 €/mois
+    - si: niveau = 'cadre 564'
+      alors: 3535.72 €/mois
+    - si: niveau = 'cadre 586'
+      alors: 3673.63 €/mois
+    - si: niveau = 'cadre 608'
+      alors: 3811.55 €/mois
+    - si: niveau = 'cadre 630'
+      alors: 3949.47 €/mois
+    - si: niveau = 'cadre 652'
+      alors: 4087.39 €/mois
+    - sinon: 0 €/mois
+
+salarié . convention collective . tuiles et briques . salaire minimum conventionnel:
+  titre: Salaire minimum mensuel conventionnel
+  description: Douzième de la garantie annuelle des ouvriers et ETAM, ou salaire minimum des cadres, proratisé selon la quotité de travail.
+  applicable si: convention collective = 'tuiles et briques'
+  unité: €/mois
+  valeur: (rémunération minimale annuelle garantie / 12 mois/an + salaire minimum des cadres) * contrat . temps de travail . quotité
+
+salarié . convention collective . tuiles et briques . niveau hors grille:
+  titre: Classification absente des barèmes
+  applicable si: convention collective = 'tuiles et briques'
+  toutes ces conditions:
+    - rémunération minimale annuelle garantie = 0 €/an
+    - salaire minimum des cadres = 0 €/mois
+
+salarié . convention collective . tuiles et briques . groupe:
+  titre: Groupe des ouvriers et ETAM
+  description: Premier chiffre de la classification, 0 pour les cadres.
+  applicable si: convention collective = 'tuiles et briques'
+  unité: unité
+  variations:
+    - si:
+        une de ces conditions:
+          - niveau = '1.A'
+          - niveau = '1.B'
+          - niveau = '1.C'
+          - niveau = '1.D'
+      alors: 1
+    - si:
+        une de ces conditions:
+          - niveau = '2.A'
+          - niveau = '2.B'
+          - niveau = '2.C'
+          - niveau = '2.D'
+      alors: 2
+    - si:
+        une de ces conditions:
+          - niveau = '3.A'
+          - niveau = '3.B'
+          - niveau = '3.C'
+          - niveau = '3.D'
+      alors: 3
+    - si:
+        une de ces conditions:
+          - niveau = '4.A'
+          - niveau = '4.B'
+          - niveau = '4.C'
+          - niveau = '4.D'
+      alors: 4
+    - si:
+        une de ces conditions:
+          - niveau = '5.A'
+          - niveau = '5.B'
+          - niveau = '5.C'
+          - niveau = '5.D'
+      alors: 5
+    - sinon: 0
+
+salarié . convention collective . tuiles et briques . prime d'ancienneté:
+  titre: Prime d'ancienneté
+  description: Prime mensuelle des ouvriers et ETAM selon le groupe et l'ancienneté, proratisée selon la quotité de travail, en dehors de la garantie annuelle. Le barème n'en prévoit pas pour les cadres.
+  applicable si: convention collective = 'tuiles et briques'
+  unité: €/mois
+  produit:
+    - temps plein
+    - contrat . temps de travail . quotité
+
+salarié . convention collective . tuiles et briques . prime d'ancienneté . temps plein:
+  titre: Prime d'ancienneté à temps plein
+  unité: €/mois
+  variations:
+    - si: groupe = 1
+      alors:
+        variations:
+          - si: ancienneté dans l'entreprise >= 15 an
+            alors: 115 €/mois
+          - si: ancienneté dans l'entreprise >= 12 an
+            alors: 92 €/mois
+          - si: ancienneté dans l'entreprise >= 9 an
+            alors: 69 €/mois
+          - si: ancienneté dans l'entreprise >= 6 an
+            alors: 46 €/mois
+          - si: ancienneté dans l'entreprise >= 3 an
+            alors: 23 €/mois
+          - sinon: 0 €/mois
+    - si: groupe = 2
+      alors:
+        variations:
+          - si: ancienneté dans l'entreprise >= 15 an
+            alors: 135 €/mois
+          - si: ancienneté dans l'entreprise >= 12 an
+            alors: 108 €/mois
+          - si: ancienneté dans l'entreprise >= 9 an
+            alors: 81 €/mois
+          - si: ancienneté dans l'entreprise >= 6 an
+            alors: 54 €/mois
+          - si: ancienneté dans l'entreprise >= 3 an
+            alors: 27 €/mois
+          - sinon: 0 €/mois
+    - si: groupe = 3
+      alors:
+        variations:
+          - si: ancienneté dans l'entreprise >= 15 an
+            alors: 150 €/mois
+          - si: ancienneté dans l'entreprise >= 12 an
+            alors: 120 €/mois
+          - si: ancienneté dans l'entreprise >= 9 an
+            alors: 90 €/mois
+          - si: ancienneté dans l'entreprise >= 6 an
+            alors: 60 €/mois
+          - si: ancienneté dans l'entreprise >= 3 an
+            alors: 30 €/mois
+          - sinon: 0 €/mois
+    - si: groupe = 4
+      alors:
+        variations:
+          - si: ancienneté dans l'entreprise >= 15 an
+            alors: 200 €/mois
+          - si: ancienneté dans l'entreprise >= 12 an
+            alors: 160 €/mois
+          - si: ancienneté dans l'entreprise >= 9 an
+            alors: 120 €/mois
+          - si: ancienneté dans l'entreprise >= 6 an
+            alors: 80 €/mois
+          - si: ancienneté dans l'entreprise >= 3 an
+            alors: 40 €/mois
+          - sinon: 0 €/mois
+    - si: groupe = 5
+      alors:
+        variations:
+          - si: ancienneté dans l'entreprise >= 15 an
+            alors: 250 €/mois
+          - si: ancienneté dans l'entreprise >= 12 an
+            alors: 200 €/mois
+          - si: ancienneté dans l'entreprise >= 9 an
+            alors: 150 €/mois
+          - si: ancienneté dans l'entreprise >= 6 an
+            alors: 100 €/mois
+          - si: ancienneté dans l'entreprise >= 3 an
+            alors: 50 €/mois
+          - sinon: 0 €/mois
+    - sinon: 0 €/mois
