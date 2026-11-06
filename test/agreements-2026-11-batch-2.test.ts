@@ -266,9 +266,9 @@ describe("industrie des tuiles et briques (IDCC 1170)", () => {
     "5.A": 35709, "5.B": 37045, "5.C": 39854, "5.D": 43257,
   };
   const executives: [number, number][] = [
-    [300, 1880.7], [322, 2018.62], [344, 2156.54], [366, 2294.45], [388, 2432.37], [410, 2570.29],
-    [432, 2708.21], [454, 2846.13], [476, 2984.04], [498, 3121.96], [520, 3259.88], [542, 3397.8],
-    [564, 3535.72], [586, 3673.63], [608, 3811.55], [630, 3949.47], [652, 4087.39],
+    [300, 1895.75], [322, 2034.77], [344, 2173.79], [366, 2312.81], [388, 2451.83], [410, 2590.85],
+    [432, 2729.87], [454, 2868.9], [476, 3007.92], [498, 3146.94], [520, 3285.96], [542, 3424.98],
+    [564, 3564], [586, 3703.02], [608, 3842.04], [630, 3981.07], [652, 4120.09],
   ];
   const bonuses: Record<string, number[]> = {
     "1": [23, 46, 69, 92, 115], "2": [27, 54, 81, 108, 135], "3": [30, 60, 90, 120, 150],
@@ -300,7 +300,7 @@ describe("industrie des tuiles et briques (IDCC 1170)", () => {
       assert.equal(cents(engine.evaluate(`${ns} . salaire minimum conventionnel`).nodeValue), amount);
     }
     set("cadre 300", 0, "50%");
-    assert.equal(cents(engine.evaluate(`${ns} . salaire minimum conventionnel`).nodeValue), 940.35);
+    assert.equal(cents(engine.evaluate(`${ns} . salaire minimum conventionnel`).nodeValue), 947.88);
     for (const invalid of ["6.A", "1.E", "cadre 301"]) {
       set(invalid);
       assert.equal(engine.evaluate(`${ns} . niveau hors grille`).nodeValue, true, invalid);
