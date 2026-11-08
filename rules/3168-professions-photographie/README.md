@@ -20,3 +20,7 @@ La valeur Publicodes est `photographie` ; les règles sont sous `salarié . conv
 - Avenant du 15 février 2024 relatif aux salaires minima, article 1er (salaires minima mensuels bruts pour 151,67 heures, coefficients 150 à 450), applicable le 1er mars 2024 aux entreprises adhérentes aux organisations signataires et, pour les autres, le premier jour du mois suivant la publication de l'arrêté d'extension (arrêté du 13 mai 2024, JORF du 31 mai 2024), soit le 1er juin 2024. Aucun accord de salaires postérieur n'est publié sur Légifrance au 2 novembre 2026.
 - https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000049605869
 - Convention collective nationale des professions de la photographie du 13 février 2013, conteneur KALICONT000027961162.
+
+## Financement du paritarisme
+
+La révision 2024.2, à la date d'effet de la version 2024.1, ajoute `financement du paritarisme` : contribution des entreprises au financement de l'amélioration de la négociation et de l'information : 0,05 % de la masse salariale brute (accord du 12 juin 2007). Le minimum annuel n'est pas calculé (KALITEXT000018562985). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

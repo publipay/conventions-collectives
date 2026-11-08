@@ -1,7 +1,8 @@
 /**
  * Joint bodies (paritarisme) contributions added in November 2026 to 538, 843, 959, 993, 1090,
  * 1147, 1286 and 1316, then 1405, 1505, 1518, 1619, 1996, 2021, 2264, 2332, 3203 and 3237, then 292, 1261, 1501, 1517, 1631, 1686, 1978, 2098, 3127
- * and 3213, then 1267, 1285, 1516, 1534, 1951, 2336, 2941, 3097, 3241, 3242 and 3254. Amounts are computed from the texts cited in each version's sources, for
+ * and 3213, then 1267, 1285, 1516, 1534, 1951, 2336, 2941, 3097, 3241, 3242 and 3254, then 86, 637, 953, 1000, 1043, 1404, 1487, 1561, 1880, 2121, 2148, 2596, 2691,
+ * 3013, 3032, 3168 and 3252. Amounts are computed from the texts cited in each version's sources, for
  * a gross salary of 3 000 €/mois unless stated otherwise (2026 ceiling: 4 005 €/mois).
  */
 import assert from "node:assert/strict";
@@ -435,6 +436,188 @@ const CASES: Case[] = [
     source: "KALITEXT000050700202",
     // 3 000 € × 0.15 %.
     amount: 4.5,
+  },
+  {
+    model: "0086-publicite",
+    value: "publicité",
+    previous: "2025.3",
+    revision: "2025.4",
+    source: "KALITEXT000038418066",
+    // 3 000 € × 0.03 %.
+    amount: 0.9,
+  },
+  {
+    model: "0637-industries-commerce-recuperation",
+    value: "récupération",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000050974559",
+    // 3 000 € × 0.06 %.
+    amount: 1.8,
+  },
+  {
+    model: "0953-charcuterie-detail",
+    value: "charcuterie de détail",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000017842201",
+    // 3 000 € × 0.45 %.
+    amount: 13.5,
+  },
+  {
+    model: "1000-cabinets-avocats",
+    value: "cabinets d'avocats",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000047865919",
+    // 3 000 € × 0.06 %; above the ceiling, 4 005 € × 0.06 % = 2.403 €.
+    amount: 1.8,
+    others: [[{ "salarié . contrat . salaire brut": "8000 €/mois" }, 2.4]],
+  },
+  {
+    model: "1043-gardiens-concierges-employes-immeubles",
+    value: "gardiens concierges et employés d'immeubles",
+    previous: "2026.3",
+    revision: "2026.7",
+    source: "KALITEXT000021180979",
+    // 3 000 € × 0.02 %.
+    amount: 0.6,
+  },
+  {
+    model: "1043-gardiens-concierges-employes-immeubles",
+    value: "gardiens concierges et employés d'immeubles",
+    previous: "2026.6",
+    revision: "2026.8",
+    source: "KALITEXT000021180979",
+    // 3 000 € × 0.02 %.
+    amount: 0.6,
+  },
+  {
+    model: "1404-maintenance-distribution-location",
+    value: "maintenance distribution location",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000025202009",
+    // 3 000 € × 0.07 %.
+    amount: 2.1,
+  },
+  {
+    model: "1487-commerce-detail-horlogerie-bijouterie",
+    value: "commerce de détail horlogerie bijouterie",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000038616327",
+    // 3 000 € × 0.08 %.
+    amount: 2.4,
+  },
+  {
+    model: "1561-cordonnerie-multiservice",
+    value: "cordonnerie multiservice",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000026696198",
+    // 3 000 € × 0.15 %.
+    amount: 4.5,
+  },
+  {
+    model: "1880-commerce-ameublement",
+    value: "commerce de l'ameublement",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000023556576",
+    // 3 000 € × 0.02 %.
+    amount: 0.6,
+  },
+  {
+    model: "2121-edition",
+    value: "édition",
+    previous: "2026.1",
+    revision: "2026.3",
+    source: "KALITEXT000052483087",
+    // 3 000 € × 0.07 %.
+    amount: 2.1,
+  },
+  {
+    model: "2121-edition",
+    value: "édition",
+    previous: "2026.2",
+    revision: "2026.4",
+    source: "KALITEXT000052483087",
+    // 3 000 € × 0.07 %.
+    amount: 2.1,
+  },
+  {
+    model: "2148-telecommunications",
+    value: "télécommunications",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000052119246",
+    // 3 000 € × 0.023 % = 0.69 €; the companies of fewer than 11 employees pay a flat amount instead.
+    amount: 0.69,
+    others: [[{ "entreprise . salariés . effectif": 10 }, null]],
+  },
+  {
+    model: "2596-coiffure",
+    value: "coiffure",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000021213086",
+    // 3 000 € × 0.15 %.
+    amount: 4.5,
+  },
+  {
+    model: "2691-enseignement-prive-independant",
+    value: "enseignement privé indépendant",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000053504343",
+    // 3 000 € × 0.07 %.
+    amount: 2.1,
+  },
+  {
+    model: "3013-librairie",
+    value: "librairie",
+    previous: "2026.3",
+    revision: "2026.4",
+    source: "KALITEXT000018878622",
+    // 3 000 € × 0.05 %.
+    amount: 1.5,
+  },
+  {
+    model: "3032-esthetique-cosmetique",
+    value: "esthétique cosmétique",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000027036235",
+    // 3 000 € × 0.06 %.
+    amount: 1.8,
+  },
+  {
+    model: "3168-professions-photographie",
+    value: "photographie",
+    previous: "2024.1",
+    revision: "2024.2",
+    source: "KALITEXT000018562985",
+    // 3 000 € × 0.05 %.
+    amount: 1.5,
+  },
+  {
+    model: "3252-entreprises-creation-evenement",
+    value: "entreprises au service de la création et de l'événement",
+    previous: "2025.3",
+    revision: "2025.4",
+    source: "KALITEXT000050299244",
+    // 3 000 € × 0.1 %.
+    amount: 3,
+  },
+  {
+    model: "3252-entreprises-creation-evenement",
+    value: "entreprises au service de la création et de l'événement",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000050299244",
+    // 3 000 € × 0.1 %.
+    amount: 3,
   },
 ];
 

@@ -59,3 +59,7 @@ Les classifications de 1 843 € à 1 855 € (niveau 1 technique, esthétique-c
 ## Maintien de salaire
 
 L’article 17 de la convention ne règle que les formalités ; l’incapacité de travail relève du régime de prévoyance (avenant n° 8) : le maintien légal s’applique.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : contribution des entreprises au financement du dialogue social : 0,15 % de la masse salariale (article 2 de l'accord du 17 juin 2009). Le montant mensuel est une provision : 0,15 % du brut du mois (KALITEXT000021213086). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

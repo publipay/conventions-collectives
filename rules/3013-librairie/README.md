@@ -55,3 +55,7 @@ Les primes, indemnités, ancienneté, treizième mois, intéressement, épargne 
 - Accord du 25 novembre 2025 relatif aux salaires minima et à la prime d'ancienneté, Légifrance, KALITEXT000054034034.
 - Arrêté d'extension du 24 février 2026, Journal officiel du 5 mars 2026, Légifrance.
 - Convention collective nationale de la librairie du 24 mars 2011, IDCC 3013, Légifrance.
+
+## Financement du paritarisme
+
+La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `financement du paritarisme` : cotisation des entreprises au fonds de développement du paritarisme : 0,05 % des salaires soumis à cotisations (accord du 5 décembre 2005). Le montant mensuel est une provision : 0,05 % du brut du mois (KALITEXT000018878622). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

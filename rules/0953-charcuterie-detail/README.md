@@ -20,3 +20,7 @@ La valeur Publicodes est `charcuterie de détail` ; les règles sont sous `salar
 - Avenant n° 64 du 15 janvier 2026 relatif aux salaires au 1er janvier 2026, article 1er (salaires horaires bruts des coefficients 150 à 330), étendu par arrêté du 17 juillet 2026 (JORF du 23 juillet 2026) sous réserve du SMIC. Les taux horaires sont convertis en minima mensuels pour 151,67 heures, arrondis au centime.
 - https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054553974
 - Convention collective nationale de la charcuterie de détail du 1er décembre 1977, conteneur KALICONT000005635375.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution des employeurs au financement du paritarisme et du dialogue social : 0,45 % des revenus d'activité soumis à cotisations, collectée par l'Urssaf (article 38.4 de la convention) (KALITEXT000017842201). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

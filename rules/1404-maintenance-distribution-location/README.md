@@ -22,3 +22,7 @@ Le modèle ne déduit pas le niveau du poste et ne modélise pas les primes, maj
 ## Tests
 
 `test/maintenance-distribution-location.test.ts` vérifie la date et les sources, les 22 niveaux de la grille, la proratisation à temps partiel, les niveaux hors grille et l’inapplicabilité pour une autre convention.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution des entreprises au financement du dialogue social : 0,07 % de la masse salariale (article 4 de l'accord du 14 septembre 2011). Le minimum annuel de 100 € par entreprise n'est pas calculé ; le montant mensuel est une provision : 0,07 % du brut du mois (KALITEXT000025202009). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

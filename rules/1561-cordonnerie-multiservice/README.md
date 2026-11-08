@@ -25,3 +25,7 @@ Ces omissions évitent d'inventer des paramètres de paie qui dépendent d'accor
 - Accord du 18 février 2026 relatif aux salaires minima, IDCC 1561, Légifrance.
 - Arrêté d'extension du 4 mai 2026 publié au Journal officiel.
 - Convention collective nationale de la cordonnerie multiservice du 7 août 1989 et textes de rattachement publiés sur Légifrance.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution des entreprises au financement du dialogue social : 0,15 % de la masse salariale (accord du 22 novembre 2011). Le montant mensuel est une provision : 0,15 % du brut du mois (KALITEXT000026696198). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

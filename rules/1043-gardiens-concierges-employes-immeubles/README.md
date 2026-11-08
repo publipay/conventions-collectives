@@ -60,3 +60,7 @@ Le modèle ne déduit pas le coefficient, les heures contractuelles, les unités
 La révision 2026.5 ajoute le maintien de salaire conventionnel (article 30.1) sous `maintien de salaire`, lu sur Légifrance le 24 octobre 2026 : les durées, taux, carences et modalités sont dans les sources de la version et dans `test/salary-maintenance-2.test.ts`. L’interface est décrite dans le README du package.
 
 La révision 2026.6 ajoute l'indemnité de licenciement (article 16) et les indemnités de départ et de mise à la retraite (article 17), sous `indemnité de rupture`, lus sur Légifrance le 28 octobre 2026 : les barèmes, seuils d'ancienneté et plafonds sont dans les sources de la version et dans `test/termination-indemnity.test.ts`, en mois de salaire de référence. Aucun montant propre pour la rupture conventionnelle.
+
+## Financement du paritarisme
+
+Les révisions 2026.7 (version 2026.3) et 2026.8 (version 2026.6), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : contribution conventionnelle des employeurs au paritarisme : 0,02 % des salaires bruts soumis à cotisations (article 7 de la convention). Le montant mensuel est une provision : 0,02 % du brut du mois (KALITEXT000021180979). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

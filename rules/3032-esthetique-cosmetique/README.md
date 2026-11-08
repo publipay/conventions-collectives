@@ -28,3 +28,7 @@ Le fichier [2026.1](3032-esthetique-cosmetique.2026.1.publicodes) entre en vigue
 ## Limites
 
 Les autres dispositions conventionnelles (majorations de dimanche et de jours fériés, indemnités et prévoyance) ne sont pas calculées automatiquement. Les montants de la grille sont ceux de l'avenant n° 43 ; le salaire effectivement dû reste au moins égal au SMIC applicable.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution des entreprises au financement du dialogue social : 0,06 % de la masse salariale brute soumise à cotisations (article 5, point 1.2.1 de la convention), gérée par l'APANECEP (KALITEXT000027036235). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

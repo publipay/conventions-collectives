@@ -20,3 +20,7 @@ La valeur Publicodes est `enseignement privé indépendant` ; les règles sont s
 - Avenant n° 69 du 13 juin 2025 relatif à la négociation annuelle obligatoire (revalorisation de 1,8 % des grilles), annexes 1-A (personnel administratif et de service), 1-B (encadrement pédagogique, valeurs identiques) et 1-C (personnel enseignant) : minima annuels bruts par échelon A, B et C, les montants mensuels étant indicatifs ; article 3 : entrée en vigueur le premier jour du mois suivant la publication de l'arrêté d'extension, arrêté du 6 février 2026 (JORF du 12 février 2026), soit le 1er mars 2026. Les annexes 1-D (enseignants des cycles diplômants avec obligation de recherche) et 1-E (enseignement à distance) ne sont pas modélisées.
 - https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000052531975
 - Convention collective nationale de l'enseignement privé indépendant du 27 novembre 2007, conteneur KALICONT000019593660.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution des entreprises au financement du paritarisme : 0,07 % de la masse salariale (article 2.3 de la convention, rédigé par l'avenant n° 67 du 8 juillet 2025), gérée par l'APEPI. Le montant mensuel est une provision : 0,07 % du brut du mois (KALITEXT000053504343). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

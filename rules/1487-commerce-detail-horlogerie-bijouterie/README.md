@@ -22,3 +22,7 @@ Le modèle ne déduit pas le niveau du poste et ne modélise pas les primes, maj
 ## Tests
 
 `test/commerce-detail-horlogerie-bijouterie.test.ts` vérifie la date et les sources, les dix niveaux de la grille, la proratisation à temps partiel, les niveaux hors grille et l'inapplicabilité pour une autre convention.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution des entreprises au financement du paritarisme : 0,08 % de la masse salariale brute (article 1er de l'accord du 10 octobre 2018). Le plancher de 60 € et les plafonds par entreprise au-delà de 200 salariés ne sont pas calculés (KALITEXT000038616327). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

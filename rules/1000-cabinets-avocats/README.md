@@ -24,3 +24,7 @@ La convention collective nationale des avocats et de leur personnel du 20 févri
 - Arrêté du 9 avril 2025 portant extension d'avenants à la convention collective nationale du personnel des cabinets d'avocats (n° 1000), publié au Journal officiel du 26 avril 2025, `JORFTEXT000051521244`.
 
 Les références figurent également dans l'en-tête du fichier `.publicodes`.
+
+## Financement du paritarisme
+
+La révision 2025.2, à la date d'effet de la version 2025.1, ajoute `financement du paritarisme` : cotisation des employeurs au financement du paritarisme : 0,06 % de la masse salariale brute plafonnée au plafond de la sécurité sociale (articles 3 et 4 de l'accord du 14 avril 2023), gérée par l'ADDSA (KALITEXT000047865919). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

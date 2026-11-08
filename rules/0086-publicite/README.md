@@ -32,3 +32,7 @@ Le modèle prorate le minimum exposé selon la quotité de travail et arrondit l
 - Convention collective et dispositions de classification : [KALITEXT000005678091](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000005678091) et [KALITEXT000005678101](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000005678101).
 - Stock officiel KALI de la DILA : [OPENDATA/KALI](https://echanges.dila.gouv.fr/OPENDATA/KALI/).
 - Accord du 18 décembre 2015 relatif à la formation professionnelle, article 28.1.2 : contribution conventionnelle de 0,30 % : [KALIARTI000042181870](https://www.legifrance.gouv.fr/conv_coll/article/KALIARTI000042181870).
+
+## Financement du paritarisme
+
+La révision 2025.4, à la date d'effet de la version 2025.3, ajoute `financement du paritarisme` : contribution proportionnelle des entreprises au financement du paritarisme : 0,03 % de la masse salariale brute déclarée en retraite complémentaire (avenant n° 1 du 16 novembre 2018). Le forfait annuel de 25 € par entreprise n'est pas calculé ; le montant mensuel est une provision : 0,03 % du brut du mois (KALITEXT000038418066). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

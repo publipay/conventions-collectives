@@ -24,3 +24,7 @@ Les majorations et repos sont conditionnels à des données d’éligibilité pr
 - Données conventionnelles officielles : [stock KALI de la DILA](https://echanges.dila.gouv.fr/OPENDATA/KALI/).
 
 Les dispositions de prévoyance, santé, ancienneté et professionnalisation ne sont pas modélisées comme calculs automatiques. Consulter les textes applicables et les règles légales en vigueur pour chaque situation.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution conventionnelle des entreprises d'au moins 11 salariés au dialogue social de branche : 0,023 % de la masse salariale (accord du 16 mai 2025). Le forfait annuel de 150 € des entreprises de moins de 11 salariés n'est pas calculé (KALITEXT000052119246). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

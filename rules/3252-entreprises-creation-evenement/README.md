@@ -87,3 +87,7 @@ les œuvres télévisuelles, 121,73 €.
 - Les grilles sont étendues sous réserve du SMIC : le contrôle du SMIC (1 823,03 € brut mensuel depuis le
   1er janvier 2026) et le choix de la version applicable à la période de paie restent à la charge de
   l'application consommatrice.
+
+## Financement du paritarisme
+
+Les révisions 2025.4 (version 2025.3) et 2026.2 (version 2026.1), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : contribution conventionnelle des entreprises au financement du paritarisme : 0,1 % de la masse salariale (article 3.6.1 de la convention), gérée par l'AGP. Le montant mensuel est une provision : 0,1 % du brut du mois (KALITEXT000050299244). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

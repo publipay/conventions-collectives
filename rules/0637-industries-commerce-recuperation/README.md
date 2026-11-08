@@ -20,3 +20,7 @@ La valeur Publicodes est `récupération` ; les règles sont sous `salarié . co
 - Accord du 3 octobre 2025 relatif aux salaires au 1er janvier 2026, annexe 1 (barème des salaires minima conventionnels, base 151,67 heures, niveaux I à VII, colonnes A à C), étendu par arrêté du 13 janvier 2026 (JORF du 17 janvier 2026). Tableau lu sur Légifrance le 2 novembre 2026 (la colonne D est vide).
 - https://www.legifrance.gouv.fr/conv_coll/article/KALIARTI000053497305
 - Convention collective nationale des industries et du commerce de la récupération du 6 décembre 1971, conteneur KALICONT000005635466.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution des employeurs au financement du dialogue social : 0,06 % de la masse salariale brute (paragraphe 1.1 de l'accord du 6 décembre 2017, modifié par l'avenant du 3 octobre 2024). Le montant mensuel est une provision : 0,06 % du brut du mois (KALITEXT000050974559). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

@@ -47,3 +47,7 @@ et donne un minimum nul.
 Seule la grille des minima est modélisée. Les primes, indemnités et autres dispositions
 de la convention ne le sont pas. Les contrôles SMIC (l'extension est prononcée sous
 réserve) et le choix de la version applicable restent à la charge de l'application.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution des entreprises au financement du paritarisme : 0,02 % de la masse salariale brute (article 1er de l'accord du 21 septembre 2010). Le minimum de 50 € et le forfait de 45 € par établissement ne sont pas calculés (KALITEXT000023556576). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
