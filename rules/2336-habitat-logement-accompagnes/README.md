@@ -54,3 +54,7 @@ Ces omissions sont intentionnelles : aucun taux salarié/employeur, base, plafon
 - [Avenant n° 66 du 19 novembre 2024 relatif à la négociation salariale annuelle obligatoire — Légifrance](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000051163241)
 - [Convention collective nationale de l'habitat et du logement accompagnés — Légifrance](https://www.legifrance.gouv.fr/conv_coll/id/KALICONT000005635560)
 - Arrêté du 6 février 2025 portant extension de l'avenant n° 66, publié au Journal officiel du 14 février 2025 (référence indiquée sur le texte Légifrance).
+
+## Financement du paritarisme
+
+La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `financement du paritarisme` : la cotisation des employeurs au fonds d'aide au paritarisme : 0,29 % de la masse salariale brute (article 3.5.1 de la convention, rédigé par l'avenant n° 45 du 14 décembre 2017, KALITEXT000037079586, étendu par arrêté du 17 février 2020 ; la réservation de 0,09 % à la formation est exclue de l'extension, pas le taux). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

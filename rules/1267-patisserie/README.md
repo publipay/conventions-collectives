@@ -59,3 +59,7 @@ et donne un minimum nul afin que l'application appelante puisse bloquer le calcu
 - Les primes (ancienneté, etc.), indemnités et autres dispositions de la convention
   ne sont pas modélisées. Les contrôles SMIC et le choix de la version applicable
   à la période de paie restent à la charge de l'application consommatrice.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : les contributions des employeurs au financement du dialogue social : 0,20 % de la masse salariale brute pour la branche et 0,08 % pour l'association paritaire interprofessionnelle nationale, soit 0,28 % (article 53.2 de la convention, rédigé par l'avenant n° 108 du 10 septembre 2024, KALITEXT000050792316, étendu par arrêté du 11 février 2025), collectées par l'Urssaf depuis le 1er janvier 2026. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

@@ -54,3 +54,7 @@ Ne sont pas calculés ici : la liste 2, les primes et indemnités, les règles d
 - Accord du 11 mai 2026 relatif aux salaires minima des salariés employés sous CDDU, NOR ASET2650556M, BOCC 2026-23, pages 101 à 105.
 - Accord du 11 mai 2026 relatif aux salaires minima, NOR ASET2650557M, BOCC 2026-23, pages 106 à 109.
 - Convention collective nationale de la télédiffusion du 2 juillet 2021 (IDCC 3241), publiée dans la base officielle des conventions collectives.
+
+## Financement du paritarisme
+
+La révision 2026.5, à la date d'effet de la version 2026.4, ajoute `financement du paritarisme` : la contribution des entreprises au paritarisme : 0,03 % de la masse salariale brute déclarée en retraite complémentaire (article 11.1 de la convention, rédigé par l'avenant n° 5 du 4 novembre 2022, KALITEXT000047046214, étendu par arrêté du 30 juin 2023). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

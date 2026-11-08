@@ -78,9 +78,9 @@ for (const [revision, grid, validFrom, sourceIds] of [
 }
 
 describe("IDCC 1267 version history", () => {
-  it("publishes 2025.1 then 2026.1 with the +1.2 % revaluation", () => {
+  it("publishes 2025.1, then 2026.1 with the +1.2 % revaluation and 2026.2 with the joint bodies contributions", () => {
     const revisions = (COMPILED_VERSIONS[agreement] ?? []).map((entry) => entry.version);
-    assert.deepEqual(revisions, ["2025.1", "2026.1"]);
+    assert.deepEqual(revisions, ["2025.1", "2026.1", "2026.2"]);
     assert.equal(GRID_2026[160], 1863.37);
     assert.equal(GRID_2026[350], 3714.46);
   });

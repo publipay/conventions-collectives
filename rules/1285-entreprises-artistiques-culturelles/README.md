@@ -20,3 +20,7 @@ La valeur Publicodes est `entreprises artistiques et culturelles` ; les règles 
 - Accord du 1er juillet 2026 relatif aux salaires pour l'année 2026, article 1.2 (salaires mensuels bruts minima des emplois non artistiques, groupes 1 à 9, échelons 1 à 12), minima applicables au 1er août 2026, étendu par arrêté du 7 septembre 2026 (JORF du 19 septembre 2026). Les minima des artistes (articles 1.1.1 à 1.1.4 : cachets, services, mensuels) ne sont pas modélisés.
 - https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054981887
 - Convention collective nationale des entreprises artistiques et culturelles (Syndeac), conteneur KALICONT000005635964.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la contribution des entreprises au fonds commun d'aide au paritarisme (FCAP) : 0,25 % des salaires bruts, collectée mensuellement (article II.2 de la convention, rédigé par l'avenant du 17 novembre 2023, KALITEXT000049150216). Les contributions dues au GUSO à l'issue de chaque contrat ne sont pas distinguées. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

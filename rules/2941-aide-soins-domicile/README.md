@@ -25,3 +25,7 @@ Les ECR de tutorat, apprentissage et astreinte sont exposés séparément, avec 
 La révision 2026.2 ajoute le maintien de salaire conventionnel (titre VIII, A, article 1er) sous `maintien de salaire`, lu sur Légifrance le 24 octobre 2026 : les durées, taux, carences et modalités sont dans les sources de la version et dans `test/salary-maintenance-2.test.ts`. L’interface est décrite dans le README du package.
 
 La révision 2026.3 ajoute les indemnités de licenciement, de rupture conventionnelle et de départ ou de mise à la retraite (articles 26, 28 et 29), sous `indemnité de rupture`, lus sur Légifrance le 28 octobre 2026 : les barèmes, seuils d'ancienneté et plafonds sont dans les sources de la version et dans `test/termination-indemnity.test.ts`, en mois de salaire de référence.
+
+## Financement du paritarisme
+
+La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `financement du paritarisme` : la cotisation conventionnelle des employeurs au fonds du paritarisme : 0,040 %, dès le premier euro (article 3 du titre II de la convention, rédigé par l'avenant n° 26-2016 du 27 janvier 2016, KALITEXT000033106206, étendu par arrêté du 4 octobre 2016). L'assiette de l'article 2 du titre II n'a pas été relue : le modèle applique le taux au brut soumis à cotisations. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

@@ -21,3 +21,7 @@ Les cinq premiers paliers de la grille 2025 (de 1 841 € à 1 863 € par mois)
 - À l’issue de la période transitoire de quatre ans de l’avenant du 4 février 2026, les minima seront fixés directement par mois : une nouvelle version devra alors remplacer ces règles.
 - Les dispositions de prévoyance (avenant du 14 novembre 2025, étendu par arrêtés des 3 et 7 juillet 2026) et les primes ne sont pas modélisées.
 - Les grilles antérieures à 2025 ne sont pas modélisées : la première version couvre les périodes à partir du 1er janvier 2025.
+
+## Financement du paritarisme
+
+Les révisions 2025.2 et 2027.2, aux dates d'effet des versions 2025.1 et 2027.1, ajoutent `financement du paritarisme` : la cotisation annuelle des employeurs au fonds du paritarisme : 0,05 % de la masse salariale brute, dès le premier centime (article 18.1.2 de la convention, rédigé par l'avenant n° 11 du 11 décembre 2009, KALITEXT000024891249, étendu par arrêté du 30 mai 2012). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

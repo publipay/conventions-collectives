@@ -19,3 +19,7 @@ L'avenant salarial et les textes officiels rattachés à l'IDCC 3097 ont été e
 - Fiche officielle de la convention, KALICONT000028059838.
 - Avenant du 11 septembre 2024 relatif à la collecte, KALITEXT000051295352.
 - Arrêté d'extension du 6 janvier 2026, publié au JORF du 17 janvier 2026.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la contribution des entreprises au fonds d'aide au paritarisme : 0,045 % de la masse salariale brute des intermittents et des permanents (article 2.1 de l'accord du 3 novembre 2015, KALITEXT000032426289, étendu par arrêté du 12 mai 2017). Le réajustement prévu si la collecte totale est inférieure à 180 000 € passe par un avenant ; aucun n'est publié dans KALI. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

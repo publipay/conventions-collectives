@@ -34,3 +34,7 @@ La recherche a couvert la convention de base, l'avenant salarial n° 92, les tex
 ## Limites
 
 Les revenus annuels de niveau 1 peuvent être inférieurs au SMIC applicable à une date donnée : le plancher légal doit être évalué séparément par `modele-social`. Le modèle ne convertit pas la grille en salaire mensuel juridiquement comparé et ne fabrique pas de taux de cotisations, de santé, de prévoyance, de formation ou d'AT/MP en l'absence d'un paramétrage conventionnel universel et sûr.
+
+## Financement du paritarisme
+
+La révision 2025.2, à la date d'effet de la version 2025.1, ajoute `financement du paritarisme` : les contributions annuelles des employeurs au paritarisme : 0,08 ‰ de la masse salariale et, pour chaque salarié, 1 % du plafond mensuel de la sécurité sociale au 1er janvier (article 14.4 de la convention, KALIARTI000018159482, rédigé par l'avenant n° 25 du 19 décembre 2006). Le montant mensuel est 0,008 % du brut du mois plus un douzième de 1 % du plafond mensuel de l'année, sans proratisation pour un temps partiel ou un mois incomplet ; la contribution due par les non-salariés exerçant l'expertise n'est pas calculée. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

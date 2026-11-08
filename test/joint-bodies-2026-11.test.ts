@@ -1,7 +1,7 @@
 /**
  * Joint bodies (paritarisme) contributions added in November 2026 to 538, 843, 959, 993, 1090,
  * 1147, 1286 and 1316, then 1405, 1505, 1518, 1619, 1996, 2021, 2264, 2332, 3203 and 3237, then 292, 1261, 1501, 1517, 1631, 1686, 1978, 2098, 3127
- * and 3213. Amounts are computed from the texts cited in each version's sources, for
+ * and 3213, then 1267, 1285, 1516, 1534, 1951, 2336, 2941, 3097, 3241 and 3242. Amounts are computed from the texts cited in each version's sources, for
  * a gross salary of 3 000 €/mois unless stated otherwise (2026 ceiling: 4 005 €/mois).
  */
 import assert from "node:assert/strict";
@@ -318,6 +318,105 @@ const CASES: Case[] = [
     source: "KALITEXT000005654344",
     // 3 000 € × 0.06 %.
     amount: 1.8,
+  },
+  {
+    model: "1267-patisserie",
+    value: "pâtisserie",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000050792316",
+    // 3 000 € × (0.20 % + 0.08 %).
+    amount: 8.4,
+  },
+  {
+    model: "1285-entreprises-artistiques-culturelles",
+    value: "entreprises artistiques et culturelles",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000049150216",
+    // 3 000 € × 0.25 %.
+    amount: 7.5,
+  },
+  {
+    model: "1516-organismes-formation",
+    value: "organismes de formation",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000024891249",
+    // 3 000 € × 0.05 %.
+    amount: 1.5,
+  },
+  {
+    model: "1516-organismes-formation",
+    value: "organismes de formation",
+    previous: "2027.1",
+    revision: "2027.2",
+    source: "KALITEXT000024891249",
+    // 3 000 € × 0.05 %.
+    amount: 1.5,
+  },
+  {
+    model: "1534-industrie-commerces-gros-viandes",
+    value: "industrie et commerces en gros des viandes",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000043925608",
+    // 3 000 € × (0.1 % + 0.01 %).
+    amount: 3.3,
+  },
+  {
+    model: "1951-expertises-automobile",
+    value: "expertises automobile",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000018084898",
+    // 3 000 € × 0.008 % + 1 % × 4 005 € / 12 = 0.24 € + 3.3375 €.
+    amount: 3.58,
+  },
+  {
+    model: "2336-habitat-logement-accompagnes",
+    value: "habitat logement accompagnés",
+    previous: "2026.3",
+    revision: "2026.4",
+    source: "KALITEXT000037079586",
+    // 3 000 € × 0.29 %.
+    amount: 8.7,
+  },
+  {
+    model: "2941-aide-soins-domicile",
+    value: "aide et soins à domicile",
+    previous: "2026.3",
+    revision: "2026.4",
+    source: "KALITEXT000033106206",
+    // 3 000 € × 0.040 %.
+    amount: 1.2,
+  },
+  {
+    model: "3097-production-cinematographique",
+    value: "production cinématographique",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000032426289",
+    // 3 000 € × 0.045 %.
+    amount: 1.35,
+  },
+  {
+    model: "3241-telediffusion",
+    value: "télédiffusion",
+    previous: "2026.4",
+    revision: "2026.5",
+    source: "KALITEXT000047046214",
+    // 3 000 € × 0.03 %.
+    amount: 0.9,
+  },
+  {
+    model: "3242-presse-regions",
+    value: "presse en régions",
+    previous: "2024.3",
+    revision: "2024.4",
+    source: "KALITEXT000051367412",
+    // 3 000 € × 0.07 %.
+    amount: 2.1,
   },
 ];
 

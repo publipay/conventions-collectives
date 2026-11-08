@@ -23,3 +23,7 @@ Les positions `I.1` à `I.3` (de 1 835 € à 1 859 €) sont inférieures au SM
 - L’exemplaire de l’avenant consulté ne reproduit pas ses articles 3 et 4, absents du texte publié par juristique.org. La grille est celle de l’article 2.
 - La prime à l’obtention d’un CQP (800 € minimum, article 5) et les autres éléments de la convention (primes, majorations, prévoyance) ne sont pas modélisés.
 - Les grilles antérieures au 1er février 2026 ne sont pas modélisées : la première version couvre les périodes à partir de cette date.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : les contributions annuelles des employeurs de 0,1 % des rémunérations soumises à cotisations pour le financement du paritarisme et 0,01 % pour la politique emploi-formation de la CPNEFP, soit 0,11 % (article 4 de l'accord du 10 février 2021, KALITEXT000043925608, étendu par arrêté du 17 septembre 2021). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
