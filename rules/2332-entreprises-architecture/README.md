@@ -88,3 +88,7 @@ La version [`2026.2`](2332-entreprises-architecture.2026.2.publicodes) s'appliqu
 | Mayotte | aucun | aucun |
 
 Les identifiants KALITEXT des accords et leurs arrêtés d'extension sont listés dans les métadonnées du fichier.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs au fonds du paritarisme : 0,11 % de la masse salariale brute de l'année précédente (article XV.4.2 de la convention, rédigé par l'avenant du 16 novembre 2023, KALITEXT000048954007, étendu par arrêté du 22 mars 2024). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.

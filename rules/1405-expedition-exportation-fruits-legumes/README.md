@@ -25,3 +25,7 @@ La convention collective nationale des entreprises d'expédition et d'exportatio
 - [Convention collective IDCC 1405 sur Légifrance](https://www.legifrance.gouv.fr/conv_coll/id/KALICONT000005635142).
 
 Les valeurs sont des minima mensuels pour 151,67 heures et ne préjugent pas des règles individuelles plus favorables, du SMIC ou des éléments de rémunération non modélisés.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation patronale conventionnelle de 1 ‰ (0,1 %) de la masse salariale, versée par toutes les entreprises (article 3 de l'accord du 20 octobre 2023, KALITEXT000049100265, étendu par arrêté du 17 mai 2024, et article 7 de la convention). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.

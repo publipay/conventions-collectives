@@ -48,3 +48,7 @@ restent également hors périmètre.
 - Avenant n° 209 du 9 juillet 2025 relatif à la formation professionnelle et à l'apprentissage, notamment articles 5 et 12, KALIARTI000052447643 et KALIARTI000052447694.
 - Arrêté du 26 mars 2026 portant extension de l'avenant n° 209, JORF du 3 avril 2026.
 - Convention collective nationale ÉCLAT du 28 juin 1988, IDCC 1518.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs au fonds pour le fonctionnement et le développement du paritarisme : 0,1 % du revenu d'activité retenu pour les cotisations sociales, dès le premier centime (articles 1.8.2 et 1.8.3 de la convention, rédigés par l'avenant n° 197 du 11 mai 2023, KALITEXT000048052461, étendu par arrêté du 10 octobre 2024). Elle est distincte de la contribution conventionnelle de formation déjà calculée. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.

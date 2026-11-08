@@ -33,3 +33,7 @@ Les emplois d’entretien et de réception (12,02 €/h, soit 1 823,07 €) sont
 - Les employeurs non adhérents aux organisations signataires ne sont tenus par l’accord qu’à compter du lendemain de la publication de l’arrêté (24 juillet 2026) : cette distinction n’est pas modélisée.
 - La prime d’ancienneté (2 % à partir de 2 ans, puis 1 % par an, plafonnée à 20 %), les primes de mention (administrative, ODF, secrétariat à l’embauche, de 205 € à 220 € par mois d’après les pages consultées) et les règles des contrats de formation ne sont pas modélisées.
 - Les grilles antérieures au 1er janvier 2026 ne sont pas modélisées : la première version couvre les périodes à partir de cette date.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs au fonds pour le paritarisme : 0,05 % de la masse salariale brute (accord du 16 mars 2007, KALITEXT000017579573, étendu par arrêté du 4 octobre 2007). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.

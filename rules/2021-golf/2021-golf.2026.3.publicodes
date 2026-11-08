@@ -1,0 +1,102 @@
+# Révision 2026.3 : ajoute à la version 2026.2, à dates d'effet identiques, la cotisation au
+# fonds d'aide au développement du paritarisme (0,05 % de la masse salariale brute).
+validFrom: 2026-04-01
+extension: 2026-04-17
+sources:
+  - https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053907829
+  - https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054092229
+  - https://www.legifrance.gouv.fr/conv_coll/article/KALIARTI000054092233
+  - >-
+    Avenant n° 47 du 16 septembre 2009 relatif au fonds d'aide au développement du paritarisme
+    (KALITEXT000021747679), étendu par arrêté du 23 juillet 2010 (JORF du 30 juillet 2010) :
+    article 2.3.3.1 de la convention, cotisation annuelle de toutes les entreprises, « assise
+    sur la masse salariale brute de l'effectif salarié telle qu'elle est définie pour la
+    contribution à la formation professionnelle continue. Le taux de cette cotisation est fixé à
+    0,05 % et sera appelé dès le premier euro ». Texte lu sur Légifrance le 8 novembre 2026 :
+    https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000021747679
+---
+salarié . convention collective . golf:
+  applicable si: convention collective = 'golf'
+  valeur: oui
+salarié . convention collective . golf . groupe:
+  applicable si: convention collective = 'golf'
+  par défaut: "'non renseigné'"
+salarié . convention collective . golf . deux ans d'ancienneté:
+  applicable si: convention collective = 'golf'
+  description: Le salarié justifie d'au moins deux ans d'ancienneté non interrompue dans le groupe de classification et dans l'entreprise ou la ou les chaîne(s) de golf regroupant différentes structures pour l'application des minima annuels des groupes 6 et 7.
+  par défaut: non
+salarié . convention collective . golf . salaire minimum mensuel:
+  applicable si:
+    toutes ces conditions:
+      - convention collective = 'golf'
+      - une de ces conditions:
+          - groupe = '1'
+          - groupe = '2'
+          - groupe = '3'
+          - groupe = '4'
+          - groupe = '5'
+          - groupe = '6'
+          - groupe = '7'
+  unité: €/mois
+  variations:
+    - si: groupe = '1'
+      alors: 1882.56 €/mois
+    - si: groupe = '2'
+      alors: 1899.84 €/mois
+    - si: groupe = '3'
+      alors: 1975.06 €/mois
+    - si: groupe = '4'
+      alors: 2136.68 €/mois
+    - si: groupe = '5'
+      alors: 2379.63 €/mois
+    - si: groupe = '6'
+      alors: 3032.22 €/mois
+    - sinon: 3586.21 €/mois
+salarié . convention collective . golf . salaire minimum conventionnel:
+  applicable si: convention collective = 'golf'
+  unité: €/mois
+  valeur: salaire minimum mensuel * contrat . temps de travail . quotité
+salarié . convention collective . golf . salaire minimum annuel conventionnel:
+  applicable si:
+    toutes ces conditions:
+      - convention collective = 'golf'
+      - deux ans d'ancienneté
+      - une de ces conditions:
+          - groupe = '6'
+          - groupe = '7'
+  unité: €/an
+  produit:
+    - variations:
+        - si: groupe = '6'
+          alors: 38524 €/an
+        - sinon: 48060 €/an
+    - contrat . temps de travail . quotité
+salarié . convention collective . golf . groupe hors grille:
+  applicable si: convention collective = 'golf'
+  toutes ces conditions:
+    - groupe != '1'
+    - groupe != '2'
+    - groupe != '3'
+    - groupe != '4'
+    - groupe != '5'
+    - groupe != '6'
+    - groupe != '7'
+
+salarié . convention collective . golf . financement du paritarisme:
+  titre: Cotisation au fonds d'aide au développement du paritarisme
+  description: |
+    Cotisation annuelle des entreprises au fonds d'aide au développement du paritarisme : 0,05 %
+    de la masse salariale brute, dès le premier euro (article 2.3.3.1 de la convention, rédigé
+    par l'avenant n° 47). Le montant mensuel est une provision : 0,05 % du brut du mois.
+  applicable si: convention collective = 'golf'
+  unité: €/mois
+  produit:
+    - cotisations . assiette
+    - 0.05%
+
+salarié . convention collective . golf . cotisations employeur avec paritarisme:
+  applicable si: convention collective = 'golf'
+  remplace: salarié . cotisations . employeur
+  somme:
+    - salarié . cotisations . employeur
+    - financement du paritarisme

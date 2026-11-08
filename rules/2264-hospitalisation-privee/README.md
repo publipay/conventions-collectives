@@ -29,3 +29,7 @@ Les coefficients de 243 à 256 (de 1 764,18 € à 1 858,56 €) donnent un sala
 ## Maintien de salaire
 
 L’article 84 de la convention institue un régime de prévoyance collective obligatoire (incapacité de travail) géré par un organisme assureur : ce n’est pas un maintien de salaire par l’employeur, il n’est pas décrit ; le maintien légal s’applique.
+
+## Financement du paritarisme
+
+La révision 2023.4, à la date d'effet de la version 2023.3, ajoute `financement du paritarisme` : la contribution des entreprises, quel que soit leur effectif, à l'association paritaire de gestion (FONGESMES) : 0,007 % de la masse salariale brute (article 3 de l'accord du 26 février 2001, KALITEXT000005660662, étendu). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.

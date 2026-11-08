@@ -20,3 +20,7 @@ L’avenant est pris dans son champ signataire ou adhérent, avant extension. Le
 ## Audit des effets de paie
 
 L’avenant salarial consulté chiffre uniquement les minima mensuels. Aucun taux, plafond, forfait, prime, avantage, régime de santé ou de prévoyance, contribution de formation ou cotisation AT/MP directement modélisable n’est ajouté. Les autres dispositions de la convention restent hors périmètre de cette version.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation au fonds du paritarisme de la convention ÉCLAT, au taux cible de 0,10 % de la masse salariale brute à compter du 1er janvier 2026 (article 6.1 de l'avenant n° 197 du 11 mai 2023, rédigé par l'article 4 de l'avenant n° 207 du 20 novembre 2024, KALITEXT000051447117, étendu par arrêté du 15 mai 2025). La montée progressive vers ce taux avant 2026 n'est pas modélisée. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.

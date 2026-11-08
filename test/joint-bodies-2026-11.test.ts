@@ -1,6 +1,6 @@
 /**
  * Joint bodies (paritarisme) contributions added in November 2026 to 538, 843, 959, 993, 1090,
- * 1147, 1286 and 1316. Amounts are computed from the texts cited in each version's sources, for
+ * 1147, 1286 and 1316, then 1405, 1505, 1518, 1619, 1996, 2021, 2264, 2332, 3203 and 3237. Amounts are computed from the texts cited in each version's sources, for
  * a gross salary of 3 000 €/mois unless stated otherwise (2026 ceiling: 4 005 €/mois).
  */
 import assert from "node:assert/strict";
@@ -126,6 +126,95 @@ const CASES: Case[] = [
     source: "KALITEXT000005684557",
     // 3 000 € × 0.05 %.
     amount: 1.5,
+  },  {
+    model: "1405-expedition-exportation-fruits-legumes",
+    value: "expédition exportation fruits légumes",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000049100265",
+    // 3 000 € × 1 ‰.
+    amount: 3,
+  },
+  {
+    model: "1505-commerce-detail-alimentaire-non-specialise",
+    value: "commerce de détail alimentaire non spécialisé",
+    previous: "2026.8",
+    revision: "2026.9",
+    source: "KALITEXT000053049839",
+    // 3 000 € × 0.15 %.
+    amount: 4.5,
+  },
+  {
+    model: "3237-commerce-detail-alimentaire-specialise",
+    value: "commerce de détail alimentaire spécialisé",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000044085496",
+    // 3 000 € × 0.15 %.
+    amount: 4.5,
+  },
+  {
+    model: "1518-eclat",
+    value: "éclat",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000048052461",
+    // 3 000 € × 0.1 %.
+    amount: 3,
+  },
+  {
+    model: "3203-structures-associatives-peche",
+    value: "structures associatives de pêche de loisir et de protection du milieu aquatique",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000051447117",
+    // 3 000 € × 0.10 %, the target rate from 2026.
+    amount: 3,
+  },
+  {
+    model: "1619-cabinets-dentaires",
+    value: "cabinets dentaires",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000017579573",
+    // 3 000 € × 0.05 %.
+    amount: 1.5,
+  },
+  {
+    model: "1996-pharmacie-officine",
+    value: "pharmacie",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000005671176",
+    // 3 000 € × 0.03 %.
+    amount: 0.9,
+  },
+  {
+    model: "2021-golf",
+    value: "golf",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000021747679",
+    // 3 000 € × 0.05 %.
+    amount: 1.5,
+  },
+  {
+    model: "2264-hospitalisation-privee",
+    value: "hospitalisation privée",
+    previous: "2023.3",
+    revision: "2023.4",
+    source: "KALITEXT000005660662",
+    // 3 000 € × 0.007 %.
+    amount: 0.21,
+  },
+  {
+    model: "2332-entreprises-architecture",
+    value: "entreprises d'architecture",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000048954007",
+    // 3 000 € × 0.11 %.
+    amount: 3.3,
   },
 ];
 

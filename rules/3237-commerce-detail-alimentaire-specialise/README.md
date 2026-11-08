@@ -57,3 +57,7 @@ Forfait jours (218 jours) : C1 38 722 € pendant les 24 premiers mois puis 40 7
 - Les versions antérieures au 17 avril 2026 ne sont pas incluses.
 - La grille est limitée aux classifications explicitement publiées dans l'annexe de l'avenant ; aucune classification supplémentaire n'est extrapolée.
 - Le passage automatique E1 vers E2 après six mois d'ancienneté doit être pris en compte dans la classification fournie ; il n'est pas déduit automatiquement sans donnée de changement de niveau.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs à l'association paritaire : 0,15 % des salaires entrant dans l'assiette des cotisations de sécurité sociale (article 4 de l'accord du 19 mai 2021, KALITEXT000044085496, étendu par arrêté du 17 septembre 2021). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.

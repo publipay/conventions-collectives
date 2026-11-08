@@ -32,3 +32,7 @@ La révision 2026.6 ajoute le maintien de salaire conventionnel (articles 40.1 e
 La révision 2026.7 ajoute l'indemnité de départ à la retraite (article 23.4.1), sous `indemnité de rupture`, lus sur Légifrance le 28 octobre 2026 : les barèmes, seuils d'ancienneté et plafonds sont dans les sources de la version et dans `test/termination-indemnity.test.ts`, en mois de salaire de référence. Les indemnités de licenciement et de mise à la retraite reprennent le barème légal.
 
 La révision [2026.8](1505-commerce-detail-alimentaire-non-specialise.2026.8.publicodes), à la même date et aux mêmes taux, change la forme de la complémentaire santé : ses règles `santé . montant` et `santé . taux employeur` remplacent le montant et la part employeur de modele-social (`santé . montant` et `santé . taux employeur`) plutôt que ses parts employeur et salarié : une application peut y saisir le montant ou la part de l'entreprise (`test/health-insurance-scheme.test.ts`).
+
+## Financement du paritarisme
+
+La révision 2026.9, à la date d'effet de la version 2026.8, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs à l'association paritaire : 0,15 % des salaires entrant dans l'assiette des cotisations de sécurité sociale (article 5 de l'accord du 8 juillet 2025, KALITEXT000053049839, étendu par arrêté du 6 février 2026, qui remplace l'accord du 19 mai 2021). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.
