@@ -129,3 +129,43 @@ describe("IDCC 1266", () => {
   for (const endpoint of ["salarié . cotisations . ATMP","salarié . cotisations . formation professionnelle","salarié . cotisations . prévoyances . santé . montant","salarié . cotisations . employeur"]) assert.equal(value(endpoint),baseline.evaluate(endpoint).nodeValue,endpoint);
  });
 });
+
+// Revision 2025.4: article 5 of avenant n° 66 (KALIARTI000050135924), 0.016 % of the payroll,
+// provisioned monthly on the gross salary and added to the employer contributions.
+describe("IDCC 1266 — 2025.4, joint bodies contribution", async () => {
+  const next = COMPILED_VERSIONS["1266-restauration-collective"]?.find((v) => v.version === "2025.4");
+  assert.ok(next, "Agreement version 2025.4 must be exported");
+  const nextRules = { ...modeleSocial, ...(await next.loadRules()) } as Record<string, Rule>;
+  nextRules["salarié . convention collective"] = rules["salarié . convention collective"] as Rule;
+  const nextEngine = new Engine(nextRules, { logger: { log() {}, warn() {}, error() {} } });
+  const set = (target: Engine, extra: Record<string, string | number> = {}) =>
+    target.setSituation({
+      "salarié . convention collective": "'restauration collective'",
+      [`${namespace} . niveau`]: "'III'",
+      "salarié . contrat . salaire brut": "2500 €/mois",
+      "date": "11/10/2026",
+      ...extra,
+    });
+  const employer = (target: Engine) => target.evaluate("salarié . cotisations . employeur").nodeValue as number;
+
+  it("keeps the 2025.3 date and cites the avenant", () => {
+    assert.equal(next.validFrom, "2025-07-01");
+    assert.ok(next.sources.some((source) => source.includes("KALITEXT000050135916")));
+  });
+
+  it("charges 0.016 % of the gross salary and adds it to the employer contributions", () => {
+    set(nextEngine);
+    // 2 500 € × 0.016 %.
+    assert.equal(nextEngine.evaluate(`${namespace} . financement du paritarisme`).nodeValue, 0.4);
+    set(engine);
+    assert.equal(Math.round((employer(nextEngine) - employer(engine)) * 100) / 100, 0.4);
+  });
+
+  it("applies neither before July 2025, outside the field nor to another agreement", () => {
+    const cases: Record<string, string>[] = [{ date: "30/06/2025" }, { [`${namespace} . hors champ conventionnel`]: "oui" }, { "salarié . convention collective": "'autre'" }];
+    for (const extra of cases) {
+      set(nextEngine, extra);
+      assert.equal(nextEngine.evaluate(`${namespace} . financement du paritarisme`).nodeValue, null);
+    }
+  });
+});
