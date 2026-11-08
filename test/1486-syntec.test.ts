@@ -77,6 +77,41 @@ describe("IDCC 1486 — 2026.5, formation contribution", async () => {
   });
 });
 
+// Article 3.5 of the accord of 28 April 2021 (KALIARTI000044159308): 0.2 ‰ of the gross payroll,
+// whatever the headcount, on top of modele-social's legal social dialogue contribution (0.016 %).
+describe("IDCC 1486 — 2026.6, joint bodies contribution", async () => {
+  const { version, engine, setSituation } = await engineOf("2026.6");
+  const previous = await engineOf("2026.5");
+  const joint = `${namespace} . financement du paritarisme`;
+  const employer = "salarié . cotisations . employeur";
+
+  it("keeps the 2026 date and cites the accord", () => {
+    assert.equal(version.validFrom, "2026-01-01");
+    assert.ok(version.sources.some((source) => source.includes("KALITEXT000044159279")));
+  });
+
+  it("charges 0.02 % of the gross salary for every headcount", () => {
+    for (const effectif of [5, 20, 300]) {
+      setSituation({ "entreprise . salariés . effectif": effectif });
+      // 3 000 € × 0.02 %.
+      assert.equal(engine.evaluate(joint).nodeValue, 0.6, `effectif ${effectif}`);
+    }
+  });
+
+  it("adds it to the employer contributions, beside the legal social dialogue contribution", () => {
+    setSituation();
+    previous.setSituation();
+    const added = (engine.evaluate(employer).nodeValue as number) - (previous.engine.evaluate(employer).nodeValue as number);
+    assert.equal(Math.round(added * 100) / 100, 0.6);
+    assert.ok((engine.evaluate("salarié . cotisations . contribution au dialogue social").nodeValue as number) > 0);
+  });
+
+  it("does not apply to another agreement", () => {
+    setSituation({ "salarié . convention collective": "'droit commun'" });
+    assert.equal(engine.evaluate(joint).nodeValue, null);
+  });
+});
+
 // Articles 9.2 and 9.3 (KALIARTI000047513889 and KALIARTI000053769476).
 describe("IDCC 1486 — 2026.5, salary maintenance", async () => {
   const { version, engine, setSituation } = await engineOf("2026.5");
