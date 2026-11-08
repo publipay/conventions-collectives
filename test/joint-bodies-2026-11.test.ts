@@ -1,7 +1,7 @@
 /**
  * Joint bodies (paritarisme) contributions added in November 2026 to 538, 843, 959, 993, 1090,
  * 1147, 1286 and 1316, then 1405, 1505, 1518, 1619, 1996, 2021, 2264, 2332, 3203 and 3237, then 292, 1261, 1501, 1517, 1631, 1686, 1978, 2098, 3127
- * and 3213, then 1267, 1285, 1516, 1534, 1951, 2336, 2941, 3097, 3241 and 3242. Amounts are computed from the texts cited in each version's sources, for
+ * and 3213, then 1267, 1285, 1516, 1534, 1951, 2336, 2941, 3097, 3241, 3242 and 3254. Amounts are computed from the texts cited in each version's sources, for
  * a gross salary of 3 000 €/mois unless stated otherwise (2026 ceiling: 4 005 €/mois).
  */
 import assert from "node:assert/strict";
@@ -417,6 +417,24 @@ const CASES: Case[] = [
     source: "KALITEXT000051367412",
     // 3 000 € × 0.07 %.
     amount: 2.1,
+  },
+  {
+    model: "3254-boucherie-poissonnerie",
+    value: "boucherie poissonnerie",
+    previous: "2026.1",
+    revision: "2026.3",
+    source: "KALITEXT000050700202",
+    // 3 000 € × 0.15 %.
+    amount: 4.5,
+  },
+  {
+    model: "3254-boucherie-poissonnerie",
+    value: "boucherie poissonnerie",
+    previous: "2026.2",
+    revision: "2026.4",
+    source: "KALITEXT000050700202",
+    // 3 000 € × 0.15 %.
+    amount: 4.5,
   },
 ];
 

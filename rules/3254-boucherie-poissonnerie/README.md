@@ -46,3 +46,7 @@ La version `2026.2` applique, à compter du 1er octobre 2026 (premier jour du mo
 La grille boucherie se lit avec `niveau` (`I-A` à `VII-B`), la grille poissonnerie avec `coefficient` (130 à 250 et 300 à 450). `grille applicable` retient la grille renseignée et `niveau hors grille` est vrai si aucune des deux ne correspond (minimum 0 €/mois). Les grilles poissonnerie antérieures au 1er octobre 2026 (avenants 6-P et 8-P) ne sont pas modélisées.
 
 Test : `test/boucherie-poissonnerie-2026-2.test.ts`.
+
+## Contribution au dialogue social
+
+Les révisions 2026.3 et 2026.4, aux dates d'effet des versions 2026.1 et 2026.2, ajoutent `financement du paritarisme` : la contribution obligatoire de toutes les entreprises au dialogue social, de 0,15 % de la masse salariale (article 8 de la convention du 24 septembre 2024, KALITEXT000050700202, étendue par arrêté du 29 septembre 2025), collectée chaque année par l'ACOTA et reversée à l'association de la boucherie ou de la poissonnerie selon le secteur ; l'article 90 maintient pour la poissonnerie la répartition des avenants n° 30 et n° 32. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.
