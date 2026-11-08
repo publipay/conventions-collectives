@@ -101,3 +101,45 @@ describe("IDCC 3253 — 2025.2, joint bodies contribution", () => {
     assert.equal(get(engine, joint).nodeValue, null);
   });
 });
+
+// Version 2026.1: article 20 of the accord of 2 July 2025 (KALIARTI000052344318), from 1 May 2026,
+// 0.35 % of the gross payroll for the entities of 1 to 299 employees, on top of the legal
+// contribution (0.55 % below 11 employees, 1 % from 11).
+describe("IDCC 3253 — 2026.1, conventional training contribution", () => {
+  const formation = "salarié . cotisations . formation professionnelle";
+  const amount = (engine: Engine, rule = formation) =>
+    Math.round((engine.evaluate(rule).nodeValue as number) * 100) / 100;
+
+  it("comes into force on 1 May 2026 and cites the accord", () => {
+    const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.1");
+    assert.equal(version?.validFrom, "2026-05-01");
+    assert.ok(version?.sources.some((source) => source.includes("KALITEXT000052344249")));
+  });
+
+  it("adds 0.35 % to the legal contribution below 300 employees", async () => {
+    const engine = await makeEngine("2026.1");
+    // 3 000 € × (0.55 % + 0.35 %), 3 000 € × (1 % + 0.35 %), 3 000 € × 1 %.
+    for (const [effectif, expected] of [[5, 27], [50, 40.5], [299, 40.5], [300, 30]] as const) {
+      set(engine, { "salarié . contrat . salaire brut": "3000 €/mois", "entreprise . salariés . effectif": effectif });
+      assert.equal(amount(engine), expected, `effectif ${effectif}`);
+    }
+  });
+
+  it("adds it to the employer contributions, besides the joint bodies contribution", async () => {
+    const engine = await makeEngine("2026.1");
+    const previous = await makeEngine("2025.2");
+    const values = { "salarié . contrat . salaire brut": "3000 €/mois", "entreprise . salariés . effectif": 20 };
+    set(engine, values);
+    set(previous, values);
+    const employer = "salarié . cotisations . employeur";
+    // 3 000 € × 0.35 %.
+    assert.equal(Math.round((amount(engine, employer) - amount(previous, employer)) * 100) / 100, 10.5);
+    assert.equal(amount(engine, `${ns} . financement du paritarisme`), 1.8);
+  });
+
+  it("does not alter the formation contribution of another agreement", async () => {
+    const engine = await makeEngine("2026.1");
+    set(engine, { "salarié . convention collective": "'droit commun'", "salarié . contrat . salaire brut": "3000 €/mois", "entreprise . salariés . effectif": 50 });
+    assert.equal(amount(engine), 30);
+  });
+});
