@@ -24,3 +24,7 @@ Les positions 4 et 5 (1 782,14 € et 1 815,79 €) sont inférieures au SMIC me
 - La prime d’ancienneté (de 4 % à 20 % selon l’ancienneté, d’après les pages consultées), les jours de congés supplémentaires et les autres éléments de la convention ne sont pas modélisés.
 - Les garanties, dispenses et organismes du régime de prévoyance restent contractuels et ne sont pas modélisés.
 - Les grilles antérieures au 1er janvier 2024 ne sont pas modélisées : la première version couvre les périodes à partir de cette date.
+
+## Financement du paritarisme
+
+La révision 2024.3, à la date d'effet de la version 2024.2, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs au fonds pour le paritarisme : 0,02 % de la masse salariale brute (avenant n° 56 du 24 août 2011, KALITEXT000024983918, étendu par arrêté du 2 avril 2012). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle et les éventuels minimums par entreprise ne sont pas calculés.

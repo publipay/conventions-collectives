@@ -17,3 +17,7 @@ La valeur Publicodes est `tourisme social et familial` ; les règles sont sous `
 - Les primes, le treizième mois, les avantages en nature et les autres éléments de rémunération ne sont pas modélisés.
 - La version couvre les salaires minima 2026 à compter du 1er janvier 2026 ; les périodes antérieures sont signalées comme hors couverture.
 - Le modèle ne déduit pas automatiquement les compléments individuels ou les dispositions plus favorables applicables au salarié.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la contribution financière des entreprises de 0,05 % de la masse salariale brute, dont 0,02 % pour le fonctionnement du paritarisme et 0,03 % pour l'exercice du syndicalisme (article 3 de l'avenant n° 41 du 15 mai 2003, KALITEXT000005684557, étendu). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle et les éventuels minimums par entreprise ne sont pas calculés.

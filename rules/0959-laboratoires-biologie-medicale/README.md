@@ -42,3 +42,7 @@ L'accord et son arrêté d'extension ont été examinés avec les textes rattach
 ## Limites
 
 Le modèle couvre le barème salarial étendu de 2024. Les régimes autonomes de santé, prévoyance et formation, ainsi que les rubriques nécessitant des entrées supplémentaires, sont explicitement audités et laissés à l'application appelante.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la cotisation des laboratoires à l'association paritaire, quel que soit leur effectif : 0,04 % des salaires bruts dans la limite du plafond de la sécurité sociale (avenant du 14 juin 2018 à l'accord du 3 octobre 2005, KALITEXT000038014422, étendu par arrêté du 17 février 2020). Les périodes qui choisissent la version 2024.1 ne la calculent pas. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle et les éventuels minimums par entreprise ne sont pas calculés.

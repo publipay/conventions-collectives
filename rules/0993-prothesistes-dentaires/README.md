@@ -34,3 +34,7 @@ Ne sont pas calculées ici : les primes de qualification elles-mêmes, l’ancie
 
 - Accord du 15 juin 2026 relatif aux salaires minima et aux primes de qualification, publié au Bulletin officiel des conventions collectives.
 - Arrêté du 24 août 2026 portant extension, publié au **Journal officiel n° 0206 du 4 septembre 2026**, Légifrance.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs au fonds d'aide au paritarisme : 0,15 % de la masse salariale brute servant d'assiette aux cotisations sociales (article 3 de l'accord du 27 juin 2008, rédigé par l'avenant n° 1 du 10 octobre 2014, KALITEXT000029954440, étendu par arrêté du 9 avril 2015). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle et les éventuels minimums par entreprise ne sont pas calculés.

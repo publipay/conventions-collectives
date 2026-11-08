@@ -26,3 +26,7 @@ La valeur Publicodes est `confiserie chocolaterie détaillants` ; les règles so
 - Avenant n° 42 : https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000051352420 (arrêté du 17 mars 2025, JORF du 29 mars 2025).
 - Avenant n° 43 : https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054091922 (arrêté du 8 avril 2026, JORF du 17 avril 2026).
 - Convention collective nationale du 1er janvier 1984, conteneur KALICONT000005635899.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la contribution des entreprises au fonds d'aide au paritarisme, quel que soit leur effectif : 0,15 % des rémunérations comprises dans l'assiette des contributions de sécurité sociale (avenant n° 9 du 8 juin 2004, rédigé par l'avenant n° 1 du 10 avril 2025, KALITEXT000051947464, étendu par arrêté du 27 juin 2025). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle et les éventuels minimums par entreprise ne sont pas calculés.
