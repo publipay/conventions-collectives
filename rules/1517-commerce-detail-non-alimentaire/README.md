@@ -28,3 +28,7 @@ Les niveaux 1 à 3 (de 1 829 € à 1 843 €) et le niveau 4 (1 867 €) sont i
 La révision 2026.2 ajoute le maintien de salaire conventionnel (articles 1er et 2 du chapitre VII) sous `maintien de salaire`, lu sur Légifrance le 24 octobre 2026 : les durées, taux, carences et modalités sont dans les sources de la version et dans `test/salary-maintenance.test.ts`. L’interface est décrite dans le README du package.
 
 La révision 2026.3 ajoute les indemnités de licenciement (article 4), de départ volontaire à la retraite (article 6) et de mise à la retraite (article 8) du chapitre VI, sous `indemnité de rupture`, lus sur Légifrance le 28 octobre 2026 : les barèmes, seuils d'ancienneté et plafonds sont dans les sources de la version et dans `test/termination-indemnity.test.ts`, en mois de salaire de référence. Aucun montant propre pour la rupture conventionnelle.
+
+## Financement du paritarisme
+
+La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `financement du paritarisme` : la part de 0,07 % de la masse salariale brute de la contribution conventionnelle au dialogue social (article 3 de l'accord du 27 juin 2019, KALITEXT000041439724, étendu par arrêté du 6 novembre 2020). Le forfait de 50 € par établissement et les plafonds par établissement ne sont pas calculés. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.

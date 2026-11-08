@@ -1,6 +1,7 @@
 /**
  * Joint bodies (paritarisme) contributions added in November 2026 to 538, 843, 959, 993, 1090,
- * 1147, 1286 and 1316, then 1405, 1505, 1518, 1619, 1996, 2021, 2264, 2332, 3203 and 3237. Amounts are computed from the texts cited in each version's sources, for
+ * 1147, 1286 and 1316, then 1405, 1505, 1518, 1619, 1996, 2021, 2264, 2332, 3203 and 3237, then 292, 1261, 1501, 1517, 1631, 1686, 1978, 2098, 3127
+ * and 3213. Amounts are computed from the texts cited in each version's sources, for
  * a gross salary of 3 000 €/mois unless stated otherwise (2026 ceiling: 4 005 €/mois).
  */
 import assert from "node:assert/strict";
@@ -41,6 +42,8 @@ type Case = {
   previous: string;
   revision: string;
   source: string;
+  /** The version's own date, when it does not keep the previous one. */
+  validFrom?: string;
   /** Expected monthly amount for 3 000 € of gross salary and 20 employees. */
   amount: number;
   /** Other situations and their expected amount. */
@@ -216,6 +219,106 @@ const CASES: Case[] = [
     // 3 000 € × 0.11 %.
     amount: 3.3,
   },
+  {
+    model: "0292-plasturgie",
+    value: "plasturgie",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000026484169",
+    // 3 000 € × 0.05 %; the minimum and caps per establishment are not computed.
+    amount: 1.5,
+  },
+  {
+    model: "1261-acteurs-lien-social-familial",
+    value: "acteurs du lien social et familial",
+    previous: "2026.10",
+    revision: "2026.11",
+    source: "KALITEXT000005677524",
+    // 3 000 € × 0.08 %.
+    amount: 2.4,
+  },
+  {
+    model: "1501-restauration-rapide",
+    value: "restauration rapide",
+    previous: "2026.6",
+    revision: "2026.7",
+    source: "KALITEXT000027195000",
+    // 3 000 € × 0.012 %.
+    amount: 0.36,
+  },
+  {
+    model: "1501-restauration-rapide",
+    value: "restauration rapide",
+    previous: "2026.6",
+    revision: "2027.1",
+    source: "KALITEXT000055028206",
+    validFrom: "2027-01-01",
+    // 3 000 € × 0.01 %, from January 2027.
+    amount: 0.3,
+  },
+  {
+    model: "1517-commerce-detail-non-alimentaire",
+    value: "commerce de détail non alimentaire",
+    previous: "2026.3",
+    revision: "2026.4",
+    source: "KALITEXT000041439724",
+    // 3 000 € × 0.07 %; the 50 € per establishment are not computed.
+    amount: 2.1,
+  },
+  {
+    model: "1631-hotellerie-plein-air",
+    value: "hôtellerie de plein air",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000024629512",
+    // 3 000 € × 0.03 %; the 25 € per SIRET are not computed.
+    amount: 0.9,
+  },
+  {
+    model: "1686-commerces-services-audiovisuel",
+    value: "audiovisuel électronique équipement ménager",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000038201342",
+    // 3 000 € × 0.02 %.
+    amount: 0.6,
+  },
+  {
+    model: "1978-fleuristes-animaux",
+    value: "fleuristes animaux",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000054426672",
+    // 3 000 € × 0.10 %; the 48 € are not computed.
+    amount: 3,
+  },
+  {
+    model: "2098-prestataires-tertiaire",
+    value: "prestataires tertiaires",
+    previous: "2026.4",
+    revision: "2026.5",
+    source: "KALITEXT000005680490",
+    // 3 000 € × 0.03 %.
+    amount: 0.9,
+  },
+  {
+    model: "3127-services-personne",
+    value: "services à la personne",
+    previous: "2024.2",
+    revision: "2024.3",
+    source: "KALITEXT000022271536",
+    // 3 000 € × 0.10 %.
+    amount: 3,
+  },
+  {
+    model: "3213-economistes-construction",
+    value: "économistes de la construction et métreurs-vérificateurs",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000005654344",
+    // 3 000 € × 0.06 %.
+    amount: 1.8,
+  },
 ];
 
 const employer = "salarié . cotisations . employeur";
@@ -226,8 +329,8 @@ for (const testCase of CASES) {
     const previous = await engineOf(testCase.model, testCase.value, testCase.previous);
     const joint = `salarié . convention collective . ${testCase.value} . financement du paritarisme`;
 
-    it("keeps the previous date and cites the text", () => {
-      assert.equal(current.version.validFrom, previous.version.validFrom);
+    it("has the expected date and cites the text", () => {
+      assert.equal(current.version.validFrom, testCase.validFrom ?? previous.version.validFrom);
       assert.ok(current.version.sources.some((source) => source.includes(testCase.source)));
     });
 

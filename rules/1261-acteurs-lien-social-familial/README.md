@@ -13,3 +13,7 @@ Le salaire minimum hiérarchique annuel est la somme du salaire socle de **23 00
 `points de pesée` est la somme des points au-delà du premier niveau des huit critères classants. La détermination détaillée du poste et des points d'ancienneté ou de compétences demeure une décision de paie documentée ; le modèle reçoit leurs totaux déjà établis. Les valeurs négatives sont invalides.
 
 Les règles couvrent le minimum hiérarchique de branche. Elles n'incluent pas les primes, indemnités, avantages ou les modalités de détermination des huit critères. Les références juridiques sont enregistrées dans les métadonnées de la version.
+
+## Financement du paritarisme
+
+La révision 2026.11, à la date d'effet de la version 2026.10, ajoute `financement du paritarisme` : la contribution annuelle des employeurs au fonds d'aide au paritarisme : 0,08 % de la masse salariale brute (article 4.1 du protocole n° 11-05 du 10 novembre 2005, KALITEXT000005677524). Le minimum de 20 € (avenant n° 07-09 du 9 décembre 2009) n'est pas calculé. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.

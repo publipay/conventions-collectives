@@ -26,3 +26,7 @@ Les positions `I.1` (1 827,03 €), `I.2` (1 831,21 €) et `I.3` (1 843,11 €)
 - Le texte de l’avenant a été consulté sur Légifrance (textes salaires de la convention) ; il a été recoupé avec une grille publiée par convention.fr, qui donne les mêmes montants. Le fichier PDF publié au BOCC n’a pas été lu.
 - Les primes, majorations, la santé et les autres éléments de la convention ne sont pas modélisés. La répartition employeur/salarié de la prévoyance n’est pas fixée par l’avenant et reste contractuelle.
 - Les grilles antérieures au 1er mai 2026, notamment celle de l’avenant n° 61 du 13 février 2025, ne sont pas modélisées : la première version couvre les périodes à partir de cette date.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la part de 0,02 % de la masse salariale brute de la contribution au financement du paritarisme (article 2.2 de l'accord du 12 juillet 2018, KALITEXT000038201342, étendu par arrêté du 6 novembre 2020). Le minimum de 50 € par entreprise et le forfait de 45 € par établissement (avenant n° 5 du 21 octobre 2025) ne sont pas calculés. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.

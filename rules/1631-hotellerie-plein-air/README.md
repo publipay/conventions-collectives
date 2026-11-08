@@ -26,3 +26,7 @@ Les avenants salariaux fixent uniquement les salaires minima conventionnels. Auc
 - Avenant n° 46 du 30 décembre 2024 relatif aux salaires, `KALITEXT000051314765`.
 - Avenant n° 47 du 28 janvier 2026 relatif aux salaires, `KALITEXT000054092133`.
 - Convention collective nationale de l'hôtellerie de plein air du 2 juin 1993, IDCC 1631, conteneur KALI `KALICONT000005635029`.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la part de 0,03 % de la masse salariale brute de la contribution au financement du paritarisme (article 2 de l'accord du 27 mai 2011, KALITEXT000024629512, étendu par arrêté du 29 décembre 2011). Le forfait de 25 € par SIRET n'est pas calculé. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.

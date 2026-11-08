@@ -42,3 +42,7 @@ Les primes d'ancienneté, indemnités, temps de travail et autres obligations co
 - Accord du 8 avril 2026 relatif aux salaires minimums conventionnels, Légifrance, KALITEXT000054872359.
 - Arrêté du 6 juillet 2026 portant extension, NOR TRST2617121A, JORFTEXT000054408938, publié au Journal officiel du 10 juillet 2026.
 - Convention collective nationale du 16 décembre 2015, IDCC 3213, Légifrance.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs au fonds du paritarisme : 0,06 % de la masse salariale brute (article 2 de l'avenant n° 5 du 22 décembre 1999, KALITEXT000005654344, en vigueur étendu). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.

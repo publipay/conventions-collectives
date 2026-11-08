@@ -49,3 +49,7 @@ Cette version ne modélise pas l'annualisation du temps de travail, la présence
 ## Maintien de salaire
 
 L’incapacité de travail relève du régime de prévoyance assuré de la partie VI (avenant n° 1 du 25 avril 2013) : le maintien légal s’applique.
+
+## Financement du paritarisme
+
+La révision 2024.3, à la date d'effet de la version 2024.2, ajoute `financement du paritarisme` : la contribution des employeurs de 0,10 % de la masse salariale brute (article 2 de l'accord du 18 décembre 2009, KALITEXT000022271536, étendu par arrêté du 20 avril 2010). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.

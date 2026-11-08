@@ -40,3 +40,7 @@ Cette version ne modélise pas les compléments dépendant d'annexes sectorielle
 La révision 2026.3 ajoute le maintien de salaire conventionnel (article 18.1 B) sous `maintien de salaire`, lu sur Légifrance le 24 octobre 2026 : les durées, taux, carences et modalités sont dans les sources de la version et dans `test/salary-maintenance-2.test.ts`. L’interface est décrite dans le README du package. La levée de la carence en cas d’hospitalisation n’est pas reprise ; la maternité reçoit les mêmes durées, sans carence.
 
 La révision 2026.4 ajoute l'indemnité de licenciement (article 19.2) et les indemnités de départ et de mise à la retraite (article 19.3), sous `indemnité de rupture`, lus sur Légifrance le 28 octobre 2026 : les barèmes, seuils d'ancienneté et plafonds sont dans les sources de la version et dans `test/termination-indemnity.test.ts`, en mois de salaire de référence. Aucun montant propre pour la rupture conventionnelle.
+
+## Financement du paritarisme
+
+La révision 2026.5, à la date d'effet de la version 2026.4, ajoute `financement du paritarisme` : la contribution des entreprises au fonds commun d'aide au paritarisme : 0,03 % de la masse salariale brute (article 2 de l'accord du 28 octobre 2003, KALITEXT000005680490). Le minimum de 23 € par an n'est pas calculé. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.

@@ -47,3 +47,7 @@ Les primes, indemnités, classifications détaillées et autres dispositions de
 la convention ne sont pas modélisées. Les contrôles SMIC et le choix de la
 version applicable à la période de paie restent à la charge de l'application
 consommatrice.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la part de 0,10 % de la masse salariale brute de la contribution conventionnelle au paritarisme versée à l'ADPFA, collectée par les Urssaf et la MSA (avenant n° 5 du 13 avril 2026 à l'accord du 13 juin 2000, KALITEXT000054426672, étendu par arrêté du 3 juillet 2026). Le forfait de 48 € n'est pas calculé. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.
