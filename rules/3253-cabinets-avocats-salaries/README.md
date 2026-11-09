@@ -30,3 +30,7 @@ Ces omissions sont intentionnelles et testées par l'isolation du namespace : le
 - Le modèle concerne les salariés non-avocats et ne modélise pas une rémunération propre aux avocats salariés.
 - Une nouvelle version devra être ajoutée pour tout avenant salarial postérieur.
 - Les éléments variables, primes, garanties de protection sociale et contributions nécessitant des paramètres d'entreprise restent à renseigner par l'application.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.2, à la date d'effet de la version 2026.1, sort la part conventionnelle de la contribution de formation professionnelle (0,35 % de l'assiette des cotisations de 1 à 299 salariés) de la contribution légale : `formation professionnelle conventionnelle` s'ajoute à `salarié . cotisations . employeur`, et `salarié . cotisations . formation professionnelle` redevient la seule contribution légale. Le montant total est inchangé.

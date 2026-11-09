@@ -24,3 +24,7 @@ Les fichiers [2026.3](1607-jeux-jouets.2026.3.publicodes) (1er avril 2026) et [2
 - La version 2026.1 couvre le barème applicable à compter du 1er avril 2026 ; la version 2026.2 couvre la contribution étendue à compter du 1er juillet 2026.
 - Les versions 2026.1 et 2026.2 ne modélisent que la colonne 0 à 3 ans ; elles sont remplacées par 2026.3 et 2026.4. La colonne « Base ancienneté » de l'avenant (774 à 2 824 €, base de calcul de la prime d'ancienneté) n'est pas un minimum et n'est pas modélisée.
 - Les primes, majorations et autres dispositions de la convention ne sont pas modélisées. La contribution de formation est calculée sur l'assiette de cotisations mensuelle ; les modalités annuelles de collecte auprès de l'OPCO ne le sont pas.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.5, à la date d'effet de la version 2026.4, sort la part conventionnelle de la contribution de formation professionnelle (taux globaux de 0,60 % (moins de 10 salariés), 1,10 % (10 à 299) et 1,20 % (300 et plus) de l'assiette des cotisations, diminués de la contribution légale) de la contribution légale : `formation professionnelle conventionnelle` s'ajoute à `salarié . cotisations . employeur`, et `salarié . cotisations . formation professionnelle` redevient la seule contribution légale. Le montant total est inchangé.

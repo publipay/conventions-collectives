@@ -52,3 +52,7 @@ restent également hors périmètre.
 ## Financement du paritarisme
 
 La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs au fonds pour le fonctionnement et le développement du paritarisme : 0,1 % du revenu d'activité retenu pour les cotisations sociales, dès le premier centime (articles 1.8.2 et 1.8.3 de la convention, rédigés par l'avenant n° 197 du 11 mai 2023, KALITEXT000048052461, étendu par arrêté du 10 octobre 2024). Elle est distincte de la contribution conventionnelle de formation déjà calculée. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.4, à la date d'effet de la version 2026.3, sort la part conventionnelle de la contribution de formation professionnelle (taux global de 2,10 % de l'assiette des cotisations, diminué de la contribution légale) de la contribution légale : `formation professionnelle conventionnelle` s'ajoute à `salarié . cotisations . employeur`, et `salarié . cotisations . formation professionnelle` redevient la seule contribution légale. Le montant total est inchangé.

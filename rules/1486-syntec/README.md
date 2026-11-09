@@ -24,3 +24,7 @@ La révision 2026.5 ajoute les indemnités de licenciement (article 4.5), de dé
 ## Contribution au dialogue social et au paritarisme
 
 La révision 2026.6, en vigueur à la même date, ajoute `financement du paritarisme` : la contribution conventionnelle annuelle versée à l'ADESATT, de 0,2 ‰ (0,02 %) de la masse salariale brute de l'année précédente déclarée dans la DSN, due par toutes les entreprises de la branche quel que soit leur effectif (article 3.1 de l'accord du 25 octobre 2007, rédigé par l'article 3.5 de l'accord du 28 avril 2021, KALITEXT000044159279, étendu par arrêté du 4 février 2022), lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution patronale légale au dialogue social de `modele-social` (0,016 %), dont elle est distincte. Le montant mensuel est une provision de 0,02 % de l'assiette du mois ; la régularisation sur la masse salariale déclarée de l'année précédente n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.7, à la date d'effet de la version 2026.6, sort la part conventionnelle de la contribution de formation professionnelle (0,05 % de l'assiette des cotisations sous 50 salariés, 0,10 % à partir de 50) de la contribution légale : `formation professionnelle conventionnelle` s'ajoute à `salarié . cotisations . employeur`, et `salarié . cotisations . formation professionnelle` redevient la seule contribution légale. Le montant total est inchangé.

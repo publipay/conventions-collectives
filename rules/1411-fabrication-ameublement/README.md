@@ -26,3 +26,7 @@ Aucun montant de la grille n’est inférieur au SMIC mensuel de 1 867,02 € en
 
 - Accord du 28 mai 2026 relatif aux salaires minima, étendu par arrêté du 24 août 2026 (JORF du 4 septembre 2026) : [KALITEXT000054887544](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054887544), [JORFTEXT000054794539](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054794539).
 - Accord du 30 janvier 2026 relatif à la contribution additionnelle à la formation professionnelle, étendu par arrêté du 3 juillet 2026 (JORF du 11 juillet 2026) : [KALITEXT000054177285](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054177285), [JORFTEXT000054415773](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054415773).
+
+## Contribution conventionnelle de formation
+
+La révision 2026.3, à la date d'effet de la version 2026.2, sort la part conventionnelle de la contribution de formation professionnelle (0,50 % de l'assiette des cotisations à partir de 10 salariés) de la contribution légale : `formation professionnelle conventionnelle` s'ajoute à `salarié . cotisations . employeur`, et `salarié . cotisations . formation professionnelle` redevient la seule contribution légale. Le montant total est inchangé.

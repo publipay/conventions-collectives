@@ -36,3 +36,7 @@ Le modèle prorate le minimum exposé selon la quotité de travail et arrondit l
 ## Financement du paritarisme
 
 La révision 2025.4, à la date d'effet de la version 2025.3, ajoute `financement du paritarisme` : contribution proportionnelle des entreprises au financement du paritarisme : 0,03 % de la masse salariale brute déclarée en retraite complémentaire (avenant n° 1 du 16 novembre 2018). Le forfait annuel de 25 € par entreprise n'est pas calculé ; le montant mensuel est une provision : 0,03 % du brut du mois (KALITEXT000038418066). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2025.5, à la date d'effet de la version 2025.4, sort la part conventionnelle de la contribution de formation professionnelle (0,30 % de l'assiette des cotisations) de la contribution légale : `formation professionnelle conventionnelle` s'ajoute à `salarié . cotisations . employeur`, et `salarié . cotisations . formation professionnelle` redevient la seule contribution légale. Le montant total est inchangé.
