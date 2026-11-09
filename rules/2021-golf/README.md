@@ -43,3 +43,7 @@ Ne sont pas modélisés : classifications détaillées au sein des groupes, prim
 ## Financement du paritarisme
 
 La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation annuelle des entreprises au fonds d'aide au développement du paritarisme : 0,05 % de la masse salariale brute, dès le premier euro (article 2.3.3.1 de la convention, rédigé par l'avenant n° 47 du 16 septembre 2009, KALITEXT000021747679, étendu par arrêté du 23 juillet 2010). Le texte prévoit une renégociation annuelle du taux ; aucune n'est publiée dans KALI. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 0,25 % des rémunérations brutes, pour toutes les structures (article 9.2.4 de la convention, avenant n° 89 du 19 septembre 2023), versée à l'Afdas. Le montant mensuel est une provision : 0,25 % du brut du mois (KALITEXT000048638502). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

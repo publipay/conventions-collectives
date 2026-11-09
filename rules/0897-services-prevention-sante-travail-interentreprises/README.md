@@ -13,3 +13,7 @@ La révision [2026.2](0897-services-prevention-sante-travail-interentreprises.20
 - `classe hors grille` repère une classe absente de la grille ; le minimum vaut alors `0 €/an` et l'application doit traiter cette anomalie.
 
 Le modèle conserve la comparaison en euros annuels et ne convertit pas le minimum en garantie mensuelle. Les indemnités de déplacement et de repas de l'avenant distinct du 19 février 2026 ne sont pas calculées automatiquement, car elles dépendent de frais et de situations de déplacement. Les garanties d'évolution liées à l'ancienneté des cadres ne sont pas évaluées automatiquement. Les références juridiques détaillées figurent dans les métadonnées du fichier Publicodes.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle de l'année 2026 : 0,35 % de la masse salariale (avenant n° 5 du 12 juin 2025), versée à l'OPCO Santé. Le montant mensuel est une provision : 0,35 % du brut du mois ; rien après 2026 (KALITEXT000052288844). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

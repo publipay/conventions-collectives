@@ -30,3 +30,7 @@ La valeur Publicodes est `réseaux de transports urbains` ; les règles sont sou
 ## Financement du paritarisme
 
 Les révisions 2025.2 (version 2025.1) et 2026.2 (version 2026.1), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : contribution des entreprises au financement du dialogue social de branche : 0,1 % de la masse salariale brute (article 4 de l'accord du 3 décembre 2007). Le montant mensuel est une provision : 0,1 % du brut du mois (KALITEXT000018772924). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+Les révisions 2025.3 (version 2025.2) et 2026.3 (version 2026.2), à la date d'effet de chaque version, ajoutent `formation professionnelle conventionnelle` : contribution supplémentaire conventionnelle de formation professionnelle : 0,3 % de la masse salariale brute (accord du 6 février 2024), versée à l'opérateur de compétences de la branche. Le montant mensuel est une provision : 0,3 % du brut du mois (KALITEXT000049620584). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

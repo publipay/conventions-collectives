@@ -30,3 +30,7 @@ Les avenants salariaux fixent uniquement les salaires minima conventionnels. Auc
 ## Financement du paritarisme
 
 La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la part de 0,03 % de la masse salariale brute de la contribution au financement du paritarisme (article 2 de l'accord du 27 mai 2011, KALITEXT000024629512, étendu par arrêté du 29 décembre 2011). Le forfait de 25 € par SIRET n'est pas calculé. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+Les révisions 2025.3 (version 2025.2) et 2026.3 (version 2026.2), à la date d'effet de chaque version, ajoutent `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 0,18 % de la masse salariale, pour toutes les entreprises (accord du 24 février 2022), versée à l'Afdas. Le montant mensuel est une provision : 0,18 % du brut du mois (KALITEXT000045847596). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.
