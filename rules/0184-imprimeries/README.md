@@ -35,3 +35,7 @@ Un groupe hors de cette grille est signalé par `groupe hors grille` et donne un
 - Les minima antérieurs au 1er avril 2026 ne sont pas modélisés.
 - Les primes, indemnités, salaires des apprentis et autres dispositions de la convention ne sont pas modélisés.
 - Le modèle couvre uniquement les douze positions explicitement présentes dans la grille salariale publiée ; il ne déduit pas une position à partir d'un intitulé de poste.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution des entreprises au dialogue social : 0,04 % de la masse salariale (article 2 de l'accord du 23 novembre 2015). Le plancher de 50 € et le plafond de 1 500 € par entreprise ne sont pas calculés ; le montant mensuel est une provision : 0,04 % du brut du mois (KALITEXT000032080921). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

@@ -26,3 +26,7 @@ La valeur Publicodes est `réseaux de transports urbains` ; les règles sont sou
 - Accord du 18 février 2026 : https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054177295 (arrêté du 27 mai 2026, JORF du 31 mai 2026).
 - Annexe VI, accord national de salaires : https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000005669239
 - Convention collective nationale du 11 avril 1986, conteneur KALICONT000005635740.
+
+## Financement du paritarisme
+
+Les révisions 2025.2 (version 2025.1) et 2026.2 (version 2026.1), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : contribution des entreprises au financement du dialogue social de branche : 0,1 % de la masse salariale brute (article 4 de l'accord du 3 décembre 2007). Le montant mensuel est une provision : 0,1 % du brut du mois (KALITEXT000018772924). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

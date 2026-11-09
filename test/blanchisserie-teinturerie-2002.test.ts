@@ -81,9 +81,10 @@ describe("IDCC 2002 blanchisserie-teinturerie minimum salaries", () => {
     });
   }
 
-  it("has two consecutive versions, the 2026 one effective from 1 January 2026", () => {
+  it("has two consecutive versions, the 2026 one effective from 1 January 2026, each revised", () => {
     const versions = COMPILED_VERSIONS[agreement]?.map((entry) => entry.version);
-    assert.deepEqual(versions, ["2025.1", "2026.1"]);
+    // 2025.2 and 2026.2 add the joint bodies contribution at the dates of 2025.1 and 2026.1.
+    assert.deepEqual(versions, ["2025.1", "2025.2", "2026.1", "2026.2"]);
   });
   it("part-time 2026: 2-2 at 80 % gives 1484.30", async () => {
     const { engine } = await engineOf("2026.1");

@@ -50,3 +50,7 @@ n° 4 ne publie plus que la grille de la nouvelle classification : leurs clés s
 - Le passage automatique de A1 à A2 au plus tard au 6e mois de présence (article 12.5.3) n'est pas calculé :
   le niveau est fourni par l'application.
 - Le choix de la grille (transposée ou sectorielle) et de la version selon la période de paie reste à la charge de l'application consommatrice.
+
+## Financement du paritarisme
+
+Les révisions 2025.2 (version 2025.1) et 2026.2 (version 2026.1), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : partie variable de la contribution des entreprises au fonds de financement du paritarisme : 0,04 % des rémunérations soumises à cotisations (article 3 de l'accord du 5 avril 2022). La partie forfaitaire de 300 € par entreprise n'est pas calculée ; le montant mensuel est une provision : 0,04 % du brut du mois (KALITEXT000046100116). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

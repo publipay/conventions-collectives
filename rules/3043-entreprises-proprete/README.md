@@ -52,3 +52,7 @@ La convention contient d'autres dispositions qui demandent des données ou une d
 La révision 2026.2 ajoute le maintien de salaire conventionnel (article 4.9.1 a) sous `maintien de salaire`, lu sur Légifrance le 24 octobre 2026 : les durées, taux, carences et modalités sont dans les sources de la version et dans `test/salary-maintenance.test.ts`. L’interface est décrite dans le README du package.
 
 La révision 2026.3 ajoute les indemnités de licenciement (article 4.11.3) et de départ ou de mise à la retraite (article 4.12), sous `indemnité de rupture`, lus sur Légifrance le 28 octobre 2026 : les barèmes, seuils d'ancienneté et plafonds sont dans les sources de la version et dans `test/termination-indemnity.test.ts`, en mois de salaire de référence. Aucun montant propre pour la rupture conventionnelle.
+
+## Financement du paritarisme
+
+La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `financement du paritarisme` : contribution patronale au développement du dialogue social de branche : 0,01 % de la masse salariale brute soumise à cotisations (article 3.2 de l'annexe V, accord du 19 septembre 2018). Le montant mensuel est une provision : 0,01 % du brut du mois (KALITEXT000038184099). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

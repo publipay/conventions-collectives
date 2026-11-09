@@ -36,3 +36,7 @@ Les textes dédiés de la branche ont été recherchés en plus de l'avenant sal
 ## Limites
 
 Les dispositions autonomes de santé, prévoyance, formation, AT/MP, primes et avantages nécessitent leurs propres entrées, dates d'effet et périmètres. Elles sont auditées et explicitement omises ici plutôt que calculées avec des valeurs par défaut.
+
+## Financement du paritarisme
+
+Les révisions 2026.4 (version 2026.2) et 2026.5 (version 2026.3), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : contribution des entreprises au financement du paritarisme et du syndicalisme : 0,05 % de la masse salariale brute (article 3 de l'avenant n° 14 du 27 avril 2001). Le montant mensuel est une provision : 0,05 % du brut du mois (KALITEXT000005660387). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

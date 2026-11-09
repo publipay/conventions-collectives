@@ -27,3 +27,7 @@ Les textes officiels de la convention, l'accord salarial, l'arrêté d'extension
 - Arrêté du 27 mai 2024 portant extension, publié au Journal officiel du 1er juin 2024 : [JORFTEXT000049630725](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049630725).
 - Convention collective nationale du commerce succursaliste de la chaussure, IDCC 468, conteneur Légifrance [KALICONT000005635394](https://www.legifrance.gouv.fr/conv_coll/id/KALICONT000005635394).
 - Accords dédiés de prévoyance et de formation consultés dans le conteneur officiel ci-dessus ; aucun taux supplémentaire n'est automatisé dans cette version.
+
+## Financement du paritarisme
+
+Les révisions 2025.2 (version 2025.1) et 2026.2 (version 2026.1), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : contribution des employeurs au financement du dialogue social : 0,11 % de la masse salariale (accord du 21 octobre 2019, avenant du 13 avril 2026). Le plafond annuel par entreprise (27 500 €) et le forfait de 550 € ne sont pas calculés ; le montant mensuel est une provision : 0,11 % du brut du mois (KALITEXT000054871719). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

@@ -81,3 +81,7 @@ Cadres (les deux filières) :
 Les primes (ancienneté, etc.), cotisations conventionnelles, indemnités et autres dispositions ne sont pas modélisées.
 Les contrôles SMIC et le choix de la version applicable à la période de paie restent à la charge de l'application consommatrice.
 Les arrêtés d'extension sont cités d'après la mention de Légifrance ; leur texte au Journal officiel n'a pas été ouvert.
+
+## Financement du paritarisme
+
+Les révisions 2025.2 (version 2025.1) et 2026.2 (version 2026.1), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : contribution des entreprises au financement du dialogue social : 0,15 % de la masse salariale hors apprentis (avenant n° 1 du 23 janvier 2017). La contribution minimale de 25 € par entreprise n'est pas calculée ; le montant mensuel est une provision : 0,15 % du brut du mois (KALITEXT000035532466). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

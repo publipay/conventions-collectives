@@ -2,7 +2,8 @@
  * Joint bodies (paritarisme) contributions added in November 2026 to 538, 843, 959, 993, 1090,
  * 1147, 1286 and 1316, then 1405, 1505, 1518, 1619, 1996, 2021, 2264, 2332, 3203 and 3237, then 292, 1261, 1501, 1517, 1631, 1686, 1978, 2098, 3127
  * and 3213, then 1267, 1285, 1516, 1534, 1951, 2336, 2941, 3097, 3241, 3242 and 3254, then 86, 637, 953, 1000, 1043, 1404, 1487, 1561, 1880, 2121, 2148, 2596, 2691,
- * 3013, 3032, 3168 and 3252. Amounts are computed from the texts cited in each version's sources, for
+ * 3013, 3032, 3168 and 3252, then 16 (employer share only), 184, 468, 489, 1424, 1527, 1790, 2002,
+ * 2219, 3043, 3219 and 3255. Amounts are computed from the texts cited in each version's sources, for
  * a gross salary of 3 000 €/mois unless stated otherwise (2026 ceiling: 4 005 €/mois).
  */
 import assert from "node:assert/strict";
@@ -618,6 +619,174 @@ const CASES: Case[] = [
     source: "KALITEXT000050299244",
     // 3 000 € × 0.1 %.
     amount: 3,
+  },
+  {
+    model: "0016-transports-routiers",
+    value: "transports routiers",
+    previous: "2026.5",
+    revision: "2026.6",
+    source: "KALITEXT000038545362",
+    // half of 0.05 % (employer share), capped at three ceilings: 3 000 € × 0.025 %.
+    amount: 0.75,
+    others: [[{ "salarié . contrat . salaire brut": "15000 €/mois" }, 3], [{ "salarié . contrat": "'apprentissage'" }, null], [{ "salarié . contrat": "'professionnalisation'" }, null]],
+  },
+  {
+    model: "0184-imprimeries",
+    value: "imprimeries de labeur et industries graphiques",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000032080921",
+    // 3 000 € × 0.04 %.
+    amount: 1.2,
+  },
+  {
+    model: "0468-commerce-succursaliste-chaussure",
+    value: "commerce succursaliste de la chaussure",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000054871719",
+    // 3 000 € × 0.11 %.
+    amount: 3.3,
+  },
+  {
+    model: "0468-commerce-succursaliste-chaussure",
+    value: "commerce succursaliste de la chaussure",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000054871719",
+    // 3 000 € × 0.11 %.
+    amount: 3.3,
+  },
+  {
+    model: "0489-industries-cartonnage",
+    value: "industries du cartonnage",
+    previous: "2025.4",
+    revision: "2025.5",
+    source: "KALITEXT000051843319",
+    // 3 000 € × 0.02 %.
+    amount: 0.6,
+  },
+  {
+    model: "1424-reseaux-transports-publics-urbains",
+    value: "réseaux de transports urbains",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000018772924",
+    // 3 000 € × 0.1 %.
+    amount: 3,
+  },
+  {
+    model: "1424-reseaux-transports-publics-urbains",
+    value: "réseaux de transports urbains",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000018772924",
+    // 3 000 € × 0.1 %.
+    amount: 3,
+  },
+  {
+    model: "1527-immobilier",
+    value: "immobilier",
+    previous: "2026.4",
+    revision: "2026.5",
+    source: "KALITEXT000052018210",
+    // 3 000 € × 0.0075 % (11 to 49 employees).
+    amount: 0.23,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 0.38], [{ "entreprise . salariés . effectif": 60 }, 0.15], [{ "entreprise . salariés . effectif": 300 }, 0.05]],
+  },
+  {
+    model: "1790-espaces-loisirs",
+    value: "espaces loisirs",
+    previous: "2026.2",
+    revision: "2026.4",
+    source: "KALITEXT000005660387",
+    // 3 000 € × 0.05 %.
+    amount: 1.5,
+  },
+  {
+    model: "1790-espaces-loisirs",
+    value: "espaces loisirs",
+    previous: "2026.3",
+    revision: "2026.5",
+    source: "KALITEXT000005660387",
+    // 3 000 € × 0.05 %.
+    amount: 1.5,
+  },
+  {
+    model: "2002-blanchisserie-teinturerie",
+    value: "blanchisserie teinturerie",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000035532466",
+    // 3 000 € × 0.15 %; apprentices excluded.
+    amount: 4.5,
+    others: [[{ "salarié . contrat": "'apprentissage'" }, null]],
+  },
+  {
+    model: "2002-blanchisserie-teinturerie",
+    value: "blanchisserie teinturerie",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000035532466",
+    // 3 000 € × 0.15 %; apprentices excluded.
+    amount: 4.5,
+    others: [[{ "salarié . contrat": "'apprentissage'" }, null]],
+  },
+  {
+    model: "2219-taxis",
+    value: "taxis",
+    previous: "2025.2",
+    revision: "2025.3",
+    source: "KALITEXT000054951926",
+    // 3 000 € × 0.15 %; apprentices excluded.
+    amount: 4.5,
+    others: [[{ "salarié . contrat": "'apprentissage'" }, null]],
+  },
+  {
+    model: "2219-taxis",
+    value: "taxis",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000054951926",
+    // 3 000 € × 0.15 %; apprentices excluded.
+    amount: 4.5,
+    others: [[{ "salarié . contrat": "'apprentissage'" }, null]],
+  },
+  {
+    model: "3043-entreprises-proprete",
+    value: "propreté",
+    previous: "2026.3",
+    revision: "2026.4",
+    source: "KALITEXT000038184099",
+    // 3 000 € × 0.01 %.
+    amount: 0.3,
+  },
+  {
+    model: "3219-portage-salarial",
+    value: "portage salarial",
+    previous: "2024.3",
+    revision: "2024.4",
+    source: "KALITEXT000038330663",
+    // 3 000 € × 0.01 %.
+    amount: 0.3,
+  },
+  {
+    model: "3255-boulangerie-industrielle",
+    value: "boulangerie industrielle",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000046100116",
+    // 3 000 € × 0.04 %; the 300 € flat part is not computed.
+    amount: 1.2,
+  },
+  {
+    model: "3255-boulangerie-industrielle",
+    value: "boulangerie industrielle",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000046100116",
+    // 3 000 € × 0.04 %; the 300 € flat part is not computed.
+    amount: 1.2,
   },
 ];
 

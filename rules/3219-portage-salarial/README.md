@@ -37,3 +37,7 @@ L'absence de ces calculs ne vaut pas renonciation aux obligations conventionnell
 ## Limites
 
 La convention du portage salarial est très dépendante de la mission, du compte d'activité, du type de contrat et du régime collectif choisi. Le modèle ne calcule pas le compte d'activité, les commissions de gestion, les frais réels, les congés payés effectivement acquis, les contributions de régimes collectifs, ni les taux de cotisations de droit commun.
+
+## Financement du paritarisme
+
+La révision 2024.4, à la date d'effet de la version 2024.3, ajoute `financement du paritarisme` : contribution conventionnelle des entreprises au financement du dialogue social : 0,01 % de la masse salariale (avenant n° 5 du 26 novembre 2018). Le montant mensuel est une provision : 0,01 % du brut du mois (KALITEXT000038330663). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

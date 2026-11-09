@@ -51,3 +51,7 @@ elle n'est pas appliquée. Le statut de négociateur (annexe IV) a sa propre pri
 La révision 2026.3 ajoute le maintien de salaire conventionnel (article 24.2) sous `maintien de salaire`, lu sur Légifrance le 24 octobre 2026 : les durées, taux, carences et modalités sont dans les sources de la version et dans `test/salary-maintenance-2.test.ts`. L’interface est décrite dans le README du package.
 
 La révision 2026.4 ajoute l'indemnité de départ en retraite (article 34), sous `indemnité de rupture`, lus sur Légifrance le 28 octobre 2026 : les barèmes, seuils d'ancienneté et plafonds sont dans les sources de la version et dans `test/termination-indemnity.test.ts`, en mois de salaire de référence. Les indemnités de licenciement et de mise à la retraite reprennent le barème légal.
+
+## Financement du paritarisme
+
+La révision 2026.5, à la date d'effet de la version 2026.4, ajoute `financement du paritarisme` : contribution conventionnelle des entreprises au dialogue social, en pourcentage de la masse salariale brute selon l'effectif : 0,0125 % jusqu'à 10 salariés, 0,0075 % de 11 à 49, 0,005 % de 50 à 299, 0,0015 % à partir de 300 (article 3 de l'avenant n° 106 du 28 mai 2025). Le minimum annuel par entreprise n'est pas calculé (KALITEXT000052018210). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

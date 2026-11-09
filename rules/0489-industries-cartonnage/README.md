@@ -19,3 +19,7 @@ Les textes officiels de l'IDCC 489 et l'avenant n° 166 ont été examinés pour
 ## Source officielle
 
 - Avenant n° 166 du 12 mars 2025 relatif aux salaires minima au 1er mai 2025, BOCC 2025-16 TRA 14 à 16, NOR ASET2550438M, ministère du Travail.
+
+## Financement du paritarisme
+
+La révision 2025.5, à la date d'effet de la version 2025.4, ajoute `financement du paritarisme` : contribution des entreprises au financement du dialogue social : 0,02 % de la masse salariale (article 3.2 de l'avenant n° 167 du 11 mars 2025, en vigueur le 1er janvier 2026). Le montant mensuel est une provision : 0,02 % du brut du mois (KALITEXT000051843319). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

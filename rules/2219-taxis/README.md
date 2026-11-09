@@ -49,3 +49,7 @@ Ces omissions sont intentionnelles : l'audit a recherché explicitement les chan
 - [Accord du 20 juin 2025 relatif aux rémunérations minimales — Légifrance](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000052447745)
 - [Arrêté du 9 octobre 2025 portant extension — Journal officiel/Légifrance](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052391450)
 - [Convention collective nationale des taxis du 11 septembre 2001 — Légifrance](https://www.legifrance.gouv.fr/conv_coll/id/KALICONT000021125058)
+
+## Financement du paritarisme
+
+Les révisions 2025.3 (version 2025.2) et 2026.2 (version 2026.1), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : contribution des entreprises au financement du dialogue social : 0,15 % de la masse salariale hors apprentis (accord du 11 décembre 2019, puis accord du 28 avril 2026). Le montant mensuel est une provision : 0,15 % du brut du mois (KALITEXT000054951926). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
