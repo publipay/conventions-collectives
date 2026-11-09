@@ -847,3 +847,42 @@ for (const testCase of CASES) {
     });
   });
 }
+
+// Revision 2026.7 of 16: the employee half of the contribution (0.025 % capped at three ceilings),
+// withheld from the net pay, deducted neither from the taxable net nor from the net social amount.
+describe("0016-transports-routiers 2026.7, employee half of the joint bodies contribution", async () => {
+  const value = "transports routiers";
+  const current = await engineOf("0016-transports-routiers", value, "2026.7");
+  const previous = await engineOf("0016-transports-routiers", value, "2026.6");
+  const employeeShare = `salarié . convention collective . ${value} . financement du paritarisme . part salariale`;
+  const difference = (rule: string) =>
+    Math.round(((current.evaluate(rule) as number) - (previous.evaluate(rule) as number)) * 100) / 100;
+
+  it("cites the accord and keeps the date of 2026.6", () => {
+    assert.equal(current.version.validFrom, previous.version.validFrom);
+    assert.ok(current.version.sources.some((source) => source.includes("KALITEXT000038545362")));
+  });
+
+  it("withholds 0.75 € for 3 000 € and adds it to the employee contributions", () => {
+    assert.equal(current.evaluate(employeeShare), 0.75);
+    assert.equal(difference("salarié . cotisations . salarié"), 0.75);
+    assert.equal(difference("salarié . rémunération . net . à payer avant impôt"), -0.75);
+    assert.equal(difference("salarié . cotisations . employeur"), 0);
+  });
+
+  it("leaves the taxable net and the net social amount unchanged", () => {
+    assert.equal(difference("salarié . rémunération . net . imposable"), 0);
+    assert.equal(difference("salarié . rémunération . montant net social"), 0);
+  });
+
+  it("is capped at three ceilings and spares apprentices and work-study contracts", () => {
+    // 3 × 4 005 € × 0.025 % = 3.00 €.
+    assert.equal(current.evaluate(employeeShare, { "salarié . contrat . salaire brut": "15000 €/mois" }), 3);
+    assert.equal(current.evaluate(employeeShare, { "salarié . contrat": "'apprentissage'" }), null);
+    assert.equal(current.evaluate(employeeShare, { "salarié . contrat": "'professionnalisation'" }), null);
+  });
+
+  it("does not apply to another agreement", () => {
+    assert.equal(current.evaluate(employeeShare, { "salarié . convention collective": "'droit commun'" }), null);
+  });
+});
