@@ -26,3 +26,7 @@ L'accord salarial ne permet pas de calculer automatiquement les primes, majorati
 - [Accord du 9 février 2026 relatif aux salaires minima conventionnels](https://www.legifrance.gouv.fr/conv_coll/article/KALIARTI000054303931)
 - [Texte de l'accord](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054303914)
 - [Convention collective nationale du commerce à distance du 6 février 2001](https://www.legifrance.gouv.fr/conv_coll/id/KALICONT000005635798)
+
+## Financement du paritarisme
+
+L'accord du 30 mars 2022 relatif au financement du dialogue social (KALITEXT000046106757), article 2, institue une contribution forfaitaire annuelle entièrement à la charge de l'employeur selon l'effectif : 100 € jusqu'à 10 salariés, 150 € de 11 à 49, 200 € de 50 à 249, 300 € de 250 à 499, 400 € de 500 à 1 000 et 500 € au-delà de 1 000 salariés. Ce montant est dû par l'entreprise, non par salarié et par mois : il n'est pas calculé sur le bulletin et aucune version ne l'ajoute. Lu sur Légifrance le 9 novembre 2026.

@@ -30,3 +30,7 @@ La convention comporte également des dispositions de prévoyance, santé, forma
 - [Annexe de l’accord du 13 février 2020](https://www.legifrance.gouv.fr/conv_coll/article/KALIARTI000042132002)
 - [Convention collective nationale des pompes funèbres — IDCC 759](https://www.legifrance.gouv.fr/conv_coll/id/KALICONT000005635490)
 - [Données KALI de la DILA](https://echanges.dila.gouv.fr/OPENDATA/KALI/)
+
+## Financement du paritarisme
+
+L'accord du 1er décembre 2020 relatif à la CPPNI et au financement du paritarisme, modifié par l'avenant du 13 juin 2023 (KALITEXT000049620554), institue une contribution conventionnelle forfaitaire et obligatoire par entreprise (70 € pour 2021), dont le montant annuel est fixé en CPPNI au plus tard le 31 octobre de l'année précédente. Ce montant est dû par l'entreprise, non par salarié et par mois : il n'est pas calculé sur le bulletin et aucune version ne l'ajoute. Lu sur Légifrance le 9 novembre 2026.

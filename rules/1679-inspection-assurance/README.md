@@ -60,3 +60,7 @@ La recherche a couvert le protocole salarial, la convention de base, les accords
 ## Limites
 
 Aucun accord de branche salarial plus récent et directement calculable n'a été identifié dans le périmètre retenu pour cette version. Les accords d'entreprise rattachés à l'IDCC 1679 ne sont pas utilisés comme minima de branche. Une future version devra remplacer ou compléter cette grille seulement sur la base d'un nouveau texte officiel de branche, sans modifier `2007.1`.
+
+## Financement du paritarisme
+
+Le protocole d'accord du 10 décembre 2021 relatif au dialogue social (KALITEXT000045695423), commun aux sociétés d'assurances (1672) et à l'inspection d'assurance (1679), fixe la contribution annuelle de chaque société à 5 € par salarié présent dans l'effectif au 31 décembre de l'année précédente. Ce montant est dû par l'entreprise, non par salarié et par mois : il n'est pas calculé sur le bulletin et aucune version ne l'ajoute. Lu sur Légifrance le 9 novembre 2026.

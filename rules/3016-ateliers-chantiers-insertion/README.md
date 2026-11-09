@@ -26,3 +26,7 @@ Les primes, indemnités, avantages en nature et frais non déterminables à part
 - Convention collective nationale des ateliers et chantiers d'insertion du 31 mars 2011, IDCC 3016 — Légifrance, texte `KALITEXT000027181040`.
 - Avenant n° 37 du 25 novembre 2025 relatif au régime de prévoyance, étendu par arrêté du 18 mars 2026 — Légifrance, texte `KALITEXT000053576911`.
 - Accord du 25 novembre 2025 relatif aux frais de santé et avenant n° 1 du 20 février 2026 — Légifrance, article `KALIARTI000053576870`.
+
+## Financement du paritarisme
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : cotisation des employeurs au fonds pour le fonctionnement et le développement du paritarisme : 0,1 % de la masse salariale brute (article 7 de la convention). Le montant mensuel est une provision : 0,1 % du brut du mois (KALITEXT000027181040). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

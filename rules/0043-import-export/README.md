@@ -16,3 +16,7 @@ La valeur Publicodes est `import-export` ; les règles sont sous `salarié . con
 - Le modèle couvre uniquement les minima mensuels de l'accord salarial cité ; les primes, majorations, classifications détaillées, ancienneté et autres dispositions de la convention ne sont pas modélisées.
 - Le minimum conventionnel est comparé par l'application au SMIC lorsqu'il est plus favorable.
 - L'accord est modélisé à compter de son entrée en vigueur étendue du 1er mars 2026 ; les périodes antérieures ne sont pas couvertes.
+
+## Financement du paritarisme
+
+L'accord du 30 septembre 2013 relatif au fonctionnement et au financement du dialogue social (KALITEXT000028465577), étendu par arrêté du 29 décembre 2014, institue une contribution annuelle entièrement à la charge de l'employeur, forfaitaire selon l'effectif : 85 € de 1 à moins de 5 salariés, 110 € de 5 à moins de 10, 150 € de 10 à moins de 20, 250 € de 20 à moins de 50, 350 € de 50 à moins de 500 et 500 € à partir de 500 salariés. Ce montant est dû par l'entreprise, non par salarié et par mois : il n'est pas calculé sur le bulletin et aucune version ne l'ajoute. Lu sur Légifrance le 9 novembre 2026.

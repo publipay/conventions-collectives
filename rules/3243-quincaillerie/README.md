@@ -48,3 +48,7 @@ Les primes, indemnités, ancienneté, intéressement, épargne salariale et disp
 
 - Avenant n° 3 du 22 janvier 2026 relatif aux salaires minima hiérarchiques (annexe 2), Légifrance, KALIARTI000054066782.
 - Arrêté du 8 avril 2026 portant extension d'un avenant à la convention collective nationale des commerces de quincaillerie, fournitures industrielles, fers, métaux et équipement de la maison (IDCC 3243), Légifrance, JORFTEXT000053907795, JORF du 17 avril 2026.
+
+## Financement du paritarisme
+
+L'accord du 5 mars 2026 relatif au financement du dialogue social (KALITEXT000054370955) institue une contribution conventionnelle patronale annuelle fixée à 150 € par entreprise. Ce montant est dû par l'entreprise, non par salarié et par mois : il n'est pas calculé sur le bulletin et aucune version ne l'ajoute. Lu sur Légifrance le 9 novembre 2026.

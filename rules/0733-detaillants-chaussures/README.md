@@ -16,3 +16,7 @@ La convention collective nationale des détaillants en chaussures du 27 juin 197
 - Cette version modélise uniquement la grille des salaires minima de l’avenant n° 108 à compter du 1er juillet 2026 ; les grilles antérieures ne sont pas incluses.
 - Les primes, majorations, indemnités, classifications détaillées et autres obligations conventionnelles ne sont pas modélisés.
 - Le texte est étendu à l’ensemble du champ de la convention à compter du 1er juillet 2026, sous réserve des réserves de l’arrêté d’extension ; aucune extrapolation à une autre convention n’est faite.
+
+## Financement du paritarisme
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : partie proportionnelle de la contribution des entreprises au fonds du paritarisme : 0,1 % de la masse salariale brute (article 1er de l'avenant n° 46 du 23 novembre 1995). Le forfait de 350 F (53,36 €) par entreprise et le plafond de la masse salariale (2 150 000 F) ne sont pas calculés ; le montant mensuel est une provision : 0,1 % du brut du mois (KALITEXT000005683909). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

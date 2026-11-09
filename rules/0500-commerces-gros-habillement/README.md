@@ -35,3 +35,7 @@ La valeur Publicodes est `commerces de gros habillement` ; les règles sont sous
 - Communiqué de la CFDT du 2 juillet 2026 donnant la grille de l'annexe 56/A (source secondaire, utilisée par la version 2026.1, confirmée par le texte du BOCC).
 
 Les références et les liens officiels figurent également dans l'en-tête du fichier `.publicodes`.
+
+## Financement du paritarisme
+
+L'avenant du 16 juin 2025 à l'accord du 11 avril 2019 relatif au financement du dialogue social (KALITEXT000052283451) fixe une contribution annuelle de l'employeur selon l'effectif déclaré dans la DSN de l'année précédente : 55 € sans salarié, 220 € de 1 à moins de 10 salariés, 550 € de 10 à moins de 50, 1 100 € de 50 à moins de 300 et 2 200 € à partir de 300 salariés. Ce montant est dû par l'entreprise, non par salarié et par mois : il n'est pas calculé sur le bulletin et aucune version ne l'ajoute. Lu sur Légifrance le 9 novembre 2026.

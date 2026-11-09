@@ -20,3 +20,7 @@ Les niveaux hors grille ne sont pas extrapolés ; les catégories particulières
 - Accord du 19 mars 2025 relatif aux salaires minima conventionnels — Légifrance, texte `KALITEXT000052299815`.
 - Arrêté du 12 septembre 2025 portant extension de l'accord — JORF du 19 septembre 2025.
 - Convention collective nationale de la bijouterie, joaillerie, orfèvrerie, horlogerie du 3 octobre 2023 — Légifrance, conteneur `KALICONT000048984729`.
+
+## Financement du paritarisme
+
+L'accord du 10 décembre 2024 relatif à la contribution au dialogue social (KALITEXT000051295572), article 3.2, fixe une contribution annuelle forfaitaire selon la taille de l'entreprise : 500 € de moins de 10 salariés, 875 € de 11 à moins de 50, 1 250 € de 50 à moins de 100 et 1 875 € à partir de 100 salariés. Ce montant est dû par l'entreprise, non par salarié et par mois : il n'est pas calculé sur le bulletin et aucune version ne l'ajoute. Lu sur Légifrance le 9 novembre 2026.

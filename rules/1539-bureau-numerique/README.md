@@ -22,3 +22,7 @@ Les niveaux `A1` et `A2` (1 835 € et 1 855 €) sont inférieurs au SMIC mensu
 - Les pages consultées en 2026 donnent la même grille : aucune revalorisation postérieure au 1er septembre 2025 n’a été trouvée, sans que son absence soit établie.
 - La modulation (jusqu’à 42 heures en haute saison), les primes, majorations, la prévoyance et les autres éléments de la convention ne sont pas modélisés.
 - Les grilles antérieures au 1er septembre 2025 ne sont pas modélisées : la première version couvre les périodes à partir de cette date.
+
+## Financement du paritarisme
+
+La révision 2025.3, à la date d'effet de la version 2025.2, ajoute `financement du paritarisme` : contribution des employeurs au financement de la négociation collective et des instances paritaires : 0,05 % de la masse salariale brute (article 2 de l'avenant du 22 février 2006, modifié le 3 juillet 2019). Le minimum de 40 € par entreprise et par an n'est pas calculé ; le montant mensuel est une provision : 0,05 % du brut du mois (KALITEXT000005644329). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.

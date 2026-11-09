@@ -3,7 +3,7 @@
  * 1147, 1286 and 1316, then 1405, 1505, 1518, 1619, 1996, 2021, 2264, 2332, 3203 and 3237, then 292, 1261, 1501, 1517, 1631, 1686, 1978, 2098, 3127
  * and 3213, then 1267, 1285, 1516, 1534, 1951, 2336, 2941, 3097, 3241, 3242 and 3254, then 86, 637, 953, 1000, 1043, 1404, 1487, 1561, 1880, 2121, 2148, 2596, 2691,
  * 3013, 3032, 3168 and 3252, then 16 (employer share only), 184, 468, 489, 1424, 1527, 1790, 2002,
- * 2219, 3043, 3219 and 3255. Amounts are computed from the texts cited in each version's sources, for
+ * 2219, 3043, 3219 and 3255, then 733, 1539 and 3016. Amounts are computed from the texts cited in each version's sources, for
  * a gross salary of 3 000 €/mois unless stated otherwise (2026 ceiling: 4 005 €/mois).
  */
 import assert from "node:assert/strict";
@@ -787,6 +787,33 @@ const CASES: Case[] = [
     source: "KALITEXT000046100116",
     // 3 000 € × 0.04 %; the 300 € flat part is not computed.
     amount: 1.2,
+  },
+  {
+    model: "0733-detaillants-chaussures",
+    value: "détaillants chaussures",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000005683909",
+    // 3 000 € × 0.1 %; the 350 F per company and the cap are not computed.
+    amount: 3,
+  },
+  {
+    model: "1539-bureau-numerique",
+    value: "bureau et numérique",
+    previous: "2025.2",
+    revision: "2025.3",
+    source: "KALITEXT000005644329",
+    // 3 000 € × 0.05 %; the minimum of 40 € per company is not computed.
+    amount: 1.5,
+  },
+  {
+    model: "3016-ateliers-chantiers-insertion",
+    value: "ateliers et chantiers d'insertion",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000027181040",
+    // 3 000 € × 0.1 %.
+    amount: 3,
   },
 ];
 

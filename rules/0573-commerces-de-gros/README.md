@@ -32,3 +32,7 @@ Les positions `I.1` (1 839,81 €), `I.2` (1 850,85 €) et `I.3` (1 861,96 €)
 La révision 2026.3 ajoute le maintien de salaire conventionnel (article 53) sous `maintien de salaire`, lu sur Légifrance le 24 octobre 2026 : les durées, taux, carences et modalités sont dans les sources de la version et dans `test/salary-maintenance-2.test.ts`. L’interface est décrite dans le README du package. La levée de la carence en cas d’hospitalisation n’est pas reprise.
 
 La révision 2026.4 ajoute l'indemnité de licenciement (article 37) et l'allocation de départ ou de mise à la retraite (article 41), sous `indemnité de rupture`, lus sur Légifrance le 28 octobre 2026 : les barèmes, seuils d'ancienneté et plafonds sont dans les sources de la version et dans `test/termination-indemnity.test.ts`, en mois de salaire de référence. Aucun montant propre pour la rupture conventionnelle.
+
+## Financement du paritarisme
+
+L'accord du 23 juin 2020 relatif au développement du dialogue social (KALITEXT000042463567), article 2.2, fixe la contribution patronale annuelle pour le développement du dialogue social de branche à 190 € par entreprise, indexée sur les augmentations des salaires minima conventionnels (avenant n° 1 du 15 mai 2025, KALITEXT000052226639). Ce montant est dû par l'entreprise, non par salarié et par mois : il n'est pas calculé sur le bulletin et aucune version ne l'ajoute. Lu sur Légifrance le 9 novembre 2026.

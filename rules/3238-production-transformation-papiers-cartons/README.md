@@ -19,3 +19,7 @@ La valeur Publicodes est `production transformation papiers cartons` ; les règl
 - Les minima des ingénieurs et cadres de l’avenant n° 22, les primes, astreintes et autres dispositions ne sont pas modélisés.
 - Le salaire minimum conventionnel est comparé par l’application au SMIC lorsqu’il est plus favorable.
 - La date d’effet de la grille est le 1er janvier 2026 ; aucune grille historique antérieure n’est fournie.
+
+## Financement du paritarisme
+
+L'avenant n° 20 du 9 juillet 2025 relatif au financement du dialogue social (KALITEXT000052447796), article 2.4, fixe une contribution conventionnelle complémentaire forfaitaire selon la taille de l'entreprise : 187 € de moins de 10 salariés, 312 € de 10 à moins de 50, 425 € de 50 à moins de 100, 750 € de 100 à moins de 300 et 875 € à partir de 300 salariés. Ce montant est dû par l'entreprise, non par salarié et par mois : il n'est pas calculé sur le bulletin et aucune version ne l'ajoute. Lu sur Légifrance le 9 novembre 2026.
