@@ -24,3 +24,7 @@ Les coefficients 700 et 710 (1 835 € et 1 848 €) sont inférieurs au SMIC me
 ## Financement du paritarisme
 
 La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la contribution annuelle des entreprises de 0,05 % de la masse salariale brute (article 2 de l'accord du 20 juin 2012, KALITEXT000026484169, étendu par arrêté du 19 décembre 2012). Le minimum de 150 € par établissement et les plafonds de 8 000 € par établissement et 15 000 € par société ne sont pas calculés. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle supplémentaire de formation professionnelle des entreprises de 10 salariés et plus : 0,15 % de la masse salariale brute (article 20.2.2 de l'accord du 25 mars 2015, avenant n° 3 du 29 juin 2023), versée à l'OPCO de la branche. Le montant mensuel est une provision : 0,15 % du brut du mois (KALITEXT000048150449). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

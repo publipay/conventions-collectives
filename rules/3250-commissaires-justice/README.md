@@ -61,3 +61,7 @@ Seuls les minima de la grille sont modélisés (le règlement de l'`audit paie` 
 indemnités et autres dispositions ne le sont pas. Le choix de la version applicable à la période de paie
 et le contrôle du SMIC restent à la charge de l'application consommatrice. La version `2025.1` couvre
 aussi janvier à mars 2026 ; les versions antérieures à 2025 ne sont pas modélisées.
+
+## Contribution conventionnelle de formation
+
+Les révisions 2025.2 (version 2025.1) et 2026.2 (version 2026.1), à la date d'effet de chaque version, ajoutent `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 0,12 % de la masse salariale brute sous 11 salariés, 0,35 % à partir de 11 (article 48.1 de la convention, avenant n° 3 du 23 novembre 2023), versée à l'OPCO compétent. Le montant mensuel est une provision sur le brut du mois (KALITEXT000049095645). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

@@ -25,3 +25,7 @@ Les montants des coefficients 370, 375 et 380 concernent les jeunes diplômés d
 - [Avenant n° 77 du 26 mars 2026 relatif à la fixation des salaires minima — Légifrance](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054426537)
 - [Grille de l'avenant n° 77 — Légifrance](https://www.legifrance.gouv.fr/conv_coll/article/KALIARTI000054426545)
 - [Arrêté du 11 juin 2026 portant extension des avenants n° 77 et n° 78 — Journal officiel](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054322388)
+
+## Contribution conventionnelle de formation
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle des entreprises de moins de 11 salariés : 0,1 % du revenu d'activité, de 2026 à 2030 (avenant n° 4 du 22 mai 2025), versée à l'OPCO des entreprises de proximité. Le montant mensuel est une provision : 0,1 % du brut du mois (KALITEXT000052283480). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

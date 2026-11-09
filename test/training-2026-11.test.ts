@@ -2,7 +2,8 @@
  * Conventional vocational training contributions moved out of the legal contribution in November
  * 2026 (0086, 1411, 1486, 1518, 1607 and 3253): each revision keeps the previous version's total
  * and shows the conventional part as `formation professionnelle conventionnelle`, added to the
- * employer contributions. Then the contributions added to 1424, 1631, 2021, 2264, 897 and 1979.
+ * employer contributions. Then the contributions added to 1424, 1631, 2021, 2264, 897 and 1979, then
+ * 292, 1316, 1412, 2098, 2148, 3219 and 3250.
  * Amounts for a gross salary of 3 000 €/mois and 20 employees, for which the legal contribution is
  * 1 % (30 €), on 1 July 2026 unless stated otherwise.
  */
@@ -187,6 +188,86 @@ const ADDED: AddedCase[] = [
     // 3 000 € × 0.2 % in 2026, 0.35 % in 2027, 0.5 % from 2028.
     amount: 6,
     others: [[{ date: "01/12/2025" }, 0], [{ date: "01/03/2027" }, 10.5], [{ date: "01/01/2028" }, 15]],
+  },
+  {
+    model: "0292-plasturgie",
+    value: "plasturgie",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000048150449",
+    // 3 000 € × 0.15 % from 10 employees.
+    amount: 4.5,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 0]],
+  },
+  {
+    model: "1316-tourisme-social-familial",
+    value: "tourisme social et familial",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000053721440",
+    // 3 000 € × 0.40 % below 300 employees, until 2027.
+    amount: 12,
+    others: [[{ "entreprise . salariés . effectif": 300 }, 6], [{ date: "01/01/2028" }, 0]],
+  },
+  {
+    model: "1412-installation-aeraulique-thermique-frigorifique",
+    value: "installation aeraulique thermique frigorifique",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000052283480",
+    // Below 11 employees only: 3 000 € × 0.1 %, from 2026 to 2030.
+    amount: 0,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 3], [{ "entreprise . salariés . effectif": 5, date: "01/01/2031" }, 0]],
+  },
+  {
+    model: "2098-prestataires-tertiaire",
+    value: "prestataires tertiaires",
+    previous: "2026.5",
+    revision: "2026.6",
+    source: "KALITEXT000054337542",
+    // 3 000 € × 0.10 % from 11 to 49 employees, until 2026.
+    amount: 3,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 6], [{ "entreprise . salariés . effectif": 60 }, 1.5], [{ date: "01/01/2027" }, 0]],
+  },
+  {
+    model: "2148-telecommunications",
+    value: "télécommunications",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000049150488",
+    // 3 000 € × 0.05 % from 11 employees, until 2026.
+    amount: 1.5,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 0.6], [{ date: "01/01/2027" }, 0]],
+  },
+  {
+    model: "3219-portage-salarial",
+    value: "portage salarial",
+    previous: "2024.4",
+    revision: "2024.5",
+    source: "KALITEXT000043458326",
+    // 3 000 € × 0.60 % from 11 employees.
+    amount: 18,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 31.5]],
+  },
+  {
+    model: "3250-commissaires-justice",
+    value: "commissaires de justice et sociétés de ventes volontaires",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000049095645",
+    // 3 000 € × 0.35 % from 11 employees.
+    amount: 10.5,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 3.6]],
+  },
+  {
+    model: "3250-commissaires-justice",
+    value: "commissaires de justice et sociétés de ventes volontaires",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000049095645",
+    // 3 000 € × 0.35 % from 11 employees.
+    amount: 10.5,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 3.6]],
   },
 ];
 

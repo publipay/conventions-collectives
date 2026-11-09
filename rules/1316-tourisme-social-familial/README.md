@@ -21,3 +21,7 @@ La valeur Publicodes est `tourisme social et familial` ; les règles sont sous `
 ## Financement du paritarisme
 
 La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : la contribution financière des entreprises de 0,05 % de la masse salariale brute, dont 0,02 % pour le fonctionnement du paritarisme et 0,03 % pour l'exercice du syndicalisme (article 3 de l'avenant n° 41 du 15 mai 2003, KALITEXT000005684557, étendu). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle et les éventuels minimums par entreprise ne sont pas calculés.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `formation professionnelle conventionnelle` : contribution supplémentaire conventionnelle de formation professionnelle : 0,40 % de la masse salariale brute sous 300 salariés, 0,20 % à partir de 300, sur les salaires de 2026 et 2027 (avenant n° 3 du 4 décembre 2025). Le minimum de 100 € par entreprise n'est pas calculé ; le montant mensuel est une provision sur le brut du mois (KALITEXT000053721440). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

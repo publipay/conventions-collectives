@@ -41,3 +41,7 @@ La convention du portage salarial est très dépendante de la mission, du compte
 ## Financement du paritarisme
 
 La révision 2024.4, à la date d'effet de la version 2024.3, ajoute `financement du paritarisme` : contribution conventionnelle des entreprises au financement du dialogue social : 0,01 % de la masse salariale (avenant n° 5 du 26 novembre 2018). Le montant mensuel est une provision : 0,01 % du brut du mois (KALITEXT000038330663). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2024.5, à la date d'effet de la version 2024.4, ajoute `formation professionnelle conventionnelle` : contribution supplémentaire conventionnelle de formation professionnelle : 1,05 % de la masse salariale sous 11 salariés, 0,60 % à partir de 11 (article 36 de la convention, avenant n° 10 du 15 décembre 2020), versée à l'OPCO de la branche. Le montant mensuel est une provision sur le brut du mois (KALITEXT000043458326). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

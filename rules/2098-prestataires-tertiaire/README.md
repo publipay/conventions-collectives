@@ -44,3 +44,7 @@ La révision 2026.4 ajoute l'indemnité de licenciement (article 19.2) et les in
 ## Financement du paritarisme
 
 La révision 2026.5, à la date d'effet de la version 2026.4, ajoute `financement du paritarisme` : la contribution des entreprises au fonds commun d'aide au paritarisme : 0,03 % de la masse salariale brute (article 2 de l'accord du 28 octobre 2003, KALITEXT000005680490). Le minimum de 23 € par an n'est pas calculé. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.6, à la date d'effet de la version 2026.5, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle selon l'effectif : 0,20 % jusqu'à 10 salariés, 0,10 % de 11 à 49, 0,05 % à partir de 50 (avenant du 24 mars 2026, exercices 2025 et 2026), versée à l'OPCO des entreprises de proximité. Le montant mensuel est une provision sur le brut du mois, jusqu'en 2026 (KALITEXT000054337542). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

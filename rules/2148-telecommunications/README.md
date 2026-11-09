@@ -28,3 +28,7 @@ Les dispositions de prévoyance, santé, ancienneté et professionnalisation ne 
 ## Financement du paritarisme
 
 La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : contribution conventionnelle des entreprises d'au moins 11 salariés au dialogue social de branche : 0,023 % de la masse salariale (accord du 16 mai 2025). Le forfait annuel de 150 € des entreprises de moins de 11 salariés n'est pas calculé (KALITEXT000052119246). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 0,05 % de la masse salariale à partir de 11 salariés, 0,02 % en dessous (avenant du 15 décembre 2023, de 2024 à 2026). Le montant mensuel est une provision sur le brut du mois, jusqu'en 2026 (KALITEXT000049150488). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.
