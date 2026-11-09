@@ -4,7 +4,7 @@
  * and shows the conventional part as `formation professionnelle conventionnelle`, added to the
  * employer contributions. Then the contributions added to 1424, 1631, 2021, 2264, 897 and 1979, then
  * 292, 1316, 1412, 2098, 2148, 3219 and 3250, then 1261, 1307, 3225, 1505, 3237, 2247, 2335 and 2596,
- * then 1875, 1909, 3013, 3016 and 3043.
+ * then 1875, 1909, 3013, 3016 and 3043, then 3232.
  * Amounts for a gross salary of 3 000 €/mois and 20 employees, for which the legal contribution is
  * 1 % (30 €), on 1 July 2026 unless stated otherwise.
  */
@@ -438,6 +438,16 @@ const ADDED: AddedCase[] = [
     // 3 000 € × 0.5 % from 11 employees.
     amount: 15,
     others: [[{ "entreprise . salariés . effectif": 5 }, 0]],
+  },
+  {
+    model: "3232-agents-direction-securite-sociale",
+    value: "agents de direction sécurité sociale",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000052531805",
+    // 3 000 € × 0.15 % from 2026 to 2028.
+    amount: 4.5,
+    others: [[{ date: "01/12/2028" }, 4.5], [{ date: "01/01/2029" }, 0]],
   },
 ];
 

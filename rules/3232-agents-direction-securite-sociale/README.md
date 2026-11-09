@@ -23,7 +23,7 @@ La convention, l'avenant du 31 janvier 2025, les textes dédiés de classificati
 - **Plafonds, tranches et forfaits** : les seuls plafonds conventionnels calculés sont ceux des prêts automobiles ci-dessus ; aucun plafond ou forfait de cotisation n'est ajouté.
 - **Santé et prévoyance** : aucun taux ou montant universel directement calculable sans contrat assureur n'est ajouté.
 - **Retraite complémentaire et supplémentaire** : aucun taux ni assiette conventionnelle nouvelle n'est calculé.
-- **Formation professionnelle** : le texte impose des dispositifs de formation mais ne fournit pas de contribution chiffrée calculable dans cette version ; omission documentée.
+- **Formation professionnelle** : la version 2026.1 ne calcule pas de contribution conventionnelle ; la révision 2026.2 ajoute la contribution supplémentaire de 0,15 % (voir ci-dessous).
 - **AT/MP** : aucun taux conventionnel ; la tarification dépend du régime réglementaire et de l'activité.
 - **Primes et indemnités** : seule l'indemnité de double résidence chiffrée par l'avenant est calculée ; la part variable et les points de responsabilité nécessitent des données d'évaluation et de classement non disponibles.
 - **Avantages, exonérations et frais** : le prêt automobile est exposé comme plafond, sans simuler l'octroi, les remboursements ou un avantage en nature ; aucune exonération ni frais n'est inventé.
@@ -38,3 +38,7 @@ Ces omissions sont intentionnelles : aucun taux salarié/employeur, base, plafon
 - [Avenant du 31 janvier 2025, prêts véhicule — Légifrance](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000051447486)
 - [Avenant du 31 janvier 2025, double résidence — Légifrance](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000051447491)
 - [Lettre circulaire UCANSS 011-25 sur le protocole du 22 novembre 2024](https://jurilettres.ucanss.fr/lettresCirculaires/LC011-25.html/)
+
+## Contribution conventionnelle de formation
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle supplémentaire de formation professionnelle de 0,15 % de la masse salariale brute pour 2026 à 2028 (article 10 du protocole d'accord du 19 décembre 2019, rédigé par l'article 8 de l'avenant du 20 juin 2025, KALITEXT000052531805, étendu aux agents de direction par le protocole du 20 juin 2025, KALITEXT000052532200), collectée par l'Urssaf depuis le 1er janvier 2026. Le montant mensuel est une provision : 0,15 % du brut du mois. Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.
