@@ -20,3 +20,7 @@
 - [Accord n° 42 du 3 décembre 2019 relatif aux frais de santé — Légifrance](https://www.legifrance.gouv.fr/conv_coll/article/KALIARTI000040542320)
 
 Le modèle ne déduit pas le niveau à partir de l'emploi. Les niveaux absents de la grille restent inapplicables. Les options de santé, ayants droit, dispenses, portabilité et garanties complémentaires restent gérés par le contrat et les entrées de paie. Les autres dispositions de la convention collective ne sont pas modélisées.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 0,45 % de la masse salariale sous 11 salariés, 0,40 % à partir de 11 (avenant n° 31 du 17 décembre 2020). Le montant mensuel est une provision sur le brut du mois (KALITEXT000043793148). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

@@ -59,3 +59,7 @@ Les primes, indemnités, ancienneté, treizième mois, intéressement, épargne 
 ## Financement du paritarisme
 
 La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `financement du paritarisme` : cotisation des entreprises au fonds de développement du paritarisme : 0,05 % des salaires soumis à cotisations (accord du 5 décembre 2005). Le montant mensuel est une provision : 0,05 % du brut du mois (KALITEXT000018878622). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.5, à la date d'effet de la version 2026.4, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle des employeurs de 10 à 299 salariés : 0,1 % de la masse salariale (accord du 16 septembre 2015). Le montant mensuel est une provision : 0,1 % du brut du mois (KALITEXT000032003321). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

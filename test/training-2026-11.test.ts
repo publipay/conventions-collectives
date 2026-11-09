@@ -3,7 +3,8 @@
  * 2026 (0086, 1411, 1486, 1518, 1607 and 3253): each revision keeps the previous version's total
  * and shows the conventional part as `formation professionnelle conventionnelle`, added to the
  * employer contributions. Then the contributions added to 1424, 1631, 2021, 2264, 897 and 1979, then
- * 292, 1316, 1412, 2098, 2148, 3219 and 3250, then 1261, 1307, 3225, 1505, 3237, 2247, 2335 and 2596.
+ * 292, 1316, 1412, 2098, 2148, 3219 and 3250, then 1261, 1307, 3225, 1505, 3237, 2247, 2335 and 2596,
+ * then 1875, 1909, 3013, 3016 and 3043.
  * Amounts for a gross salary of 3 000 €/mois and 20 employees, for which the legal contribution is
  * 1 % (30 €), on 1 July 2026 unless stated otherwise.
  */
@@ -388,6 +389,55 @@ const ADDED: AddedCase[] = [
     // 3 000 € × 0.60 % from 20 employees.
     amount: 18,
     others: [[{ "entreprise . salariés . effectif": 5 }, 12], [{ "entreprise . salariés . effectif": 15 }, 9]],
+  },
+  {
+    model: "1875-cabinets-cliniques-veterinaires",
+    value: "cabinets et cliniques vétérinaires",
+    previous: "2026.1",
+    revision: "2026.2",
+    source: "KALITEXT000039479873",
+    // 3 000 € × 0.60 % from 11 employees.
+    amount: 18,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 13.5]],
+  },
+  {
+    model: "1909-organismes-tourisme",
+    value: "organismes de tourisme",
+    previous: "2026.3",
+    revision: "2026.4",
+    source: "KALITEXT000043793148",
+    // 3 000 € × 0.40 % from 11 employees.
+    amount: 12,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 13.5]],
+  },
+  {
+    model: "3013-librairie",
+    value: "librairie",
+    previous: "2026.4",
+    revision: "2026.5",
+    source: "KALITEXT000032003321",
+    // 3 000 € × 0.1 % from 10 to 299 employees.
+    amount: 3,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 0], [{ "entreprise . salariés . effectif": 300 }, 0]],
+  },
+  {
+    model: "3016-ateliers-chantiers-insertion",
+    value: "ateliers et chantiers d'insertion",
+    previous: "2026.3",
+    revision: "2026.4",
+    source: "KALITEXT000031496491",
+    // 3 000 € × 0.60 %.
+    amount: 18,
+  },
+  {
+    model: "3043-entreprises-proprete",
+    value: "propreté",
+    previous: "2026.4",
+    revision: "2026.5",
+    source: "KALITEXT000051695012",
+    // 3 000 € × 0.5 % from 11 employees.
+    amount: 15,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 0]],
   },
 ];
 

@@ -56,3 +56,7 @@ La révision 2026.3 ajoute les indemnités de licenciement (article 4.11.3) et d
 ## Financement du paritarisme
 
 La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `financement du paritarisme` : contribution patronale au développement du dialogue social de branche : 0,01 % de la masse salariale brute soumise à cotisations (article 3.2 de l'annexe V, accord du 19 septembre 2018). Le montant mensuel est une provision : 0,01 % du brut du mois (KALITEXT000038184099). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.5, à la date d'effet de la version 2026.4, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de branche pour le développement de la formation des entreprises de 11 salariés et plus : 0,5 % de la masse salariale brute (article 5.1.3 de l'accord formation, avenant n° 22 du 13 mars 2025). Le montant mensuel est une provision : 0,5 % du brut du mois (KALITEXT000051695012). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

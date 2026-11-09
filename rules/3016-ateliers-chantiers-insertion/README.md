@@ -30,3 +30,7 @@ Les primes, indemnités, avantages en nature et frais non déterminables à part
 ## Financement du paritarisme
 
 La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : cotisation des employeurs au fonds pour le fonctionnement et le développement du paritarisme : 0,1 % de la masse salariale brute (article 7 de la convention). Le montant mensuel est une provision : 0,1 % du brut du mois (KALITEXT000027181040). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 0,60 % de la masse salariale brute (avenant n° 19 du 18 juin 2015), versée à l'OPCO de la branche. Le montant mensuel est une provision : 0,60 % du brut du mois (KALITEXT000031496491). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

@@ -22,3 +22,7 @@ Les coefficients non listés ne sont pas extrapolés. Cette version n'essaie pas
 - Avenant n° 91 du 6 janvier 2026 relatif à la valeur du point — Légifrance, texte KALITEXT000054066637.
 - Avenant n° 82 du 9 juin 2022 relatif aux salaires minima et aux classifications — Légifrance.
 - Arrêté du 2 avril 2026 portant extension de l'avenant n° 91 — Journal officiel du 17 avril 2026.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 0,45 % de la masse salariale brute sous 11 salariés, 0,60 % à partir de 11 (avenant n° 77 du 5 juin 2019). Le montant mensuel est une provision sur le brut du mois (KALITEXT000039479873). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.
