@@ -61,3 +61,7 @@ Forfait jours (218 jours) : C1 38 722 € pendant les 24 premiers mois puis 40 7
 ## Financement du paritarisme
 
 La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs à l'association paritaire : 0,15 % des salaires entrant dans l'assiette des cotisations de sécurité sociale (article 4 de l'accord du 19 mai 2021, KALITEXT000044085496, étendu par arrêté du 17 septembre 2021). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+Les révisions 2026.4 (version 2026.1) et 2026.5 (version 2026.3), à la date d'effet de chaque version, ajoutent `formation professionnelle conventionnelle` : contribution conventionnelle supplémentaire de formation professionnelle : 0,15 % de la masse salariale sous 20 salariés, 0,60 % de 20 à 49, 0,70 % à partir de 50 (article 24.1 de l'accord du 19 avril 2021). Le montant mensuel est une provision sur le brut du mois (KALITEXT000044065250). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

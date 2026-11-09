@@ -3,7 +3,7 @@
  * 2026 (0086, 1411, 1486, 1518, 1607 and 3253): each revision keeps the previous version's total
  * and shows the conventional part as `formation professionnelle conventionnelle`, added to the
  * employer contributions. Then the contributions added to 1424, 1631, 2021, 2264, 897 and 1979, then
- * 292, 1316, 1412, 2098, 2148, 3219 and 3250.
+ * 292, 1316, 1412, 2098, 2148, 3219 and 3250, then 1261, 1307, 3225, 1505, 3237, 2247, 2335 and 2596.
  * Amounts for a gross salary of 3 000 €/mois and 20 employees, for which the legal contribution is
  * 1 % (30 €), on 1 July 2026 unless stated otherwise.
  */
@@ -268,6 +268,126 @@ const ADDED: AddedCase[] = [
     // 3 000 € × 0.35 % from 11 employees.
     amount: 10.5,
     others: [[{ "entreprise . salariés . effectif": 5 }, 3.6]],
+  },
+  {
+    model: "1261-acteurs-lien-social-familial",
+    value: "acteurs du lien social et familial",
+    previous: "2026.1",
+    revision: "2026.12",
+    source: "KALITEXT000042463667",
+    // 3 000 € × 1.10 % from 11 employees.
+    amount: 33,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 46.5]],
+  },
+  {
+    model: "1261-acteurs-lien-social-familial",
+    value: "acteurs du lien social et familial",
+    previous: "2026.11",
+    revision: "2026.13",
+    source: "KALITEXT000042463667",
+    // 3 000 € × 1.10 % from 11 employees.
+    amount: 33,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 46.5]],
+  },
+  {
+    model: "1307-exploitation-cinematographique",
+    value: "exploitation cinématographique",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000049949410",
+    // 3 000 € × 0.30 % from 11 employees.
+    amount: 9,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 4.5]],
+  },
+  {
+    model: "3225-editeurs-presse-magazine",
+    value: "presse magazine",
+    previous: "2024.1",
+    revision: "2024.2",
+    source: "KALITEXT000053721776",
+    // 3 000 € × 0.1 % from 11 to 49 employees, 2026 to 2028.
+    amount: 3,
+    others: [[{ "entreprise . salariés . effectif": 60 }, 12], [{ "entreprise . salariés . effectif": 5 }, 0], [{ date: "01/12/2025" }, 0], [{ date: "01/01/2029" }, 0]],
+  },
+  {
+    model: "1505-commerce-detail-alimentaire-non-specialise",
+    value: "commerce de détail alimentaire non spécialisé",
+    previous: "2026.9",
+    revision: "2026.10",
+    source: "KALITEXT000044065645",
+    // 3 000 € × 0.60 % from 20 to 49 employees.
+    amount: 18,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 4.5], [{ "entreprise . salariés . effectif": 60 }, 21]],
+  },
+  {
+    model: "3237-commerce-detail-alimentaire-specialise",
+    value: "commerce de détail alimentaire spécialisé",
+    previous: "2026.1",
+    revision: "2026.4",
+    source: "KALITEXT000044065250",
+    // 3 000 € × 0.60 % from 20 to 49 employees.
+    amount: 18,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 4.5], [{ "entreprise . salariés . effectif": 60 }, 21]],
+  },
+  {
+    model: "3237-commerce-detail-alimentaire-specialise",
+    value: "commerce de détail alimentaire spécialisé",
+    previous: "2026.3",
+    revision: "2026.5",
+    source: "KALITEXT000044065250",
+    // 3 000 € × 0.60 % from 20 to 49 employees.
+    amount: 18,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 4.5], [{ "entreprise . salariés . effectif": 60 }, 21]],
+  },
+  {
+    model: "2247-courtage-assurances",
+    value: "courtage assurances",
+    previous: "2026.2",
+    revision: "2026.3",
+    source: "KALITEXT000049300720",
+    // 3 000 € × 0.30 % from 11 employees, until 2026.
+    amount: 9,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 13.5], [{ date: "01/01/2027" }, 0]],
+  },
+  {
+    model: "2335-agences-generales-assurances",
+    value: "agences générales assurances",
+    previous: "2025.1",
+    revision: "2025.2",
+    source: "KALITEXT000052283649",
+    // 3 000 € × 0.2 % from 11 employees.
+    amount: 6,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 19.5]],
+  },
+  {
+    model: "2335-agences-generales-assurances",
+    value: "agences générales assurances",
+    previous: "2026.1",
+    revision: "2026.3",
+    source: "KALITEXT000052283649",
+    // 3 000 € × 0.2 % from 11 employees.
+    amount: 6,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 19.5]],
+  },
+  {
+    model: "2335-agences-generales-assurances",
+    value: "agences générales assurances",
+    previous: "2026.2",
+    revision: "2026.4",
+    source: "KALITEXT000052283649",
+    // 3 000 € × 0.2 % from 11 employees.
+    amount: 6,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 19.5]],
+  },
+  {
+    model: "2596-coiffure",
+    value: "coiffure",
+    previous: "2026.3",
+    revision: "2026.4",
+    source: "KALITEXT000047331854",
+    // 3 000 € × 0.60 % from 20 employees.
+    amount: 18,
+    others: [[{ "entreprise . salariés . effectif": 5 }, 12], [{ "entreprise . salariés . effectif": 15 }, 9]],
   },
 ];
 

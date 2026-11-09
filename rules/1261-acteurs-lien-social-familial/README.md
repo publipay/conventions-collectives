@@ -17,3 +17,7 @@ Les règles couvrent le minimum hiérarchique de branche. Elles n'incluent pas l
 ## Financement du paritarisme
 
 La révision 2026.11, à la date d'effet de la version 2026.10, ajoute `financement du paritarisme` : la contribution annuelle des employeurs au fonds d'aide au paritarisme : 0,08 % de la masse salariale brute (article 4.1 du protocole n° 11-05 du 10 novembre 2005, KALITEXT000005677524). Le minimum de 20 € (avenant n° 07-09 du 9 décembre 2009) n'est pas calculé. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle sur le brut du mois ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+Les révisions 2026.12 (version 2026.1) et 2026.13 (version 2026.11), à la date d'effet de chaque version, ajoutent `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 1,10 % de la masse salariale brute à partir de 11 salariés, 1,55 % en dessous, pour une contribution totale de 2,1 % avec la contribution légale (avenant n° 05-20 du 10 juillet 2020). Le montant mensuel est une provision sur le brut du mois (KALITEXT000042463667). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

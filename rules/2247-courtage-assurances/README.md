@@ -23,3 +23,7 @@ Les classes A et B (1 923,00 € et 2 022,33 € par mois à temps plein) sont a
 - Le salaire annuel minimum inclut, selon les pages consultées, la part variable : la règle n’en donne que l’équivalent mensuel, plus strict que son appréciation annuelle.
 - Les primes, la prévoyance et les autres éléments de la convention ne sont pas modélisés.
 - Les grilles antérieures au 1er juillet 2025 ne sont pas modélisées : la première version couvre les périodes à partir de cette date. La version 2025.1 conserve l’ancien calcul pour préserver son empreinte publiée ; utiliser 2026.1 pour le calcul corrigé.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 0,45 % de la masse salariale brute sous 11 salariés, 0,30 % à partir de 11, jusqu'en 2026 (accord du 21 décembre 2023). Le montant mensuel est une provision sur le brut du mois (KALITEXT000049300720). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

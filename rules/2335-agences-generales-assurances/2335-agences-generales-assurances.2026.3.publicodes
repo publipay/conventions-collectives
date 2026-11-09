@@ -1,0 +1,85 @@
+# Convention collective nationale du personnel des agences générales d'assurances (IDCC 2335).
+# Version 2026.1 : avenant n° 6 du 11 décembre 2025 relatif aux salaires minima
+# annuels au 1er janvier 2026.
+# Révision 2026.3 : ajoute à la version 2026.1, à dates d'effet identiques, la contribution
+# conventionnelle supplémentaire de formation professionnelle (0,65 % de la masse salariale
+# brute sous 11 salariés, 0,2 % à partir de 11).
+validFrom: 2026-01-01
+extension: 2026-03-19
+sources:
+  - https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000054040577
+  - https://www.legifrance.gouv.fr/conv_coll/id/KALICONT000005635361
+  - >-
+    Avenant n° 3 du 15 mai 2025 à l'accord du 26 mai 2021 relatif à la formation professionnelle
+    (KALITEXT000052283649), étendu par arrêté du 7 novembre 2025 (JORF du 21 novembre 2025) :
+    article 16, pour la collecte 2026 sur la masse salariale de 2025, « 0,65 % au titre de la
+    contribution conventionnelle supplémentaire » pour les agences de moins de 11 salariés et «
+    0,2 % » pour celles de 11 salariés et plus, versée à l'OPCO Atlas au plus tard le 28
+    février, la contribution légale étant recouvrée par l'Urssaf. Les mêmes taux figurent dans
+    l'accord du 26 mai 2021 et ses avenants des années précédentes. Texte lu sur Légifrance le 9
+    novembre 2026 : https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000052283649
+---
+salarié . convention collective . agences générales assurances:
+  titre: Personnel des agences générales d'assurances (IDCC 2335)
+  valeur: convention collective = 'agences générales assurances'
+salarié . convention collective . agences générales assurances . classe:
+  titre: Classe de classification
+  description: Classes 1 à 6, dont la classe 5 bis, selon l'annexe 1 de l'avenant salarial. La classe est fournie par l'application et n'est pas déduite de l'intitulé du poste.
+  applicable si: convention collective = 'agences générales assurances'
+  par défaut: "'non renseigné'"
+salarié . convention collective . agences générales assurances . grille annuelle:
+  titre: Salaire minimum annuel à temps plein, en euros
+  description: Salaires minima annuels bruts de l'avenant n° 6 du 11 décembre 2025, applicables au 1er janvier 2026.
+  applicable si: convention collective = 'agences générales assurances'
+  unité: €/an
+  variations:
+    - si: classe = '1'
+      alors: 23194 €/an
+    - si: classe = '2'
+      alors: 24085 €/an
+    - si: classe = '3'
+      alors: 26079 €/an
+    - si: classe = '4'
+      alors: 29132 €/an
+    - si: classe = '5'
+      alors: 34029 €/an
+    - si: classe = '5 bis'
+      alors: 39206 €/an
+    - si: classe = '6'
+      alors: 44383 €/an
+    - sinon: 0 €/an
+salarié . convention collective . agences générales assurances . salaire minimum annuel conventionnel:
+  titre: Salaire minimum annuel conventionnel
+  description: Minimum annuel brut de la classe, exprimé en euros par an. Le modèle ne convertit pas ce minimum annuel en mensualité.
+  applicable si:
+    toutes ces conditions:
+      - convention collective = 'agences générales assurances'
+      - grille annuelle > 0 €/an
+  unité: €/an
+  valeur: grille annuelle
+
+salarié . convention collective . agences générales assurances . formation professionnelle conventionnelle:
+  titre: Contribution conventionnelle de formation professionnelle
+  description: |
+    Contribution conventionnelle supplémentaire de formation professionnelle : 0,65 % de la
+    masse salariale brute sous 11 salariés, 0,2 % à partir de 11 (article 16 de l'accord du 26
+    mai 2021, avenant n° 3 du 15 mai 2025), versée à l'OPCO Atlas. Le montant mensuel est une
+    provision sur le brut du mois.
+  applicable si: convention collective = 'agences générales assurances'
+  unité: €/mois
+  produit:
+    - cotisations . assiette
+    - taux
+
+salarié . convention collective . agences générales assurances . formation professionnelle conventionnelle . taux:
+  variations:
+    - si: entreprise . salariés . effectif >= 11
+      alors: 0.2%
+    - sinon: 0.65%
+
+salarié . convention collective . agences générales assurances . cotisations employeur avec formation conventionnelle:
+  applicable si: convention collective = 'agences générales assurances'
+  remplace: salarié . cotisations . employeur
+  somme:
+    - salarié . cotisations . employeur
+    - formation professionnelle conventionnelle

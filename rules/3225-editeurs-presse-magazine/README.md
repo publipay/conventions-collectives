@@ -19,3 +19,7 @@ La valeur Publicodes est `presse magazine` ; les règles sont sous `salarié . c
 ## Sources
 
 - Accord du 17 juin 2024 : https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000050298949 (arrêté du 4 septembre 2024, JORF du 12 septembre 2024).
+
+## Contribution conventionnelle de formation
+
+La révision 2024.2, à la date d'effet de la version 2024.1, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle mutualisée de formation professionnelle des entreprises de 11 salariés et plus : 0,1 % des salaires de 11 à 49 salariés, 0,4 % à partir de 50, de 2026 à 2028 (article 9 de l'accord du 8 décembre 2025), versée à l'Afdas. Le montant mensuel est une provision sur le brut du mois (KALITEXT000053721776). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

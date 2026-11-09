@@ -46,3 +46,5 @@ Les révisions 2024.5 et 2026.4 ajoute les indemnités de licenciement (article 
 ## Contribution conventionnelle de formation
 
 Les révisions 2024.6 (version 2024.5) et 2026.5 (version 2026.4), à la date d'effet de chaque version, ajoutent `formation professionnelle conventionnelle` : contribution conventionnelle supplémentaire de formation professionnelle : 0,2 % du revenu d'activité en 2026, 0,35 % en 2027, puis 0,5 % à partir de 2028 (accord du 19 juin 2024, en application depuis le 1er janvier 2026). Le montant mensuel est une provision sur le brut du mois (KALITEXT000050394754). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.
+
+L'accord calcule la contribution d'une année sur la masse salariale de l'année précédente quand l'OPCO la collecte : la provision mensuelle applique le taux de l'année civile du bulletin aux salaires de cette année, sans décalage d'un an (choix du 9 novembre 2026).

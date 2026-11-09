@@ -36,3 +36,7 @@ La révision [2026.8](1505-commerce-detail-alimentaire-non-specialise.2026.8.pub
 ## Financement du paritarisme
 
 La révision 2026.9, à la date d'effet de la version 2026.8, ajoute `financement du paritarisme` : la cotisation annuelle des employeurs à l'association paritaire : 0,15 % des salaires entrant dans l'assiette des cotisations de sécurité sociale (article 5 de l'accord du 8 juillet 2025, KALITEXT000053049839, étendu par arrêté du 6 février 2026, qui remplace l'accord du 19 mai 2021). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`. Le montant mensuel est une provision sur le brut du mois ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.10, à la date d'effet de la version 2026.9, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle supplémentaire de formation professionnelle : 0,15 % de la masse salariale sous 20 salariés, 0,60 % de 20 à 49, 0,70 % à partir de 50 (article 24.1 de l'accord du 19 avril 2021). Le montant mensuel est une provision sur le brut du mois (KALITEXT000044065645). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

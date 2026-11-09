@@ -63,3 +63,7 @@ L’article 17 de la convention ne règle que les formalités ; l’incapacité 
 ## Financement du paritarisme
 
 La révision 2026.3, à la date d'effet de la version 2026.2, ajoute `financement du paritarisme` : contribution des entreprises au financement du dialogue social : 0,15 % de la masse salariale (article 2 de l'accord du 17 juin 2009). Le montant mensuel est une provision : 0,15 % du brut du mois (KALITEXT000021213086). Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Contribution conventionnelle de formation
+
+La révision 2026.4, à la date d'effet de la version 2026.3, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle : 0,4 % des rémunérations sous 11 salariés, 0,30 % de 11 à 19, 0,60 % à partir de 20 (accord du 18 novembre 2022), versée à l'OPCO des entreprises de proximité. Le montant mensuel est une provision sur le brut du mois (KALITEXT000047331854). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

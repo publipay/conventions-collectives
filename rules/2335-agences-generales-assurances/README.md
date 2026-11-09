@@ -33,3 +33,7 @@ La valeur Publicodes est `agences générales assurances` et les règles sont so
 ## Limites
 
 Le modèle ne compare pas les éléments de rémunération effectivement versés avec le minimum annuel et ne modélise pas les primes, avantages, ancienneté, absences, temps partiel, treizième mois ou modalités de comparaison prévues par la convention. Les versions antérieures à 2025 ne sont pas modélisées.
+
+## Contribution conventionnelle de formation
+
+Les révisions 2025.2 (version 2025.1) et 2026.3 (version 2026.1) et 2026.4 (version 2026.2), à la date d'effet de chaque version, ajoutent `formation professionnelle conventionnelle` : contribution conventionnelle supplémentaire de formation professionnelle : 0,65 % de la masse salariale brute sous 11 salariés, 0,2 % à partir de 11 (article 16 de l'accord du 26 mai 2021, avenant n° 3 du 15 mai 2025), versée à l'OPCO Atlas. Le montant mensuel est une provision sur le brut du mois (KALITEXT000052283649). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.

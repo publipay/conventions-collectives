@@ -48,3 +48,5 @@ La révision 2026.5, à la date d'effet de la version 2026.4, ajoute `financemen
 ## Contribution conventionnelle de formation
 
 La révision 2026.6, à la date d'effet de la version 2026.5, ajoute `formation professionnelle conventionnelle` : contribution conventionnelle de formation professionnelle selon l'effectif : 0,20 % jusqu'à 10 salariés, 0,10 % de 11 à 49, 0,05 % à partir de 50 (avenant du 24 mars 2026, exercices 2025 et 2026), versée à l'OPCO des entreprises de proximité. Le montant mensuel est une provision sur le brut du mois, jusqu'en 2026 (KALITEXT000054337542). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, à côté de la contribution légale ; la régularisation annuelle n'est pas calculée.
+
+L'accord calcule la contribution d'une année sur la masse salariale de l'année précédente : la provision mensuelle applique le taux de l'année civile du bulletin aux salaires de cette année, sans décalage d'un an (choix du 9 novembre 2026).
