@@ -33,8 +33,8 @@ const base = (gross: number) => ({ salarié: "oui", dirigeant: "non", date: "01/
 const round = (value: unknown) => Math.round(Number(value ?? 0) * 100) / 100;
 
 for (const [model, current] of [
-  ["1597-batiment-ouvriers-plus-de-10", "2026.7"],
-  ["1702-travaux-publics-ouvriers", "2026.6"],
+  ["1597-batiment-ouvriers-plus-de-10", "2026.8"],
+  ["1702-travaux-publics-ouvriers", "2026.7"],
 ] as const) {
   describe(`${model} ${current}`, () => {
 
@@ -50,7 +50,7 @@ for (const [model, current] of [
 
 describe("bâtiment et travaux publics, rules taken over from modele-social", () => {
   it("pays no paid leave indemnity at the end of a fixed-term contract: the fund pays the leave", async () => {
-    const engine = await engineOf("1597-batiment-ouvriers-plus-de-10", "2026.7", "bâtiment et travaux publics");
+    const engine = await engineOf("1597-batiment-ouvriers-plus-de-10", "2026.8", "bâtiment et travaux publics");
     const cdd = { "salarié . contrat": "'CDD'", "salarié . contrat . CDD . congés pris": "0 jour ouvré" };
     engine.setSituation({ ...base(2500), ...cdd, "salarié . convention collective": "'bâtiment et travaux publics'" });
     assert.equal(engine.evaluate("salarié . rémunération . indemnités CDD . congés payés").nodeValue, null);
@@ -60,7 +60,7 @@ describe("bâtiment et travaux publics, rules taken over from modele-social", ()
   });
 
   it("charges the provident contributions on the social security base, bonuses included", async () => {
-    const engine = await engineOf("1597-batiment-ouvriers-plus-de-10", "2026.7", "bâtiment et travaux publics");
+    const engine = await engineOf("1597-batiment-ouvriers-plus-de-10", "2026.8", "bâtiment et travaux publics");
     const conventional = "salarié . cotisations . prévoyances . conventionnelle";
     for (const [category, employer, employee] of [["ouvrier", 1.72, 0.87], ["etam", 1.25, 0.6]] as const) {
       engine.setSituation({
@@ -75,7 +75,7 @@ describe("bâtiment et travaux publics, rules taken over from modele-social", ()
   });
 
   it("makes the cadres executives", async () => {
-    const engine = await engineOf("1702-travaux-publics-ouvriers", "2026.6", "bâtiment et travaux publics");
+    const engine = await engineOf("1702-travaux-publics-ouvriers", "2026.7", "bâtiment et travaux publics");
     engine.setSituation({ ...base(4000), "salarié . convention collective": "'bâtiment et travaux publics'", [`${NS} . catégorie`]: "'cadre'" });
     assert.equal(engine.evaluate("salarié . contrat . statut cadre").nodeValue, true);
   });

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const model = "1351-prevention-securite";
 const value = "prévention et sécurité";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.4");
+const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.7");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };

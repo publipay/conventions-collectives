@@ -64,8 +64,8 @@ describe("IDCC 787 — 2026.4, article 7.3", async () => {
   });
 });
 
-describe("IDCC 843 — 2026.4, article 37.1", async () => {
-  const { of } = await maintenanceEngine("0843-boulangerie-patisserie-artisanale", "2026.4", "boulangerie-pâtisserie artisanale", {});
+describe("IDCC 843 — 2026.6, article 37.1", async () => {
+  const { of } = await maintenanceEngine("0843-boulangerie-patisserie-artisanale", "2026.6", "boulangerie-pâtisserie artisanale", {});
 
   it("pays 90 % for 180 days a civil year, accidents without seniority nor waiting", () => {
     assert.deepEqual(of("maladie", 12).periods, [[180, 90]]);
@@ -111,9 +111,9 @@ describe("IDCC 1266 — 2025.3, articles 25 B and 26 B", async () => {
   });
 });
 
-describe("IDCC 1351 — 2026.6, annexes IV to VI", async () => {
+describe("IDCC 1351 — 2026.8, annexes IV to VI", async () => {
   const name = "prévention et sécurité";
-  const { of } = await maintenanceEngine("1351-prevention-securite", "2026.6", name, {});
+  const { of } = await maintenanceEngine("1351-prevention-securite", "2026.8", name, {});
   const category = (value: string) => level(`'${value}'`, name, "catégorie");
 
   it("pays operating staff after 3 years from the 11th day", () => {

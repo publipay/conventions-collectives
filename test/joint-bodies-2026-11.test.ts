@@ -41,7 +41,8 @@ async function engineOf(model: string, value: string, revision: string) {
 type Case = {
   model: string;
   value: string;
-  previous: string;
+  /** The version without the contribution, when one is still published. */
+  previous?: string;
   revision: string;
   source: string;
   /** The version's own date, when it does not keep the previous one. */
@@ -66,8 +67,7 @@ const CASES: Case[] = [
   {
     model: "0843-boulangerie-patisserie-artisanale",
     value: "boulangerie-pâtisserie artisanale",
-    previous: "2026.4",
-    revision: "2026.5",
+    revision: "2026.6",
     source: "KALITEXT000051664619",
     // 3 000 € × (0.15 % + 0.10 %).
     amount: 7.5,
@@ -242,8 +242,7 @@ const CASES: Case[] = [
   {
     model: "1501-restauration-rapide",
     value: "restauration rapide",
-    previous: "2026.6",
-    revision: "2026.7",
+    revision: "2026.11",
     source: "KALITEXT000027195000",
     // 3 000 € × 0.012 %.
     amount: 0.36,
@@ -251,8 +250,7 @@ const CASES: Case[] = [
   {
     model: "1501-restauration-rapide",
     value: "restauration rapide",
-    previous: "2026.6",
-    revision: "2027.1",
+    revision: "2027.3",
     source: "KALITEXT000055028206",
     validFrom: "2027-01-01",
     // 3 000 € × 0.01 %, from January 2027.
@@ -840,17 +838,19 @@ const employer = "salarié . cotisations . employeur";
 for (const testCase of CASES) {
   describe(`${testCase.model} ${testCase.revision}, joint bodies contribution`, async () => {
     const current = await engineOf(testCase.model, testCase.value, testCase.revision);
-    const previous = await engineOf(testCase.model, testCase.value, testCase.previous);
+    const previous = testCase.previous === undefined ? undefined : await engineOf(testCase.model, testCase.value, testCase.previous);
     const joint = `salarié . convention collective . ${testCase.value} . financement du paritarisme`;
 
     it("has the expected date and cites the text", () => {
-      assert.equal(current.version.validFrom, testCase.validFrom ?? previous.version.validFrom);
+      const validFrom = testCase.validFrom ?? previous?.version.validFrom;
+      if (validFrom !== undefined) assert.equal(current.version.validFrom, validFrom);
       assert.ok(current.version.sources.some((source) => source.includes(testCase.source)));
     });
 
     it(`charges ${testCase.amount} € for 3 000 € and adds it to the employer contributions`, () => {
       assert.equal(current.evaluate(joint), testCase.amount);
-      const added = (current.evaluate(employer) as number) - (previous.evaluate(employer) as number);
+      const before = previous?.evaluate(employer) ?? current.evaluate(employer, { [joint]: 0 });
+      const added = (current.evaluate(employer) as number) - (before as number);
       assert.equal(Math.round(added * 100) / 100, testCase.amount);
     });
 

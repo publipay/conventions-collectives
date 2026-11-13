@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1909-organismes-tourisme";
 const value = "organismes de tourisme";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -34,7 +34,7 @@ function evaluate(rule: string) {
   return engine.evaluate(`${namespace} . ${rule}`).nodeValue;
 }
 
-describe("IDCC 1909 — 2026.3 payroll rubrics", () => {
+describe("IDCC 1909 — 2026.5 payroll rubrics", () => {
   it("keeps the identity and salary source while adding the two convention regimes", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source) => source.includes("Accord n° 48 du 26 janvier 2026")));
@@ -63,8 +63,8 @@ describe("IDCC 1909 — 2026.3 payroll rubrics", () => {
 
 // Accord n° 42 du 21 août 2023 (KALITEXT000048557957), article 11: the base health contribution is
 // shared equally, with no rate; revision 2026.3 no longer sets the 1,40 % of avenant n° 34 (2021).
-describe("IDCC 1909 — 2026.3 without a conventional health rate", async () => {
-  const revision = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
+describe("IDCC 1909 — 2026.5 without a conventional health rate", async () => {
+  const revision = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
   assert.ok(revision);
   // From modele-social alone: `rules` already holds revision 2026.3.
   const revisionEngine = new Engine(

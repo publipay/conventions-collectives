@@ -55,9 +55,9 @@ const amount = (rule: string, situation: Situation = {}) => {
 const percentOf = (base: number, rate: number) => Math.round(base * rate) / 100;
 
 describe("public works agreements — one shared version", () => {
-  it("publishes 2026.7 identically for the three agreements, after 2026.6", () => {
+  it("publishes 2026.7 identically for the three agreements, the only version (2026.6 deleted)", () => {
     const published = AGREEMENTS.map((name) => {
-      assert.deepEqual(COMPILED_VERSIONS[name]!.map((v) => v.version).sort(), ["2026.6", "2026.7"], name);
+      assert.deepEqual(COMPILED_VERSIONS[name]!.map((v) => v.version).sort(), ["2026.7"], name);
       return COMPILED_VERSIONS[name]!.find((v) => v.version === VERSION)!;
     });
     for (const found of published) {

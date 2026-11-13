@@ -97,7 +97,8 @@ for (const testCase of CASES) {
 type AddedCase = {
   model: string;
   value: string;
-  previous: string;
+  /** The version without the contribution, when one is still published. */
+  previous?: string;
   revision: string;
   source: string;
   amount: number;
@@ -403,8 +404,7 @@ const ADDED: AddedCase[] = [
   {
     model: "1909-organismes-tourisme",
     value: "organismes de tourisme",
-    previous: "2026.3",
-    revision: "2026.4",
+    revision: "2026.5",
     source: "KALITEXT000043793148",
     // 3 000 € × 0.40 % from 11 employees.
     amount: 12,
@@ -454,19 +454,20 @@ const ADDED: AddedCase[] = [
 for (const testCase of ADDED) {
   describe(`${testCase.model} ${testCase.revision}, conventional training contribution added`, async () => {
     const current = await engineOf(testCase.model, testCase.value, testCase.revision);
-    const previous = await engineOf(testCase.model, testCase.value, testCase.previous);
+    const previous = testCase.previous === undefined ? undefined : await engineOf(testCase.model, testCase.value, testCase.previous);
     const training = `salarié . convention collective . ${testCase.value} . formation professionnelle conventionnelle`;
     const version = COMPILED_VERSIONS[testCase.model]!.find((entry) => entry.version === testCase.revision)!;
-    const before = COMPILED_VERSIONS[testCase.model]!.find((entry) => entry.version === testCase.previous)!;
+    const before = COMPILED_VERSIONS[testCase.model]!.find((entry) => entry.version === testCase.previous);
 
     it("keeps the previous version's date and cites the text", () => {
-      assert.equal(version.validFrom, before.validFrom);
+      if (before) assert.equal(version.validFrom, before.validFrom);
       assert.ok(version.sources.some((source) => source.includes(testCase.source)));
     });
 
     it(`charges ${testCase.amount} € and adds it to the employer contributions`, () => {
       assert.equal(current(training), testCase.amount);
-      const added = (current("salarié . cotisations . employeur") as number) - (previous("salarié . cotisations . employeur") as number);
+      const employer = "salarié . cotisations . employeur";
+      const added = (current(employer) as number) - ((previous ? previous(employer) : current(employer, { [training]: 0 })) as number);
       assert.equal(Math.round(added * 100) / 100, testCase.amount);
       assert.equal(current("salarié . cotisations . formation professionnelle"), 30);
     });

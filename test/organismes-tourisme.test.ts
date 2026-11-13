@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const id = "1909-organismes-tourisme";
 const value = "organismes de tourisme";
 const ns = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[id]?.find((entry: { version: string }) => entry.version === "2026.3");
+const version = COMPILED_VERSIONS[id]?.find((entry: { version: string }) => entry.version === "2026.5");
 assert.ok(version, "IDCC 1909 must be exported");
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -37,7 +37,7 @@ function set(level: string, date = "11/10/2026", quota = "100%") {
 }
 const minimum = () => engine.evaluate(`${ns} . salaire minimum conventionnel`).nodeValue;
 
-describe("IDCC 1909 — 2026.3 salary minima", () => {
+describe("IDCC 1909 — 2026.5 salary minima", () => {
   it("is effective on 1 January 2026 and cites the extended agreement", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source: string) => source.includes("Accord n° 48 du 26 janvier 2026")));

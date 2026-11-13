@@ -15,8 +15,8 @@ const VERSIONS = [
   { model: "1979-hotels-cafes-restaurants", revision: "2026.4", value: "hôtels cafés restaurants", classification: { niveau: "'I.1'" } },
   { model: "2216-commerce-detail-gros-predominance-alimentaire", revision: "2026.6", value: "commerce alimentaire", classification: { niveau: "'2B'" } },
   { model: "1517-commerce-detail-non-alimentaire", revision: "2026.3", value: "commerce de détail non alimentaire", classification: {} },
-  { model: "1501-restauration-rapide", revision: "2026.5", value: "restauration rapide", classification: {} },
-  { model: "1501-restauration-rapide", revision: "2026.6", value: "restauration rapide", classification: {} },
+  { model: "1501-restauration-rapide", revision: "2026.10", value: "restauration rapide", classification: {} },
+  { model: "1501-restauration-rapide", revision: "2026.11", value: "restauration rapide", classification: {} },
   { model: "3043-entreprises-proprete", revision: "2026.3", value: "propreté", classification: { niveau: "'AQS1-A'" } },
   { model: "1090-services-automobile", revision: "2026.3", value: "services automobile", classification: { niveau: "'5'" } },
   { model: "0044-industries-chimiques", revision: "2026.6", value: "industries chimiques", classification: { coefficient: 190 } },
@@ -24,10 +24,10 @@ const VERSIONS = [
   { model: "0016-transports-routiers", revision: "2026.5", value: "transports routiers", classification: { niveau: "'M-O-128'" } },
   { model: "0573-commerces-de-gros", revision: "2026.4", value: "commerces de gros", classification: {} },
   { model: "0787-experts-comptables", revision: "2026.4", value: "experts-comptables", classification: {} },
-  { model: "0843-boulangerie-patisserie-artisanale", revision: "2026.4", value: "boulangerie-pâtisserie artisanale", classification: {} },
+  { model: "0843-boulangerie-patisserie-artisanale", revision: "2026.6", value: "boulangerie-pâtisserie artisanale", classification: {} },
   { model: "1043-gardiens-concierges-employes-immeubles", revision: "2026.6", value: "gardiens concierges et employés d'immeubles", classification: {} },
   { model: "1266-restauration-collective", revision: "2025.3", value: "restauration collective", classification: {} },
-  { model: "1351-prevention-securite", revision: "2026.6", value: "prévention et sécurité", classification: {} },
+  { model: "1351-prevention-securite", revision: "2026.8", value: "prévention et sécurité", classification: {} },
   { model: "1413-travail-temporaire", revision: "2026.3", value: "travail temporaire", classification: {} },
   { model: "1483-commerce-detail-habillement-textiles", revision: "2026.7", value: "commerce de détail habillement", classification: { niveau: "'3'" } },
   { model: "1505-commerce-detail-alimentaire-non-specialise", revision: "2026.8", value: "commerce de détail alimentaire non spécialisé", classification: {} },
@@ -152,8 +152,8 @@ describe("IDCC 1517 — 2026.3, chapter VII", async () => {
   });
 });
 
-describe("IDCC 1501 — 2026.5, articles 19 B and 20", async () => {
-  const { of } = await maintenanceEngine("1501-restauration-rapide", "2026.5", "restauration rapide", {});
+describe("IDCC 1501 — 2026.10, articles 19 B and 20", async () => {
+  const { of } = await maintenanceEngine("1501-restauration-rapide", "2026.10", "restauration rapide", {});
 
   it("pays sickness after 3 years from the 11th day, the work accident at the legal rates after 6 months", () => {
     assert.equal(of("maladie", 35).eligible, false);

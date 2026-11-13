@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1501-restauration-rapide";
 const value = "restauration rapide";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.10");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -26,7 +26,7 @@ function setSituation(salary: number, convention = value) {
   });
 }
 
-describe("IDCC 1501 — 2026.5 prévoyance", () => {
+describe("IDCC 1501 — 2026.10 prévoyance", () => {
   it("uses the 0.50% branch rate split equally on T1 and T2", () => {
     setSituation(2000);
     assert.equal(engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue, 5);
@@ -34,10 +34,11 @@ describe("IDCC 1501 — 2026.5 prévoyance", () => {
     assert.equal(engine.evaluate(`${namespace} . prévoyance`).nodeValue, 10);
   });
 
-  it("caps both shares at four monthly social-security ceilings", () => {
-    setSituation(20000);
-    assert.ok(Math.abs((engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue as number) - 40.05) < 1e-12);
-    assert.ok(Math.abs((engine.evaluate(`${namespace} . prévoyance . salarié`).nodeValue as number) - 40.05) < 1e-12);
+  it("caps both shares at eight monthly social-security ceilings", () => {
+    // 8 × 4 005 € = 32 040 € at 0.25 %.
+    setSituation(40000);
+    assert.ok(Math.abs((engine.evaluate(`${namespace} . prévoyance . employeur`).nodeValue as number) - 80.1) < 1e-9);
+    assert.ok(Math.abs((engine.evaluate(`${namespace} . prévoyance . salarié`).nodeValue as number) - 80.1) < 1e-9);
   });
 
   it("replaces the standard conventionnelle endpoints only for IDCC 1501", () => {

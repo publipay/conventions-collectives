@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0843-boulangerie-patisserie-artisanale";
 const value = "boulangerie-pâtisserie artisanale";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.4");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.6");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -29,10 +29,11 @@ function setSituation(cadre: "oui" | "non") {
 }
 
 describe("IDCC 843 — rente éducation conventionnelle", () => {
-  it("applies the 0.065% employer rate to non-cadres and cadres", () => {
+  it("applies 0.065 % in all, split 0.043 % / 0.022 % for non-cadres and all employer for cadres", () => {
+    const expected = { non: 0.86, oui: 1.3 } as const;
     for (const cadre of ["non", "oui"] as const) {
       setSituation(cadre);
-      assert.ok(Math.abs((engine.evaluate(`${namespace} . prévoyance . rente éducation . employeur`).nodeValue as number) - 1.3) < 1e-9);
+      assert.ok(Math.abs((engine.evaluate(`${namespace} . prévoyance . rente éducation . employeur`).nodeValue as number) - expected[cadre]) < 1e-9);
       assert.ok(Math.abs((engine.evaluate(`${namespace} . prévoyance . rente éducation`).nodeValue as number) - 1.3) < 1e-9);
     }
   });

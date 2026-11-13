@@ -137,7 +137,7 @@ describe("1517 commerce de détail non alimentaire", async () => {
 });
 
 describe("1501 restauration rapide", async () => {
-  for (const revision of ["2026.5", "2026.6"]) {
+  for (const revision of ["2026.10", "2026.11"]) {
     const { of } = await terminationEngine("1501-restauration-rapide", revision, "restauration rapide");
 
     it(`gives the dismissal and retirement indemnities in ${revision} (articles 13 and 28)`, () => {
@@ -287,7 +287,7 @@ describe("second lot of agreements", async () => {
   });
 
   it("0843 boulangerie-pâtisserie artisanale: retirement by seniority", async () => {
-    const { of } = await lot("0843-boulangerie-patisserie-artisanale", "2026.4", "boulangerie-pâtisserie artisanale");
+    const { of } = await lot("0843-boulangerie-patisserie-artisanale", "2026.6", "boulangerie-pâtisserie artisanale");
     for (const [seniority, months] of [[9, 0], [10, 2], [15, 2.5], [20, 3], [25, 3.5], [30, 4], [39, 4.9], [40, 6]] as const) {
       near(of(years(seniority)).voluntaryRetirement, months, `${seniority} years`);
       near(of(years(seniority)).forcedRetirement, months, `${seniority} years, forced`);
@@ -325,9 +325,9 @@ describe("second lot of agreements", async () => {
   });
 
   it("1351 prévention et sécurité: retirement by category", async () => {
-    const operators = await lot("1351-prevention-securite", "2026.6", "prévention et sécurité", { "catégorie": "'exploitation'", coefficient: 120 });
-    const supervisors = await lot("1351-prevention-securite", "2026.6", "prévention et sécurité", { "catégorie": "'maîtrise'", coefficient: 175 });
-    const managers = await lot("1351-prevention-securite", "2026.6", "prévention et sécurité", { "catégorie": "'cadre'", coefficient: 270 });
+    const operators = await lot("1351-prevention-securite", "2026.8", "prévention et sécurité", { "catégorie": "'exploitation'", coefficient: 120 });
+    const supervisors = await lot("1351-prevention-securite", "2026.8", "prévention et sécurité", { "catégorie": "'maîtrise'", coefficient: 175 });
+    const managers = await lot("1351-prevention-securite", "2026.8", "prévention et sécurité", { "catégorie": "'cadre'", coefficient: 270 });
     near(operators.of(years(4)).voluntaryRetirement, 0, "under 5 years");
     near(operators.of(years(5)).voluntaryRetirement, 0.5, "operator, 5 years");
     near(operators.of(years(20)).voluntaryRetirement, 3, "operator, 20 years");

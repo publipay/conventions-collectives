@@ -1,5 +1,7 @@
 # Radiodiffusion — IDCC 1922
 
+> La version 2025.1 a été supprimée pendant la bêta, le 13 novembre 2026 : la révision 2025.2, à la même date d'effet, la corrige et est seule choisie.
+
 La version `2025.1` prend effet le **1er octobre 2025**, après l'extension de l'accord salarial du 27 juin 2025 par arrêté du 4 septembre 2025. Elle modélise la formule publiée pour les personnels de radiodiffusion hors journalistes : `SC = (120 × point A) + (Z × point B)`, avec `Z = indice - 120` lorsque l'indice est au moins 121.
 
 ## Règles calculées

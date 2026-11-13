@@ -1,6 +1,8 @@
 # Organismes de tourisme — IDCC 1909
 
 > Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> Les versions 2026.3 et 2026.4 ont été supprimées pendant la bêta, le 13 novembre 2026 : la révision 2026.5, à la même date d'effet, les corrige et est seule choisie.
 
 ## Modèles 2026.1 à 2026.3
 

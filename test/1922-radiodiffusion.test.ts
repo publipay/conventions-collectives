@@ -6,7 +6,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 
 describe("IDCC 1922 radiodiffusion", () => {
   it("calculates the published point formula and prorates it", async () => {
-    const version = COMPILED_VERSIONS["1922-radiodiffusion"]?.find((v) => v.version === "2025.1");
+    const version = COMPILED_VERSIONS["1922-radiodiffusion"]?.find((v) => v.version === "2025.2");
     assert.ok(version);
     const rules: Record<string, Rule> = { ...modeleSocial, ...(await version.loadRules()) };
     const namespace = "salarié . convention collective . radiodiffusion";
@@ -25,7 +25,7 @@ describe("IDCC 1922 radiodiffusion", () => {
   });
 
   it("exposes the cadre obligation and blocks indices below the formula range", async () => {
-    const version = COMPILED_VERSIONS["1922-radiodiffusion"]?.find((v) => v.version === "2025.1");
+    const version = COMPILED_VERSIONS["1922-radiodiffusion"]?.find((v) => v.version === "2025.2");
     assert.ok(version);
     const extension = await version.loadRules();
     const rules: Record<string, Rule> = { ...modeleSocial, ...extension };

@@ -8,7 +8,7 @@ const model = "1351-prevention-securite";
 const value = "prévention et sécurité";
 const namespace = `salarié . convention collective . ${value}`;
 const list = COMPILED_VERSIONS[model]!;
-const version = list.find((entry) => entry.version === "2026.4");
+const version = list.find((entry) => entry.version === "2026.7");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -62,11 +62,10 @@ function inForce(date: string) {
   return eligible.filter((entry) => entry.validFrom === latest).map((entry) => entry.version).sort().at(-1);
 }
 
-describe("IDCC 1351 — 2026.4, January to June 2026", () => {
-  it("is selected from 1 January to 30 June 2026 and replaced by 2026.3 (2026.5 with the salary maintenance, 2026.6 with the termination indemnities) on 1 July, both corrected by 2026.7 and 2026.8", () => {
+describe("IDCC 1351 — 2026.7, January to June 2026", () => {
+  it("is selected from 1 January to 30 June 2026 and replaced by 2026.8 on 1 July (the revisions they correct, 2026.4 and 2026.6, were deleted during the beta)", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.equal(inForce("2025-12-31"), undefined);
-    // 2026.7 and 2026.8 cap the non-executives' provident contribution at four ceilings.
     assert.equal(inForce("2026-01-01"), "2026.7");
     assert.equal(inForce("2026-06-30"), "2026.7");
     assert.equal(inForce("2026-07-01"), "2026.8");

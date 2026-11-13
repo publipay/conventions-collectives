@@ -107,8 +107,8 @@ async function engineOf(agreement: string, version: string) {
   return new Engine(rules, { logger: { log() {}, warn() {}, error() {} } });
 }
 
-const building = await engineOf("1597-batiment-ouvriers-plus-de-10", "2026.7");
-const publicWorks = await engineOf("1702-travaux-publics-ouvriers", "2026.6");
+const building = await engineOf("1597-batiment-ouvriers-plus-de-10", "2026.8");
+const publicWorks = await engineOf("1702-travaux-publics-ouvriers", "2026.7");
 
 type Situation = Record<string, string>;
 

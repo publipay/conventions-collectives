@@ -6,6 +6,10 @@
 # des articles 19 B et 20 (maladie et accident).
 # Révision 2026.6 : ajoute à la version 2026.4, à date d'effet identique, les indemnités de licenciement et
 # de départ à la retraite des articles 13 et 28, décrites par les règles `indemnité de rupture`.
+# Révision 2026.9 : corrige la 2026.7, à date d'effet identique : la cotisation de prévoyance porte
+# sur la tranche 2 entière, d'un à huit plafonds de la sécurité sociale (quatre auparavant).
+# Révision 2026.11 : corrige la 2026.9, à date d'effet identique : la cotisation de prévoyance de
+# l'article 54 est due aussi pour les cadres (part employeur de T1 comprise dans le 1,50 % de l'ANI).
 # Une version publiée ne se modifie plus (voir versions.lock.json) : toute évolution ou
 # correction passe par une nouvelle version.
 #
@@ -13,10 +17,12 @@
 # français comme dans modele-social.
 
 # Date d'entrée en vigueur de cette version.
+# Révision 2026.7 : ajoute à la version 2026.6, à date d'effet identique, la cotisation au
+# financement du paritarisme (0,012 % de la masse salariale brute).
 validFrom: 2026-06-04
 sources:
   - "Avenant n° 72 du 5 juin 2025 relatif aux minima conventionnels (article 2, nouvel article 44 « Salaires minima par niveau »), étendu par arrêté du 31 juillet 2025 (JORF n° 0182 du 7 août 2025, NOR TSST2520699A)."
-  - "Avenant n° 10 du 5 décembre 2025 à l'avenant n° 42 du 11 mai 2010 relatif au régime de prévoyance complémentaire et à la garantie incapacité de travail, intégré à l'article 54 et en vigueur étendu à compter du 1er janvier 2026 : taux de 0,25 % employeur et 0,25 % salarié sur T1 et T2, avec les dispositions spécifiques de l'ANI prévoyance pour les cadres. https://www.legifrance.gouv.fr/conv_coll/id/KALIARTI000054176836"
+  - "Avenant n° 10 du 5 décembre 2025 à l'avenant n° 42 du 11 mai 2010 relatif au régime de prévoyance complémentaire et à la garantie incapacité de travail, intégré à l'article 54 et en vigueur étendu à compter du 1er janvier 2026 : taux de 0,25 % employeur et 0,25 % salarié sur T1 et T2, avec les dispositions spécifiques de l'ANI prévoyance pour les cadres. Relu sur Légifrance le 13 novembre 2026 (KALIARTI000054176836) : l'article 54 fixe ces taux « sur les salaires bruts » pour T1 et T2 sans définir ces tranches ni fixer d'autre limite ; la tranche 2 est lue au sens de l'Agirc-Arrco, d'un à huit plafonds de la sécurité sociale. Le tableau unique de l'article vaut pour tous les salariés ; sa note rappelle pour les cadres l'ANI du 17 novembre 2017 (« 1,50 du T1 affecté en priorité au risque décès ») : la part employeur de la branche sur T1 est lue comme imputée sur ce 1,50 % (relu le 13 novembre 2026). https://www.legifrance.gouv.fr/conv_coll/id/KALIARTI000054176836"
   - >-
     Article 19 B de la convention (indemnisation de la maladie), lu sur Légifrance le 24 octobre 2026
     (KALISCTA000005749454) : après 3 ans d'ancienneté ; 90 % de la rémunération brute pendant 30 jours,
@@ -39,6 +45,14 @@ sources:
     mise à la retraite relève de la loi. Les tranches des barèmes sont lues comme progressives.
     Textes lus sur Légifrance le 28 octobre 2026 :
     https://www.legifrance.gouv.fr/conv_coll/id/KALISCTA000005749448
+  - >-
+    Avenant n° 1 du 15 novembre 2012 relatif au financement du paritarisme
+    (KALITEXT000027195000), étendu par arrêté du 26 avril 2013 (JORF du 4 mai 2013) : article
+    4.1 de l'accord du 22 juillet 2010, « cotisation à la charge des employeurs de 0,012 % de la
+    masse salariale brute de l'exercice n – 1 sans que le versement soit inférieur à 10 € ». Les
+    avenants n° 2 du 17 avril 2026 et n° 3 du 27 mai 2026 le remplacent à partir du 1er janvier
+    2027 (version 2027.1). Texte lu sur Légifrance le 8 novembre 2026 :
+    https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000027195000
 ---
 salarié . convention collective . restauration rapide:
   titre: Restauration rapide (IDCC 1501)
@@ -135,15 +149,18 @@ salarié . convention collective . restauration rapide . niveau hors grille:
 salarié . convention collective . restauration rapide . prévoyance:
   titre: Prévoyance conventionnelle restauration rapide
   description: |
-    Cotisation conventionnelle du régime de prévoyance de la branche, calculée sur les tranches T1
-    et T2 du salaire brut, dans la limite de quatre plafonds mensuels de sécurité sociale. Chaque
-    tranche est financée à parts égales : 0,25 % employeur et 0,25 % salarié (0,50 % au total).
-    Les dispositions spécifiques de l'ANI prévoyance pour les cadres restent portées par le modèle
-    standard et ne sont pas remplacées ici.
-  applicable si:
-    toutes ces conditions:
-      - convention collective = 'restauration rapide'
-      - contrat . statut cadre = non
+    Cotisation conventionnelle du régime de prévoyance de la branche (article 54), due pour tous
+    les salariés, calculée sur les tranches T1 et T2 du salaire brut, dans la limite de huit
+    plafonds mensuels de sécurité sociale (la tranche 2 au sens de l'Agirc-Arrco, le texte ne la
+    définissant pas). Chaque tranche est financée à parts égales : 0,25 % employeur et 0,25 %
+    salarié (0,50 % au total).
+
+    Pour les cadres, l'article rappelle les dispositions de l'ANI prévoyance du 17 novembre 2017 :
+    1,50 % de la tranche 1 à la charge de l'employeur, porté par le modèle standard. La part
+    employeur de la branche sur T1 est lue comme imputée sur ce 1,50 % (les garanties de la
+    branche en font partie) : pour un cadre, l'employeur ne cotise ici que sur T2, le salarié sur
+    T1 et T2.
+  applicable si: convention collective = 'restauration rapide'
   somme:
     - employeur
     - salarié
@@ -154,10 +171,20 @@ salarié . convention collective . restauration rapide . prévoyance:
         assiette: contrat . salaire brut
         multiplicateur: plafond sécurité sociale
         tranches:
-          - taux: 0.25%
+          - taux: taux T1
             plafond: 1
           - taux: 0.25%
-            plafond: 4
+            plafond: 8
+    employeur . taux T1:
+      titre: Taux employeur de la branche sur T1
+      description: |
+        0,25 %, sauf pour un cadre : la part employeur est alors comprise dans le 1,50 % de la
+        tranche 1 de l'ANI prévoyance.
+      unité: '%'
+      variations:
+        - si: contrat . statut cadre
+          alors: 0%
+        - sinon: 0.25%
     salarié:
       remplace: cotisations . prévoyances . conventionnelle . salarié
       barème:
@@ -167,7 +194,7 @@ salarié . convention collective . restauration rapide . prévoyance:
           - taux: 0.25%
             plafond: 1
           - taux: 0.25%
-            plafond: 4
+            plafond: 8
   références:
     Avenant n° 10 du 5 décembre 2025, article 54: https://www.legifrance.gouv.fr/conv_coll/id/KALIARTI000054176836
     Arrêté d'extension du 27 mai 2026: https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052849346
@@ -387,3 +414,23 @@ salarié . convention collective . restauration rapide . indemnité de rupture .
     - si: ancienneté >= 10 an
       alors: 1
     - sinon: 0
+
+salarié . convention collective . restauration rapide . financement du paritarisme:
+  titre: Cotisation au financement du paritarisme
+  description: |
+    Cotisation des employeurs au financement du paritarisme : 0,012 % de la masse salariale
+    brute de l'exercice précédent (article 4.1 de l'accord du 22 juillet 2010, rédigé par
+    l'avenant n° 1 du 15 novembre 2012). Le montant mensuel est une provision sur le brut du
+    mois ; le minimum de 10 € n'est pas calculé.
+  applicable si: convention collective = 'restauration rapide'
+  unité: €/mois
+  produit:
+    - cotisations . assiette
+    - 0.012%
+
+salarié . convention collective . restauration rapide . cotisations employeur avec paritarisme:
+  applicable si: convention collective = 'restauration rapide'
+  remplace: salarié . cotisations . employeur
+  somme:
+    - salarié . cotisations . employeur
+    - financement du paritarisme
