@@ -62,7 +62,7 @@ describe("IDCC 1501 — 2026.5 minimum salaries", () => {
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 10 du 5 décembre 2025")));
   });
 
-  it("is selected until 3 June 2026, then 2026.7 and 2027.1 take over; 2025.1 covers June to December 2025", () => {
+  it("is corrected by 2026.8 until 3 June 2026, then 2026.9 and 2027.2 take over; 2025.1 covers June to December 2025", () => {
     const list = COMPILED_VERSIONS[agreement]!;
     const inForce = (date: string) => {
       const eligible = list.filter((entry) => entry.validFrom <= date);
@@ -73,12 +73,13 @@ describe("IDCC 1501 — 2026.5 minimum salaries", () => {
     assert.equal(inForce("2025-12-31"), "2025.1");
     // 2026.5 and 2026.5 add the salary maintenance to 2026.5 and 2026.5, at the same dates; 2026.5
     // and 2026.6 add the termination indemnities to them.
-    assert.equal(inForce("2026-01-01"), "2026.5");
-    assert.equal(inForce("2026-06-03"), "2026.5");
+    // 2026.8, 2026.9 and 2027.2 correct them at the same dates: the provident tranche 2 up to 8 ceilings.
+    assert.equal(inForce("2026-01-01"), "2026.8");
+    assert.equal(inForce("2026-06-03"), "2026.8");
     // 2026.7 adds the joint bodies contribution to 2026.6 at the same date; 2027.1 lowers it from 2027.
-    assert.equal(inForce("2026-06-04"), "2026.7");
-    assert.equal(inForce("2026-12-31"), "2026.7");
-    assert.equal(inForce("2027-01-01"), "2027.1");
+    assert.equal(inForce("2026-06-04"), "2026.9");
+    assert.equal(inForce("2026-12-31"), "2026.9");
+    assert.equal(inForce("2027-01-01"), "2027.2");
   });
 
   it("carries the prévoyance rules from 1 January 2026", () => {
