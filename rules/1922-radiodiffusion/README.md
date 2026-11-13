@@ -31,3 +31,5 @@ Aucun taux salarié/employeur, base, plafond ou forfait non sourcé n'est mis à
 - Avenant du 17 janvier 2025 relatif au régime de santé et de prévoyance, Légifrance, KALIARTI000051834668.
 - Accord du 17 décembre 2015 relatif à la création d'un régime de santé et de prévoyance, Légifrance, KALIARTI000032241955.
 - Accord du 28 janvier 2020 relatif à la formation professionnelle, Légifrance, KALIARTI000042598259.
+
+La révision 2025.2, à la date d'effet de la version 2025.1, ajoute aux cotisations du bulletin la prévoyance des non-cadres : 0,88 % de la tranche A, à parts égales entre l'employeur et le salarié (`prévoyance non cadre . employeur` et `. salarié`, qui remplacent la cotisation conventionnelle de modele-social). Pour les cadres, la cotisation de 0,88 % est à la charge de l'employeur et s'impute sur les 1,50 % de la tranche A que modele-social calcule déjà : rien ne s'y ajoute. Article 10 de l'accord du 17 décembre 2015 ([KALIARTI000032241955](https://www.legifrance.gouv.fr/conv_coll/article/KALIARTI000032241955)), relu sur Légifrance le 13 novembre 2026 ; les avenants de 2016, 2019, 2023 et 2025 ne modifient que le régime de frais de santé.
