@@ -1,6 +1,8 @@
 # Professions de la photographie — IDCC 3168
 
-Le fichier [2024.1](3168-professions-photographie.2024.1.publicodes) entre en vigueur le 1er mars 2024 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 1er juin 2024. Salaires minima mensuels de l'avenant du 15 février 2024 ; les premiers coefficients sont sous le SMIC de 2026.
+> La version 2024.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2024.1 entre en vigueur le 1er mars 2024 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 1er juin 2024. Salaires minima mensuels de l'avenant du 15 février 2024 ; les premiers coefficients sont sous le SMIC de 2026.
 
 La valeur Publicodes est `photographie` ; les règles sont sous `salarié . convention collective . photographie`.
 

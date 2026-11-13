@@ -1,6 +1,8 @@
 # Tourisme social et familial — IDCC 1316
 
-Le fichier [2026.1](1316-tourisme-social-familial.2026.1.publicodes) modélise les salaires minima mensuels des avenants n° 77 du 4 décembre 2025 et n° 78 du 15 janvier 2026, étendus par arrêtés publiés au Journal officiel en février et mai 2026. Il couvre les paliers d'entrée en vigueur du 1er janvier, du 1er février et du 1er mai 2026. Les références officielles figurent dans les métadonnées du fichier source.
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 modélise les salaires minima mensuels des avenants n° 77 du 4 décembre 2025 et n° 78 du 15 janvier 2026, étendus par arrêtés publiés au Journal officiel en février et mai 2026. Il couvre les paliers d'entrée en vigueur du 1er janvier, du 1er février et du 1er mai 2026. Les références officielles figurent dans les métadonnées du fichier source.
 
 La valeur Publicodes est `tourisme social et familial` ; les règles sont sous `salarié . convention collective . tourisme social et familial`.
 

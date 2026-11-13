@@ -1,5 +1,7 @@
 # Boucherie, boucherie-charcuterie-traiteur, poissonnerie — IDCC 3254
 
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2026.1` modélise la grille mensuelle de l'avenant n° 9-B du 4 février 2026, applicable au 1er juin 2026 après extension par arrêté du 4 mai 2026. Les montants sont ceux de la branche boucherie-poissonnerie pour 151,67 heures et sont proratisés selon la quotité de travail.
 
 La valeur Publicodes est `boucherie poissonnerie` et les règles sont sous `salarié . convention collective . boucherie poissonnerie`.

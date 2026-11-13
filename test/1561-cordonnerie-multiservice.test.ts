@@ -6,7 +6,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 
 describe("IDCC 1561 — cordonnerie multiservice", () => {
   it("evaluates the sourced 2026 grid and isolates the namespace", async () => {
-    const version = COMPILED_VERSIONS["1561-cordonnerie-multiservice"]?.find((v) => v.version === "2026.1");
+    const version = COMPILED_VERSIONS["1561-cordonnerie-multiservice"]?.find((v) => v.version === "2026.2");
     assert.ok(version);
     const extension = await version.loadRules();
     const rules: Record<string, Rule> = { ...modeleSocial };

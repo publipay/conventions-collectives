@@ -19,8 +19,8 @@ const PMSS = 4005;
 const HEALTH = "salarié . cotisations . prévoyances . santé";
 
 const SCHEMES = [
-  { agreement: "1261-acteurs-lien-social-familial", version: "2026.10", value: "acteurs du lien social et familial", rate: 0.016, employerShare: 0.6 },
-  { agreement: "1505-commerce-detail-alimentaire-non-specialise", version: "2026.8", value: "commerce de détail alimentaire non spécialisé", rate: 0.0151, employerShare: 0.5 },
+  { agreement: "1261-acteurs-lien-social-familial", version: "2026.13", value: "acteurs du lien social et familial", rate: 0.016, employerShare: 0.6 },
+  { agreement: "1505-commerce-detail-alimentaire-non-specialise", version: "2026.10", value: "commerce de détail alimentaire non spécialisé", rate: 0.0151, employerShare: 0.5 },
   { agreement: "1512-promotion-immobiliere", version: "2026.6", value: "promotion immobilière", rate: 0.026, employerShare: 0.5 },
 ];
 

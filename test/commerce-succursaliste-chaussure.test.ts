@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0468-commerce-succursaliste-chaussure";
 const value = "commerce succursaliste de la chaussure";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -32,7 +32,7 @@ function annual() {
   return Math.round((engine.evaluate(`${namespace} . rémunération minimum annuelle conventionnelle`).nodeValue as number) * 100) / 100;
 }
 
-describe("IDCC 468 — 2025.1 minimum salaries and payroll isolation", () => {
+describe("IDCC 468 — 2025.2 minimum salaries and payroll isolation", () => {
 
   it("rejects unknown classifications and exposes the payroll audit", () => {
     setSituation("99");

@@ -7,8 +7,8 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const model = "3127-services-personne";
 const value = "services à la personne";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2024.2");
-assert.ok(version, "IDCC 3127 version 2024.2 must be compiled");
+const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2024.3");
+assert.ok(version, "IDCC 3127 version 2024.3 must be compiled");
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
 const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
@@ -47,7 +47,7 @@ function amount(name: string) {
   return Math.round((result as number) * 100) / 100;
 }
 
-describe("IDCC 3127 — 2024.2 services à la personne", () => {
+describe("IDCC 3127 — 2024.3 services à la personne", () => {
   it("is effective from 20 June 2024 and cites the extended wage amendment", () => {
     assert.equal(version.validFrom, "2024-06-20");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 11 du 22 janvier 2024")));

@@ -21,7 +21,7 @@ async function engineOf(revision: string) {
 
 // Amounts copied from article 1er of each avenant (base 35 hours, euros per month).
 const GRIDS: Record<string, { validFrom: string; kali: string; grid: Record<string, number> }> = {
-  "2025.1": {
+  "2025.2": {
     validFrom: "2025-01-01",
     kali: "KALITEXT000051694901",
     grid: {
@@ -31,7 +31,7 @@ const GRIDS: Record<string, { validFrom: string; kali: string; grid: Record<stri
       "7-1": 2583.79, "8-1": 3414.42, "9-1": 3793.09,
     },
   },
-  "2026.1": {
+  "2026.2": {
     validFrom: "2026-01-01",
     kali: "KALITEXT000054303889",
     grid: {
@@ -83,11 +83,11 @@ describe("IDCC 2002 blanchisserie-teinturerie minimum salaries", () => {
 
   it("has two consecutive versions, the 2026 one effective from 1 January 2026, each revised", () => {
     const versions = COMPILED_VERSIONS[agreement]?.map((entry) => entry.version);
-    // 2025.2 and 2026.2 add the joint bodies contribution at the dates of 2025.1 and 2026.1.
-    assert.deepEqual(versions, ["2025.1", "2025.2", "2026.1", "2026.2"]);
+    // 2025.2 and 2026.2 add the joint bodies contribution to the grids of 2025 and 2026.
+    assert.deepEqual(versions, ["2025.2", "2026.2"]);
   });
   it("part-time 2026: 2-2 at 80 % gives 1484.30", async () => {
-    const { engine } = await engineOf("2026.1");
+    const { engine } = await engineOf("2026.2");
     engine.setSituation({
       "salarié . convention collective": `'${value}'`,
       [`${namespace} . classification`]: "'2-2'",

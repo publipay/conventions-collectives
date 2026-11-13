@@ -51,8 +51,8 @@ describe("IDCC 2336 — 2026.2 (avenant n° 67)", async () => {
   });
 });
 
-describe("IDCC 2336 — 2026.3 (avenant n° 70)", async () => {
-  const { version, evaluate } = await engineOf("2026.3");
+describe("IDCC 2336 — 2026.4 (avenant n° 70)", async () => {
+  const { version, evaluate } = await engineOf("2026.4");
 
   it("is in force from 1 January 2026, extended on 10 July 2026", () => {
     assert.equal(version.validFrom, "2026-01-01");

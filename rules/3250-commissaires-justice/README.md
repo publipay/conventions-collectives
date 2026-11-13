@@ -1,5 +1,7 @@
 # Commissaires de justice et sociétés de ventes volontaires — IDCC 3250
 
+> Les versions 2025.1 et 2026.1 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Modèle `3250-commissaires-justice`, versions `2025.1` et `2026.1`, espace de noms
 `salarié . convention collective . commissaires de justice et sociétés de ventes volontaires`.
 

@@ -1,7 +1,9 @@
 # Réseaux de transports publics urbains de voyageurs — IDCC 1424
 
-- [2025.1](1424-reseaux-transports-publics-urbains.2025.1.publicodes) : 1er janvier 2025, autres employeurs à partir du 5 juillet 2025 (accord du 20 février 2025, point à 9,85 €).
-- [2026.1](1424-reseaux-transports-publics-urbains.2026.1.publicodes) : 1er janvier 2026, autres employeurs à partir du 31 mai 2026 (accord du 18 février 2026, point à 9,97 €).
+> Les versions 2025.1, 2025.2, 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+- 2025.1 : 1er janvier 2025, autres employeurs à partir du 5 juillet 2025 (accord du 20 février 2025, point à 9,85 €).
+- 2026.1 : 1er janvier 2026, autres employeurs à partir du 31 mai 2026 (accord du 18 février 2026, point à 9,97 €).
 
 La valeur Publicodes est `réseaux de transports urbains` ; les règles sont sous `salarié . convention collective . réseaux de transports urbains`.
 

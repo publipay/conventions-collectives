@@ -7,8 +7,8 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const model = "3043-entreprises-proprete";
 const value = "propreté";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.3");
-assert.ok(version, "IDCC 3043 version 2026.3 must be compiled");
+const version = COMPILED_VERSIONS[model]?.find((entry) => entry.version === "2026.5");
+assert.ok(version, "IDCC 3043 version 2026.5 must be compiled");
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
 for (const name of Object.keys(extension)) {
@@ -56,7 +56,7 @@ function amount(name: string) {
   return Math.round((result as number) * 100) / 100;
 }
 
-describe("IDCC 3043 — 2026.3 entreprises de propreté", () => {
+describe("IDCC 3043 — 2026.5 entreprises de propreté", () => {
   it("is effective from 1 April 2026 and cites the extended wage amendment", () => {
     assert.equal(version.validFrom, "2026-04-01");
     assert.ok(version.sources.some((source) => source.includes("IDCC 3043, brochure 3173")));

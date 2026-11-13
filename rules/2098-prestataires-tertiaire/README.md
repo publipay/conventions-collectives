@@ -1,6 +1,8 @@
 # Prestataires de services dans le domaine du secteur tertiaire — IDCC 2098
 
 > Les versions 2026.1, 2026.2 et 2026.3 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> Les versions 2026.4 et 2026.5 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
 Ce répertoire contient le modèle Publicodes de la convention collective nationale du personnel des prestataires de services dans le domaine du secteur tertiaire (IDCC 2098).
 

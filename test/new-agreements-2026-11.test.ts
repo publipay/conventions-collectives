@@ -23,7 +23,7 @@ const cases: Case[] = [
     amounts: [["1.A", 21801], ["3.B", 27755], ["6.C", 49780], ["7.B", 50275], ["9.C", 74593]], outOfGrid: "7.A",
   },
   {
-    agreement: "0538-manutention-ferroviaire", version: "2026.1", value: "manutention ferroviaire", input: "classification",
+    agreement: "0538-manutention-ferroviaire", version: "2026.2", value: "manutention ferroviaire", input: "classification",
     amounts: [["ouvrier 156", hourly(12.14)], ["ouvrier 196", hourly(13.34)], ["employé niveau 4", 1932.39], ["chef de chantier", 2666.41, 0], ["chef de chantier", 2826.4, 4], ["contremaître", 2657.51, 20]],
     outOfGrid: "ouvrier 197",
   },
@@ -32,11 +32,11 @@ const cases: Case[] = [
     amounts: [["A", 1747.2], ["E", 2196.71], ["I", 3769.87]], outOfGrid: "J",
   },
   {
-    agreement: "0637-industries-commerce-recuperation", version: "2026.1", value: "récupération", input: "niveau",
+    agreement: "0637-industries-commerce-recuperation", version: "2026.2", value: "récupération", input: "niveau",
     amounts: [["I.A", 1910.42], ["IV.B", 2177.47], ["VII.C", 3815.02]], outOfGrid: "VII.D",
   },
   {
-    agreement: "0953-charcuterie-detail", version: "2026.1", value: "charcuterie de détail", input: "coefficient",
+    agreement: "0953-charcuterie-detail", version: "2026.2", value: "charcuterie de détail", input: "coefficient",
     amounts: [[150, hourly(12.27)], [200, hourly(13.94)], [330, hourly(20.43)]], outOfGrid: 250,
   },
   {
@@ -48,7 +48,7 @@ const cases: Case[] = [
     amounts: [[65, 36337], [90, 50313], [180, 100626]], outOfGrid: 64,
   },
   {
-    agreement: "1285-entreprises-artistiques-culturelles", version: "2026.1", value: "entreprises artistiques et culturelles", input: "groupe et échelon",
+    agreement: "1285-entreprises-artistiques-culturelles", version: "2026.2", value: "entreprises artistiques et culturelles", input: "groupe et échelon",
     amounts: [["1.1", 3513.35], ["5.3", 2159.48], ["9.12", 2485.33]], outOfGrid: "10.1",
   },
   {
@@ -56,11 +56,11 @@ const cases: Case[] = [
     amounts: [["1A", 1803], ["4B", 2151], ["8D", 5551]], outOfGrid: "7A",
   },
   {
-    agreement: "2691-enseignement-prive-independant", version: "2026.1", value: "enseignement privé indépendant", input: "catégorie et échelon", annual: true,
+    agreement: "2691-enseignement-prive-independant", version: "2026.2", value: "enseignement privé indépendant", input: "catégorie et échelon", annual: true,
     amounts: [["E1.A", 22986.11], ["T2.B", 27454.97], ["C3.C", 55468.09], ["enseignant 1.A", 25284.68], ["enseignant 10.C", 38951.94]], outOfGrid: "enseignant 11.A",
   },
   {
-    agreement: "3168-professions-photographie", version: "2024.1", value: "photographie", input: "coefficient",
+    agreement: "3168-professions-photographie", version: "2024.2", value: "photographie", input: "coefficient",
     amounts: [[150, 1767], [250, 2521], [450, 4393]], outOfGrid: 160,
   },
   {

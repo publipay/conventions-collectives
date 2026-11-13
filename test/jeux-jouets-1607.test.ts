@@ -59,7 +59,7 @@ function minimum(engine: Engine, coefficient: number, years?: number, quota = "1
   return Math.round((result as number) * 100) / 100;
 }
 
-for (const [revision, validFrom] of [["2026.3", "2026-04-01"], ["2026.4", "2026-07-01"]] as const) {
+for (const [revision, validFrom] of [["2026.3", "2026-04-01"], ["2026.5", "2026-07-01"]] as const) {
   describe(`IDCC 1607 — ${revision} full seniority grid`, async () => {
     const { version, engine } = await engineOf(revision);
 
@@ -105,8 +105,8 @@ for (const [revision, validFrom] of [["2026.3", "2026-04-01"], ["2026.4", "2026-
   });
 }
 
-describe("IDCC 1607 — 2026.4 keeps the training contribution of 2026.2", async () => {
-  const { engine } = await engineOf("2026.4");
+describe("IDCC 1607 — 2026.5 keeps the training contribution of 2026.2", async () => {
+  const { engine } = await engineOf("2026.5");
   it("applies the contribution by workforce band", () => {
     for (const [effectif, expected] of [[9, 18], [10, 33], [299, 33], [300, 36]] as const) {
       engine.setSituation({
@@ -115,7 +115,10 @@ describe("IDCC 1607 — 2026.4 keeps the training contribution of 2026.2", async
         "salarié . cotisations . assiette": "3000 €/mois",
         "entreprise . salariés . effectif": effectif,
       });
-      assert.equal(Math.round((engine.evaluate("salarié . cotisations . formation professionnelle").nodeValue as number) * 100) / 100, expected, String(effectif));
+      // The legal contribution and the agreement's own line, together.
+      const total = (engine.evaluate("salarié . cotisations . formation professionnelle").nodeValue as number) +
+        ((engine.evaluate(`${namespace} . formation professionnelle conventionnelle`).nodeValue as number | null) ?? 0);
+      assert.equal(Math.round(total * 100) / 100, expected, String(effectif));
     }
   });
 });

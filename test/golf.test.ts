@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const namespace = "salarié . convention collective . golf";
 
 async function engine(situation: Record<string, string> = {}) {
-  const version = COMPILED_VERSIONS["2021-golf"]?.find((v: { version: string }) => v.version === "2026.2");
+  const version = COMPILED_VERSIONS["2021-golf"]?.find((v: { version: string }) => v.version === "2026.4");
   assert.ok(version);
   const rules = { ...modeleSocial, ...(await version.loadRules()) };
   const choice = rules["salarié . convention collective"] as { "une possibilité": string[] };
@@ -60,7 +60,7 @@ describe("IDCC 2021 golf", () => {
   });
 
   it("is inapplicable outside the golf convention", async () => {
-    const version = COMPILED_VERSIONS["2021-golf"]?.find((v: { version: string }) => v.version === "2026.2");
+    const version = COMPILED_VERSIONS["2021-golf"]?.find((v: { version: string }) => v.version === "2026.4");
     assert.ok(version);
     const rules = { ...modeleSocial, ...(await version.loadRules()) };
     const e = new Engine(rules, { logger: { log() {}, warn() {}, error() {} } });

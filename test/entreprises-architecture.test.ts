@@ -6,7 +6,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 
 const value = "entreprises d'architecture";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS["2332-entreprises-architecture"]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS["2332-entreprises-architecture"]?.find((entry) => entry.version === "2026.3");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -33,7 +33,7 @@ function amount() {
   return Math.round((result as number) * 100) / 100;
 }
 
-describe("IDCC 2332 — entreprises d'architecture 2026.2", () => {
+describe("IDCC 2332 — entreprises d'architecture 2026.3", () => {
 
   it("reports an unknown zone and leaves another agreement untouched", () => {
     setSituation(300, "national");

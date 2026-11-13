@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3013-librairie";
 const value = "librairie";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.3");
+const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -31,7 +31,7 @@ function evaluate(rule: string, level?: string, quota = "100%") {
   return engine.evaluate(`${namespace} . ${rule}`).nodeValue;
 }
 
-describe("IDCC 3013 librairie 2026.3 (accord du 25 novembre 2025)", () => {
+describe("IDCC 3013 librairie 2026.5 (accord du 25 novembre 2025)", () => {
   it("applies from 1 April 2026 and cites the real text", () => {
     assert.equal(version.validFrom, "2026-04-01");
     assert.ok(version.sources.some((source: string) => source.includes("KALITEXT000054034034")));

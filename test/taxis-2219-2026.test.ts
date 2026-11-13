@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const ns = "salarié . convention collective . taxis";
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS["2219-taxis"]?.find((v) => v.version === "2026.1");
+  const version = COMPILED_VERSIONS["2219-taxis"]?.find((v) => v.version === "2026.2");
   assert.ok(version);
   const rules: Record<string, Rule> = { ...modeleSocial };
   const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
@@ -47,7 +47,7 @@ const nonDriving: [string, number, number][] = [
   ["non roulant — échelon VI", 18.85, 2858.98],
 ];
 
-describe("IDCC 2219 — taxis, version 2026.1", () => {
+describe("IDCC 2219 — taxis, version 2026.2", () => {
   it("carries the five driver lines (monthly and hourly published amounts)", async () => {
     const engine = await makeEngine();
     for (const [classification, monthly, hourly] of drivers) {

@@ -1,5 +1,7 @@
 # Cordonnerie multiservice — IDCC 1561
 
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2026.1` modélise l'accord salarial du **18 février 2026**, étendu par arrêté du **4 mai 2026**, avec effet au **1er janvier 2026**. Le secteur est rattaché à la branche maroquinerie, mais sa grille dédiée est exposée sous une namespace distincte.
 
 ## Règles

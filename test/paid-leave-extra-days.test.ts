@@ -31,7 +31,7 @@ async function engineOf(model: string, revision: string, value: string) {
 }
 
 describe("Syntec seniority days (1486 revision 2026.5)", async () => {
-  const days = await engineOf("1486-syntec", "2026.5", "syntec");
+  const days = await engineOf("1486-syntec", "2026.7", "syntec");
   const at = (years: number) => days({ "salarié . convention collective . syntec . congés payés . ancienneté": `${years} an` });
 
   it("grants 1 to 4 jours ouvrés after 5, 10, 15 and 20 years", () => {
@@ -89,8 +89,8 @@ describe("Métallurgie extra days (3248 revision 2026.6)", async () => {
   });
 });
 
-describe("HCR conventional days (1979 revisions 2024.5 and 2026.4)", async () => {
-  for (const revision of ["2024.5", "2026.4"]) {
+describe("HCR conventional days (1979 revisions 2024.7 and 2026.6)", async () => {
+  for (const revision of ["2024.7", "2026.6"]) {
     const days = await engineOf("1979-hotels-cafes-restaurants", revision, "hôtels cafés restaurants");
     const rule = "salarié . convention collective . hôtels cafés restaurants . congés payés . congé légal";
 

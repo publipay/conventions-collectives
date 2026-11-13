@@ -1,5 +1,7 @@
 # Cabinets ou entreprises d'expertises en automobile — IDCC 1951
 
+> La version 2025.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2025.1` modélise l'avenant n° 92 du **19 juin 2025**, applicable au **1er janvier 2025**. L'avenant a été étendu par arrêté du **4 septembre 2025**, publié au Journal officiel du **10 septembre 2025**.
 
 La valeur Publicodes est `expertises automobile` et les règles sont sous `salarié . convention collective . expertises automobile`.

@@ -1,6 +1,8 @@
 # Entreprises artistiques et culturelles (emplois non artistiques) — IDCC 1285
 
-Le fichier [2026.1](1285-entreprises-artistiques-culturelles.2026.1.publicodes) entre en vigueur le 1er août 2026 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 19 septembre 2026. Minima mensuels des emplois non artistiques au 1er août 2026 ; les artistes (cachets, services, minima mensuels) ne sont pas modélisés.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er août 2026 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 19 septembre 2026. Minima mensuels des emplois non artistiques au 1er août 2026 ; les artistes (cachets, services, minima mensuels) ne sont pas modélisés.
 
 La valeur Publicodes est `entreprises artistiques et culturelles` ; les règles sont sous `salarié . convention collective . entreprises artistiques et culturelles`.
 

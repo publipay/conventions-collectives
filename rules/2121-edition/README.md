@@ -1,6 +1,8 @@
 # Édition — IDCC 2121
 
-Le fichier [2026.1](2121-edition.2026.1.publicodes) entre en vigueur le 1er juillet 2026. Il modélise l'avenant n° 18 du 18 juin 2026 relatif aux salaires minima conventionnels, étendu par arrêté du 24 août 2026 publié au Journal officiel. Les textes officiels ont été consultés dans les bases Légifrance/JORF pour la convention collective nationale de l'édition (brochure 3076).
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er juillet 2026. Il modélise l'avenant n° 18 du 18 juin 2026 relatif aux salaires minima conventionnels, étendu par arrêté du 24 août 2026 publié au Journal officiel. Les textes officiels ont été consultés dans les bases Légifrance/JORF pour la convention collective nationale de l'édition (brochure 3076).
 
 La valeur Publicodes est `édition` ; les règles sont sous `salarié . convention collective . édition`.
 
@@ -19,7 +21,7 @@ La valeur Publicodes est `édition` ; les règles sont sous `salarié . conventi
 
 ## Version `2026.2` (1er juin 2026)
 
-Le fichier [2026.2](2121-edition.2026.2.publicodes) reprend la même grille que `2026.1` avec la date d'effet exacte de l'avenant n° 18 du 26 juin 2026 (KALITEXT000054951908) : il entre en vigueur le **1er juin 2026**, avec application rétroactive si l'avenant est mis en œuvre sur la paie de juillet 2026 (article 6). Il a été étendu par arrêté du 7 septembre 2026 (JORF du 19 septembre 2026). La version `2026.1` (1er juillet 2026, avenant daté à tort du 18 juin et arrêté du 24 août dans ses sources) reste inchangée ; sa grille est identique.
+Le fichier 2026.2 reprend la même grille que `2026.1` avec la date d'effet exacte de l'avenant n° 18 du 26 juin 2026 (KALITEXT000054951908) : il entre en vigueur le **1er juin 2026**, avec application rétroactive si l'avenant est mis en œuvre sur la paie de juillet 2026 (article 6). Il a été étendu par arrêté du 7 septembre 2026 (JORF du 19 septembre 2026). La version `2026.1` (1er juillet 2026, avenant daté à tort du 18 juin et arrêté du 24 août dans ses sources) reste inchangée ; sa grille est identique.
 
 Non modélisés : la garantie annuelle (minima mensuels × 13 / 12, article 2.1) et le barème des minima à l'ancienneté de 5, 10 et 15 ans (article 4). Les catégories E4 et C5 figurent au tableau sans montant : elles restent hors grille.
 

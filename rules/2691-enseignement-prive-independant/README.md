@@ -1,6 +1,8 @@
 # Enseignement privé indépendant — IDCC 2691
 
-Le fichier [2026.1](2691-enseignement-prive-independant.2026.1.publicodes) entre en vigueur le 1er mars 2026. Minima annuels des annexes 1-A, 1-B et 1-C de l'avenant n° 69 au 1er mars 2026 ; les annexes 1-D et 1-E ne sont pas modélisées.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er mars 2026. Minima annuels des annexes 1-A, 1-B et 1-C de l'avenant n° 69 au 1er mars 2026 ; les annexes 1-D et 1-E ne sont pas modélisées.
 
 La valeur Publicodes est `enseignement privé indépendant` ; les règles sont sous `salarié . convention collective . enseignement privé indépendant`.
 

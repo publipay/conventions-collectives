@@ -11,7 +11,7 @@ const near = (actual: number, expected: number, label = "") =>
   assert.ok(Math.abs(actual - expected) < 1e-6, `${label} ${actual} ≠ ${expected}`);
 
 describe("1486 Syntec", async () => {
-  const { of } = await terminationEngine("1486-syntec", "2026.5", "syntec");
+  const { of } = await terminationEngine("1486-syntec", "2026.7", "syntec");
 
   it("gives the dismissal indemnity of the ETAM and of the engineers and managers (article 4.5)", () => {
     near(of(7).dismissal, 0, "under 8 months");
@@ -71,7 +71,7 @@ describe("3248 métallurgie", async () => {
 });
 
 describe("1979 hôtels cafés restaurants", async () => {
-  for (const revision of ["2024.5", "2026.4"]) {
+  for (const revision of ["2024.7", "2026.6"]) {
     const { of } = await terminationEngine("1979-hotels-cafes-restaurants", revision, "hôtels cafés restaurants", { niveau: "'I.1'" });
 
     it(`gives the dismissal and retirement indemnities in ${revision} (articles 32 and 33, avenant n° 1 article 14)`, () => {
@@ -122,7 +122,7 @@ describe("2216 commerce alimentaire", async () => {
 });
 
 describe("1517 commerce de détail non alimentaire", async () => {
-  const { of } = await terminationEngine("1517-commerce-detail-non-alimentaire", "2026.3", "commerce de détail non alimentaire");
+  const { of } = await terminationEngine("1517-commerce-detail-non-alimentaire", "2026.4", "commerce de détail non alimentaire");
 
   it("gives the dismissal and retirement indemnities (articles 4, 6 and 8)", () => {
     near(of(7).dismissal, 0, "under 8 months");
@@ -160,7 +160,7 @@ describe("1501 restauration rapide", async () => {
 });
 
 describe("3043 propreté", async () => {
-  const { of } = await terminationEngine("3043-entreprises-proprete", "2026.3", "propreté", { niveau: "'AQS1-A'" });
+  const { of } = await terminationEngine("3043-entreprises-proprete", "2026.5", "propreté", { niveau: "'AQS1-A'" });
 
   it("gives the dismissal and retirement indemnities (articles 4.11.3 and 4.12)", () => {
     near(of(23).dismissal, 0, "under 2 years");
@@ -176,7 +176,7 @@ describe("3043 propreté", async () => {
 });
 
 describe("1090 services de l'automobile", async () => {
-  const { of } = await terminationEngine("1090-services-automobile", "2026.3", "services automobile", { niveau: "'5'" });
+  const { of } = await terminationEngine("1090-services-automobile", "2026.4", "services automobile", { niveau: "'5'" });
 
   it("gives the dismissal indemnity of the legal scale (articles 2.13 and 4.11)", () => {
     near(of(7).dismissal, 0, "under 8 months");
@@ -250,9 +250,9 @@ describe("second lot of agreements", async () => {
     terminationEngine(model, revision, value, classification);
 
   it("0016 transports routiers: congédiement and retirement of the annexes I to IV", async () => {
-    const workers = await lot("0016-transports-routiers", "2026.5", "transports routiers", { niveau: "'M-O-128'" });
-    const technicians = await lot("0016-transports-routiers", "2026.5", "transports routiers", { niveau: "'M-T-175'" });
-    const managers = await lot("0016-transports-routiers", "2026.5", "transports routiers", { niveau: "'M-C-113'" });
+    const workers = await lot("0016-transports-routiers", "2026.7", "transports routiers", { niveau: "'M-O-128'" });
+    const technicians = await lot("0016-transports-routiers", "2026.7", "transports routiers", { niveau: "'M-T-175'" });
+    const managers = await lot("0016-transports-routiers", "2026.7", "transports routiers", { niveau: "'M-C-113'" });
     near(workers.of(23).dismissal, 0, "under 2 years");
     near(workers.of(24).dismissal, 0.2, "2 years");
     near(workers.of(35).dismissal, 35 / 12 / 10, "under 3 years");
@@ -295,8 +295,8 @@ describe("second lot of agreements", async () => {
   });
 
   it("1043 gardiens: the scale of article 16 and the categories A and B of article 17", async () => {
-    const b = await lot("1043-gardiens-concierges-employes-immeubles", "2026.6", "gardiens concierges et employés d'immeubles", { "catégorie": "'B'" });
-    const a = await lot("1043-gardiens-concierges-employes-immeubles", "2026.6", "gardiens concierges et employés d'immeubles", { "catégorie": "'A'" });
+    const b = await lot("1043-gardiens-concierges-employes-immeubles", "2026.8", "gardiens concierges et employés d'immeubles", { "catégorie": "'B'" });
+    const a = await lot("1043-gardiens-concierges-employes-immeubles", "2026.8", "gardiens concierges et employés d'immeubles", { "catégorie": "'A'" });
     near(b.of(11).dismissal, 0, "under a year");
     near(b.of(12).dismissal, 0.2, "1 year");
     near(b.of(years(7)).dismissal, 1.4, "7 years");
@@ -310,7 +310,7 @@ describe("second lot of agreements", async () => {
   });
 
   it("1266 restauration collective: scales of the employees and the managers", async () => {
-    const { of } = await lot("1266-restauration-collective", "2025.3", "restauration collective");
+    const { of } = await lot("1266-restauration-collective", "2025.4", "restauration collective");
     near(of(11).dismissal, 0, "under a year");
     near(of(years(12)).dismissal, 2 + 2 / 3, "12 years");
     near(of(years(12), { cadre: true }).dismissal, 1 + 4 / 3 + 2 / 3, "cadre, 12 years");
@@ -375,11 +375,11 @@ describe("second lot of agreements", async () => {
   });
 
   it("1505, 1527, 1606: retirement and dismissal indemnities", async () => {
-    const food = await lot("1505-commerce-detail-alimentaire-non-specialise", "2026.8", "commerce de détail alimentaire non spécialisé");
+    const food = await lot("1505-commerce-detail-alimentaire-non-specialise", "2026.10", "commerce de détail alimentaire non spécialisé");
     near(food.of(23).voluntaryRetirement, 0, "under 2 years");
     near(food.of(years(10)).voluntaryRetirement, 1, "10 years");
     near(food.of(years(40)).voluntaryRetirement, 3, "capped at 3 months");
-    const realEstate = await lot("1527-immobilier", "2026.4", "immobilier");
+    const realEstate = await lot("1527-immobilier", "2026.5", "immobilier");
     for (const [seniority, months] of [[4, 0], [5, 0.6], [6, 0.6], [7, 0.8], [9, 1], [17, 1.8], [19, 2.1], [34, 4.2], [35, 4.5], [40, 4.5]] as const) {
       near(realEstate.of(years(seniority)).voluntaryRetirement, months, `${seniority} years`);
     }
@@ -405,7 +405,7 @@ describe("second lot of agreements", async () => {
     near(insurance.of(years(20)).voluntaryRetirement, 2, "20 years");
     near(insurance.of(23).forcedRetirement, 0, "under 2 years");
     near(insurance.of(years(12)).forcedRetirement, 1 + 2 / 3 * 0.5, "12 years");
-    const services = await lot("2098-prestataires-tertiaire", "2026.4", "prestataires tertiaires");
+    const services = await lot("2098-prestataires-tertiaire", "2026.6", "prestataires tertiaires");
     near(services.of(23).dismissal, 0, "under 2 years");
     near(services.of(24).dismissal, 0.2, "2 years");
     near(services.of(years(10)).dismissal, 0.5 + 5 / 7, "10 years");
@@ -422,7 +422,7 @@ describe("second lot of agreements", async () => {
     }
     near(sport.of(years(5)).forcedRetirement, 1.25, "forced retirement: the dismissal indemnity");
     near(sport.of(years(10)).forcedRetirement, 2.5, "forced retirement: the dismissal indemnity");
-    const homeCare = await lot("2941-aide-soins-domicile", "2026.3", "aide et soins à domicile");
+    const homeCare = await lot("2941-aide-soins-domicile", "2026.4", "aide et soins à domicile");
     near(homeCare.of(7).dismissal, 0, "under 8 months");
     near(homeCare.of(years(12)).dismissal, 10 / 4 + 2 / 3, "12 years");
     near(homeCare.of(years(12)).conventionalTermination, 10 / 4 + 2 / 3, "conventional termination (article 28)");

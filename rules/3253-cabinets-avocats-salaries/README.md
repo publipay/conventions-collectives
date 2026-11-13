@@ -1,5 +1,7 @@
 # Salariés des cabinets d'avocats — IDCC 3253
 
+> Les versions 2025.1 et 2026.1 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Le modèle `2025.1` entre en vigueur le **1er octobre 2025**, premier jour du mois suivant la publication au Journal officiel de l'arrêté d'extension du 18 septembre 2025. Il couvre la convention collective nationale des salariés des cabinets d'avocats du 21 juin 2024, issue de la fusion des champs IDCC 1000 et IDCC 1850.
 
 La version `2026.1` entre en vigueur le **1er mai 2026** avec l'accord de formation professionnelle du 2 juillet 2025 (voir l'audit ci-dessous).

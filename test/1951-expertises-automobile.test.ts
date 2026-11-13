@@ -8,7 +8,7 @@ const value = "expertises automobile";
 const namespace = `salarié . convention collective . ${value}`;
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS["1951-expertises-automobile"]?.find((v) => v.version === "2025.1");
+  const version = COMPILED_VERSIONS["1951-expertises-automobile"]?.find((v) => v.version === "2025.2");
   assert.ok(version);
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };
@@ -59,6 +59,6 @@ describe("IDCC 1951 expertises en automobile", () => {
     });
     assert.equal(get(engine, "niveau hors grille").nodeValue, true);
     assert.equal(get(engine, "salaire minimum annuel conventionnel").nodeValue, 0);
-    assert.equal(Object.keys(engine.getParsedRules()).some((name) => name.includes("expertises automobile . cotisations")), false);
+    assert.equal(Object.keys(engine.getParsedRules()).some((name) => name.includes("expertises automobile . cotisations") && !name.endsWith("cotisations employeur avec paritarisme")), false);
   });
 });

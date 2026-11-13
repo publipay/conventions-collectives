@@ -1,6 +1,8 @@
 # Entreprises d'architecture — IDCC 2332
 
 > Les versions 2025.1, 2025.2, 2025.3 et 2026.1 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2026.2 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 ## Version `2025.1`
 
@@ -37,7 +39,7 @@ Les versions `2025.1` à `2026.1` ne modélisent que la région Rhône-Alpes.
 
 ## Version `2026.2` : tous les territoires
 
-La version [`2026.2`](2332-entreprises-architecture.2026.2.publicodes) s'applique à compter du **1er janvier 2026**, à tous les employeurs du champ. Elle remplace la `2026.1` dès cette date. La date d'effet de la `2026.1` (1er juin 2026) étant postérieure, un consommateur qui choisit la version par date doit écarter la `2026.1`.
+La version `2026.2` s'applique à compter du **1er janvier 2026**, à tous les employeurs du champ. Elle remplace la `2026.1` dès cette date. La date d'effet de la `2026.1` (1er juin 2026) étant postérieure, un consommateur qui choisit la version par date doit écarter la `2026.1`.
 
 - **Territoire** : la valeur du point est négociée par chaque commission territoriale paritaire (article V.2.2). `territoire` se déduit de l'entrée `département` (les deux premiers chiffres du code postal, les trois premiers outre-mer, `20`, `2A` ou `2B` pour la Corse) selon le périmètre de l'article XV.5.1 de la CCN. Il y a 27 territoires, Mayotte comprise. Sans département connu, le territoire est « hors territoire ».
 - **Zones** :

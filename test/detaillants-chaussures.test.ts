@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0733-detaillants-chaussures";
 const value = "détaillants chaussures";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -30,7 +30,7 @@ function minimum() {
   return Math.round((result as number) * 100) / 100;
 }
 
-describe("IDCC 733 — 2026.1 minimum salaries", () => {
+describe("IDCC 733 — 2026.2 minimum salaries", () => {
   it("starts on 1 July 2026 and cites the official agreement and extension", () => {
     assert.equal(version.validFrom, "2026-07-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 108 du 9 mars 2026")));

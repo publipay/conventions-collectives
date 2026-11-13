@@ -1,6 +1,8 @@
 # Modèle aide et soins à domicile — IDCC 2941
 
 > Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2026.3 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 Source Publicodes : version 2026.1.
 

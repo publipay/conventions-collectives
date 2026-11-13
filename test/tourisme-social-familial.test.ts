@@ -8,7 +8,7 @@ const name = "1316-tourisme-social-familial";
 const namespace = "salarié . convention collective . tourisme social et familial";
 
 const engineFor = async (niveau: string, date: string, quotient = "100%") => {
-  const version = COMPILED_VERSIONS[name]?.find((item: { version: string }) => item.version === "2026.1");
+  const version = COMPILED_VERSIONS[name]?.find((item: { version: string }) => item.version === "2026.3");
   assert.ok(version);
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };

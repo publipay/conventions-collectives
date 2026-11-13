@@ -1,8 +1,10 @@
 # Cabinets médicaux — IDCC 1147
 
 > La version 2024.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2024.2 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
-Le fichier 2024.1 entre en vigueur le 1er janvier 2024. Le fichier [2024.2](1147-cabinets-medicaux.2024.2.publicodes) ajoute le régime de prévoyance applicable depuis le 1er avril 2023. Les sources sont citées dans les métadonnées. La valeur Publicodes est `cabinets médicaux` ; les règles sont sous `salarié . convention collective . cabinets médicaux`.
+Le fichier 2024.1 entre en vigueur le 1er janvier 2024. Le fichier 2024.2 ajoute le régime de prévoyance applicable depuis le 1er avril 2023. Les sources sont citées dans les métadonnées. La valeur Publicodes est `cabinets médicaux` ; les règles sont sous `salarié . convention collective . cabinets médicaux`.
 
 La convention collective nationale du personnel des cabinets médicaux du 14 octobre 1981 (brochure 3168) classe les emplois en positions de 4 à 16 depuis la réforme de 2020, sans valeur de point.
 

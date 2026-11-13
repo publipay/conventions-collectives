@@ -1,6 +1,8 @@
 # Structures associatives de pêche de loisir et de protection du milieu aquatique — IDCC 3203
 
-Le fichier [2026.2](3203-structures-associatives-peche.2026.2.publicodes) entre en vigueur le **1er janvier 2026**. Il modélise l’avenant n° 16 du 17 décembre 2025 relatif aux salaires minima conventionnels.
+> La version 2026.2 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.2 entre en vigueur le **1er janvier 2026**. Il modélise l’avenant n° 16 du 17 décembre 2025 relatif aux salaires minima conventionnels.
 
 ## Sources officielles
 

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1875-cabinets-cliniques-veterinaires";
 const value = "cabinets et cliniques vétérinaires";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -45,7 +45,7 @@ function outOfGrid() {
   return engine.evaluate(`${namespace} . coefficient hors grille`).nodeValue;
 }
 
-describe("IDCC 1875 — 2026.1 minimum salaries", () => {
+describe("IDCC 1875 — 2026.2 minimum salaries", () => {
   it("is effective on 1 January 2026 and cites the 2026 point agreement", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 91 du 6 janvier 2026")));

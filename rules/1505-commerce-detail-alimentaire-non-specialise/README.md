@@ -1,6 +1,8 @@
 # Commerce de détail alimentaire non spécialisé — IDCC 1505
 
 > Les versions 2026.1, 2026.5, 2026.6 et 2026.7 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> Les versions 2026.8 et 2026.9 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
 Le fichier 2026.1 entre en vigueur le 1er août 2026. Le fichier 2026.5 conserve cette grille et ajoute les rubriques de paie de l’audit du 12 octobre 2026. Les textes et identifiants officiels sont cités dans les métadonnées. La valeur Publicodes est `commerce de détail alimentaire non spécialisé` ; les règles sont sous `salarié . convention collective . commerce de détail alimentaire non spécialisé`.
 
@@ -31,7 +33,7 @@ La révision 2026.6 ajoute le maintien de salaire conventionnel (articles 40.1 e
 
 La révision 2026.7 ajoute l'indemnité de départ à la retraite (article 23.4.1), sous `indemnité de rupture`, lus sur Légifrance le 28 octobre 2026 : les barèmes, seuils d'ancienneté et plafonds sont dans les sources de la version et dans `test/termination-indemnity.test.ts`, en mois de salaire de référence. Les indemnités de licenciement et de mise à la retraite reprennent le barème légal.
 
-La révision [2026.8](1505-commerce-detail-alimentaire-non-specialise.2026.8.publicodes), à la même date et aux mêmes taux, change la forme de la complémentaire santé : ses règles `santé . montant` et `santé . taux employeur` remplacent le montant et la part employeur de modele-social (`santé . montant` et `santé . taux employeur`) plutôt que ses parts employeur et salarié : une application peut y saisir le montant ou la part de l'entreprise (`test/health-insurance-scheme.test.ts`).
+La révision 2026.8, à la même date et aux mêmes taux, change la forme de la complémentaire santé : ses règles `santé . montant` et `santé . taux employeur` remplacent le montant et la part employeur de modele-social (`santé . montant` et `santé . taux employeur`) plutôt que ses parts employeur et salarié : une application peut y saisir le montant ou la part de l'entreprise (`test/health-insurance-scheme.test.ts`).
 
 ## Financement du paritarisme
 

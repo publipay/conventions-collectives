@@ -6,7 +6,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 
 const value = "production cinématographique";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS["3097-production-cinematographique"]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS["3097-production-cinematographique"]?.find((entry) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -28,7 +28,7 @@ function amount() {
   return Math.round((result as number) * 100) / 100;
 }
 
-describe("IDCC 3097 — production cinématographique 2026.1", () => {
+describe("IDCC 3097 — production cinématographique 2026.2", () => {
   it("has the extension date and official references", () => {
     assert.equal(version.validFrom, "2026-02-01");
     assert.ok(version.sources.some((source) => source.includes("KALITEXT000053497544")));

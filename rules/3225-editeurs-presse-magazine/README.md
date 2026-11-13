@@ -1,6 +1,8 @@
 # Éditeurs de la presse magazine, employés et cadres — IDCC 3225
 
-Le fichier [2024.1](3225-editeurs-presse-magazine.2024.1.publicodes) entre en vigueur le 1er juillet 2024 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 12 septembre 2024. Barèmes de l'accord du 17 juin 2024, le dernier publié sur Légifrance au 5 novembre 2026.
+> La version 2024.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2024.1 entre en vigueur le 1er juillet 2024 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 12 septembre 2024. Barèmes de l'accord du 17 juin 2024, le dernier publié sur Légifrance au 5 novembre 2026.
 
 La valeur Publicodes est `presse magazine` ; les règles sont sous `salarié . convention collective . presse magazine`.
 

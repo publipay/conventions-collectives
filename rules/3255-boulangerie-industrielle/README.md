@@ -1,5 +1,7 @@
 # Activités industrielles de boulangerie et pâtisserie et professionnels de l'œuf — IDCC 3255
 
+> Les versions 2025.1 et 2026.1 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Modèle `3255-boulangerie-industrielle`, versions `2025.1` et `2026.1`, espace de noms
 `salarié . convention collective . boulangerie industrielle`.
 

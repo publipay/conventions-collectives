@@ -1,10 +1,12 @@
 # Prothésistes dentaires — IDCC 993
 
 > La version 2026.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2026.2 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 Le fichier 2026.1 entre en vigueur le **1er octobre 2026**, premier jour du mois suivant la publication au JORF du 4 septembre 2026 de l’arrêté du 24 août 2026 portant extension de l’accord du 15 juin 2026.
 
-Le fichier [2026.2](0993-prothesistes-dentaires.2026.2.publicodes), en vigueur à la même date, corrige `niveau hors grille` : dans la version 2026.1, la règle comparait `grille` à zéro, une référence que publicodes résout vers la règle elle-même, si bien qu’elle ne valait jamais vrai. Elle compare désormais `salaire minimum conventionnel . grille`.
+Le fichier 2026.2, en vigueur à la même date, corrige `niveau hors grille` : dans la version 2026.1, la règle comparait `grille` à zéro, une référence que publicodes résout vers la règle elle-même, si bien qu’elle ne valait jamais vrai. Elle compare désormais `salaire minimum conventionnel . grille`.
 
 La valeur Publicodes est `prothésistes dentaires` et les règles sont sous `salarié . convention collective . prothésistes dentaires`.
 

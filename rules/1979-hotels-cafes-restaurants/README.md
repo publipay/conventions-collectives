@@ -1,6 +1,8 @@
 # Hôtels, cafés, restaurants — IDCC 1979 (HCR)
 
 > Les versions 2024.1, 2024.2, 2024.3, 2024.4, 2026.1, 2026.2 et 2026.3 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> Les versions 2024.5, 2024.6, 2026.4 et 2026.5 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
 Le fichier 2024.1 entre en vigueur le 1er décembre 2024. Ses métadonnées citent l’avenant salarial n° 33 du 19 juin 2024 et son arrêté d’extension. Les règles ci-dessous complètent l’espace `salarié . convention collective . HCR` déjà présent dans `modele-social` ; elles s’appliquent uniquement lorsque la convention `HCR` est sélectionnée.
 

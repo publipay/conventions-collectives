@@ -1,6 +1,8 @@
 # Services de l’automobile — IDCC 1090
 
 > Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2026.3 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 Le fichier 2026.1 entre en vigueur le 1er mai 2026. Il est fondé sur l’avenant n° 110 du 22 janvier 2026 relatif aux salaires minima, étendu par arrêté du 2 avril 2026 (JORF n° 0090 du 16 avril 2026, NOR TRST2609049A), cités dans ses métadonnées. La valeur Publicodes est `services automobile` ; les règles sont sous `salarié . convention collective . services automobile`.
 

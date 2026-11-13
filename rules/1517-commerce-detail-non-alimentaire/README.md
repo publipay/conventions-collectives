@@ -1,6 +1,8 @@
 # Commerce de détail non alimentaire — IDCC 1517
 
 > Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2026.3 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 Le fichier 2026.1 entre en vigueur le 1er juin 2026. Il est fondé sur l’avenant n° 15 du 6 février 2026 portant revalorisation de la rémunération minimale, applicable le premier jour du mois qui suit la publication de l’arrêté d’extension, soit le 1er juin 2026 : l’arrêté du 4 mai 2026 a été publié au JORF n° 0109 du 10 mai 2026 (texte n° 80, NOR TRST2610662A). Les références figurent dans ses métadonnées. La valeur Publicodes est `commerce de détail non alimentaire` ; les règles sont sous `salarié . convention collective . commerce de détail non alimentaire`.
 

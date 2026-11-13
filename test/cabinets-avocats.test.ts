@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1000-cabinets-avocats";
 const value = "cabinets d'avocats";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -52,7 +52,7 @@ const evaluateNumber = (rule: string) => {
   return Math.round((result as number) * 100) / 100;
 };
 
-describe("IDCC 1000 — 2025.1 minimum salaries", () => {
+describe("IDCC 1000 — 2025.2 minimum salaries", () => {
   it("is in force from 1 January 2025 and cites the extended salary amendment", () => {
     assert.equal(version.validFrom, "2025-01-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 136 du 24 janvier 2025")));

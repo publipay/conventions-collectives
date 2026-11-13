@@ -1,5 +1,7 @@
 # Personnel des agences générales d'assurances — IDCC 2335
 
+> Les versions 2025.1, 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2025.1` modélise l'avenant n° 5 du **17 décembre 2024** (`KALITEXT000051694318`) : + 2 % sur toute la grille au **1er janvier 2025**, de 22 784 € (classe 1) à 43 598 € (classe 6). Il est étendu par arrêté du 5 mai 2025 (JORF n° 0109 du **10 mai 2025**, `JORFTEXT000051576272`, effet à la date de publication) : `extension: 2025-05-10`. C'est le dernier accord étendu avant l'avenant n° 6 : il s'applique aux employeurs non adhérents jusqu'au 19 mars 2026.
 
 La version `2026.1` modélise l'avenant n° 6 du **11 décembre 2025** relatif aux salaires minima annuels bruts au **1er janvier 2026**. La grille comporte les classes 1 à 6 et la classe 5 bis.

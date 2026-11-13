@@ -72,8 +72,8 @@ const GRID_2026: Record<string, number> = {
   K1: 3502.38, K2: 3691.5, K3: 3879.77, L1: 4067.16, L2: 4327.46, L3: 4632.55, M: 5222.43,
 };
 
-describe("IDCC 3255, version 2025.1 (article 21 from 1 December 2025)", async () => {
-  const { version, engine } = await engineOf("2025.1");
+describe("IDCC 3255, version 2025.2 (article 21 from 1 December 2025)", async () => {
+  const { version, engine } = await engineOf("2025.2");
   const { set, minimum, outside } = helpers(engine);
 
   it("is effective from the entry into force of the extended convention", () => {
@@ -122,8 +122,8 @@ describe("IDCC 3255, version 2025.1 (article 21 from 1 December 2025)", async ()
   });
 });
 
-describe("IDCC 3255, version 2026.1 (avenant n° 4 from 1 March 2026)", async () => {
-  const { version, engine } = await engineOf("2026.1");
+describe("IDCC 3255, version 2026.2 (avenant n° 4 from 1 March 2026)", async () => {
+  const { version, engine } = await engineOf("2026.2");
   const { set, minimum, outside } = helpers(engine);
 
   it("is effective on 1 March 2026 and cites the extended amendment", () => {

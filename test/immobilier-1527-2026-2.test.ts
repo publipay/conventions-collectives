@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1527-immobilier";
 const value = "immobilier";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.4");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -31,8 +31,8 @@ function evaluate(rule: string, situation: Record<string, string | number>) {
 }
 const cents = (n: unknown) => Math.round((n as number) * 100) / 100;
 
-describe("IDCC 1527 immobilier 2026.4", () => {
-  it("is in force from 1 June 2026, like 2026.4", () => {
+describe("IDCC 1527 immobilier 2026.5", () => {
+  it("is in force from 1 June 2026, like 2026.5", () => {
     assert.equal(version.validFrom, "2026-06-01");
   });
   it("pays the grid of the avenant n° 111, every level", () => {

@@ -1,6 +1,8 @@
 # Fabrication de l’ameublement — IDCC 1411
 
-Le fichier [2026.1](1411-fabrication-ameublement.2026.1.publicodes) entre en vigueur le 1er juillet 2026. Le fichier [2026.2](1411-fabrication-ameublement.2026.2.publicodes) entre en vigueur le 11 juillet 2026, date de publication de l’arrêté d’extension de l’accord du 30 janvier 2026, et ajoute sa contribution conventionnelle de formation professionnelle de 0,50 % pour les entreprises d’au moins 10 salariés. La valeur Publicodes est `fabrication ameublement` ; les règles sont sous `salarié . convention collective . fabrication ameublement`.
+> La version 2026.2 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier [2026.1](1411-fabrication-ameublement.2026.1.publicodes) entre en vigueur le 1er juillet 2026. Le fichier 2026.2 entre en vigueur le 11 juillet 2026, date de publication de l’arrêté d’extension de l’accord du 30 janvier 2026, et ajoute sa contribution conventionnelle de formation professionnelle de 0,50 % pour les entreprises d’au moins 10 salariés. La valeur Publicodes est `fabrication ameublement` ; les règles sont sous `salarié . convention collective . fabrication ameublement`.
 
 La convention collective nationale de la fabrication de l’ameublement du 14 janvier 1986 (brochure 3155) classe les salariés en agents de production (AP), agents fonctionnels (AF), agents d’encadrement (AE) et cadres (C).
 

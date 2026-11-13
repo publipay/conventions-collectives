@@ -1,6 +1,8 @@
 # Entreprises de publicité (IDCC 86)
 
 > La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> Les versions 2025.3 et 2025.4 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
 Version `2025.3`, applicable à compter du **19 juin 2025**, date de publication au Journal officiel de l'arrêté d'extension du 13 juin 2025 portant sur l'avenant du 19 mars 2025 relatif aux salaires minima. L'application volontaire aux entreprises adhérentes aux organisations signataires est prévue à compter du 1er juin 2025 ; le modèle couvre l'effet étendu. Cette révision ajoute la contribution conventionnelle de formation professionnelle identifiée dans l'accord de branche.
 

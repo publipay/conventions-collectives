@@ -26,20 +26,20 @@ const EXTENSIONS: Record<string, Record<string, string>> = {
   "0493-vins-cidres-spiritueux": { "2026.2": "2026-06-01" },
   // Arrêtés of 11 December 2023 (JORF 14 December 2023) and 5 February 2026 (JORF 10 February 2026).
   "0787-experts-comptables": { "2024.1": "2023-12-14", "2026.4": "2026-02-10" },
-  "1405-expedition-exportation-fruits-legumes": { "2026.2": "2026-05-29" }, // JORFTEXT000054149405
+  "1405-expedition-exportation-fruits-legumes": { "2026.3": "2026-05-29" }, // JORFTEXT000054149405
   // accord du 13 mars 2025, arrêté du 27 mai 2025, JORF du 31 mai 2025; the accord of 3 April 2026 (2026.1) is not extended
   "1408-distribution-logistique-energies": { "2025.3": "2025-05-31" },
   "1555-produits-pharmaceutiques": { "2026.1": "2026-05-08" }, // JORF du 8 mai 2026
   "2336-habitat-logement-accompagnes": {
     "2026.2": "2025-12-20", // avenant n° 67, arrêté du 10 décembre 2025
-    "2026.3": "2026-07-10", // avenant n° 70, arrêté du 6 juillet 2026
+    "2026.4": "2026-07-10", // avenant n° 70, arrêté du 6 juillet 2026
   },
   // avenant n° 4 (journalistes d'agences de presse), arrêté du 12 septembre 2025, JORFTEXT000052260481
   "1480-journalistes": { "2025.2": "2025-09-19" },
   // avenant du 25 février 2026 (paritarisme), arrêté du 3 juillet 2026, JORF du 11 juillet 2026
   "1431-optique-lunetterie-detail": { "2026.1": "2026-07-11" },
   // avenant n° 33, arrêté du 5 novembre 2024, JORF du 9 novembre 2024 (applicable from 1 December 2024)
-  "1979-hotels-cafes-restaurants": { "2024.5": "2024-11-09", "2026.4": "2026-10-15" },
+  "1979-hotels-cafes-restaurants": { "2024.7": "2024-11-09", "2026.6": "2026-10-15" },
   // avenant du 21 juillet 2025, arrêté du 17 février 2026, JORF du 24 février 2026
   "3090-spectacle-vivant-prive": { "2025.4": "2026-02-24" },
   // The shared building version: each regional grid applies from the publication of its own
@@ -51,13 +51,13 @@ const EXTENSIONS: Record<string, Record<string, string>> = {
   "2609-batiment-etam": { "2026.8": "2020-01-01" },
   // 2332: every territorial accord applies from the month after the publication of its own
   // extension order, in its rules.
-  "2332-entreprises-architecture": { "2026.2": "2026-01-01" },
+  "2332-entreprises-architecture": { "2026.3": "2026-01-01" },
   // 3241: the accord of 15 December 2023, extended in 2024, then the accord of 11 May 2026, from
   // 1 June 2026 for a member and from its extension order (JORF of 24 July 2026) for the others.
-  "3241-telediffusion": { "2026.3": "2026-01-01", "2026.4": "2026-07-24" },
+  "3241-telediffusion": { "2026.3": "2026-01-01", "2026.5": "2026-07-24" },
   // 3213: the version starts in 2026 and the grid applies from the effective date of its
   // extended accord (11 July 2026), in its rules.
-  "3213-economistes-construction": { "2026.2": "2026-01-01" },
+  "3213-economistes-construction": { "2026.3": "2026-01-01" },
   // The shared public works version: each regional grid applies from the publication of its own
   // extension order (in its rules).
   "1702-travaux-publics-ouvriers": { "2026.7": "2026-01-01" },
@@ -73,9 +73,9 @@ const EXTENSIONS: Record<string, Record<string, string>> = {
     "2026.3": "2026-05-29", // arrêté du 20 mai 2026, JORFTEXT000054149468
   },
   "2335-agences-generales-assurances": {
-    "2025.1": "2025-05-10", // avenant n° 5, JORFTEXT000051576272
-    "2026.1": "2026-03-19", // avenant n° 6, JORF du 19 mars 2026
-    "2026.2": "2026-09-19", // avenant n° 7, JORFTEXT000054860951
+    "2025.2": "2025-05-10", // avenant n° 5, JORFTEXT000051576272
+    "2026.3": "2026-03-19", // avenant n° 6, JORF du 19 mars 2026
+    "2026.4": "2026-09-19", // avenant n° 7, JORFTEXT000054860951
   },
   "2728-sucreries": { "2026.2": "2026-06-27" },
   "3221-agences-presse": { "2026.2": "2026-09-04" },
@@ -86,76 +86,76 @@ const EXTENSIONS: Record<string, Record<string, string>> = {
   // extension order (the text holding their grid, cited in their sources), which bind the
   // employers outside a signatory organisation from that publication only.
   "0043-import-export": { "2026.1": "2026-05-10" },
-  "0044-industries-chimiques": { "2025.1": "2025-03-18", "2026.6": "2026-02-24" },
+  "0044-industries-chimiques": { "2026.6": "2026-02-24" },
   "0112-industrie-laitiere": { "2026.2": "2026-05-10" },
   "0176-industrie-pharmaceutique": { "2026.2": "2026-02-24" },
   "0200-exploitations-frigorifiques": { "2026.1": "2026-07-09" },
   "0247-industries-habillement": { "2026.2": "2026-05-08" },
-  "0292-plasturgie": { "2026.1": "2026-10-03" },
+  "0292-plasturgie": { "2026.3": "2026-10-03" },
   "0454-remontees-mecaniques-domaines-skiables": { "2026.1": "2026-02-18" },
-  "0468-commerce-succursaliste-chaussure": { "2025.1": "2025-03-14", "2026.1": "2026-09-19" },
-  "0489-industries-cartonnage": { "2025.4": "2025-05-31" },
+  "0468-commerce-succursaliste-chaussure": { "2025.2": "2025-03-14", "2026.2": "2026-09-19" },
+  "0489-industries-cartonnage": { "2025.5": "2025-05-31" },
   "0500-commerces-gros-habillement": { "2024.2": "2025-02-14" },
   "0669-industries-fabrication-mecanique-verre": { "2025.1": "2025-07-03" },
   "0675-succursales-habillement": { "2026.3": "2026-07-10" },
   "0759-pompes-funebres": { "2025.1": "2025-03-29", "2026.1": "2026-04-10" },
-  "0897-services-prevention-sante-travail-interentreprises": { "2026.2": "2026-05-10" },
-  "0959-laboratoires-biologie-medicale": { "2024.1": "2024-04-18", "2026.1": "2026-09-19" },
-  "1000-cabinets-avocats": { "2025.1": "2025-04-26" },
+  "0897-services-prevention-sante-travail-interentreprises": { "2026.3": "2026-05-10" },
+  "0959-laboratoires-biologie-medicale": { "2024.1": "2024-04-18", "2026.2": "2026-09-19" },
+  "1000-cabinets-avocats": { "2025.2": "2025-04-26" },
   "1077-negoce-produits-du-sol-engrais": { "2025.1": "2025-06-12" },
-  "1147-cabinets-medicaux": { "2024.2": "2024-06-01" },
+  "1147-cabinets-medicaux": { "2024.3": "2024-06-01" },
   "1182-ports-plaisance": { "2025.2": "2025-10-15" },
-  "1267-patisserie": { "2025.1": "2025-04-26", "2026.1": "2026-04-17" },
-  "1307-exploitation-cinematographique": { "2025.1": "2025-06-07" },
-  "1316-tourisme-social-familial": { "2026.1": "2026-02-24" },
+  "1267-patisserie": { "2025.1": "2025-04-26", "2026.2": "2026-04-17" },
+  "1307-exploitation-cinematographique": { "2025.2": "2025-06-07" },
+  "1316-tourisme-social-familial": { "2026.3": "2026-02-24" },
   "1388-industrie-petrole": { "2026.2": "2026-02-05" },
   "1396-industries-produits-alimentaires-elabores": { "2026.1": "2026-04-17" },
-  "1404-maintenance-distribution-location": { "2026.1": "2026-05-29" },
-  "1411-fabrication-ameublement": { "2026.1": "2026-09-04", "2026.2": "2026-09-04" },
-  "1412-installation-aeraulique-thermique-frigorifique": { "2026.2": "2026-06-27" },
+  "1404-maintenance-distribution-location": { "2026.2": "2026-05-29" },
+  "1411-fabrication-ameublement": { "2026.1": "2026-09-04", "2026.3": "2026-09-04" },
+  "1412-installation-aeraulique-thermique-frigorifique": { "2026.3": "2026-06-27" },
   "1413-travail-temporaire": { "2026.3": "2026-05-10" },
-  "1487-commerce-detail-horlogerie-bijouterie": { "2026.1": "2026-02-24" },
+  "1487-commerce-detail-horlogerie-bijouterie": { "2026.2": "2026-02-24" },
   "1499-miroiterie": { "2025.2": "2025-06-19", "2026.1": "2026-05-29" },
   "1501-restauration-rapide": { "2025.1": "2025-08-07", "2026.10": "2026-06-03" },
   "1513-eaux-embouteillees-boissons-bieres": { "2026.1": "2026-04-17" },
-  "1527-immobilier": { "2026.4": "2026-09-19" },
-  "1534-industrie-commerces-gros-viandes": { "2026.1": "2026-06-06" },
+  "1527-immobilier": { "2026.5": "2026-09-19" },
+  "1534-industrie-commerces-gros-viandes": { "2026.2": "2026-06-06" },
   "1536-distributeurs-conseils-hors-domicile": { "2026.1": "2026-05-29" },
   "1543-boyauderie": { "2026.1": "2026-04-17" },
   "1557-commerce-articles-sports-loisirs": { "2025.2": "2025-05-24" },
   "1558-industries-ceramiques": { "2025.2": "2025-04-26", "2026.1": "2026-05-29" },
-  "1561-cordonnerie-multiservice": { "2026.1": "2026-05-10" },
+  "1561-cordonnerie-multiservice": { "2026.2": "2026-05-10" },
   "1580-industrie-chaussure": { "2026.2": "2026-06-27" },
   "1586-industries-charcutieres": { "2026.1": "2026-04-17", "2026.2": "2026-04-17" },
   "1607-jeux-jouets": { "2026.3": "2026-05-29" },
-  "1619-cabinets-dentaires": { "2026.1": "2026-07-23" },
+  "1619-cabinets-dentaires": { "2026.2": "2026-07-23" },
   "1621-repartition-pharmaceutique": { "2025.2": "2025-07-05" },
   // avenant n° 51, arrêté du 20 mai 2026, JORFTEXT000054219138 (JORF du 9 juin 2026)
   "1512-promotion-immobiliere": { "2026.6": "2026-06-09" },
   "1659-rouissage-teillage-lin": { "2025.1": "2025-07-16" },
-  "1790-espaces-loisirs": { "2026.2": "2026-07-10", "2026.3": "2026-07-10" },
+  "1790-espaces-loisirs": { "2026.4": "2026-07-10", "2026.5": "2026-07-10" },
   "1821-cristal-verre-vitrail": { "2026.3": "2026-06-27" },
-  "1875-cabinets-cliniques-veterinaires": { "2026.1": "2026-04-17" },
-  "1880-commerce-ameublement": { "2026.1": "2026-06-27" },
+  "1875-cabinets-cliniques-veterinaires": { "2026.2": "2026-04-17" },
+  "1880-commerce-ameublement": { "2026.2": "2026-06-27" },
   "1909-organismes-tourisme": { "2026.5": "2026-04-17" },
   "1930-transformation-grains": { "2026.1": "2026-05-10" },
   "1938-industries-transformation-volailles": { "2025.1": "2025-04-26", "2026.1": "2026-04-17" },
-  "1951-expertises-automobile": { "2025.1": "2025-09-10" },
-  "2002-blanchisserie-teinturerie": { "2025.1": "2025-05-24", "2026.1": "2026-05-10" },
-  "2021-golf": { "2026.2": "2026-04-17" },
+  "1951-expertises-automobile": { "2025.2": "2025-09-10" },
+  "2002-blanchisserie-teinturerie": { "2025.2": "2025-05-24", "2026.2": "2026-05-10" },
+  "2021-golf": { "2026.4": "2026-04-17" },
   "2120-banque": { "2026.4": "2026-06-27" },
-  "2121-edition": { "2026.1": "2026-09-19", "2026.2": "2026-09-19" },
+  "2121-edition": { "2026.3": "2026-09-19", "2026.4": "2026-09-19" },
   "2147-services-eau-assainissement": { "2025.1": "2025-09-10" },
   "2150-personnels-hlm": { "2026.1": "2026-04-17" },
   "2156-grands-magasins": { "2026.1": "2024-07-06" },
   "2198-commerce-distance": { "2026.1": "2026-05-10" },
-  "2219-taxis": { "2025.2": "2025-10-15" },
-  "2247-courtage-assurances": { "2026.2": "2025-09-04" },
-  "2264-hospitalisation-privee": { "2023.3": "2023-02-21" },
+  "2219-taxis": { "2025.3": "2025-10-15" },
+  "2247-courtage-assurances": { "2026.3": "2025-09-04" },
+  "2264-hospitalisation-privee": { "2023.5": "2023-02-21" },
   "2272-assainissement-maintenance-industrielle": { "2026.2": "2026-05-16" },
   "2528-maroquinerie": { "2026.1": "2026-05-08" },
-  "2583-societes-autoroutes": { "2024.2": "2024-09-12", "2025.1": "2026-01-17" },
-  "2941-aide-soins-domicile": { "2026.3": "2026-07-23" },
+  "2583-societes-autoroutes": { "2025.1": "2026-01-17" },
+  "2941-aide-soins-domicile": { "2026.4": "2026-07-23" },
   "2972-navigation-personnel-sedentaire": { "2026.1": "2026-07-23" },
   "3017-ports-manutention": { "2025.1": "2025-10-30", "2026.1": "2026-03-05" },
   "3109-industries-alimentaires-diverses": { "2026.1": "2026-04-17" },
@@ -176,19 +176,19 @@ const EXTENSIONS: Record<string, Record<string, string>> = {
   "3248-metallurgie": { "2026.6": "2026-06-05" },
   "3249-carrieres-materiaux": { "2026.4": "2026-09-04" }, // avenant n° 2 du 30 avril 2026 (préfabrication béton)
   "3251-bijouterie-joaillerie-horlogerie": { "2025.1": "2025-09-19" },
-  "3255-boulangerie-industrielle": { "2026.1": "2026-04-17" },
+  "3255-boulangerie-industrielle": { "2026.2": "2026-04-17" },
   "3256-etablissements-soins-veterinaires": { "2026.1": "2026-04-17" },
   // Agreements added in November 2026 (extension orders read on Légifrance).
   "0303-couture-parisienne": { "2024.1": "2024-06-20" },
   "0614-serigraphie": { "2023.1": "2023-09-22" },
-  "0637-industries-commerce-recuperation": { "2026.1": "2026-01-17" },
-  "0953-charcuterie-detail": { "2026.1": "2026-07-23" },
+  "0637-industries-commerce-recuperation": { "2026.2": "2026-01-17" },
+  "0953-charcuterie-detail": { "2026.2": "2026-07-23" },
   "0998-exploitation-equipements-thermiques": { "2025.1": "2025-12-20" },
   "1256-cadres-exploitation-equipements-thermiques": { "2025.1": "2025-12-20" },
-  "1285-entreprises-artistiques-culturelles": { "2026.1": "2026-09-19" },
+  "1285-entreprises-artistiques-culturelles": { "2026.2": "2026-09-19" },
   "1794-institutions-retraite-complementaire": { "2025.1": "2025-05-31" },
   // avenant du 15 février 2024: first day of the month after the publication (JORF du 31 mai 2024)
-  "3168-professions-photographie": { "2024.1": "2024-06-01" },
+  "3168-professions-photographie": { "2024.2": "2024-06-01" },
   "3210-banque-populaire": { "2024.1": "2024-03-16" },
 };
 

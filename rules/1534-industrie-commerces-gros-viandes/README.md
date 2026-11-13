@@ -1,6 +1,8 @@
 # Industrie et commerces en gros des viandes — IDCC 1534
 
-Le fichier [2026.1](1534-industrie-commerces-gros-viandes.2026.1.publicodes) entre en vigueur le 1er février 2026. Il est fondé sur l’avenant n° 100 du 12 février 2026 relatif à la revalorisation des salaires minima au 1er février 2026 et de la prime à l’obtention d’un CQP, étendu par arrêté du 20 mai 2026 (JORF n° 0131 du 6 juin 2026, texte n° 88, NOR TRST2612791A), cités dans ses métadonnées. La valeur Publicodes est `industrie et commerces en gros des viandes` ; les règles sont sous `salarié . convention collective . industrie et commerces en gros des viandes`.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er février 2026. Il est fondé sur l’avenant n° 100 du 12 février 2026 relatif à la revalorisation des salaires minima au 1er février 2026 et de la prime à l’obtention d’un CQP, étendu par arrêté du 20 mai 2026 (JORF n° 0131 du 6 juin 2026, texte n° 88, NOR TRST2612791A), cités dans ses métadonnées. La valeur Publicodes est `industrie et commerces en gros des viandes` ; les règles sont sous `salarié . convention collective . industrie et commerces en gros des viandes`.
 
 La convention collective nationale des entreprises de l’industrie et des commerces en gros des viandes du 20 février 1969 (brochure 3179) couvre les entreprises relevant de l’IDCC 1534. Elle ne couvre pas les industries de la salaison, charcuterie et conserves de viandes (IDCC 1586).
 

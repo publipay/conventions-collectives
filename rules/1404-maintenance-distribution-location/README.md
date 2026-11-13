@@ -1,5 +1,7 @@
 # Maintenance, distribution et location de matériels — IDCC 1404
 
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2026.1` modélise la grille des salaires minima conventionnels mensuels applicable au **1er mars 2026** pour 151,67 heures mensuelles. Elle reprend l’avenant n° 16 du 18 février 2026 et son champ étendu par l’arrêté publié au Journal officiel le 29 mai 2026.
 
 La valeur Publicodes est `maintenance distribution location` et les règles sont sous `salarié . convention collective . maintenance distribution location`.

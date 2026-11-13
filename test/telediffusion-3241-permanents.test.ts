@@ -1,5 +1,5 @@
 /**
- * IDCC 3241, versions 2026.3 and 2026.4: the monthly minimums of the permanent employees. Expected
+ * IDCC 3241, versions 2026.3 and 2026.5: the monthly minimums of the permanent employees. Expected
  * amounts come from the barème of the accord of 15 December 2023 (from 1 February 2024,
  * KALITEXT000049271441) and annex 1 of the accord of 11 May 2026 (from 1 June 2026,
  * KALITEXT000054880861), independently of the YAML.
@@ -52,7 +52,7 @@ function minimum(engine: Engine, classification: string, { headcount = 10, group
 
 for (const [versionNumber, grid, validFrom, extension] of [
   ["2026.3", FEBRUARY_2024, "2026-01-01", "2026-01-01"],
-  ["2026.4", JUNE_2026, "2026-06-01", "2026-07-24"],
+  ["2026.5", JUNE_2026, "2026-06-01", "2026-07-24"],
 ] as const) {
   describe(`IDCC 3241 — ${versionNumber}, monthly minimums of the permanent employees`, async () => {
     const { version, engine } = await engineOf(versionNumber);
@@ -85,8 +85,8 @@ for (const [versionNumber, grid, validFrom, extension] of [
   });
 }
 
-describe("IDCC 3241 — 2026.4 keeps the daily minimums of the CDDU", async () => {
-  const { engine } = await engineOf("2026.4");
+describe("IDCC 3241 — 2026.5 keeps the daily minimums of the CDDU", async () => {
+  const { engine } = await engineOf("2026.5");
   it("5-1, column M1: 180,16 €", () => {
     engine.setSituation({ "salarié . convention collective": `'${value}'`, [`${namespace} . niveau`]: "'5-1'" });
     assert.equal(engine.evaluate(`${namespace} . salaire minimum journalier`).nodeValue, 180.16);

@@ -76,11 +76,11 @@ describe("IDCC 1405 — 2026.1 minimum salaries", () => {
   });
 });
 
-// Version 2026.2: the main grid's levels carry their category as in the avenant n° 33
+// Version 2026.3: the main grid's levels carry their category as in the avenant n° 33
 // (KALITEXT000054370669), and the grid of the annex « Légumes frais prêt à l'emploi » of the
 // avenant n° 14 (KALITEXT000054337310) is added.
-describe("IDCC 1405 — 2026.2 (avenants n° 33 and n° 14)", async () => {
-  const revised = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+describe("IDCC 1405 — 2026.3 (avenants n° 33 and n° 14)", async () => {
+  const revised = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
   assert.ok(revised);
   const revisedRules: Record<string, Rule> = { ...rules, ...(await revised.loadRules()) };
   const revisedEngine = new Engine(revisedRules, { logger: { log() {}, warn() {}, error() {} } });

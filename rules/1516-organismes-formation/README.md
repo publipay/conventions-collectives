@@ -1,6 +1,8 @@
 # Organismes de formation — IDCC 1516
 
-Les fichiers [2025.1](1516-organismes-formation.2025.1.publicodes) et [2027.1](1516-organismes-formation.2027.1.publicodes) entrent en vigueur respectivement les 1er janvier 2025 et 1er janvier 2027. Ils sont fondés sur l’avenant du 18 novembre 2024 (minima de l’année 2025) et sur l’avenant du 17 avril 2026 (minima de l’année 2027), cités dans leurs métadonnées avec leurs arrêtés d’extension. La valeur Publicodes est `organismes de formation` ; les règles sont sous `salarié . convention collective . organismes de formation`.
+> Les versions 2025.1 et 2027.1 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Les fichiers 2025.1 et 2027.1 entrent en vigueur respectivement les 1er janvier 2025 et 1er janvier 2027. Ils sont fondés sur l’avenant du 18 novembre 2024 (minima de l’année 2025) et sur l’avenant du 17 avril 2026 (minima de l’année 2027), cités dans leurs métadonnées avec leurs arrêtés d’extension. La valeur Publicodes est `organismes de formation` ; les règles sont sous `salarié . convention collective . organismes de formation`.
 
 La convention collective nationale des organismes de formation du 10 juin 1988 (brochure 3249) couvre les organismes de formation privés.
 

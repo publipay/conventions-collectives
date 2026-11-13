@@ -1,6 +1,8 @@
 # Télédiffusion — IDCC 3241
 
 > Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2026.4 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 Les fichiers 2026.1 et 2026.2 entrent en vigueur le **1er juin 2026**, conformément aux accords du 11 mai 2026. La version 2026.2 corrige le barème CDDU et complète la colonne M2.
 
@@ -29,7 +31,7 @@ Le niveau `8` est rémunéré de gré à gré, avec un plancher automatique de 2
 
 ## Salariés permanents (versions 2026.3 et 2026.4)
 
-Les versions [2026.3](3241-telediffusion.2026.3.publicodes) et [2026.4](3241-telediffusion.2026.4.publicodes) ajoutent les minima mensuels bruts pour 35 heures des salariés permanents (CDI et CDD de droit commun), articles 21.2.2, 22.1 et 22.2 de la CCN :
+Les versions [2026.3](3241-telediffusion.2026.3.publicodes) et 2026.4 ajoutent les minima mensuels bruts pour 35 heures des salariés permanents (CDI et CDD de droit commun), articles 21.2.2, 22.1 et 22.2 de la CCN :
 
 - `classification` : niveau I à V avec échelon A, B ou C (`'I-A'` à `'V-C'`), ou niveau `'VI'`, sans échelon ;
 - la grille de l'article 22.2 s'applique à partir de 50 salariés (`entreprise . salariés . effectif`), ou quand l'entreprise appartient à un groupe de plus de 50 salariés (`entreprise d'un groupe`, non par défaut) ; sinon celle de l'article 22.1 ;

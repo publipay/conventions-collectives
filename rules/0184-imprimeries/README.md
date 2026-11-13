@@ -1,6 +1,8 @@
 # Imprimeries de labeur et industries graphiques — IDCC 184
 
-Le fichier [2026.1](0184-imprimeries.2026.1.publicodes) entre en vigueur le **1er avril 2026**. Il modélise l'accord du 6 janvier 2026 relatif aux salaires, étendu par arrêté du 12 mars 2026 publié au Journal officiel le 19 mars 2026.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le **1er avril 2026**. Il modélise l'accord du 6 janvier 2026 relatif aux salaires, étendu par arrêté du 12 mars 2026 publié au Journal officiel le 19 mars 2026.
 
 La valeur Publicodes est `imprimeries de labeur et industries graphiques`. Les règles sont sous `salarié . convention collective . imprimeries de labeur et industries graphiques`.
 

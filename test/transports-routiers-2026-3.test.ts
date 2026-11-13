@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0016-transports-routiers";
 const value = "transports routiers";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.5");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.7");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -159,7 +159,7 @@ const amount = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 16 — 2026.5 corrected marchandises amounts and compagnon déménageur", () => {
+describe("IDCC 16 — 2026.7 corrected marchandises amounts and compagnon déménageur", () => {
   it("is in force from 1 June 2026 and cites the four sub-sectors' texts", () => {
     assert.equal(version.validFrom, "2026-06-01");
     for (const text of ["Accord du 11 octobre 2023", "Avenants du 27 novembre 2025", "Avenant n° 17 du 12 mars 2026", "Avenant n° 24 du 21 janvier 2026", "TRST2610632A", "MTRT2333106A", "KALITEXT000054253943", "arrêté du 7 avril 2026"]) {
@@ -255,7 +255,9 @@ describe("IDCC 16 — 2026.5 corrected marchandises amounts and compagnon démé
       "entreprise . salariés . effectif": 20,
       "établissement . taux ATMP": "2%",
     };
-    engine.setSituation(situation);
+    // Without the joint bodies contribution of 2026.7, its own line.
+    const joint = "salarié . convention collective . transports routiers . financement du paritarisme";
+    engine.setSituation({ ...situation, [joint]: 0, [`${joint} . part salariale`]: 0 });
     const { ["salarié . convention collective . transports routiers . niveau"]: _level, ...baselineSituation } = situation;
     baseline.setSituation({ ...baselineSituation, "salarié . convention collective": "'droit commun'" });
     for (const endpoint of [

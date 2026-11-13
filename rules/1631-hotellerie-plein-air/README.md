@@ -1,6 +1,8 @@
 # Hôtellerie de plein air — IDCC 1631
 
 > Les versions 2024.1, 2024.2 et 2025.1 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> Les versions 2025.2, 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
 La valeur Publicodes est `hôtellerie de plein air`. Le minimum de chaque coefficient vaut le salaire du coefficient 100 plus la valeur du point (VP) multipliée par l'écart au coefficient 100, pour 151,67 heures par mois. Il est proratisé une seule fois selon `salarié . contrat . temps de travail . quotité`. Un coefficient absent de la grille donne un minimum nul.
 

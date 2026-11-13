@@ -49,8 +49,8 @@ const GRID: readonly (readonly [palier: number, from: number, to: number | undef
 ];
 
 const VERSIONS = [
-  { number: "2025.1", validFrom: "2025-01-01", column: 3 as const },
-  { number: "2027.1", validFrom: "2027-01-01", column: 4 as const },
+  { number: "2025.2", validFrom: "2025-01-01", column: 3 as const },
+  { number: "2027.2", validFrom: "2027-01-01", column: 4 as const },
 ];
 
 async function engineOf(versionNumber: string) {
@@ -109,7 +109,7 @@ for (const { number, validFrom, column } of VERSIONS) {
     it(`is in force from ${validFrom} and cites its avenant and extension order`, () => {
       assert.equal(version.validFrom, validFrom);
       assert.ok(version.sources.some((source) => source.includes("TRST2612715A")), "avenant of 4 February 2026");
-      const order = number === "2025.1" ? "TSST2505903A" : "TRST2618256A";
+      const order = number === "2025.2" ? "TSST2505903A" : "TRST2618256A";
       assert.ok(version.sources.some((source) => source.includes(order)), order);
     });
 

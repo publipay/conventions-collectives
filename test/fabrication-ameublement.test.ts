@@ -10,7 +10,7 @@ const namespace = `salarié . convention collective . ${value}`;
 const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
 assert.ok(version);
 const extension = await version.loadRules();
-const version2 = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version2 = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
 assert.ok(version2);
 const extension2 = await version2.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -145,7 +145,9 @@ describe("IDCC 1411 — 2026.1 minimum salaries", () => {
       engine2.evaluate(`${namespace} . cotisations . formation professionnelle . contribution conventionnelle`).nodeValue,
       15,
     );
-    assert.equal(Math.round((engine2.evaluate("salarié . cotisations . formation professionnelle").nodeValue as number) * 100) / 100, 31.5);
+    // The legal 0.55 % (below 11 employees) stays on its line, the 0.50 % on the agreement's own line.
+    assert.equal(Math.round((engine2.evaluate("salarié . cotisations . formation professionnelle").nodeValue as number) * 100) / 100, 16.5);
+    assert.equal(engine2.evaluate(`${namespace} . formation professionnelle conventionnelle`).nodeValue, 15);
 
     engine2.setSituation({ "entreprise . salariés . effectif": 9 });
     assert.equal(

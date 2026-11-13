@@ -1,6 +1,8 @@
 # Industries de jeux, jouets, articles de fêtes et ornements de Noël, articles de puériculture, voitures d'enfants et modèles réduits — IDCC 1607
 
 > Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2026.4 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 Le fichier 2026.1 entre en vigueur le 1er avril 2026 pour les entreprises relevant d'une organisation d'employeurs signataire. Il est fondé sur l'avenant n° 100 du 3 mars 2026 relatif aux salaires minima et sur l'arrêté d'extension du 20 mai 2026, NOR TRST2612672A, cités dans ses métadonnées. Les textes ont été consultés sur Légifrance.
 
@@ -8,7 +10,7 @@ Le fichier 2026.2 entre en vigueur le 1er juillet 2026 et ajoute la contribution
 
 La valeur Publicodes est `jeux jouets articles fêtes ornements noël puériculture voitures enfants modélisme`; les règles sont sous `salarié . convention collective . jeux jouets articles fêtes ornements noël puériculture voitures enfants modélisme`.
 
-Les fichiers [2026.3](1607-jeux-jouets.2026.3.publicodes) (1er avril 2026) et [2026.4](1607-jeux-jouets.2026.4.publicodes) (1er juillet 2026) remplacent respectivement 2026.1 et 2026.2 à dates d'effet identiques : ils modélisent les six colonnes d'ancienneté de la grille de l'avenant n° 100 (0 à 3 ans, 3 à 6, 6 à 9, 9 à 12, 12 à 15, plus de 15 ans), alors que 2026.1 et 2026.2 ne contenaient que la colonne 0 à 3 ans et sous-estimaient le minimum des salariés ayant 3 ans d'ancienneté ou plus. La révision la plus haute à date d'effet égale l'emporte. 2026.4 reprend en plus la contribution de formation de 2026.2.
+Les fichiers [2026.3](1607-jeux-jouets.2026.3.publicodes) (1er avril 2026) et 2026.4 (1er juillet 2026) remplacent respectivement 2026.1 et 2026.2 à dates d'effet identiques : ils modélisent les six colonnes d'ancienneté de la grille de l'avenant n° 100 (0 à 3 ans, 3 à 6, 6 à 9, 9 à 12, 12 à 15, plus de 15 ans), alors que 2026.1 et 2026.2 ne contenaient que la colonne 0 à 3 ans et sous-estimaient le minimum des salariés ayant 3 ans d'ancienneté ou plus. La révision la plus haute à date d'effet égale l'emporte. 2026.4 reprend en plus la contribution de formation de 2026.2.
 
 ## Règles implémentées
 

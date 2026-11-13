@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const name = "1518-eclat";
 const value = "éclat";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[name]?.find((candidate) => candidate.version === "2026.2");
+const version = COMPILED_VERSIONS[name]?.find((candidate) => candidate.version === "2026.4");
 assert.ok(version);
 const releasedVersion = version;
 
@@ -36,7 +36,7 @@ function engineFor(agreement = value) {
   });
 }
 
-describe("IDCC 1518 — audit paie formation 2026.2", () => {
+describe("IDCC 1518 — audit paie formation 2026.4", () => {
   it("overrides the standard formation contribution with the sourced 2.10% total", async () => {
     const engine = await engineFor();
     assert.equal(engine.evaluate(`${namespace} . cotisations . formation professionnelle`).nodeValue, 63);

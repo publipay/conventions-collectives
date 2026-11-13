@@ -1,12 +1,14 @@
 # Industries chimiques — IDCC 44
 
 > Les versions 2026.1, 2026.2, 2026.4 et 2026.5 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2025.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 Trois fichiers se succèdent selon la date de la paie (la version retenue est celle de la plus récente date d'effet antérieure ou égale, puis la révision la plus haute) :
 
 | Fichier | À compter du | Barème | Santé |
 |---|---|---|---|
-| [2025.1](0044-industries-chimiques.2025.1.publicodes) | 1er janvier 2025 | accord du 9 décembre 2024 (130 : 1 855,01 € ; 880 : 7 675,85 €) | non |
+| 2025.1 | 1er janvier 2025 | accord du 9 décembre 2024 (130 : 1 855,01 € ; 880 : 7 675,85 €) | non |
 | [2026.3](0044-industries-chimiques.2026.3.publicodes) | 1er septembre 2025 | accord du 9 décembre 2024 | avenant n° 4 du 2 septembre 2025 |
 
 Les fichiers `2026.1` (barème 2026 sans règles santé) et `2026.2` (barème 2026 daté à tort du 1er septembre 2025) sont conservés pour les paies déjà calculées mais sont remplacés par `2026.4` et `2026.3` pour les mêmes dates d'effet. Les règles et les clés (`coefficient`, `santé 2025`) sont identiques dans les cinq révisions.

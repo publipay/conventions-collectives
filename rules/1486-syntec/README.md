@@ -1,6 +1,8 @@
 # Bureaux d’études techniques, cabinets d’ingénieurs-conseils et sociétés de conseils — IDCC 1486 (Syntec)
 
 > Les versions 2025.1, 2026.1, 2026.2, 2026.3 et 2026.4 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> Les versions 2026.5 et 2026.6 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
 Le fichier 2025.1 entre en vigueur le 1er janvier 2025. Le fichier 2026.1 entre en vigueur le 1er janvier 2026 et ajoute la contribution conventionnelle de formation professionnelle. Le fichier 2026.2, en vigueur à la même date, la corrige : la version 2026.1 remplaçait la contribution légale par la contribution conventionnelle au lieu de l’y ajouter. Les métadonnées citent l’accord salarial du 26 juin 2024 et les textes de formation et de protection sociale de la branche. La valeur Publicodes de la convention est `syntec` ; les règles sont dans `salarié . convention collective . syntec` et ne s’appliquent que lorsque cette convention est sélectionnée.
 

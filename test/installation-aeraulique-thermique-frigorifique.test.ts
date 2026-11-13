@@ -8,7 +8,7 @@ const id = "1412-installation-aeraulique-thermique-frigorifique";
 const ns = "salarié . convention collective . installation aeraulique thermique frigorifique";
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.2");
+  const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.3");
   assert.ok(version, "IDCC 1412 must be exported");
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };

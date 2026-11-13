@@ -1,6 +1,8 @@
 # Cabinets et cliniques vétérinaires — IDCC 1875
 
-Le fichier [2026.1](1875-cabinets-cliniques-veterinaires.2026.1.publicodes) est applicable au 1er janvier 2026. Il reprend l'avenant n° 91 du 6 janvier 2026, qui fixe la valeur du point à 17,96 € sur la base de 151,67 heures, ainsi que la classification salariale issue de l'avenant n° 82 du 9 juin 2022. L'avenant n° 91 a été étendu par arrêté du 2 avril 2026 publié au Journal officiel du 17 avril 2026.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 est applicable au 1er janvier 2026. Il reprend l'avenant n° 91 du 6 janvier 2026, qui fixe la valeur du point à 17,96 € sur la base de 151,67 heures, ainsi que la classification salariale issue de l'avenant n° 82 du 9 juin 2022. L'avenant n° 91 a été étendu par arrêté du 2 avril 2026 publié au Journal officiel du 17 avril 2026.
 
 La valeur Publicodes est `cabinets et cliniques vétérinaires` ; les règles sont sous `salarié . convention collective . cabinets et cliniques vétérinaires`.
 

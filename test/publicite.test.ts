@@ -8,7 +8,7 @@ const id = "0086-publicite";
 const ns = "salarié . convention collective . publicité";
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS[id]?.find((candidate) => candidate.version === "2025.3");
+  const version = COMPILED_VERSIONS[id]?.find((candidate) => candidate.version === "2025.5");
   assert.ok(version, "IDCC 86 must be exported");
   assert.equal(version.validFrom, "2025-06-19");
   const extension = await version.loadRules();

@@ -7,7 +7,9 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0993-prothesistes-dentaires";
 const value = "prothésistes dentaires";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+// The conventional contributions the agreement adds, on rules of its own.
+const CONVENTIONAL_CONTRIBUTIONS = /financement du paritarisme|cotisations employeur avec|formation professionnelle conventionnelle/;
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
 
 const MINIMUMS: Record<string, number> = {
   "personnel-service": 1892,
@@ -52,7 +54,7 @@ function amount() {
   return result as number;
 }
 
-describe("IDCC 993 — 2026.2 minimum salaries and payroll audit", () => {
+describe("IDCC 993 — 2026.3 minimum salaries and payroll audit", () => {
   it("starts on 1 October 2026 after the 4 September 2026 extension publication", () => {
     assert.equal(version.validFrom, "2026-10-01");
     assert.ok(version.sources.some((source) => source.includes("15 juin 2026")));
@@ -79,7 +81,7 @@ describe("IDCC 993 — 2026.2 minimum salaries and payroll audit", () => {
   });
 
   it("does not redefine payroll-wide endpoints or collide with modele-social", () => {
-    assert.equal(Object.keys(extension).some((name) => name.includes("cotisations") || name.includes("prévoyance") || name.includes("santé") || name.includes("formation professionnelle") || name.includes("exonération cotisation AT")), false);
+    assert.equal(Object.keys(extension).filter((name) => !CONVENTIONAL_CONTRIBUTIONS.test(name)).some((name) => name.includes("cotisations") || name.includes("prévoyance") || name.includes("santé") || name.includes("formation professionnelle") || name.includes("exonération cotisation AT")), false);
     assert.equal(Object.keys(extension).some((name) => name in modeleSocial), false);
   });
 });

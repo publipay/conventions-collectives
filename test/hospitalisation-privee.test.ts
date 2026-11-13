@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "2264-hospitalisation-privee";
 const value = "hospitalisation privée";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2023.3");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2023.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -35,7 +35,7 @@ const minimum = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . coefficient hors grille`).nodeValue;
 
-describe("IDCC 2264 — 2023.3 base salary", () => {
+describe("IDCC 2264 — 2023.5 base salary", () => {
   it("is in force from 1 January 2023 and cites the salary amendments", () => {
     assert.equal(version.validFrom, "2023-01-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 32")));

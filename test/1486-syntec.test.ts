@@ -40,8 +40,8 @@ async function engineOf(revision: string) {
 
 const formation = "salarié . cotisations . formation professionnelle";
 
-describe("IDCC 1486 — 2026.5, grid and sources", async () => {
-  const { version, engine, setSituation } = await engineOf("2026.5");
+describe("IDCC 1486 — 2026.7, grid and sources", async () => {
+  const { version, engine, setSituation } = await engineOf("2026.7");
 
   it("keeps the 2025 salary grid and exposes the legal sources", () => {
     assert.equal(version.validFrom, "2026-01-01");
@@ -57,16 +57,17 @@ describe("IDCC 1486 — 2026.5, grid and sources", async () => {
   });
 });
 
-// The agreement's own rate is added to the legal contribution: 0.05 % (0.10 % from 50 employees)
-// on top of the legal 0.55 % (1 % from 11).
-describe("IDCC 1486 — 2026.5, formation contribution", async () => {
-  const { engine, setSituation } = await engineOf("2026.5");
+// The agreement's own rate, on its own rule, on top of the legal contribution: 0.05 % (0.10 % from
+// 50 employees) on top of the legal 0.55 % (1 % from 11).
+describe("IDCC 1486 — 2026.7, formation contribution", async () => {
+  const { engine, setSituation } = await engineOf("2026.7");
+  const conventional = `${namespace} . formation professionnelle conventionnelle`;
 
   it("adds the agreement contribution to the legal formation contribution", () => {
     // 3 000 € × (0.55 % + 0.05 %), 3 000 € × (1 % + 0.05 %), 3 000 € × (1 % + 0.10 %).
     for (const [effectif, expected] of [[5, 18], [20, 31.5], [50, 33]] as const) {
       setSituation({ "entreprise . salariés . effectif": effectif });
-      const amount = engine.evaluate(formation).nodeValue as number;
+      const amount = (engine.evaluate(formation).nodeValue as number) + (engine.evaluate(conventional).nodeValue as number);
       assert.equal(Math.round(amount * 100) / 100, expected, `effectif ${effectif}`);
     }
   });
@@ -79,9 +80,8 @@ describe("IDCC 1486 — 2026.5, formation contribution", async () => {
 
 // Article 3.5 of the accord of 28 April 2021 (KALIARTI000044159308): 0.2 ‰ of the gross payroll,
 // whatever the headcount, on top of modele-social's legal social dialogue contribution (0.016 %).
-describe("IDCC 1486 — 2026.6, joint bodies contribution", async () => {
-  const { version, engine, setSituation } = await engineOf("2026.6");
-  const previous = await engineOf("2026.5");
+describe("IDCC 1486 — 2026.7, joint bodies contribution", async () => {
+  const { version, engine, setSituation } = await engineOf("2026.7");
   const joint = `${namespace} . financement du paritarisme`;
   const employer = "salarié . cotisations . employeur";
 
@@ -99,9 +99,10 @@ describe("IDCC 1486 — 2026.6, joint bodies contribution", async () => {
   });
 
   it("adds it to the employer contributions, beside the legal social dialogue contribution", () => {
+    setSituation({ [joint]: 0 });
+    const without = engine.evaluate(employer).nodeValue as number;
     setSituation();
-    previous.setSituation();
-    const added = (engine.evaluate(employer).nodeValue as number) - (previous.engine.evaluate(employer).nodeValue as number);
+    const added = (engine.evaluate(employer).nodeValue as number) - without;
     assert.equal(Math.round(added * 100) / 100, 0.6);
     assert.ok((engine.evaluate("salarié . cotisations . contribution au dialogue social").nodeValue as number) > 0);
   });
@@ -113,13 +114,13 @@ describe("IDCC 1486 — 2026.6, joint bodies contribution", async () => {
 });
 
 // Articles 9.2 and 9.3 (KALIARTI000047513889 and KALIARTI000053769476).
-describe("IDCC 1486 — 2026.5, salary maintenance", async () => {
-  const { version, engine, setSituation } = await engineOf("2026.5");
+describe("IDCC 1486 — 2026.7, salary maintenance", async () => {
+  const { version, engine, setSituation } = await engineOf("2026.7");
   const maintenance = (motive: Motive, months: number, context: Record<string, string | number> = {}) =>
     maintenanceOf(engine, setSituation, namespace, motive, months, {}, context);
   const cadre = { "salarié . contrat . statut cadre": "oui" };
 
-  it("keeps the 2026.5 date and cites the articles", () => {
+  it("keeps the 2026.7 date and cites the articles", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source) => source.includes("KALIARTI000047513889")));
   });

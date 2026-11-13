@@ -30,7 +30,7 @@ describe("confiserie, chocolaterie, biscuiterie, détaillants (IDCC 1286)", () =
     ["2025.1", "2025-03-01",
       [[120, 1820.04], [130, 1833.69], [140, 1886.77], [150, 1945.93], [160, 2015.69], [170, 2046.03]],
       [[190, 2135.51], [210, 2335.72], [250, 2554.12], [350, 3811.47], [400, 4170.93], [500, 4735.14]]],
-    ["2026.1", "2026-04-01",
+    ["2026.2", "2026-04-01",
       [[120, 1842.79], [130, 1856.44], [140, 1909.53], [150, 1970.19], [160, 2039.96], [170, 2071.81]],
       [[190, 2161.3], [210, 2364.54], [250, 2585.97], [350, 3858.48], [400, 4220.98], [500, 4792.77]]],
   ];
@@ -71,7 +71,7 @@ describe("réseaux de transports publics urbains (IDCC 1424)", () => {
   type Row = [number, ...number[]];
   const grids: { version: string; validFrom: string; extension: string; workers: Row[]; supervisors: Row[]; executives: [number, number][] }[] = [
     {
-      version: "2025.1", validFrom: "2025-01-01", extension: "2025-07-05",
+      version: "2025.3", validFrom: "2025-01-01", extension: "2025-07-05",
       workers: [
         [145, 1846.68, 1902.08, 1975.95, 2031.35, 2068.28, 2105.22, 2160.62, 2216.02, 2271.42],
         [155, 1857.8, 1913.53, 1987.85, 2043.58, 2080.74, 2117.89, 2173.63, 2229.36, 2285.09],
@@ -102,7 +102,7 @@ describe("réseaux de transports publics urbains (IDCC 1424)", () => {
       executives: [[300, 2955], [390, 3841.5], [430, 4235.5], [530, 5220.5], [630, 6205.5], [690, 6796.5]],
     },
     {
-      version: "2026.1", validFrom: "2026-01-01", extension: "2026-05-31",
+      version: "2026.3", validFrom: "2026-01-01", extension: "2026-05-31",
       workers: [
         [145, 1868.84, 1924.91, 1999.66, 2055.72, 2093.1, 2130.48, 2186.54, 2242.61, 2298.67],
         [155, 1880.09, 1936.49, 2011.7, 2068.1, 2105.7, 2143.3, 2199.71, 2256.11, 2312.51],
@@ -233,7 +233,7 @@ describe("éditeurs de la presse magazine (IDCC 3225)", () => {
     [9, 3490.51, 3595.22, 3699.94, 3839.56],
   ];
   it("2024.1: gives every amount of the annex", async () => {
-    const { engine, ns, version } = await engineOf("3225-editeurs-presse-magazine", "2024.1", value);
+    const { engine, ns, version } = await engineOf("3225-editeurs-presse-magazine", "2024.2", value);
     assert.equal(version.validFrom, "2024-07-01");
     assert.equal(version.extension, "2024-09-12");
     const evaluate = (group: number, years: number, quota = "100%") => {

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3016-ateliers-chantiers-insertion";
 const value = "ateliers et chantiers d'insertion";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.4");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -35,7 +35,7 @@ function run(rule: string, coefficient: number | undefined, quota?: string) {
 }
 const cents = (n: unknown) => Math.round((n as number) * 100) / 100;
 
-describe("IDCC 3016 ateliers et chantiers d'insertion 2026.2", () => {
+describe("IDCC 3016 ateliers et chantiers d'insertion 2026.4", () => {
   it("applies from 1 June 2026", () => assert.equal(version.validFrom, "2026-06-01"));
   it("pays 928 + coefficient x 4.04 for the 19 coefficients of the branch emplois-repères", () => {
     for (const [coefficient, minimum] of FULL_TIME) {

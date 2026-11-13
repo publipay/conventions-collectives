@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0184-imprimeries";
 const value = "imprimeries de labeur et industries graphiques";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -50,7 +50,7 @@ const minimum = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . groupe hors grille`).nodeValue;
 
-describe("IDCC 184 — 2026.1 minimum salaries", () => {
+describe("IDCC 184 — 2026.2 minimum salaries", () => {
   it("is in force from 1 April 2026 and cites the extended agreement", () => {
     assert.equal(version.validFrom, "2026-04-01");
     assert.ok(version.sources.some((source: string) => source.includes("Arrêté du 12 mars 2026")));

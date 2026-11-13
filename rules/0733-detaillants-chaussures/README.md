@@ -1,6 +1,8 @@
 # Détaillants en chaussures — IDCC 733
 
-Le fichier [2026.1](0733-detaillants-chaussures.2026.1.publicodes) entre en vigueur le 1er juillet 2026, premier jour du mois suivant la publication de l’arrêté d’extension du 11 juin 2026. Il est fondé sur l’avenant n° 108 du 9 mars 2026 relatif aux salaires minima, étendu par arrêté du 11 juin 2026 publié au Journal officiel du 27 juin 2026. La valeur Publicodes est `détaillants chaussures` ; les règles sont sous `salarié . convention collective . détaillants chaussures`.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er juillet 2026, premier jour du mois suivant la publication de l’arrêté d’extension du 11 juin 2026. Il est fondé sur l’avenant n° 108 du 9 mars 2026 relatif aux salaires minima, étendu par arrêté du 11 juin 2026 publié au Journal officiel du 27 juin 2026. La valeur Publicodes est `détaillants chaussures` ; les règles sont sous `salarié . convention collective . détaillants chaussures`.
 
 La convention collective nationale des détaillants en chaussures du 27 juin 1973 (brochure 3008) couvre les entreprises relevant de l’IDCC 733.
 

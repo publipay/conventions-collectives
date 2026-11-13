@@ -1,5 +1,7 @@
 # Télécommunications (IDCC 2148)
 
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
 Modèle Publicodes des minima annuels de rémunération et de certaines contreparties du travail de nuit. La version `2026.1` s’applique aux entreprises adhérentes aux organisations signataires à compter du 23 janvier 2026, et aux autres entreprises du champ étendu à compter du 18 avril 2026.
 
 ## Classification et minima

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const id = "2335-agences-generales-assurances";
 const ns = "salarié . convention collective . agences générales assurances";
 
-async function makeEngine(revision = "2026.1") {
+async function makeEngine(revision = "2026.3") {
   const version = COMPILED_VERSIONS[id]?.find((v) => v.version === revision);
   assert.ok(version, "IDCC 2335 must be exported");
   const extension = await version.loadRules();
@@ -68,7 +68,7 @@ describe("IDCC 2335 — annual endpoint", () => {
 
 // Avenant n° 5 du 17 décembre 2024 (KALITEXT000051694318): + 2 % on the whole grid from 1 January
 // 2025, extended by the order of 5 May 2025 (JORF of 10 May 2025).
-describe("IDCC 2335 — 2025.1 (avenant n° 5)", () => {
+describe("IDCC 2335 — 2025.2 (avenant n° 5)", () => {
   const grid2025 = {
     "1": 22784,
     "2": 23659,
@@ -80,38 +80,38 @@ describe("IDCC 2335 — 2025.1 (avenant n° 5)", () => {
   };
   for (const [classe, amount] of Object.entries(grid2025)) {
     it(`class ${classe} annual minimum is ${amount} euros`, async () => {
-      const engine = await makeEngine("2025.1");
+      const engine = await makeEngine("2025.2");
       set(engine, { classe: `'${classe}'` });
       assert.equal(get(engine, "salaire minimum annuel conventionnel").nodeValue, amount);
     });
   }
 
   it("rejects a class outside the sourced grid", async () => {
-    const engine = await makeEngine("2025.1");
+    const engine = await makeEngine("2025.2");
     set(engine, { classe: "'7'" });
     assert.equal(get(engine, "salaire minimum annuel conventionnel").nodeValue, null);
   });
 
   it("applies from 1 January 2025, to every employer from the extension on 10 May 2025", () => {
-    const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2025.1");
+    const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2025.2");
     assert.equal(version?.validFrom, "2025-01-01");
     assert.equal(version?.extension, "2025-05-10");
   });
 });
 
 // Avenant n° 7 du 27 mai 2026: class 1 raised by 1.4 % from 1 June 2026, the other classes unchanged.
-describe("IDCC 2335 — 2026.2 (avenant n° 7)", () => {
+describe("IDCC 2335 — 2026.4 (avenant n° 7)", () => {
   const june = { ...annual, "1": 23524 };
   for (const [classe, amount] of Object.entries(june)) {
     it(`class ${classe} annual minimum is ${amount} euros`, async () => {
-      const engine = await makeEngine("2026.2");
+      const engine = await makeEngine("2026.4");
       set(engine, { classe: `'${classe}'` });
       assert.equal(get(engine, "salaire minimum annuel conventionnel").nodeValue, amount);
     });
   }
 
   it("applies from 1 June 2026, to every employer from the extension on 19 September 2026", () => {
-    const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.2");
+    const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.4");
     assert.equal(version?.validFrom, "2026-06-01");
     assert.equal(version?.extension, "2026-09-19");
   });

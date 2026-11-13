@@ -9,34 +9,34 @@ import { maintenanceEngine, MOTIVES } from "./salary-maintenance.ts";
 
 /** The versions with the rules: model, revision, value of `convention collective`, classification. */
 const VERSIONS = [
-  { model: "1486-syntec", revision: "2026.5", value: "syntec", classification: { coefficient: 355 } },
+  { model: "1486-syntec", revision: "2026.7", value: "syntec", classification: { coefficient: 355 } },
   { model: "3248-metallurgie", revision: "2026.6", value: "métallurgie", classification: { niveau: "'C5'" } },
-  { model: "1979-hotels-cafes-restaurants", revision: "2024.5", value: "hôtels cafés restaurants", classification: { niveau: "'I.1'" } },
-  { model: "1979-hotels-cafes-restaurants", revision: "2026.4", value: "hôtels cafés restaurants", classification: { niveau: "'I.1'" } },
+  { model: "1979-hotels-cafes-restaurants", revision: "2024.7", value: "hôtels cafés restaurants", classification: { niveau: "'I.1'" } },
+  { model: "1979-hotels-cafes-restaurants", revision: "2026.6", value: "hôtels cafés restaurants", classification: { niveau: "'I.1'" } },
   { model: "2216-commerce-detail-gros-predominance-alimentaire", revision: "2026.6", value: "commerce alimentaire", classification: { niveau: "'2B'" } },
-  { model: "1517-commerce-detail-non-alimentaire", revision: "2026.3", value: "commerce de détail non alimentaire", classification: {} },
+  { model: "1517-commerce-detail-non-alimentaire", revision: "2026.4", value: "commerce de détail non alimentaire", classification: {} },
   { model: "1501-restauration-rapide", revision: "2026.10", value: "restauration rapide", classification: {} },
   { model: "1501-restauration-rapide", revision: "2026.11", value: "restauration rapide", classification: {} },
-  { model: "3043-entreprises-proprete", revision: "2026.3", value: "propreté", classification: { niveau: "'AQS1-A'" } },
-  { model: "1090-services-automobile", revision: "2026.3", value: "services automobile", classification: { niveau: "'5'" } },
+  { model: "3043-entreprises-proprete", revision: "2026.5", value: "propreté", classification: { niveau: "'AQS1-A'" } },
+  { model: "1090-services-automobile", revision: "2026.4", value: "services automobile", classification: { niveau: "'5'" } },
   { model: "0044-industries-chimiques", revision: "2026.6", value: "industries chimiques", classification: { coefficient: 190 } },
   { model: "2120-banque", revision: "2026.4", value: "banque", classification: { niveau: "'D'" } },
-  { model: "0016-transports-routiers", revision: "2026.5", value: "transports routiers", classification: { niveau: "'M-O-128'" } },
+  { model: "0016-transports-routiers", revision: "2026.7", value: "transports routiers", classification: { niveau: "'M-O-128'" } },
   { model: "0573-commerces-de-gros", revision: "2026.4", value: "commerces de gros", classification: {} },
   { model: "0787-experts-comptables", revision: "2026.4", value: "experts-comptables", classification: {} },
   { model: "0843-boulangerie-patisserie-artisanale", revision: "2026.6", value: "boulangerie-pâtisserie artisanale", classification: {} },
-  { model: "1043-gardiens-concierges-employes-immeubles", revision: "2026.6", value: "gardiens concierges et employés d'immeubles", classification: {} },
-  { model: "1266-restauration-collective", revision: "2025.3", value: "restauration collective", classification: {} },
+  { model: "1043-gardiens-concierges-employes-immeubles", revision: "2026.8", value: "gardiens concierges et employés d'immeubles", classification: {} },
+  { model: "1266-restauration-collective", revision: "2025.4", value: "restauration collective", classification: {} },
   { model: "1351-prevention-securite", revision: "2026.8", value: "prévention et sécurité", classification: {} },
   { model: "1413-travail-temporaire", revision: "2026.3", value: "travail temporaire", classification: {} },
   { model: "1483-commerce-detail-habillement-textiles", revision: "2026.7", value: "commerce de détail habillement", classification: { niveau: "'3'" } },
-  { model: "1505-commerce-detail-alimentaire-non-specialise", revision: "2026.8", value: "commerce de détail alimentaire non spécialisé", classification: {} },
-  { model: "1527-immobilier", revision: "2026.4", value: "immobilier", classification: {} },
+  { model: "1505-commerce-detail-alimentaire-non-specialise", revision: "2026.10", value: "commerce de détail alimentaire non spécialisé", classification: {} },
+  { model: "1527-immobilier", revision: "2026.5", value: "immobilier", classification: {} },
   { model: "1606-bricolage", revision: "2025.4", value: "bricolage", classification: { coefficient: 190 } },
   { model: "1672-societes-assurances", revision: "2026.6", value: "sociétés assurances", classification: {} },
-  { model: "2098-prestataires-tertiaire", revision: "2026.4", value: "prestataires tertiaires", classification: {} },
+  { model: "2098-prestataires-tertiaire", revision: "2026.6", value: "prestataires tertiaires", classification: {} },
   { model: "2511-sport", revision: "2026.6", value: "branche du sport", classification: {} },
-  { model: "2941-aide-soins-domicile", revision: "2026.3", value: "aide et soins à domicile", classification: {} },
+  { model: "2941-aide-soins-domicile", revision: "2026.4", value: "aide et soins à domicile", classification: {} },
 ] as const;
 
 describe("salary maintenance rules", () => {
@@ -85,7 +85,7 @@ describe("IDCC 3248 — 2026.6, articles 91.1 and 92", async () => {
 });
 
 describe("IDCC 1979 — 2026.4, article 29.2", async () => {
-  const { of } = await maintenanceEngine("1979-hotels-cafes-restaurants", "2026.4", "hôtels cafés restaurants", { niveau: "'I.1'" });
+  const { of } = await maintenanceEngine("1979-hotels-cafes-restaurants", "2026.6", "hôtels cafés restaurants", { niveau: "'I.1'" });
 
   it("pays after 3 years from the 11th day, 90 % then two thirds, 10 more days every 5 years", () => {
     assert.equal(of("maladie", 35).eligible, false);
@@ -139,7 +139,7 @@ describe("IDCC 2216 — 2026.6, article 7.4 and annexes I to III", async () => {
 });
 
 describe("IDCC 1517 — 2026.3, chapter VII", async () => {
-  const { of } = await maintenanceEngine("1517-commerce-detail-non-alimentaire", "2026.3", "commerce de détail non alimentaire", {});
+  const { of } = await maintenanceEngine("1517-commerce-detail-non-alimentaire", "2026.4", "commerce de détail non alimentaire", {});
 
   it("pays 90 % then 70 % from the 8th day, 10 more days every 5 years beyond the first", () => {
     assert.equal(of("maladie", 11).eligible, false);
@@ -169,7 +169,7 @@ describe("IDCC 1501 — 2026.10, articles 19 B and 20", async () => {
 });
 
 describe("IDCC 3043 — 2026.3, article 4.9.1", async () => {
-  const { of } = await maintenanceEngine("3043-entreprises-proprete", "2026.3", "propreté", { niveau: "'AQS1-A'" });
+  const { of } = await maintenanceEngine("3043-entreprises-proprete", "2026.5", "propreté", { niveau: "'AQS1-A'" });
   const level = (niveau: string) => ({ "salarié . convention collective . propreté . niveau": `'${niveau}'` });
 
   it("pays agents from the 8th day, ETAM from the 4th, executives from the 1st", () => {
@@ -187,7 +187,7 @@ describe("IDCC 3043 — 2026.3, article 4.9.1", async () => {
 });
 
 describe("IDCC 1090 — 2026.3, articles 2.10 and 4.08", async () => {
-  const { of } = await maintenanceEngine("1090-services-automobile", "2026.3", "services automobile", { niveau: "'5'" });
+  const { of } = await maintenanceEngine("1090-services-automobile", "2026.4", "services automobile", { niveau: "'5'" });
 
   it("maintains the net pay for 45 days a civil year, 90 for executives", () => {
     const maintenance = of("maladie", 12);

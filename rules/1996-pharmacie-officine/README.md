@@ -1,6 +1,8 @@
 # Pharmacie d’officine — IDCC 1996
 
-Deux fichiers Publicodes couvrent cette convention : [2025.1](1996-pharmacie-officine.2025.1.publicodes), en vigueur depuis le 24 mai 2025, et [2026.1](1996-pharmacie-officine.2026.1.publicodes), en vigueur depuis le 17 avril 2026. Les accords salariaux et les arrêtés d’extension figurent dans leurs métadonnées. La valeur Publicodes est `pharmacie` et toutes les règles sont sous `salarié . convention collective . pharmacie`.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Deux fichiers Publicodes couvrent cette convention : [2025.1](1996-pharmacie-officine.2025.1.publicodes), en vigueur depuis le 24 mai 2025, et 2026.1, en vigueur depuis le 17 avril 2026. Les accords salariaux et les arrêtés d’extension figurent dans leurs métadonnées. La valeur Publicodes est `pharmacie` et toutes les règles sont sous `salarié . convention collective . pharmacie`.
 
 ## Règles implémentées
 

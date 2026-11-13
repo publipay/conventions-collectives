@@ -15,9 +15,8 @@ const GRID_2025 = [1855.01, 1876.03, 1901.57, 1918.55, 1960.99, 1996.61, 2025.42
 const GRID_2026 = [1877.13, 1898.37, 1924.18, 1941.34, 1984.24, 2020.24, 2049.34, 2061.68, 2132.51, 2244.51, 2438.11, 2658.27, 2878.27, 3096.78, 3184.97, 3537.54, 4065.12, 4244.43, 4504.35, 4859.46, 5826.82, 6800.05, 7764.57];
 
 const VERSIONS = {
-  "2025.1": { validFrom: "2025-01-01", grid: GRID_2025, health: false },
-  "2026.3": { validFrom: "2025-09-01", grid: GRID_2025, health: true },
-  "2026.6": { validFrom: "2026-01-01", grid: GRID_2026, health: true },
+  "2026.3": { validFrom: "2025-09-01", grid: GRID_2025 },
+  "2026.6": { validFrom: "2026-01-01", grid: GRID_2026 },
 } as const;
 
 async function engineOf(revision: string) {
@@ -45,13 +44,14 @@ function minimum(engine: Engine, coefficient: number | undefined, quota = "100%"
 /** Version in force on a date, as an application selects it: latest validFrom <= date, then highest revision. */
 function inForce(date: string) {
   const list = COMPILED_VERSIONS[agreement]!.filter((entry) => entry.validFrom <= date);
-  return list[list.length - 1]!.version;
+  return list[list.length - 1]?.version;
 }
 
-describe("IDCC 44 — periods: 2025 grid, then 2025 grid with health, then 2026 grid with health", () => {
+// The version of 1 January 2025 without the health rules (2025.1) was deleted during the beta, on
+// 13 November 2026: no period from 1 January 2026 selected it any more.
+describe("IDCC 44 — periods: 2025 grid with health, then 2026 grid with health", () => {
   it("selects the right version for each period", () => {
-    assert.equal(inForce("2025-01-01"), "2025.1");
-    assert.equal(inForce("2025-08-31"), "2025.1");
+    assert.equal(inForce("2025-08-31"), undefined);
     assert.equal(inForce("2025-09-01"), "2026.3");
     assert.equal(inForce("2025-12-31"), "2026.3");
     assert.equal(inForce("2026-01-01"), "2026.6");
@@ -83,9 +83,8 @@ describe("IDCC 44 — periods: 2025 grid, then 2025 grid with health, then 2026 
         }
       });
 
-      it(step.health ? "carries the branch health minimum" : "has no health rules", () => {
-        assert.equal(`${namespace} . santé 2025` in extension, step.health);
-        if (!step.health) return;
+      it("carries the branch health minimum", () => {
+        assert.equal(`${namespace} . santé 2025` in extension, true);
         engine.setSituation({
           "salarié . convention collective": `'${value}'`,
           [`${namespace} . coefficient`]: 250,

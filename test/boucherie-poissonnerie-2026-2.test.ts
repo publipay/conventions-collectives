@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3254-boucherie-poissonnerie";
 const value = "boucherie poissonnerie";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.4");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -45,7 +45,7 @@ const minimum = () => {
 };
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 3254 — 2026.2 (avenants 13-B and 12-P, from 1 October 2026)", () => {
+describe("IDCC 3254 — 2026.4 (avenants 13-B and 12-P, from 1 October 2026)", () => {
   it("records the effective date and sources", () => {
     assert.equal(version.validFrom, "2026-10-01");
     for (const id of ["KALITEXT000054952088", "KALITEXT000054952074"]) {
@@ -53,7 +53,7 @@ describe("IDCC 3254 — 2026.2 (avenants 13-B and 12-P, from 1 October 2026)", (
     }
     assert.ok(version.sources.some((s) => s.includes("7 septembre 2026")));
     const versions = COMPILED_VERSIONS[agreement] ?? [];
-    assert.equal(versions.find((v) => v.version === "2026.1")?.validFrom, "2026-06-01");
+    assert.equal(versions.find((v) => v.version === "2026.3")?.validFrom, "2026-06-01");
   });
 
   for (const [niveau, expected] of BOUCHERIE) {

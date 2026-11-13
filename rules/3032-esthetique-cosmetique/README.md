@@ -1,6 +1,8 @@
 # Esthétique-cosmétique et enseignement associé — IDCC 3032
 
-Le fichier [2026.1](3032-esthetique-cosmetique.2026.1.publicodes) entre en vigueur le 1er juin 2026. Il modélise l'avenant n° 43 du 22 janvier 2026 relatif aux salaires minima, étendu par arrêté du 18 mai 2026 publié au Journal officiel le 28 mai 2026. La valeur Publicodes est `esthétique cosmétique` ; les règles sont sous `salarié . convention collective . esthétique cosmétique`.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er juin 2026. Il modélise l'avenant n° 43 du 22 janvier 2026 relatif aux salaires minima, étendu par arrêté du 18 mai 2026 publié au Journal officiel le 28 mai 2026. La valeur Publicodes est `esthétique cosmétique` ; les règles sont sous `salarié . convention collective . esthétique cosmétique`.
 
 ## Règles implémentées
 

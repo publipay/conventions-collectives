@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "2596-coiffure";
 const value = "coiffure";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.4");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -69,7 +69,7 @@ const amount = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 2596 — 2026.2 payroll rules", () => {
+describe("IDCC 2596 — 2026.4 payroll rules", () => {
   it("is in force from 1 March 2026 and cites the avenant and its extension order", () => {
     assert.equal(version.validFrom, "2026-03-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 51 du 3 décembre 2025")));

@@ -1,5 +1,5 @@
 /**
- * IDCC 3242, versions 2023.5 and 2024.3: the grid of the regional daily press (accord of 30 June
+ * IDCC 3242, versions 2023.5 and 2024.4: the grid of the regional daily press (accord of 30 June
  * 2023, KALITEXT000048558839) and the one of the regional weekly press, chosen by `forme de
  * presse`: accord of 2 June 2023 (KALITEXT000048052775), then, for the employees, avenant n° 1
  * of 15 November 2024 (KALITEXT000051352524, not extended), with its seniority increase; and the
@@ -72,7 +72,7 @@ function bonus(engine: Engine, level: string, form: string, seniority: number, q
   return amount as number;
 }
 
-for (const versionName of ["2023.5", "2024.3"] as const) {
+for (const versionName of ["2023.5", "2024.4"] as const) {
   describe(`IDCC 3242 — ${versionName}, seniority bonus of the departmental daily press`, async () => {
     const { engine } = await engineOf(versionName);
 
@@ -101,8 +101,8 @@ for (const versionName of ["2023.5", "2024.3"] as const) {
   });
 }
 
-describe("IDCC 3242 — 2024.3, seniority bonus of the weekly press employees", async () => {
-  const { engine } = await engineOf("2024.3");
+describe("IDCC 3242 — 2024.4, seniority bonus of the weekly press employees", async () => {
+  const { engine } = await engineOf("2024.4");
 
   it("no longer increases the minimum with the seniority", () => {
     for (const [group, monthly] of Object.entries(WEEKLY_EMPLOYEES_2024)) {

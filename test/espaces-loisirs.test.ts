@@ -31,7 +31,7 @@ describe("espaces de loisirs (IDCC 1790), avenant n° 76 at 1 April 2026", () =>
     ["IV", 220, 1979.64], ["IV", 250, 2210.9], ["IV", 280, 2471.61], ["IV", 300, 2579.03],
     ["V", 300, 2579.03], ["VI", 360, 3026.42], ["VII", 430, 3653.19], ["VIII", 520, 4406.15],
   ];
-  for (const version of ["2026.2", "2026.3"]) {
+  for (const version of ["2026.4", "2026.5"]) {
     it(`${version} gives the full grid`, async () => {
       for (const [niveau, coefficient, amount] of grid) {
         const engine = await engineFor(version, niveau, coefficient);
@@ -40,9 +40,9 @@ describe("espaces de loisirs (IDCC 1790), avenant n° 76 at 1 April 2026", () =>
     });
   }
   it("prorates part-time and flags an out-of-grid coefficient", async () => {
-    const half = await engineFor("2026.3", "VIII", 520, "50%");
+    const half = await engineFor("2026.5", "VIII", 520, "50%");
     assert.equal(half.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, 2203.075);
-    const out = await engineFor("2026.3", "I", 151);
+    const out = await engineFor("2026.5", "I", 151);
     assert.equal(out.evaluate(`${namespace} . classification hors grille`).nodeValue, true);
   });
 });

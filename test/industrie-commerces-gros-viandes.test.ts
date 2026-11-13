@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1534-industrie-commerces-gros-viandes";
 const value = "industrie et commerces en gros des viandes";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -49,7 +49,7 @@ function minimum() {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 1534 — 2026.1 minimum salaries", () => {
+describe("IDCC 1534 — 2026.2 minimum salaries", () => {
   it("is in force from 1 February 2026 and cites the avenant and its extension order", () => {
     assert.equal(version.validFrom, "2026-02-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 100 du 12 février 2026")));

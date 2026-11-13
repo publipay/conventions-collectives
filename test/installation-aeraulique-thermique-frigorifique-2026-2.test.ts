@@ -8,7 +8,7 @@ const id = "1412-installation-aeraulique-thermique-frigorifique";
 const ns = "salarié . convention collective . installation aeraulique thermique frigorifique";
 
 async function makeEngine() {
-  const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.2");
+  const version = COMPILED_VERSIONS[id]?.find((v) => v.version === "2026.3");
   assert.ok(version, "IDCC 1412 must be exported");
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };
@@ -45,7 +45,7 @@ const MONTHLY: Record<number, number> = {
   390: 3197.05, 430: 3564.51, 460: 3948.69, 500: 4396.26, 600: 4994.29, 700: 5921.07,
 };
 
-describe("IDCC 1412 — 2026.2 annex grid (avenant n° 77)", () => {
+describe("IDCC 1412 — 2026.3 annex grid (avenant n° 77)", () => {
 
   for (const [coefficient, expected] of Object.entries(MONTHLY)) {
     it(`coefficient ${coefficient}: monthly ${expected}`, async () => {

@@ -6,7 +6,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const id = "2148-telecommunications";
 const ns = "salarié . convention collective . télécommunications";
 async function makeEngine() {
-  const version = COMPILED_VERSIONS[id]?.find(v => v.version === "2026.1");
+  const version = COMPILED_VERSIONS[id]?.find(v => v.version === "2026.3");
   assert.ok(version, "IDCC 2148 must be exported");
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };

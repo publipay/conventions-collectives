@@ -1,5 +1,7 @@
 # Négoce de l'ameublement — IDCC 1880
 
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Modèle `1880-commerce-ameublement`, version `2026.1`, espace de noms
 `salarié . convention collective . commerce de l'ameublement`.
 

@@ -1,5 +1,5 @@
 /**
- * IDCC 2332, version 2026.2: the point value of every territory in 2026. Expected values come from
+ * IDCC 2332, version 2026.3: the point value of every territory in 2026. Expected values come from
  * the territorial accords on Légifrance (the accord in force on 1 January 2026, then the accord for
  * 2026 from the first day of the month after its extension's publication) and from the CCN
  * (article V.1.10 for the coefficients, V.2.1 for the minimum, XV.5.1 for the territories),
@@ -15,7 +15,7 @@ const agreement = "2332-entreprises-architecture";
 const value = "entreprises d'architecture";
 const namespace = `salarié . convention collective . ${value}`;
 
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
 assert.ok(version);
 const rules: Record<string, Rule> = { ...modeleSocial };
 const choice = rules["salarié . convention collective"] as Rule & { "une possibilité": string[] };
@@ -136,7 +136,7 @@ const POINTS: Record<string, { department: string; toulouse?: boolean; january: 
 
 const COEFFICIENTS = [200, 300, 400, 600] as const;
 
-describe("IDCC 2332 — 2026.2, every territory", () => {
+describe("IDCC 2332 — 2026.3, every territory", () => {
   it("applies from 1 January 2026 to every employer", () => {
     assert.equal(version.validFrom, "2026-01-01");
     for (const id of ["KALICONT000005635365", "KALITEXT000054040505", "KALITEXT000048994203", "KALITEXT000054872039"]) {

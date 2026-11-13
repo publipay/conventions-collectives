@@ -15,7 +15,7 @@ const GRID: readonly [string, number][] = [
 ];
 
 async function engineOf() {
-  const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.1");
+  const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.3");
   assert.ok(version);
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };

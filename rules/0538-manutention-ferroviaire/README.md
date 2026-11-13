@@ -1,6 +1,8 @@
 # Manutention ferroviaire et travaux connexes — IDCC 538
 
-Le fichier [2026.1](0538-manutention-ferroviaire.2026.1.publicodes) entre en vigueur le 1er mars 2026. Grilles de l'accord du 27 novembre 2025 au 1er mars 2026. Pour les agents de maîtrise et cadres, l'ancienneté en années révolues remplace les tranches du texte ; avant un an, le montant retenu est celui de la première tranche publiée (0 à 6 mois pour le contremaître, 6 mois à 1 an pour les autres emplois).
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er mars 2026. Grilles de l'accord du 27 novembre 2025 au 1er mars 2026. Pour les agents de maîtrise et cadres, l'ancienneté en années révolues remplace les tranches du texte ; avant un an, le montant retenu est celui de la première tranche publiée (0 à 6 mois pour le contremaître, 6 mois à 1 an pour les autres emplois).
 
 La valeur Publicodes est `manutention ferroviaire` ; les règles sont sous `salarié . convention collective . manutention ferroviaire`.
 

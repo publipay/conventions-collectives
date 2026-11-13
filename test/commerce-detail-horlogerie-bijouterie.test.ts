@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1487-commerce-detail-horlogerie-bijouterie";
 const value = "commerce de détail horlogerie bijouterie";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -40,7 +40,7 @@ function minimum() {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 1487 — 2026.1 minimum salaries", () => {
+describe("IDCC 1487 — 2026.2 minimum salaries", () => {
   it("is in force from 1 January 2026 and cites the extended amendment", () => {
     assert.equal(version.validFrom, "2026-01-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 33 du 21 novembre 2025")));

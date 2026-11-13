@@ -1,6 +1,8 @@
 # Cabinets d'avocats — IDCC 1000
 
-Le fichier [2025.1](1000-cabinets-avocats.2025.1.publicodes) entre en vigueur le 1er janvier 2025. Il reprend l'avenant n° 136 du 24 janvier 2025 relatif aux salaires minima, étendu par l'arrêté du 9 avril 2025 publié au Journal officiel du 26 avril 2025. Les textes officiels sont cités dans les métadonnées du fichier source.
+> La version 2025.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2025.1 entre en vigueur le 1er janvier 2025. Il reprend l'avenant n° 136 du 24 janvier 2025 relatif aux salaires minima, étendu par l'arrêté du 9 avril 2025 publié au Journal officiel du 26 avril 2025. Les textes officiels sont cités dans les métadonnées du fichier source.
 
 La convention collective nationale des avocats et de leur personnel du 20 février 1979 (brochure 3078) utilise une classification par coefficients pour le personnel salarié non-avocats. La valeur Publicodes est `cabinets d'avocats` ; les règles sont sous `salarié . convention collective . cabinets d'avocats`.
 

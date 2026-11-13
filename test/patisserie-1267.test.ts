@@ -32,7 +32,7 @@ const GRID_2026: Record<number, number> = {
 
 for (const [revision, grid, validFrom, sourceIds] of [
   ["2025.1", GRID_2025, "2025-01-01", ["KALITEXT000051537691", "KALICONT000005635611"]],
-  ["2026.1", GRID_2026, "2026-01-01", ["KALITEXT000054066586", "KALICONT000005635611"]],
+  ["2026.2", GRID_2026, "2026-01-01", ["KALITEXT000054066586", "KALICONT000005635611"]],
 ] as const) {
   describe(`IDCC 1267 ${revision} minimum salaries`, async () => {
     const { engine, version } = await engineOf(revision);
@@ -78,9 +78,9 @@ for (const [revision, grid, validFrom, sourceIds] of [
 }
 
 describe("IDCC 1267 version history", () => {
-  it("publishes 2025.1, then 2026.1 with the +1.2 % revaluation and 2026.2 with the joint bodies contributions", () => {
+  it("publishes 2025.1, then 2026.2 with the +1.2 % revaluation and the joint bodies contributions", () => {
     const revisions = (COMPILED_VERSIONS[agreement] ?? []).map((entry) => entry.version);
-    assert.deepEqual(revisions, ["2025.1", "2026.1", "2026.2"]);
+    assert.deepEqual(revisions, ["2025.1", "2026.2"]);
     assert.equal(GRID_2026[160], 1863.37);
     assert.equal(GRID_2026[350], 3714.46);
   });

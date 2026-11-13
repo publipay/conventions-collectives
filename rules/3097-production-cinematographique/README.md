@@ -1,6 +1,8 @@
 # Convention collective nationale de la production cinématographique du 19 janvier 2012 (IDCC 3097)
 
-Le fichier [2026.1](3097-production-cinematographique.2026.1.publicodes) reprend l'avenant du 26 mars 2025 relatif aux salaires minima du titre IV. L'avenant a été étendu par arrêté du 6 janvier 2026 publié au Journal officiel du 17 janvier 2026 ; l'entrée en vigueur générale modélisée est donc le 1er février 2026.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 reprend l'avenant du 26 mars 2025 relatif aux salaires minima du titre IV. L'avenant a été étendu par arrêté du 6 janvier 2026 publié au Journal officiel du 17 janvier 2026 ; l'entrée en vigueur générale modélisée est donc le 1er février 2026.
 
 ## Périmètre modélisé
 

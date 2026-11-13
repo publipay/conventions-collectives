@@ -3,7 +3,7 @@
  * the base salary:
  * - IDCC 1483, 2026.3: avenant n° 29 (KALITEXT000053914115), article 2, a fixed amount
  *   by category and seniority, prorated by working time, no longer in the minimum;
- * - IDCC 3127, 2024.2: avenant of 29 March 2022 (KALITEXT000046100203), 0,05 €, 0,15 € or 0,25 €
+ * - IDCC 3127, 2024.3: avenant of 29 March 2022 (KALITEXT000046100203), 0,05 €, 0,15 € or 0,25 €
  *   per hour of work after 2, 5 or 10 years.
  */
 import assert from "node:assert/strict";
@@ -74,9 +74,9 @@ describe("IDCC 1483 — seniority bonus apart from the minimum", async () => {
   }
 });
 
-describe("IDCC 3127 — 2024.2, hourly bonus on the hours of the month", async () => {
+describe("IDCC 3127 — 2024.3, hourly bonus on the hours of the month", async () => {
   const namespace = "salarié . convention collective . services à la personne";
-  const { engine } = await engineOf("3127-services-personne", "services à la personne", "2024.2");
+  const { engine } = await engineOf("3127-services-personne", "services à la personne", "2024.3");
   const bonus = (years: number, extra: Record<string, string> = {}) => {
     engine.setSituation({
       date: "01/10/2026",

@@ -1,6 +1,8 @@
 # Commerce de détail alimentaire spécialisé — IDCC 3237
 
-Le fichier [2026.1](3237-commerce-detail-alimentaire-specialise.2026.1.publicodes) est applicable au 17 avril 2026, date d'entrée en vigueur après l'extension de l'avenant n° 9 du 13 janvier 2026 relatif aux salaires minima conventionnels. Le fichier [2026.2](3237-commerce-detail-alimentaire-specialise.2026.2.publicodes) est applicable au 1er octobre 2026, après l'extension de l'avenant n° 10 du 16 juin 2026.
+> Les versions 2026.1, 2026.2 et 2026.3 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 est applicable au 17 avril 2026, date d'entrée en vigueur après l'extension de l'avenant n° 9 du 13 janvier 2026 relatif aux salaires minima conventionnels. Le fichier 2026.2 est applicable au 1er octobre 2026, après l'extension de l'avenant n° 10 du 16 juin 2026.
 
 La convention collective nationale des métiers du commerce de détail alimentaire spécialisé du 12 janvier 2021 (brochure 3387) couvre les entreprises relevant de l'IDCC 3237.
 

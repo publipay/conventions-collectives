@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "2247-courtage-assurances";
 const value = "courtage assurances";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -55,7 +55,7 @@ const annualAmount = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . niveau hors grille`).nodeValue;
 
-describe("IDCC 2247 — 2026.2 minimum salaries", () => {
+describe("IDCC 2247 — 2026.3 minimum salaries", () => {
   it("is in force from 1 July 2025 and cites the avenant", () => {
     assert.equal(version.validFrom, "2025-07-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant du 19 juin 2025")));

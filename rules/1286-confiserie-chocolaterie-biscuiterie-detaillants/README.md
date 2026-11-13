@@ -1,7 +1,9 @@
 # Confiserie, chocolaterie, biscuiterie (détaillants) — IDCC 1286
 
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 - [2025.1](1286-confiserie-chocolaterie-biscuiterie-detaillants.2025.1.publicodes) : 1er mars 2025, avenant n° 42 du 20 novembre 2024.
-- [2026.1](1286-confiserie-chocolaterie-biscuiterie-detaillants.2026.1.publicodes) : 1er avril 2026, avenant n° 43 du 23 janvier 2026.
+- 2026.1 : 1er avril 2026, avenant n° 43 du 23 janvier 2026.
 
 Chaque avenant fixe sa date d'effet au mois de publication de son arrêté d'extension. Il s'applique donc à tous les employeurs du champ à cette date, et les versions ne déclarent pas de champ `extension`.
 

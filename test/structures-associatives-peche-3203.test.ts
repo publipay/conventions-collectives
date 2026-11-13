@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const name = "3203-structures-associatives-peche";
 const namespace = "salarié . convention collective . structures associatives de pêche de loisir et de protection du milieu aquatique";
 
-async function engineFor(positionnement: string, quotité = 1, revision = "2026.2", situation: Record<string, string> = {}) {
+async function engineFor(positionnement: string, quotité = 1, revision = "2026.3", situation: Record<string, string> = {}) {
   const version = COMPILED_VERSIONS[name]?.find((candidate) => candidate.version === revision);
   assert.ok(version);
   const extension = await version.loadRules();
@@ -29,7 +29,7 @@ async function engineFor(positionnement: string, quotité = 1, revision = "2026.
   return { engine, version };
 }
 
-describe("IDCC 3203 — 2026.2 minimum salaries", () => {
+describe("IDCC 3203 — 2026.3 minimum salaries", () => {
   it("uses the official effective date and source", async () => {
     const { version } = await engineFor("VI.3");
     assert.equal(version.validFrom, "2026-01-01");

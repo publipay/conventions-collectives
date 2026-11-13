@@ -7,7 +7,9 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3013-librairie";
 const value = "librairie";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.3");
+// The conventional contributions the agreement adds, on rules of its own.
+const CONVENTIONAL_CONTRIBUTIONS = /financement du paritarisme|cotisations employeur avec|formation professionnelle conventionnelle/;
+const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -28,7 +30,7 @@ function minimum() {
   return engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue;
 }
 
-describe("IDCC 3013 — 2026.3 salary minimums and payroll audit", () => {
+describe("IDCC 3013 — 2026.5 salary minimums and payroll audit", () => {
   it("uses the official 1 April 2026 effective date", () => {
     assert.equal(version.validFrom, "2026-04-01");
     assert.ok(version.sources.some((source: string) => source.includes("KALITEXT000053926509")));
@@ -52,7 +54,7 @@ describe("IDCC 3013 — 2026.3 salary minimums and payroll audit", () => {
   });
 
   it("does not redefine payroll-wide endpoints or collide with modele-social", () => {
-    assert.equal(Object.keys(extension).some((name) => name.includes("cotisations") || name.includes("prévoyance") || name.includes("santé") || name.includes("formation professionnelle") || name.includes("exonération cotisation AT")), false);
+    assert.equal(Object.keys(extension).filter((name) => !CONVENTIONAL_CONTRIBUTIONS.test(name)).some((name) => name.includes("cotisations") || name.includes("prévoyance") || name.includes("santé") || name.includes("formation professionnelle") || name.includes("exonération cotisation AT")), false);
     assert.equal(Object.keys(extension).some((name) => name in modeleSocial), false);
   });
 });

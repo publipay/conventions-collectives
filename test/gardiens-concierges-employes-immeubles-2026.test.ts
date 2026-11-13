@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const id = "1043-gardiens-concierges-employes-immeubles";
 const value = "gardiens concierges et employés d'immeubles";
 const ns = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[id]?.find((entry: { version: string }) => entry.version === "2026.3");
+const version = COMPILED_VERSIONS[id]?.find((entry: { version: string }) => entry.version === "2026.7");
 assert.ok(version, "IDCC 1043 must be exported");
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };

@@ -1,5 +1,7 @@
 # Expédition et exportation de fruits et légumes — IDCC 1405
 
+> La version 2026.2 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La convention collective nationale des entreprises d'expédition et d'exportation de fruits et légumes (IDCC 1405) a deux grilles de salaires minima, toutes deux applicables au **1er avril 2026** et étendues par arrêté du 19 mai 2026 (JORF n° 0124 du **29 mai 2026**, `JORFTEXT000054149405`, effet à la date de publication) :
 
 - la grille de la convention, avenant n° 33 du 4 mars 2026 (`KALITEXT000054370669`) ;

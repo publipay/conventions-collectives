@@ -1,6 +1,8 @@
 # Charcuterie de détail — IDCC 953
 
-Le fichier [2026.1](0953-charcuterie-detail.2026.1.publicodes) entre en vigueur le 1er janvier 2026 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 23 juillet 2026. Taux horaires de l'avenant n° 64 (de 12,27 € à 20,43 €), convertis en minima mensuels.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er janvier 2026 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 23 juillet 2026. Taux horaires de l'avenant n° 64 (de 12,27 € à 20,43 €), convertis en minima mensuels.
 
 La valeur Publicodes est `charcuterie de détail` ; les règles sont sous `salarié . convention collective . charcuterie de détail`.
 

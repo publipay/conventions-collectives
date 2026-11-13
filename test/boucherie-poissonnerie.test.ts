@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3254-boucherie-poissonnerie";
 const value = "boucherie poissonnerie";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.3");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -32,7 +32,7 @@ function minimum() {
   return Math.round((result as number) * 100) / 100;
 }
 
-describe("IDCC 3254 — 2026.1 minimum salaries and payroll isolation", () => {
+describe("IDCC 3254 — 2026.3 minimum salaries and payroll isolation", () => {
   it("records the effective date and official salary sources", () => {
     assert.equal(version.validFrom, "2026-06-01");
     assert.ok(version.sources.some((source) => source.includes("avenant n° 9-B")));

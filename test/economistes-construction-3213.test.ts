@@ -7,7 +7,9 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3213-economistes-construction";
 const value = "économistes de la construction et métreurs-vérificateurs";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.2");
+// The conventional contributions the agreement adds, on rules of its own.
+const CONVENTIONAL_CONTRIBUTIONS = /financement du paritarisme|cotisations employeur avec|formation professionnelle conventionnelle/;
+const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.3");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -16,24 +18,24 @@ rules["salarié . convention collective"] = { ...choice, "une possibilité": [..
 Object.assign(rules, extension);
 const engine = new Engine(rules, { logger: { log() {}, warn() {}, error() {} } });
 
-describe("IDCC 3213 — 2026.2 salary minimums and payroll audit", () => {
+describe("IDCC 3213 — 2026.3 salary minimums and payroll audit", () => {
 
   it("does not redefine payroll-wide endpoints or collide with modele-social", () => {
-    assert.equal(Object.keys(extension).some((name) => name.includes("cotisations") || name.includes("prévoyance") || name.includes("santé") || name.includes("formation professionnelle") || name.includes("exonération cotisation AT")), false);
+    assert.equal(Object.keys(extension).filter((name) => !CONVENTIONAL_CONTRIBUTIONS.test(name)).some((name) => name.includes("cotisations") || name.includes("prévoyance") || name.includes("santé") || name.includes("formation professionnelle") || name.includes("exonération cotisation AT")), false);
     assert.equal(Object.keys(extension).some((name) => name in modeleSocial), false);
     engine.setSituation({ "salarié . convention collective": `'${value}'`, "salarié . cotisations . assiette": "3000 €/mois" });
     assert.equal(typeof engine.evaluate("salarié . cotisations . prévoyances . santé . employeur").nodeValue, "number");
   });
 });
 
-const revised = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.2");
+const revised = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2026.3");
 assert.ok(revised);
 const revisedRules: Record<string, Rule> = { ...modeleSocial };
 revisedRules["salarié . convention collective"] = { ...choice, "une possibilité": [...choice["une possibilité"], value] } as Rule;
 Object.assign(revisedRules, await revised.loadRules());
 const revisedEngine = new Engine(revisedRules, { logger: { log() {}, warn() {}, error() {} } });
 
-describe("IDCC 3213 — 2026.2, the Île-de-France grid chosen by the region", () => {
+describe("IDCC 3213 — 2026.3, the Île-de-France grid chosen by the region", () => {
   const evaluate = (rule: string, level: string, region: string, date = "01/10/2026", quotité = "100%") => {
     revisedEngine.setSituation({
       date,

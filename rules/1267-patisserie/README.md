@@ -1,5 +1,7 @@
 # Pâtisserie — IDCC 1267
 
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 Modèle `1267-patisserie`, versions `2025.1` et `2026.1`, espace de noms
 `salarié . convention collective . pâtisserie`.
 

@@ -7,7 +7,9 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1631-hotellerie-plein-air";
 const value = "hôtellerie de plein air";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2025.2");
+// The conventional contributions the agreement adds, on rules of its own.
+const CONVENTIONAL_CONTRIBUTIONS = /financement du paritarisme|cotisations employeur avec|formation professionnelle conventionnelle/;
+const version = COMPILED_VERSIONS[agreement]?.find((entry: { version: string }) => entry.version === "2025.3");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -28,7 +30,7 @@ function minimum() {
   return engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue;
 }
 
-describe("IDCC 1631 — 2025.2 salary minimums and payroll audit", () => {
+describe("IDCC 1631 — 2025.3 salary minimums and payroll audit", () => {
 
   it("marks an unknown coefficient outside the grid", () => {
     setCoefficient(301);
@@ -42,7 +44,7 @@ describe("IDCC 1631 — 2025.2 salary minimums and payroll audit", () => {
   });
 
   it("does not redefine payroll-wide endpoints or collide with modele-social", () => {
-    assert.equal(Object.keys(extension).some((name) => name.includes("cotisations") || name.includes("prévoyance") || name.includes("santé") || name.includes("formation professionnelle") || name.includes("exonération cotisation AT")), false);
+    assert.equal(Object.keys(extension).filter((name) => !CONVENTIONAL_CONTRIBUTIONS.test(name)).some((name) => name.includes("cotisations") || name.includes("prévoyance") || name.includes("santé") || name.includes("formation professionnelle") || name.includes("exonération cotisation AT")), false);
     assert.equal(Object.keys(extension).some((name) => name in modeleSocial), false);
   });
 });

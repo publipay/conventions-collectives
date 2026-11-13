@@ -1,6 +1,8 @@
 # Industries du cartonnage — IDCC 489
 
 > La version 2025.3 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2025.4 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 La version `2025.3` reprend l'avenant n° 166 du 12 mars 2025, applicable au 1er mai 2025 dans son champ signataire. Le texte a été publié au Bulletin officiel des conventions collectives 2025-16 (NOR ASET2550438M) et demande l'extension ; aucun arrêté d'extension n'est modélisé ici.
 

@@ -10,7 +10,7 @@ const level = (value: string, name: string, rule = "niveau") => ({ [`salarié . 
 
 describe("IDCC 16 — 2026.5, annexes I to IV", async () => {
   const name = "transports routiers";
-  const { of } = await maintenanceEngine("0016-transports-routiers", "2026.5", name, { niveau: "'M-O-128'" });
+  const { of } = await maintenanceEngine("0016-transports-routiers", "2026.7", name, { niveau: "'M-O-128'" });
 
   it("pays workers and employees after 3 years, after 5 days of franchise", () => {
     assert.equal(of("maladie", 35).eligible, false);
@@ -77,7 +77,7 @@ describe("IDCC 843 — 2026.6, article 37.1", async () => {
 });
 
 describe("IDCC 1043 — 2026.6, article 30.1", async () => {
-  const { of } = await maintenanceEngine("1043-gardiens-concierges-employes-immeubles", "2026.6", "gardiens concierges et employés d'immeubles", {});
+  const { of } = await maintenanceEngine("1043-gardiens-concierges-employes-immeubles", "2026.8", "gardiens concierges et employés d'immeubles", {});
 
   it("pays 90 % from the 1st day, 30 to 190 days by seniority, work accidents apart", () => {
     assert.deepEqual(of("maladie", 12).periods, [[30, 90]]);
@@ -94,7 +94,7 @@ describe("IDCC 1043 — 2026.6, article 30.1", async () => {
 });
 
 describe("IDCC 1266 — 2025.3, articles 25 B and 26 B", async () => {
-  const { of } = await maintenanceEngine("1266-restauration-collective", "2025.3", "restauration collective", {});
+  const { of } = await maintenanceEngine("1266-restauration-collective", "2025.4", "restauration collective", {});
 
   it("pays sickness in three periods the first two years", () => {
     assert.deepEqual(of("maladie", 12).periods, [[30, 90], [30, 66], [116, 60]]);
@@ -174,7 +174,7 @@ describe("IDCC 1483 — 2026.7, articles 27 and 13", async () => {
 });
 
 describe("IDCC 1505 — 2026.8, articles 40.1 and 40.2", async () => {
-  const { of } = await maintenanceEngine("1505-commerce-detail-alimentaire-non-specialise", "2026.8", "commerce de détail alimentaire non spécialisé", {});
+  const { of } = await maintenanceEngine("1505-commerce-detail-alimentaire-non-specialise", "2026.10", "commerce de détail alimentaire non spécialisé", {});
 
   it("shortens the waiting days with the seniority", () => {
     assert.equal(of("maladie", 12).waitingDays, 7);
@@ -191,7 +191,7 @@ describe("IDCC 1505 — 2026.8, articles 40.1 and 40.2", async () => {
 });
 
 describe("IDCC 1527 — 2026.4, article 24.2", async () => {
-  const { of } = await maintenanceEngine("1527-immobilier", "2026.4", "immobilier", {});
+  const { of } = await maintenanceEngine("1527-immobilier", "2026.5", "immobilier", {});
 
   it("pays 90 % from the 1st day, 30 to 190 days, work accidents apart", () => {
     assert.deepEqual(of("maladie", 12).periods, [[30, 90]]);
@@ -237,7 +237,7 @@ describe("IDCC 1672 — 2026.6, articles 82 c and 86 c", async () => {
 });
 
 describe("IDCC 2098 — 2026.4, article 18.1 B", async () => {
-  const { of } = await maintenanceEngine("2098-prestataires-tertiaire", "2026.4", "prestataires tertiaires", {});
+  const { of } = await maintenanceEngine("2098-prestataires-tertiaire", "2026.6", "prestataires tertiaires", {});
 
   it("pays 90 % then 75 %, and 100 % then 80 % after 3 years", () => {
     assert.deepEqual(of("maladie", 12).periods, [[30, 90], [30, 75]]);
@@ -261,7 +261,7 @@ describe("IDCC 2511 — 2026.6, article 4.3", async () => {
 });
 
 describe("IDCC 2941 — 2026.3, titre VIII", async () => {
-  const { of } = await maintenanceEngine("2941-aide-soins-domicile", "2026.3", "aide et soins à domicile", {});
+  const { of } = await maintenanceEngine("2941-aide-soins-domicile", "2026.4", "aide et soins à domicile", {});
 
   it("pays 90 % after 6 months, 60 days or 90 after 20 years", () => {
     assert.equal(of("maladie", 5).eligible, false);

@@ -4,7 +4,7 @@ import Engine, { type Rule } from "publicodes";
 import modeleSocial from "modele-social";
 import { COMPILED_VERSIONS } from "../src/index.ts";
 const namespace = "salarié . convention collective . restauration collective";
-const version = COMPILED_VERSIONS["1266-restauration-collective"]?.find(v => v.version === "2025.3");
+const version = COMPILED_VERSIONS["1266-restauration-collective"]?.find(v => v.version === "2025.4");
 assert.ok(version, "Agreement version must be exported");
 const extension = await version.loadRules();
 const rules = { ...modeleSocial, ...extension } as Record<string, Rule>;
@@ -86,10 +86,6 @@ describe("IDCC 1266", () => {
    situation("III",{[`${namespace} . journées de détachement éligibles`]:`${days} jour/mois`,[`${namespace} . prime journalière de détachement entreprise`]:`${rate} €/jour`}); assert.equal(amount("prime mensuelle de détachement"),expected);
   }
  });
- it("keeps branch paritarisme on the employer's prior-year payroll, never the monthly wage", () => {
-  situation("III",{[`${namespace} . masse salariale entreprise exercice précédent`]:"1000000 €/an"}); assert.equal(amount("contribution annuelle entreprise paritarisme"),160);
-  situation("III",{[`${namespace} . masse salariale entreprise exercice précédent`]:"1000000 €/an","salarié . contrat . temps de travail . quotité":"50%","salarié . rémunération . brut":"3000 €/mois"}); assert.equal(amount("contribution annuelle entreprise paritarisme"),160);
- });
  it("preserves hourly floors and exposes a separate statutory SMIC safeguard", () => {
   for (const [level, floor] of Object.entries({I:11.89,II:11.95,III:12.10,IV:12.30,V:12.96,VI:13.46,VII:14.30,VIII:15.02,IX:19.31})) {
    situation(level,{"SMIC . horaire":"15 €/heure"}); assert.equal(amount("minimum horaire"),floor); assert.equal(amount("taux horaire minimum applicable"),Math.max(floor,15));
@@ -105,7 +101,7 @@ describe("IDCC 1266", () => {
   }
  });
  it("rejects pre-extension application and excluded activities without leaking into other conventions", () => {
-  const endpoints = ["salaire minimum conventionnel","salaire minimum annuel conventionnel","prime d'ancienneté","prime d'activité continue","prime de service minimum","treizième mois annuel","prime annuelle d'intermittence","indemnité mensuelle de coupure","prime mensuelle de détachement","contribution annuelle entreprise paritarisme"];
+  const endpoints = ["salaire minimum conventionnel","salaire minimum annuel conventionnel","prime d'ancienneté","prime d'activité continue","prime de service minimum","treizième mois annuel","prime annuelle d'intermittence","indemnité mensuelle de coupure","prime mensuelle de détachement","financement du paritarisme"];
   situation("III",{"date":"30/06/2025",[`${namespace} . un an continu révolu`]:"oui"});
   for (const rule of endpoints) assert.equal(value(rule),null,rule);
   situation("III",{"date":"01/07/2025"}); assert.equal(amount("salaire minimum conventionnel"),1835.17);
@@ -121,7 +117,7 @@ describe("IDCC 1266", () => {
  it("does not invent branch insurance rates or change actual standard payroll endpoints", () => {
   const baseline = new Engine(modeleSocial,{logger:{log(){},warn(){},error(){}}});
   const input = {"salarié":"oui","dirigeant":"non","salarié . contrat . statut cadre":"non","salarié . rémunération . brut":"3000 €/mois","salarié . cotisations . assiette":"3000 €/mois","plafond sécurité sociale":"4000 €/mois","salarié . cotisations . prévoyances . santé . montant":"60 €/mois","entreprise . salariés . effectif":20,"établissement . taux ATMP":"2%","date":"11/10/2026"};
-  baseline.setSituation({...input,"salarié . convention collective":"'autre'"}); situation("III",input);
+  baseline.setSituation({...input,"salarié . convention collective":"'autre'"}); situation("III",{...input,[`${namespace} . financement du paritarisme`]:0});
   for (const endpoint of ["salarié . cotisations . ATMP","salarié . cotisations . formation professionnelle","salarié . cotisations . prévoyances . santé . employeur","salarié . cotisations . prévoyances . santé . salarié","salarié . cotisations . prévoyances . conventionnelle . employeur","salarié . cotisations . employeur"]) {
    const expected=baseline.evaluate(endpoint).nodeValue; if (endpoint === "salarié . cotisations . prévoyances . conventionnelle . employeur") assert.equal(expected,null); else assert.equal(typeof expected,"number",endpoint); assert.equal(value(endpoint),expected,endpoint);
   }
@@ -148,7 +144,7 @@ describe("IDCC 1266 — 2025.4, joint bodies contribution", async () => {
     });
   const employer = (target: Engine) => target.evaluate("salarié . cotisations . employeur").nodeValue as number;
 
-  it("keeps the 2025.3 date and cites the avenant", () => {
+  it("keeps the 2025.4 date and cites the avenant", () => {
     assert.equal(next.validFrom, "2025-07-01");
     assert.ok(next.sources.some((source) => source.includes("KALITEXT000050135916")));
   });
@@ -157,8 +153,9 @@ describe("IDCC 1266 — 2025.4, joint bodies contribution", async () => {
     set(nextEngine);
     // 2 500 € × 0.016 %.
     assert.equal(nextEngine.evaluate(`${namespace} . financement du paritarisme`).nodeValue, 0.4);
-    set(engine);
-    assert.equal(Math.round((employer(nextEngine) - employer(engine)) * 100) / 100, 0.4);
+    const withJointBodies = employer(nextEngine);
+    set(nextEngine, { [`${namespace} . financement du paritarisme`]: 0 });
+    assert.equal(Math.round((withJointBodies - employer(nextEngine)) * 100) / 100, 0.4);
   });
 
   it("applies neither before July 2025, outside the field nor to another agreement", () => {

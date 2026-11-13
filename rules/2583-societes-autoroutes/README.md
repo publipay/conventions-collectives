@@ -1,5 +1,7 @@
 # Sociétés concessionnaires ou exploitantes d'autoroutes ou d'ouvrages routiers — IDCC 2583
 
+> La version 2024.2 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
 La version `2024.1` (12 septembre 2024) modélise l'accord collectif national de branche du **19 juin 2024** relatif aux rémunérations annuelles garanties pour l'année 2024. L'accord prend effet rétroactivement au **1er janvier 2024** et a été étendu par arrêté du **4 septembre 2024**, publié au Journal officiel le **12 septembre 2024**. La version est datée du 12 septembre 2024, date à laquelle le barème est opposable à l'ensemble du champ étendu. La version `2024.2` reprend le même barème au **1er janvier 2024**, date d'effet de l'accord (article 6, KALITEXT000050298689), avec `extension` au 12 septembre 2024 : elle lie les adhérents d'une organisation signataire dès janvier, les autres employeurs à partir de la publication de l'extension.
 
 La valeur Publicodes est `sociétés autoroutes` et les règles sont sous `salarié . convention collective . sociétés autoroutes`.

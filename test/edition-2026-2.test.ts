@@ -15,9 +15,9 @@ const GRID: readonly [string, number][] = [
   ["C3A", 2964], ["C3 B", 3341], ["C4", 3847],
 ];
 
-describe("IDCC 2121 — edition 2026.2 (effective 1 June 2026)", async () => {
+describe("IDCC 2121 — edition 2026.4 (effective 1 June 2026)", async () => {
   const versions = COMPILED_VERSIONS[agreement];
-  const version = versions?.find((entry) => entry.version === "2026.2");
+  const version = versions?.find((entry) => entry.version === "2026.4");
   assert.ok(version);
   const extension = await version.loadRules();
   const rules: Record<string, Rule> = { ...modeleSocial };
@@ -42,7 +42,7 @@ describe("IDCC 2121 — edition 2026.2 (effective 1 June 2026)", async () => {
     assert.ok(version.sources.some((s) => s.includes("KALITEXT000054951908")));
     assert.ok(version.sources.some((s) => s.includes("26 juin 2026")));
     assert.ok(version.sources.some((s) => s.includes("7 septembre 2026")));
-    assert.ok(versions?.some((v) => v.version === "2026.1" && v.validFrom === "2026-07-01"));
+    assert.ok(versions?.some((v) => v.version === "2026.3" && v.validFrom === "2026-07-01"));
   });
 
   for (const [niveau, expected] of GRID) {

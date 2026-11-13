@@ -57,7 +57,7 @@ const CASES: Case[] = [
   {
     model: "0538-manutention-ferroviaire",
     value: "manutention ferroviaire",
-    previous: "2026.1",
+    validFrom: "2026-03-01",
     revision: "2026.2",
     source: "KALITEXT000045111041",
     // 3 000 € × 0.0085 % = 0.255 €; not due by the companies of 1 to 10 employees.
@@ -75,7 +75,7 @@ const CASES: Case[] = [
   {
     model: "0959-laboratoires-biologie-medicale",
     value: "laboratoires biologie médicale",
-    previous: "2026.1",
+    validFrom: "2026-06-01",
     revision: "2026.2",
     source: "KALITEXT000038014422",
     // 3 000 € × 0.04 %; above the ceiling, 4 005 € × 0.04 % = 1.602 €.
@@ -85,7 +85,7 @@ const CASES: Case[] = [
   {
     model: "0993-prothesistes-dentaires",
     value: "prothésistes dentaires",
-    previous: "2026.2",
+    validFrom: "2026-10-01",
     revision: "2026.3",
     source: "KALITEXT000029954440",
     // 3 000 € × 0.15 %.
@@ -94,7 +94,7 @@ const CASES: Case[] = [
   {
     model: "1090-services-automobile",
     value: "services automobile",
-    previous: "2026.3",
+    validFrom: "2026-05-01",
     revision: "2026.4",
     source: "KALITEXT000005685156",
     // 3 000 € × 0.08 %; above four ceilings, 16 020 € × 0.08 % = 12.816 €; apprentices excluded.
@@ -107,7 +107,7 @@ const CASES: Case[] = [
   {
     model: "1147-cabinets-medicaux",
     value: "cabinets médicaux",
-    previous: "2024.2",
+    validFrom: "2024-01-01",
     revision: "2024.3",
     source: "KALITEXT000024983918",
     // 3 000 € × 0.02 %.
@@ -116,7 +116,7 @@ const CASES: Case[] = [
   {
     model: "1286-confiserie-chocolaterie-biscuiterie-detaillants",
     value: "confiserie chocolaterie détaillants",
-    previous: "2026.1",
+    validFrom: "2026-04-01",
     revision: "2026.2",
     source: "KALITEXT000051947464",
     // 3 000 € × 0.15 %, whatever the headcount.
@@ -126,15 +126,15 @@ const CASES: Case[] = [
   {
     model: "1316-tourisme-social-familial",
     value: "tourisme social et familial",
-    previous: "2026.1",
-    revision: "2026.2",
+    validFrom: "2026-01-01",
+    revision: "2026.3",
     source: "KALITEXT000005684557",
     // 3 000 € × 0.05 %.
     amount: 1.5,
   },  {
     model: "1405-expedition-exportation-fruits-legumes",
     value: "expédition exportation fruits légumes",
-    previous: "2026.2",
+    validFrom: "2026-04-01",
     revision: "2026.3",
     source: "KALITEXT000049100265",
     // 3 000 € × 1 ‰.
@@ -143,8 +143,8 @@ const CASES: Case[] = [
   {
     model: "1505-commerce-detail-alimentaire-non-specialise",
     value: "commerce de détail alimentaire non spécialisé",
-    previous: "2026.8",
-    revision: "2026.9",
+    validFrom: "2026-08-01",
+    revision: "2026.10",
     source: "KALITEXT000053049839",
     // 3 000 € × 0.15 %.
     amount: 4.5,
@@ -152,8 +152,8 @@ const CASES: Case[] = [
   {
     model: "3237-commerce-detail-alimentaire-specialise",
     value: "commerce de détail alimentaire spécialisé",
-    previous: "2026.2",
-    revision: "2026.3",
+    validFrom: "2026-10-01",
+    revision: "2026.5",
     source: "KALITEXT000044085496",
     // 3 000 € × 0.15 %.
     amount: 4.5,
@@ -161,8 +161,8 @@ const CASES: Case[] = [
   {
     model: "1518-eclat",
     value: "éclat",
-    previous: "2026.2",
-    revision: "2026.3",
+    validFrom: "2026-01-01",
+    revision: "2026.4",
     source: "KALITEXT000048052461",
     // 3 000 € × 0.1 %.
     amount: 3,
@@ -170,7 +170,7 @@ const CASES: Case[] = [
   {
     model: "3203-structures-associatives-peche",
     value: "structures associatives de pêche de loisir et de protection du milieu aquatique",
-    previous: "2026.2",
+    validFrom: "2026-01-01",
     revision: "2026.3",
     source: "KALITEXT000051447117",
     // 3 000 € × 0.10 %, the target rate from 2026.
@@ -179,7 +179,7 @@ const CASES: Case[] = [
   {
     model: "1619-cabinets-dentaires",
     value: "cabinets dentaires",
-    previous: "2026.1",
+    validFrom: "2026-01-01",
     revision: "2026.2",
     source: "KALITEXT000017579573",
     // 3 000 € × 0.05 %.
@@ -188,7 +188,7 @@ const CASES: Case[] = [
   {
     model: "1996-pharmacie-officine",
     value: "pharmacie",
-    previous: "2026.1",
+    validFrom: "2026-04-17",
     revision: "2026.2",
     source: "KALITEXT000005671176",
     // 3 000 € × 0.03 %.
@@ -197,8 +197,8 @@ const CASES: Case[] = [
   {
     model: "2021-golf",
     value: "golf",
-    previous: "2026.2",
-    revision: "2026.3",
+    validFrom: "2026-04-01",
+    revision: "2026.4",
     source: "KALITEXT000021747679",
     // 3 000 € × 0.05 %.
     amount: 1.5,
@@ -206,8 +206,8 @@ const CASES: Case[] = [
   {
     model: "2264-hospitalisation-privee",
     value: "hospitalisation privée",
-    previous: "2023.3",
-    revision: "2023.4",
+    validFrom: "2023-01-01",
+    revision: "2023.5",
     source: "KALITEXT000005660662",
     // 3 000 € × 0.007 %.
     amount: 0.21,
@@ -215,7 +215,7 @@ const CASES: Case[] = [
   {
     model: "2332-entreprises-architecture",
     value: "entreprises d'architecture",
-    previous: "2026.2",
+    validFrom: "2026-01-01",
     revision: "2026.3",
     source: "KALITEXT000048954007",
     // 3 000 € × 0.11 %.
@@ -224,8 +224,8 @@ const CASES: Case[] = [
   {
     model: "0292-plasturgie",
     value: "plasturgie",
-    previous: "2026.1",
-    revision: "2026.2",
+    validFrom: "2026-03-01",
+    revision: "2026.3",
     source: "KALITEXT000026484169",
     // 3 000 € × 0.05 %; the minimum and caps per establishment are not computed.
     amount: 1.5,
@@ -233,8 +233,8 @@ const CASES: Case[] = [
   {
     model: "1261-acteurs-lien-social-familial",
     value: "acteurs du lien social et familial",
-    previous: "2026.10",
-    revision: "2026.11",
+    validFrom: "2026-05-01",
+    revision: "2026.13",
     source: "KALITEXT000005677524",
     // 3 000 € × 0.08 %.
     amount: 2.4,
@@ -259,7 +259,7 @@ const CASES: Case[] = [
   {
     model: "1517-commerce-detail-non-alimentaire",
     value: "commerce de détail non alimentaire",
-    previous: "2026.3",
+    validFrom: "2026-06-01",
     revision: "2026.4",
     source: "KALITEXT000041439724",
     // 3 000 € × 0.07 %; the 50 € per establishment are not computed.
@@ -268,8 +268,8 @@ const CASES: Case[] = [
   {
     model: "1631-hotellerie-plein-air",
     value: "hôtellerie de plein air",
-    previous: "2026.1",
-    revision: "2026.2",
+    validFrom: "2026-05-01",
+    revision: "2026.3",
     source: "KALITEXT000024629512",
     // 3 000 € × 0.03 %; the 25 € per SIRET are not computed.
     amount: 0.9,
@@ -277,7 +277,7 @@ const CASES: Case[] = [
   {
     model: "1686-commerces-services-audiovisuel",
     value: "audiovisuel électronique équipement ménager",
-    previous: "2026.2",
+    validFrom: "2026-05-01",
     revision: "2026.3",
     source: "KALITEXT000038201342",
     // 3 000 € × 0.02 %.
@@ -286,7 +286,7 @@ const CASES: Case[] = [
   {
     model: "1978-fleuristes-animaux",
     value: "fleuristes animaux",
-    previous: "2026.2",
+    validFrom: "2026-08-01",
     revision: "2026.3",
     source: "KALITEXT000054426672",
     // 3 000 € × 0.10 %; the 48 € are not computed.
@@ -295,8 +295,8 @@ const CASES: Case[] = [
   {
     model: "2098-prestataires-tertiaire",
     value: "prestataires tertiaires",
-    previous: "2026.4",
-    revision: "2026.5",
+    validFrom: "2026-08-01",
+    revision: "2026.6",
     source: "KALITEXT000005680490",
     // 3 000 € × 0.03 %.
     amount: 0.9,
@@ -304,7 +304,7 @@ const CASES: Case[] = [
   {
     model: "3127-services-personne",
     value: "services à la personne",
-    previous: "2024.2",
+    validFrom: "2024-06-20",
     revision: "2024.3",
     source: "KALITEXT000022271536",
     // 3 000 € × 0.10 %.
@@ -313,7 +313,7 @@ const CASES: Case[] = [
   {
     model: "3213-economistes-construction",
     value: "économistes de la construction et métreurs-vérificateurs",
-    previous: "2026.2",
+    validFrom: "2026-01-01",
     revision: "2026.3",
     source: "KALITEXT000005654344",
     // 3 000 € × 0.06 %.
@@ -322,7 +322,7 @@ const CASES: Case[] = [
   {
     model: "1267-patisserie",
     value: "pâtisserie",
-    previous: "2026.1",
+    validFrom: "2026-01-01",
     revision: "2026.2",
     source: "KALITEXT000050792316",
     // 3 000 € × (0.20 % + 0.08 %).
@@ -331,7 +331,7 @@ const CASES: Case[] = [
   {
     model: "1285-entreprises-artistiques-culturelles",
     value: "entreprises artistiques et culturelles",
-    previous: "2026.1",
+    validFrom: "2026-08-01",
     revision: "2026.2",
     source: "KALITEXT000049150216",
     // 3 000 € × 0.25 %.
@@ -340,7 +340,7 @@ const CASES: Case[] = [
   {
     model: "1516-organismes-formation",
     value: "organismes de formation",
-    previous: "2025.1",
+    validFrom: "2025-01-01",
     revision: "2025.2",
     source: "KALITEXT000024891249",
     // 3 000 € × 0.05 %.
@@ -349,7 +349,7 @@ const CASES: Case[] = [
   {
     model: "1516-organismes-formation",
     value: "organismes de formation",
-    previous: "2027.1",
+    validFrom: "2027-01-01",
     revision: "2027.2",
     source: "KALITEXT000024891249",
     // 3 000 € × 0.05 %.
@@ -358,7 +358,7 @@ const CASES: Case[] = [
   {
     model: "1534-industrie-commerces-gros-viandes",
     value: "industrie et commerces en gros des viandes",
-    previous: "2026.1",
+    validFrom: "2026-02-01",
     revision: "2026.2",
     source: "KALITEXT000043925608",
     // 3 000 € × (0.1 % + 0.01 %).
@@ -367,7 +367,7 @@ const CASES: Case[] = [
   {
     model: "1951-expertises-automobile",
     value: "expertises automobile",
-    previous: "2025.1",
+    validFrom: "2025-01-01",
     revision: "2025.2",
     source: "KALITEXT000018084898",
     // 3 000 € × 0.008 % + 1 % × 4 005 € / 12 = 0.24 € + 3.3375 €.
@@ -376,7 +376,7 @@ const CASES: Case[] = [
   {
     model: "2336-habitat-logement-accompagnes",
     value: "habitat logement accompagnés",
-    previous: "2026.3",
+    validFrom: "2026-01-01",
     revision: "2026.4",
     source: "KALITEXT000037079586",
     // 3 000 € × 0.29 %.
@@ -385,7 +385,7 @@ const CASES: Case[] = [
   {
     model: "2941-aide-soins-domicile",
     value: "aide et soins à domicile",
-    previous: "2026.3",
+    validFrom: "2026-06-01",
     revision: "2026.4",
     source: "KALITEXT000033106206",
     // 3 000 € × 0.040 %.
@@ -394,7 +394,7 @@ const CASES: Case[] = [
   {
     model: "3097-production-cinematographique",
     value: "production cinématographique",
-    previous: "2026.1",
+    validFrom: "2026-02-01",
     revision: "2026.2",
     source: "KALITEXT000032426289",
     // 3 000 € × 0.045 %.
@@ -403,7 +403,7 @@ const CASES: Case[] = [
   {
     model: "3241-telediffusion",
     value: "télédiffusion",
-    previous: "2026.4",
+    validFrom: "2026-06-01",
     revision: "2026.5",
     source: "KALITEXT000047046214",
     // 3 000 € × 0.03 %.
@@ -412,7 +412,7 @@ const CASES: Case[] = [
   {
     model: "3242-presse-regions",
     value: "presse en régions",
-    previous: "2024.3",
+    validFrom: "2024-12-01",
     revision: "2024.4",
     source: "KALITEXT000051367412",
     // 3 000 € × 0.07 %.
@@ -421,7 +421,7 @@ const CASES: Case[] = [
   {
     model: "3254-boucherie-poissonnerie",
     value: "boucherie poissonnerie",
-    previous: "2026.1",
+    validFrom: "2026-06-01",
     revision: "2026.3",
     source: "KALITEXT000050700202",
     // 3 000 € × 0.15 %.
@@ -430,7 +430,7 @@ const CASES: Case[] = [
   {
     model: "3254-boucherie-poissonnerie",
     value: "boucherie poissonnerie",
-    previous: "2026.2",
+    validFrom: "2026-10-01",
     revision: "2026.4",
     source: "KALITEXT000050700202",
     // 3 000 € × 0.15 %.
@@ -439,8 +439,8 @@ const CASES: Case[] = [
   {
     model: "0086-publicite",
     value: "publicité",
-    previous: "2025.3",
-    revision: "2025.4",
+    validFrom: "2025-06-19",
+    revision: "2025.5",
     source: "KALITEXT000038418066",
     // 3 000 € × 0.03 %.
     amount: 0.9,
@@ -448,7 +448,7 @@ const CASES: Case[] = [
   {
     model: "0637-industries-commerce-recuperation",
     value: "récupération",
-    previous: "2026.1",
+    validFrom: "2026-01-01",
     revision: "2026.2",
     source: "KALITEXT000050974559",
     // 3 000 € × 0.06 %.
@@ -457,7 +457,7 @@ const CASES: Case[] = [
   {
     model: "0953-charcuterie-detail",
     value: "charcuterie de détail",
-    previous: "2026.1",
+    validFrom: "2026-01-01",
     revision: "2026.2",
     source: "KALITEXT000017842201",
     // 3 000 € × 0.45 %.
@@ -466,7 +466,7 @@ const CASES: Case[] = [
   {
     model: "1000-cabinets-avocats",
     value: "cabinets d'avocats",
-    previous: "2025.1",
+    validFrom: "2025-01-01",
     revision: "2025.2",
     source: "KALITEXT000047865919",
     // 3 000 € × 0.06 %; above the ceiling, 4 005 € × 0.06 % = 2.403 €.
@@ -476,7 +476,7 @@ const CASES: Case[] = [
   {
     model: "1043-gardiens-concierges-employes-immeubles",
     value: "gardiens concierges et employés d'immeubles",
-    previous: "2026.3",
+    validFrom: "2026-01-01",
     revision: "2026.7",
     source: "KALITEXT000021180979",
     // 3 000 € × 0.02 %.
@@ -485,7 +485,7 @@ const CASES: Case[] = [
   {
     model: "1043-gardiens-concierges-employes-immeubles",
     value: "gardiens concierges et employés d'immeubles",
-    previous: "2026.6",
+    validFrom: "2026-05-01",
     revision: "2026.8",
     source: "KALITEXT000021180979",
     // 3 000 € × 0.02 %.
@@ -494,7 +494,7 @@ const CASES: Case[] = [
   {
     model: "1404-maintenance-distribution-location",
     value: "maintenance distribution location",
-    previous: "2026.1",
+    validFrom: "2026-03-01",
     revision: "2026.2",
     source: "KALITEXT000025202009",
     // 3 000 € × 0.07 %.
@@ -503,7 +503,7 @@ const CASES: Case[] = [
   {
     model: "1487-commerce-detail-horlogerie-bijouterie",
     value: "commerce de détail horlogerie bijouterie",
-    previous: "2026.1",
+    validFrom: "2026-01-01",
     revision: "2026.2",
     source: "KALITEXT000038616327",
     // 3 000 € × 0.08 %.
@@ -512,7 +512,7 @@ const CASES: Case[] = [
   {
     model: "1561-cordonnerie-multiservice",
     value: "cordonnerie multiservice",
-    previous: "2026.1",
+    validFrom: "2026-01-01",
     revision: "2026.2",
     source: "KALITEXT000026696198",
     // 3 000 € × 0.15 %.
@@ -521,7 +521,7 @@ const CASES: Case[] = [
   {
     model: "1880-commerce-ameublement",
     value: "commerce de l'ameublement",
-    previous: "2026.1",
+    validFrom: "2026-05-01",
     revision: "2026.2",
     source: "KALITEXT000023556576",
     // 3 000 € × 0.02 %.
@@ -530,7 +530,7 @@ const CASES: Case[] = [
   {
     model: "2121-edition",
     value: "édition",
-    previous: "2026.1",
+    validFrom: "2026-07-01",
     revision: "2026.3",
     source: "KALITEXT000052483087",
     // 3 000 € × 0.07 %.
@@ -539,7 +539,7 @@ const CASES: Case[] = [
   {
     model: "2121-edition",
     value: "édition",
-    previous: "2026.2",
+    validFrom: "2026-06-01",
     revision: "2026.4",
     source: "KALITEXT000052483087",
     // 3 000 € × 0.07 %.
@@ -548,8 +548,8 @@ const CASES: Case[] = [
   {
     model: "2148-telecommunications",
     value: "télécommunications",
-    previous: "2026.1",
-    revision: "2026.2",
+    validFrom: "2026-01-23",
+    revision: "2026.3",
     source: "KALITEXT000052119246",
     // 3 000 € × 0.023 % = 0.69 €; the companies of fewer than 11 employees pay a flat amount instead.
     amount: 0.69,
@@ -558,8 +558,8 @@ const CASES: Case[] = [
   {
     model: "2596-coiffure",
     value: "coiffure",
-    previous: "2026.2",
-    revision: "2026.3",
+    validFrom: "2026-03-01",
+    revision: "2026.4",
     source: "KALITEXT000021213086",
     // 3 000 € × 0.15 %.
     amount: 4.5,
@@ -567,7 +567,7 @@ const CASES: Case[] = [
   {
     model: "2691-enseignement-prive-independant",
     value: "enseignement privé indépendant",
-    previous: "2026.1",
+    validFrom: "2026-03-01",
     revision: "2026.2",
     source: "KALITEXT000053504343",
     // 3 000 € × 0.07 %.
@@ -576,8 +576,8 @@ const CASES: Case[] = [
   {
     model: "3013-librairie",
     value: "librairie",
-    previous: "2026.3",
-    revision: "2026.4",
+    validFrom: "2026-04-01",
+    revision: "2026.5",
     source: "KALITEXT000018878622",
     // 3 000 € × 0.05 %.
     amount: 1.5,
@@ -585,7 +585,7 @@ const CASES: Case[] = [
   {
     model: "3032-esthetique-cosmetique",
     value: "esthétique cosmétique",
-    previous: "2026.1",
+    validFrom: "2026-06-01",
     revision: "2026.2",
     source: "KALITEXT000027036235",
     // 3 000 € × 0.06 %.
@@ -594,7 +594,7 @@ const CASES: Case[] = [
   {
     model: "3168-professions-photographie",
     value: "photographie",
-    previous: "2024.1",
+    validFrom: "2024-03-01",
     revision: "2024.2",
     source: "KALITEXT000018562985",
     // 3 000 € × 0.05 %.
@@ -603,7 +603,7 @@ const CASES: Case[] = [
   {
     model: "3252-entreprises-creation-evenement",
     value: "entreprises au service de la création et de l'événement",
-    previous: "2025.3",
+    validFrom: "2025-06-01",
     revision: "2025.4",
     source: "KALITEXT000050299244",
     // 3 000 € × 0.1 %.
@@ -612,7 +612,7 @@ const CASES: Case[] = [
   {
     model: "3252-entreprises-creation-evenement",
     value: "entreprises au service de la création et de l'événement",
-    previous: "2026.1",
+    validFrom: "2026-10-01",
     revision: "2026.2",
     source: "KALITEXT000050299244",
     // 3 000 € × 0.1 %.
@@ -621,8 +621,8 @@ const CASES: Case[] = [
   {
     model: "0016-transports-routiers",
     value: "transports routiers",
-    previous: "2026.5",
-    revision: "2026.6",
+    validFrom: "2026-06-01",
+    revision: "2026.7",
     source: "KALITEXT000038545362",
     // half of 0.05 % (employer share), capped at three ceilings: 3 000 € × 0.025 %.
     amount: 0.75,
@@ -631,7 +631,7 @@ const CASES: Case[] = [
   {
     model: "0184-imprimeries",
     value: "imprimeries de labeur et industries graphiques",
-    previous: "2026.1",
+    validFrom: "2026-04-01",
     revision: "2026.2",
     source: "KALITEXT000032080921",
     // 3 000 € × 0.04 %.
@@ -640,7 +640,7 @@ const CASES: Case[] = [
   {
     model: "0468-commerce-succursaliste-chaussure",
     value: "commerce succursaliste de la chaussure",
-    previous: "2025.1",
+    validFrom: "2025-01-01",
     revision: "2025.2",
     source: "KALITEXT000054871719",
     // 3 000 € × 0.11 %.
@@ -649,7 +649,7 @@ const CASES: Case[] = [
   {
     model: "0468-commerce-succursaliste-chaussure",
     value: "commerce succursaliste de la chaussure",
-    previous: "2026.1",
+    validFrom: "2026-08-01",
     revision: "2026.2",
     source: "KALITEXT000054871719",
     // 3 000 € × 0.11 %.
@@ -658,7 +658,7 @@ const CASES: Case[] = [
   {
     model: "0489-industries-cartonnage",
     value: "industries du cartonnage",
-    previous: "2025.4",
+    validFrom: "2025-05-01",
     revision: "2025.5",
     source: "KALITEXT000051843319",
     // 3 000 € × 0.02 %.
@@ -667,8 +667,8 @@ const CASES: Case[] = [
   {
     model: "1424-reseaux-transports-publics-urbains",
     value: "réseaux de transports urbains",
-    previous: "2025.1",
-    revision: "2025.2",
+    validFrom: "2025-01-01",
+    revision: "2025.3",
     source: "KALITEXT000018772924",
     // 3 000 € × 0.1 %.
     amount: 3,
@@ -676,8 +676,8 @@ const CASES: Case[] = [
   {
     model: "1424-reseaux-transports-publics-urbains",
     value: "réseaux de transports urbains",
-    previous: "2026.1",
-    revision: "2026.2",
+    validFrom: "2026-01-01",
+    revision: "2026.3",
     source: "KALITEXT000018772924",
     // 3 000 € × 0.1 %.
     amount: 3,
@@ -685,7 +685,7 @@ const CASES: Case[] = [
   {
     model: "1527-immobilier",
     value: "immobilier",
-    previous: "2026.4",
+    validFrom: "2026-06-01",
     revision: "2026.5",
     source: "KALITEXT000052018210",
     // 3 000 € × 0.0075 % (11 to 49 employees).
@@ -695,7 +695,7 @@ const CASES: Case[] = [
   {
     model: "1790-espaces-loisirs",
     value: "espaces loisirs",
-    previous: "2026.2",
+    validFrom: "2026-04-01",
     revision: "2026.4",
     source: "KALITEXT000005660387",
     // 3 000 € × 0.05 %.
@@ -704,7 +704,7 @@ const CASES: Case[] = [
   {
     model: "1790-espaces-loisirs",
     value: "espaces loisirs",
-    previous: "2026.3",
+    validFrom: "2026-07-06",
     revision: "2026.5",
     source: "KALITEXT000005660387",
     // 3 000 € × 0.05 %.
@@ -713,7 +713,7 @@ const CASES: Case[] = [
   {
     model: "2002-blanchisserie-teinturerie",
     value: "blanchisserie teinturerie",
-    previous: "2025.1",
+    validFrom: "2025-01-01",
     revision: "2025.2",
     source: "KALITEXT000035532466",
     // 3 000 € × 0.15 %; apprentices excluded.
@@ -723,7 +723,7 @@ const CASES: Case[] = [
   {
     model: "2002-blanchisserie-teinturerie",
     value: "blanchisserie teinturerie",
-    previous: "2026.1",
+    validFrom: "2026-01-01",
     revision: "2026.2",
     source: "KALITEXT000035532466",
     // 3 000 € × 0.15 %; apprentices excluded.
@@ -733,7 +733,7 @@ const CASES: Case[] = [
   {
     model: "2219-taxis",
     value: "taxis",
-    previous: "2025.2",
+    validFrom: "2025-06-01",
     revision: "2025.3",
     source: "KALITEXT000054951926",
     // 3 000 € × 0.15 %; apprentices excluded.
@@ -743,7 +743,7 @@ const CASES: Case[] = [
   {
     model: "2219-taxis",
     value: "taxis",
-    previous: "2026.1",
+    validFrom: "2026-10-01",
     revision: "2026.2",
     source: "KALITEXT000054951926",
     // 3 000 € × 0.15 %; apprentices excluded.
@@ -753,8 +753,8 @@ const CASES: Case[] = [
   {
     model: "3043-entreprises-proprete",
     value: "propreté",
-    previous: "2026.3",
-    revision: "2026.4",
+    validFrom: "2026-04-01",
+    revision: "2026.5",
     source: "KALITEXT000038184099",
     // 3 000 € × 0.01 %.
     amount: 0.3,
@@ -771,7 +771,7 @@ const CASES: Case[] = [
   {
     model: "3255-boulangerie-industrielle",
     value: "boulangerie industrielle",
-    previous: "2025.1",
+    validFrom: "2025-12-01",
     revision: "2025.2",
     source: "KALITEXT000046100116",
     // 3 000 € × 0.04 %; the 300 € flat part is not computed.
@@ -780,7 +780,7 @@ const CASES: Case[] = [
   {
     model: "3255-boulangerie-industrielle",
     value: "boulangerie industrielle",
-    previous: "2026.1",
+    validFrom: "2026-03-01",
     revision: "2026.2",
     source: "KALITEXT000046100116",
     // 3 000 € × 0.04 %; the 300 € flat part is not computed.
@@ -789,7 +789,7 @@ const CASES: Case[] = [
   {
     model: "0733-detaillants-chaussures",
     value: "détaillants chaussures",
-    previous: "2026.1",
+    validFrom: "2026-07-01",
     revision: "2026.2",
     source: "KALITEXT000005683909",
     // 3 000 € × 0.1 %; the 350 F per company and the cap are not computed.
@@ -798,7 +798,7 @@ const CASES: Case[] = [
   {
     model: "1539-bureau-numerique",
     value: "bureau et numérique",
-    previous: "2025.2",
+    validFrom: "2025-09-01",
     revision: "2025.3",
     source: "KALITEXT000005644329",
     // 3 000 € × 0.05 %; the minimum of 40 € per company is not computed.
@@ -807,8 +807,8 @@ const CASES: Case[] = [
   {
     model: "3016-ateliers-chantiers-insertion",
     value: "ateliers et chantiers d'insertion",
-    previous: "2026.2",
-    revision: "2026.3",
+    validFrom: "2026-06-01",
+    revision: "2026.4",
     source: "KALITEXT000027181040",
     // 3 000 € × 0.1 %.
     amount: 3,
@@ -816,7 +816,7 @@ const CASES: Case[] = [
   {
     model: "1979-hotels-cafes-restaurants",
     value: "hôtels cafés restaurants",
-    previous: "2024.6",
+    validFrom: "2024-12-01",
     revision: "2024.7",
     source: "KALITEXT000049508705",
     // 3 000 € × 0.05 %; the minimum of 50 € of 2025 is not computed.
@@ -825,7 +825,7 @@ const CASES: Case[] = [
   {
     model: "1979-hotels-cafes-restaurants",
     value: "hôtels cafés restaurants",
-    previous: "2026.5",
+    validFrom: "2026-11-01",
     revision: "2026.6",
     source: "KALITEXT000049508705",
     // 3 000 € × 0.05 %; the minimum of 50 € of 2025 is not computed.
@@ -871,13 +871,14 @@ for (const testCase of CASES) {
 describe("0016-transports-routiers 2026.7, employee half of the joint bodies contribution", async () => {
   const value = "transports routiers";
   const current = await engineOf("0016-transports-routiers", value, "2026.7");
-  const previous = await engineOf("0016-transports-routiers", value, "2026.6");
   const employeeShare = `salarié . convention collective . ${value} . financement du paritarisme . part salariale`;
   const difference = (rule: string) =>
-    Math.round(((current.evaluate(rule) as number) - (previous.evaluate(rule) as number)) * 100) / 100;
+    Math.round(
+      ((current.evaluate(rule) as number) - (current.evaluate(rule, { [employeeShare]: 0 }) as number)) * 100,
+    ) / 100;
 
-  it("cites the accord and keeps the date of 2026.6", () => {
-    assert.equal(current.version.validFrom, previous.version.validFrom);
+  it("cites the accord and keeps the date of the previous grid (1 June 2026)", () => {
+    assert.equal(current.version.validFrom, "2026-06-01");
     assert.ok(current.version.sources.some((source) => source.includes("KALITEXT000038545362")));
   });
 

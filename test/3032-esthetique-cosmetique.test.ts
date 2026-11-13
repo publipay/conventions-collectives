@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "3032-esthetique-cosmetique";
 const value = "esthétique cosmétique";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.1");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.2");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -48,7 +48,7 @@ const amount = () => {
 
 const outOfGrid = () => engine.evaluate(`${namespace} . classification hors grille`).nodeValue;
 
-describe("IDCC 3032 — 2026.1 payroll rules", () => {
+describe("IDCC 3032 — 2026.2 payroll rules", () => {
   it("is in force from 1 June 2026 and cites the official extension order", () => {
     assert.equal(version.validFrom, "2026-06-01");
     assert.ok(version.sources.some((source) => source.includes("Avenant n° 43 du 22 janvier 2026")));

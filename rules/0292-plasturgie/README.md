@@ -1,6 +1,8 @@
 # Plasturgie — IDCC 292
 
-Le fichier [2026.1](0292-plasturgie.2026.1.publicodes) entre en vigueur le 1er mars 2026. Il est fondé sur l’accord du 19 février 2026 relatif aux salaires (article 3-1), étendu par arrêté du 23 septembre 2026 (JORF n° 0231 du 3 octobre 2026, texte n° 83, NOR TRST2612629A), cités dans ses métadonnées. La valeur Publicodes est `plasturgie` ; les règles sont sous `salarié . convention collective . plasturgie`.
+> Les versions 2026.1 et 2026.2 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er mars 2026. Il est fondé sur l’accord du 19 février 2026 relatif aux salaires (article 3-1), étendu par arrêté du 23 septembre 2026 (JORF n° 0231 du 3 octobre 2026, texte n° 83, NOR TRST2612629A), cités dans ses métadonnées. La valeur Publicodes est `plasturgie` ; les règles sont sous `salarié . convention collective . plasturgie`.
 
 La convention collective nationale de la plasturgie du 1er juillet 1960 (brochure 3066) classe les salariés par coefficient, de 700 à 940.
 

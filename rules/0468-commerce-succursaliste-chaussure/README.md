@@ -1,6 +1,8 @@
 # Commerce succursaliste de la chaussure — IDCC 468
 
 > La version 2024.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> Les versions 2025.1 et 2026.1 ont été supprimées pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
 
 La version `2024.1` modélise l'accord du 26 mars 2024 relatif aux minima conventionnels. Il a été étendu par arrêté du 27 mai 2024, publié au Journal officiel du 1er juin 2024 ; l'application à tous les employeurs du champ est donc modélisée à compter du 1er juillet 2024.
 

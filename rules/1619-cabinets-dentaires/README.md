@@ -1,6 +1,8 @@
 # Cabinets dentaires — IDCC 1619
 
-Le fichier [2026.1](1619-cabinets-dentaires.2026.1.publicodes) entre en vigueur le 1er janvier 2026. Il est fondé sur l’accord du 12 février 2026 relatif aux salaires minima conventionnels, étendu par arrêté du 15 juillet 2026 (JORF n° 0170 du 23 juillet 2026), cités dans ses métadonnées. La valeur Publicodes est `cabinets dentaires` ; les règles sont sous `salarié . convention collective . cabinets dentaires`.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er janvier 2026. Il est fondé sur l’accord du 12 février 2026 relatif aux salaires minima conventionnels, étendu par arrêté du 15 juillet 2026 (JORF n° 0170 du 23 juillet 2026), cités dans ses métadonnées. La valeur Publicodes est `cabinets dentaires` ; les règles sont sous `salarié . convention collective . cabinets dentaires`.
 
 La convention collective nationale des cabinets dentaires du 17 janvier 1992 (brochure 3255) fixe des taux horaires minima par emploi, sans valeur de point.
 

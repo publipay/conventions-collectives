@@ -1,8 +1,10 @@
 # Entreprises du bureau et du numérique — IDCC 1539
 
 > La version 2025.1 a été supprimée pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2025.2 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
-Le fichier [2025.2](1539-bureau-numerique.2025.2.publicodes) corrige l’identifiant de brochure officiel (3252) et reprend les règles entrées en vigueur le 1er septembre 2025. Le fichier 2025.1 est conservé comme version publiée historique. Il est fondé sur l’accord du 2 avril 2025 relatif à la grille des salaires minima, étendu par arrêté du 31 juillet 2025 (JORF du 7 août 2025), cités dans ses métadonnées. La valeur Publicodes est `bureau et numérique` ; les règles sont sous `salarié . convention collective . bureau et numérique`.
+Le fichier 2025.2 corrige l’identifiant de brochure officiel (3252) et reprend les règles entrées en vigueur le 1er septembre 2025. Le fichier 2025.1 est conservé comme version publiée historique. Il est fondé sur l’accord du 2 avril 2025 relatif à la grille des salaires minima, étendu par arrêté du 31 juillet 2025 (JORF du 7 août 2025), cités dans ses métadonnées. La valeur Publicodes est `bureau et numérique` ; les règles sont sous `salarié . convention collective . bureau et numérique`.
 
 La convention collective nationale du commerce de détail de papeterie, fournitures de bureau, de bureautique et informatique et de librairie (15 décembre 1988) s’intitule désormais « entreprises du bureau et du numérique – commerces et services » (brochure 3252). Elle ne doit pas être confondue avec la convention [1517](../1517-commerce-detail-non-alimentaire/README.md), celle du commerce de détail non alimentaire.
 

@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "0489-industries-cartonnage";
 const value = "industries du cartonnage";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.4");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.5");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };
@@ -20,7 +20,7 @@ function setSituation(category: string, coefficient: number, quota = "100%") { e
 const get = (rule: string) => engine.evaluate(`${namespace} . ${rule}`).nodeValue;
 const num = (rule: string) => { const value = get(rule); assert.equal(typeof value, "number"); return Math.round((value as number) * 100) / 100; };
 
-describe("IDCC 489 — 2025.4 salaires et audit paie", () => {
+describe("IDCC 489 — 2025.5 salaires et audit paie", () => {
   it("uses the signatory effective date and official BOCC source", () => { assert.equal(version.validFrom, "2025-05-01"); assert.ok(version.sources.some((source) => source.includes("ASET2550438M"))); });
   for (const [coefficient, expected] of Object.entries(monthly)) it(`coefficient ${coefficient}: ${expected} €/month`, () => { setSituation("ouvriers employés et agents de maîtrise", Number(coefficient)); assert.equal(num("salaire minimum conventionnel"), expected); assert.equal(get("classification hors grille"), false); });
   it("prorates the monthly minimum once", () => { setSituation("ouvriers employés et agents de maîtrise", 240, "50%"); assert.equal(num("salaire minimum conventionnel"), 1052.59); });
@@ -28,9 +28,9 @@ describe("IDCC 489 — 2025.4 salaires et audit paie", () => {
   it("rejects an unknown classification and isolates another agreement", () => { setSituation("ouvriers employés et agents de maîtrise", 999); assert.equal(get("classification hors grille"), true); engine.setSituation({ "salarié . convention collective": "'droit commun'" }); assert.equal(get("audit paie"), null); });
 });
 
-describe("IDCC 489 — 2025.4 executives in the grid", () => {
+describe("IDCC 489 — 2025.5 executives in the grid", () => {
   it("keeps the effective date and no longer marks executives' coefficients out of the grid", async () => {
-    const revision = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.4");
+    const revision = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2025.5");
     assert.ok(revision);
     assert.equal(revision.validFrom, "2025-05-01");
     const fixed = new Engine({ ...rules, ...(await revision.loadRules()) }, { logger: { log() {}, warn() {}, error() {} } });

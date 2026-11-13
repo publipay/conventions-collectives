@@ -7,7 +7,7 @@ import { COMPILED_VERSIONS } from "../src/index.ts";
 const agreement = "1261-acteurs-lien-social-familial";
 const value = "acteurs du lien social et familial";
 const namespace = `salarié . convention collective . ${value}`;
-const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.10");
+const version = COMPILED_VERSIONS[agreement]?.find((entry) => entry.version === "2026.13");
 assert.ok(version);
 const extension = await version.loadRules();
 const rules: Record<string, Rule> = { ...modeleSocial };

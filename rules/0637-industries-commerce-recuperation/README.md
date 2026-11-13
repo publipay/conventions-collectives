@@ -1,6 +1,8 @@
 # Industries et commerce de la récupération — IDCC 637
 
-Le fichier [2026.1](0637-industries-commerce-recuperation.2026.1.publicodes) entre en vigueur le 1er janvier 2026 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 17 janvier 2026. Barème des salaires minima conventionnels au 1er janvier 2026.
+> La version 2026.1 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
+
+Le fichier 2026.1 entre en vigueur le 1er janvier 2026 ; il lie les entreprises non adhérentes aux organisations signataires à partir du 17 janvier 2026. Barème des salaires minima conventionnels au 1er janvier 2026.
 
 La valeur Publicodes est `récupération` ; les règles sont sous `salarié . convention collective . récupération`.
 

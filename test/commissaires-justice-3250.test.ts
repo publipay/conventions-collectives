@@ -22,14 +22,14 @@ async function engineOf(versionName: string) {
 // Amounts copied from the annex of each avenant (151.67 hours, euros a month).
 const GRIDS: Record<string, Record<string, number>> = {
   // Avenant n° 8 du 19 décembre 2024, from 1 January 2025 (point 8.65 EUR).
-  "2025.1": {
+  "2025.2": {
     "I-214": 1851.1, "I-215": 1859.29, "I-270": 2309.74, "I-345": 2923.99, "I-410": 3456.34,
     "II-214": 1851.1, "II-221": 1908.43, "II-296": 2522.68, "II-365": 3087.79, "II-456": 3833.08,
     "IIbis-217": 1875.67, "IIbis-230": 1982.14,
     "III-393": 3317.11, "III-470": 3947.74, "III-542": 4537.42,
   },
   // Avenant n° 12 du 16 mars 2026, from 1 April 2026 (point 8.87 EUR).
-  "2026.1": {
+  "2026.2": {
     "I-214": 1898.18, "I-215": 1906.37, "I-219": 1939.13, "I-223": 1971.89, "I-270": 2356.82, "I-283": 2463.29,
     "I-299": 2594.33, "I-300": 2602.52, "I-302": 2618.9, "I-317": 2741.75, "I-331": 2856.41, "I-345": 2971.07,
     "I-360": 3093.92, "I-410": 3503.42,
@@ -59,12 +59,12 @@ describe("IDCC 3250 — minimum salaries", () => {
   it("selects versions on their legal effective dates", () => {
     const versions = COMPILED_VERSIONS[agreement];
     assert.ok(versions);
-    assert.equal(versions.find((v) => v.version === "2025.1")?.validFrom, "2025-01-01");
-    const v2026 = versions.find((v) => v.version === "2026.1");
+    assert.equal(versions.find((v) => v.version === "2025.2")?.validFrom, "2025-01-01");
+    const v2026 = versions.find((v) => v.version === "2026.2");
     assert.equal(v2026?.validFrom, "2026-04-01");
     assert.ok(v2026.sources.some((s) => s.includes("KALITEXT000054177556") && s.includes("Avenant n° 12 du 16 mars 2026")));
     assert.ok(v2026.sources.some((s) => s.includes("arrêté du 18 mai 2026")));
-    assert.ok(versions.find((v) => v.version === "2025.1")?.sources.some((s) => s.includes("KALITEXT000051352624")));
+    assert.ok(versions.find((v) => v.version === "2025.2")?.sources.some((s) => s.includes("KALITEXT000051352624")));
   });
 
   for (const [versionName, grid] of Object.entries(GRIDS)) {
@@ -96,14 +96,14 @@ describe("IDCC 3250 — minimum salaries", () => {
     });
   }
 
-  it("prorates 2026.1 at 80 % hard-coded", async () => {
-    const { engine } = await engineOf("2026.1");
+  it("prorates 2026.2 at 80 % hard-coded", async () => {
+    const { engine } = await engineOf("2026.2");
     evaluate(engine, "III-470", "80%");
     assert.equal(minimum(engine), 3195.86);
   });
 
   it("stays isolated from modele-social and other agreements", async () => {
-    const { engine, extension } = await engineOf("2026.1");
+    const { engine, extension } = await engineOf("2026.2");
     for (const name of Object.keys(extension)) {
       assert.ok(name === namespace || name.startsWith(`${namespace} . `), name);
       assert.ok(!(name in modeleSocial), `Duplicate modele-social rule: ${name}`);

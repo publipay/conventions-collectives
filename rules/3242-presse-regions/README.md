@@ -1,6 +1,8 @@
 # Presse quotidienne et hebdomadaire en régions — IDCC 3242
 
 > Les versions 2023.1, 2023.2, 2023.3, 2023.4, 2024.1 et 2024.2 ont été supprimées pendant la bêta, le 2 novembre 2026 : aucune période à partir du 1er janvier 2026 ne les choisissait plus. Les passages qui les citent retracent l’historique des règles reprises par les versions suivantes.
+>
+> La version 2024.3 a été supprimée pendant la bêta, le 13 novembre 2026 : aucune période à partir du 1er janvier 2026 ne la choisissait plus. Les passages qui la citent retracent l’historique des règles reprises par les versions suivantes.
 
 La convention collective nationale de la presse quotidienne et hebdomadaire en régions du 9 août 2021 (KALITEXT000044339983), en vigueur le 1er janvier 2022, fixe les salaires minima par forme de presse (article 5.6). Le paquet modélise ses trois formes : la presse quotidienne régionale (PQR), la presse hebdomadaire régionale (PHR) et la presse quotidienne départementale (PQD). Les journalistes relèvent de la convention des journalistes ([1480](../1480-journalistes/README.md)), pas de celle-ci. La valeur Publicodes est `presse en régions` ; les règles sont sous `salarié . convention collective . presse en régions`.
 
@@ -9,7 +11,7 @@ La convention collective nationale de la presse quotidienne et hebdomadaire en r
 | Version | Date d’effet | Extension | Contenu |
 |---|---|---|---|
 | [2023.5](3242-presse-regions.2023.5.publicodes) | 1er juillet 2023 | 1er novembre 2025 | 2023.4 et la prime d’ancienneté de la PQD. |
-| [2024.3](3242-presse-regions.2024.3.publicodes) | 1er décembre 2024 | — (non étendu) | 2024.2, la prime d’ancienneté de la PQD, et celle des employés de la PHR, versée en plus du minimum au lieu de le majorer. |
+| 2024.3 | 1er décembre 2024 | — (non étendu) | 2024.2, la prime d’ancienneté de la PQD, et celle des employés de la PHR, versée en plus du minimum au lieu de le majorer. |
 
 Les deux accords de 2023 et la convention, dont l’annexe 3, ont été étendus par arrêté du 22 septembre 2025 (JORF du 4 octobre 2025, JORFTEXT000052353580). Ils s’appliquent aux adhérents de l’organisation signataire (SPHR) à leur date d’effet, aux autres employeurs le premier jour du mois suivant la publication de l’arrêté, soit le 1er novembre 2025. L’avenant n° 1 n’est pas étendu : il ne lie que les adhérents.
 
