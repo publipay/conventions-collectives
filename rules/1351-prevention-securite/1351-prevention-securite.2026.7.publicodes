@@ -306,7 +306,7 @@ salarié . convention collective . prévention et sécurité . prévoyance:
     - employeur
     - salarié
   description: >-
-    Cotisations conventionnelles de prévoyance assises sur le salaire brut. Le régime
+    Cotisations conventionnelles de prévoyance assises sur l'assiette des cotisations de sécurité sociale. Les sommes que le texte en exclut (indemnité compensatrice de congés payés, sommes versées à la fin du contrat) n'en sont pas retirées. Le régime
     non-cadre est de 1,06 % sur les tranches A et B (jusqu'à quatre plafonds),
     réparti à parts égales. Le régime cadre
     est de 1,54 % sur la tranche A à la charge de l'employeur et de 1,04 % sur la tranche B,
@@ -337,15 +337,15 @@ salarié . convention collective . prévention et sécurité . prévoyance non c
   avec:
     employeur:
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 0.53%
             plafond: 4
     salarié:
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 0.53%
             plafond: 4
@@ -358,8 +358,8 @@ salarié . convention collective . prévention et sécurité . prévoyance cadre
   avec:
     employeur:
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 1.54%
             plafond: 1
@@ -367,8 +367,8 @@ salarié . convention collective . prévention et sécurité . prévoyance cadre
             plafond: 4
     salarié:
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 0%
             plafond: 1

@@ -142,7 +142,7 @@ salarié . convention collective . restauration rapide . prévoyance:
   titre: Prévoyance conventionnelle restauration rapide
   description: |
     Cotisation conventionnelle du régime de prévoyance de la branche (article 54), due pour tous
-    les salariés, calculée sur les tranches T1 et T2 du salaire brut, dans la limite de huit
+    les salariés, calculée sur les tranches T1 et T2 du salaire brut (l'assiette des cotisations de sécurité sociale), dans la limite de huit
     plafonds mensuels de sécurité sociale (la tranche 2 au sens de l'Agirc-Arrco, le texte ne la
     définissant pas). Chaque tranche est financée à parts égales : 0,25 % employeur et 0,25 %
     salarié (0,50 % au total).
@@ -160,8 +160,8 @@ salarié . convention collective . restauration rapide . prévoyance:
     employeur:
       remplace: cotisations . prévoyances . conventionnelle . employeur
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: taux T1
             plafond: 1
@@ -180,8 +180,8 @@ salarié . convention collective . restauration rapide . prévoyance:
     salarié:
       remplace: cotisations . prévoyances . conventionnelle . salarié
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 0.25%
             plafond: 1

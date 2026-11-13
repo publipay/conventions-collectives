@@ -1461,8 +1461,8 @@ salarié . convention collective . bâtiment et travaux publics . catégorie . c
     employeur:
       remplace: salarié . cotisations . prévoyances . conventionnelle . employeur
       barème:
-        assiette: salarié . contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 1.50%
             plafond: 1
@@ -1473,8 +1473,8 @@ salarié . convention collective . bâtiment et travaux publics . catégorie . c
     salarié:
       remplace: salarié . cotisations . prévoyances . conventionnelle . salarié
       barème:
-        assiette: salarié . contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 0%
             plafond: 1

@@ -159,16 +159,16 @@ salarié . convention collective . commerces de gros . prévoyance:
     employeur:
       remplace: salarié . cotisations . prévoyances . conventionnelle . employeur
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 60% * 0.62%
             plafond: 4
     salarié:
       remplace: salarié . cotisations . prévoyances . conventionnelle . salarié
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 40% * 0.62%
             plafond: 4
@@ -197,8 +197,8 @@ salarié . convention collective . commerces de gros . prévoyance cadre:
           - niveau = 'X.2'
   remplace: cotisations . prévoyances . employeur . cadres
   barème:
-    assiette: contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux: 1.50%
         plafond: 1

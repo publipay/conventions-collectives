@@ -248,8 +248,8 @@ salarié . convention collective . boulangerie-pâtisserie artisanale . prévoya
 salarié . convention collective . boulangerie-pâtisserie artisanale . prévoyance . rente éducation . employeur:
   applicable si: convention collective = 'boulangerie-pâtisserie artisanale'
   barème:
-    assiette: salarié . contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux:
           variations:
@@ -261,8 +261,8 @@ salarié . convention collective . boulangerie-pâtisserie artisanale . prévoya
 salarié . convention collective . boulangerie-pâtisserie artisanale . prévoyance . rente éducation . salarié:
   applicable si: convention collective = 'boulangerie-pâtisserie artisanale'
   barème:
-    assiette: salarié . contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux:
           variations:

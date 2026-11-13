@@ -175,7 +175,7 @@ salarié . convention collective . boyauderie . prévoyance:
     - salarié
   description: >-
     Cotisations conventionnelles de prévoyance. Pour les non-cadres, le régime étendu fixe
-    une cotisation totale de 1,04 % du salaire brut limité à quatre plafonds de sécurité sociale,
+    une cotisation totale de 1,04 % du salaire brut soumis à cotisations de sécurité sociale, limité à quatre plafonds de sécurité sociale,
     répartie à parts égales. Pour les cadres, seul le financement patronal minimal obligatoire de
     1,50 % de la tranche A est calculé ; les garanties et cotisations complémentaires restent
     contractuelles.
@@ -187,15 +187,15 @@ salarié . convention collective . boyauderie . prévoyance . employeur:
     - si: contrat . statut cadre = oui
       alors:
         barème:
-          assiette: contrat . salaire brut
-          multiplicateur: plafond sécurité sociale
+          assiette: salarié . cotisations . assiette . sans prévoyance
+          multiplicateur: salarié . temps de travail . plafond sécurité sociale
           tranches:
             - taux: 1.50%
               plafond: 1
     - sinon:
         barème:
-          assiette: contrat . salaire brut
-          multiplicateur: plafond sécurité sociale
+          assiette: salarié . cotisations . assiette . sans prévoyance
+          multiplicateur: salarié . temps de travail . plafond sécurité sociale
           tranches:
             - taux: 0.52%
               plafond: 4
@@ -208,8 +208,8 @@ salarié . convention collective . boyauderie . prévoyance . salarié:
       alors: 0 €/mois
     - sinon:
         barème:
-          assiette: contrat . salaire brut
-          multiplicateur: plafond sécurité sociale
+          assiette: salarié . cotisations . assiette . sans prévoyance
+          multiplicateur: salarié . temps de travail . plafond sécurité sociale
           tranches:
             - taux: 0.52%
               plafond: 4

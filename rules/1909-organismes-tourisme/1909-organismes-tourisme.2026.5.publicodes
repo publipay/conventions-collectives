@@ -145,8 +145,8 @@ salarié . convention collective . organismes de tourisme . prévoyance . employ
     - si: contrat . statut cadre = oui
       alors:
         barème:
-          assiette: contrat . salaire brut
-          multiplicateur: plafond sécurité sociale
+          assiette: salarié . cotisations . assiette . sans prévoyance
+          multiplicateur: salarié . temps de travail . plafond sécurité sociale
           tranches:
             - taux: 1.74%
               plafond: 1
@@ -154,8 +154,8 @@ salarié . convention collective . organismes de tourisme . prévoyance . employ
               plafond: 8
     - sinon:
         barème:
-          assiette: contrat . salaire brut
-          multiplicateur: plafond sécurité sociale
+          assiette: salarié . cotisations . assiette . sans prévoyance
+          multiplicateur: salarié . temps de travail . plafond sécurité sociale
           tranches:
             - taux: 0.86%
               plafond: 1

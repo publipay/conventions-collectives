@@ -225,7 +225,7 @@ salarié . convention collective . optique-lunetterie de détail . prime d'ancie
 
 salarié . convention collective . optique-lunetterie de détail . prévoyance:
   titre: Prévoyance conventionnelle des salariés non-cadres
-  description: Cotisation contractuelle du régime de prévoyance obligatoire des salariés non-cadres, assise sur le salaire brut dans la limite des tranches TA et TB, soit quatre plafonds de sécurité sociale.
+  description: Cotisation contractuelle du régime de prévoyance obligatoire des salariés non-cadres, assise sur le salaire brut soumis à cotisations de sécurité sociale dans la limite des tranches TA et TB, soit quatre plafonds de sécurité sociale. Les « sommes isolées » que l'accord exclut n'en sont pas retirées.
   applicable si:
     toutes ces conditions:
       - convention collective = 'optique-lunetterie de détail'
@@ -238,8 +238,8 @@ salarié . convention collective . optique-lunetterie de détail . prévoyance .
   applicable si: convention collective = 'optique-lunetterie de détail'
   remplace: salarié . cotisations . prévoyances . conventionnelle . employeur
   barème:
-    assiette: contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux: 0.336%
         plafond: 4
@@ -248,8 +248,8 @@ salarié . convention collective . optique-lunetterie de détail . prévoyance .
   applicable si: convention collective = 'optique-lunetterie de détail'
   remplace: salarié . cotisations . prévoyances . conventionnelle . salarié
   barème:
-    assiette: contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux: 0.224%
         plafond: 4

@@ -128,8 +128,8 @@ salarié . convention collective . cabinets médicaux . prévoyance . employeur:
 salarié . convention collective . cabinets médicaux . prévoyance . employeur cadre:
   applicable si: convention collective = 'cabinets médicaux'
   barème:
-    assiette: contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux: 2.14%
         plafond: 4
@@ -137,8 +137,8 @@ salarié . convention collective . cabinets médicaux . prévoyance . employeur 
 salarié . convention collective . cabinets médicaux . prévoyance . employeur non cadre:
   applicable si: convention collective = 'cabinets médicaux'
   barème:
-    assiette: contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux: 1.54%
         plafond: 4
@@ -153,8 +153,8 @@ salarié . convention collective . cabinets médicaux . prévoyance . salarié:
 salarié . convention collective . cabinets médicaux . prévoyance . salarié cadre:
   applicable si: convention collective = 'cabinets médicaux'
   barème:
-    assiette: contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux: 0.99%
         plafond: 4
@@ -162,8 +162,8 @@ salarié . convention collective . cabinets médicaux . prévoyance . salarié c
 salarié . convention collective . cabinets médicaux . prévoyance . salarié non cadre:
   applicable si: convention collective = 'cabinets médicaux'
   barème:
-    assiette: contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux: 1.02%
         plafond: 4
@@ -188,8 +188,8 @@ salarié . convention collective . cabinets médicaux . prévoyance . rente édu
 salarié . convention collective . cabinets médicaux . prévoyance . rente éducation cadre . employeur:
   applicable si: convention collective = 'cabinets médicaux'
   barème:
-    assiette: contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux: 0.10%
         plafond: 1
@@ -202,8 +202,8 @@ salarié . convention collective . cabinets médicaux . prévoyance . rente édu
 salarié . convention collective . cabinets médicaux . prévoyance . rente éducation non cadre . employeur:
   applicable si: convention collective = 'cabinets médicaux'
   barème:
-    assiette: contrat . salaire brut
-    multiplicateur: plafond sécurité sociale
+    assiette: salarié . cotisations . assiette . sans prévoyance
+    multiplicateur: salarié . temps de travail . plafond sécurité sociale
     tranches:
       - taux: 0.06%
         plafond: 1

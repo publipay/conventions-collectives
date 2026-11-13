@@ -40,8 +40,11 @@ sources:
     Accord du 19 mai 2021 relatif au régime complémentaire de prévoyance, avenant n° 1 du
     11 décembre 2022 (taux depuis le 1er janvier 2023) et avenant n° 2 du 25 juin 2024 :
     non-cadres 1,03 % employeur et 0,33 % salarié, cadres 2,25 % employeur et 0,10 % salarié
-    sur T1 puis 0,62 % employeur et 1,03 % salarié sur T2, jusqu'à quatre PMSS. Textes officiels
-    KALIARTI000044085557, KALIARTI000047582986 et KALIARTI000050329344.
+    sur T1 puis 0,62 % employeur et 1,03 % salarié sur T2. Relu sur Légifrance le 13 novembre 2026
+    (KALITEXT000044085730, accord de la branche 1505, et non celui de même date de la 3237) :
+    l'assiette est la rémunération annuelle brute soumise à cotisations de sécurité sociale
+    (CSS L242-1), en tranche 1 jusqu'au plafond annuel et en tranche 2 d'un à quatre plafonds
+    annuels. Textes officiels KALITEXT000044085730, KALIARTI000047582986 et KALIARTI000050329344.
   - >-
     Articles 40.1 (maladie) et 40.2 (accidents du travail et de trajet) de la convention du 12 janvier
     2021, lus sur Légifrance le 24 octobre 2026 (KALIARTI000043562827, KALIARTI000043562828) : maladie
@@ -193,7 +196,7 @@ salarié . convention collective . commerce de détail alimentaire non spéciali
     - employeur
     - salarié
   description: >-
-    Cotisations du régime conventionnel de prévoyance sur le salaire brut, limité aux tranches
+    Cotisations du régime conventionnel de prévoyance sur la rémunération brute soumise à cotisations de sécurité sociale, limitée aux tranches
     T1 et T2 jusqu'à quatre plafonds de sécurité sociale. Les garanties, dispenses, maintien et
     portabilité restent gérés par le contrat et les entrées de paie.
 
@@ -221,15 +224,15 @@ salarié . convention collective . commerce de détail alimentaire non spéciali
   avec:
     employeur:
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 1.03%
             plafond: 4
     salarié:
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 0.33%
             plafond: 4
@@ -242,8 +245,8 @@ salarié . convention collective . commerce de détail alimentaire non spéciali
   avec:
     employeur:
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 2.25%
             plafond: 1
@@ -251,8 +254,8 @@ salarié . convention collective . commerce de détail alimentaire non spéciali
             plafond: 4
     salarié:
       barème:
-        assiette: contrat . salaire brut
-        multiplicateur: plafond sécurité sociale
+        assiette: salarié . cotisations . assiette . sans prévoyance
+        multiplicateur: salarié . temps de travail . plafond sécurité sociale
         tranches:
           - taux: 0.10%
             plafond: 1

@@ -188,7 +188,7 @@ salarié . convention collective . branche du sport . prévoyance 2025 . part:
       alors: 0 €/mois
     - sinon:
         produit:
-          - valeur: cotisations . assiette
+          - valeur: cotisations . assiette . sans prévoyance
             plafond: 4 * temps de travail . plafond sécurité sociale
           - 0.485%
 salarié . convention collective . branche du sport . prévoyance 2025 . part employeur:
