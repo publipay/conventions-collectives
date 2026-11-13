@@ -1,5 +1,5 @@
 /**
- * Public works agreements (IDCC 1702, 2614 and 3212), shared version 2026.6
+ * Public works agreements (IDCC 1702, 2614 and 3212), shared version 2026.7
  * (rules/commun/travaux-publics): modele-social's `BTP` rules corrected for public works, and the
  * regional annual minimums of 2026.
  *
@@ -7,7 +7,8 @@
  * - CNETP paid leave contribution, 21 % from 1 January 2026 (CNETP letter n° 40, January 2026);
  * - bad weather contribution, 0,68 % of the salary capped at the ceiling (4 005 € in 2026, code du
  *   travail D. 5424-36 and D. 5424-37, CNETP);
- * - RNPC (PRO BTP notice 2026): 1,50 % of tranche A for the employer, 2,40 % of tranche B shared;
+ * - RNPC (PRO BTP notice 2026): 1,50 % of tranche A for the employer, 2,40 % of tranche B shared,
+ *   and 3,60 % of tranche C (4 to 8 ceilings) with the option « Tranche C »;
  * - the regional accords on the 2026 minimums listed in REGIONAL_GRIDS, read on Légifrance on
  *   20 October 2026, each from the publication of its extension order to 31 December 2026.
  */
@@ -24,7 +25,7 @@ function withValue(rules: Record<string, Rule>): Record<string, Rule> {
 }
 
 const AGREEMENTS = ["1702-travaux-publics-ouvriers", "2614-travaux-publics-etam", "3212-travaux-publics-cadres"];
-const VERSION = "2026.6";
+const VERSION = "2026.7";
 const BTP = "salarié . convention collective . bâtiment et travaux publics";
 const CEILING = 4005;
 
@@ -54,10 +55,10 @@ const amount = (rule: string, situation: Situation = {}) => {
 const percentOf = (base: number, rate: number) => Math.round(base * rate) / 100;
 
 describe("public works agreements — one shared version", () => {
-  it("publishes 2026.6 identically for the three agreements, their only version", () => {
+  it("publishes 2026.7 identically for the three agreements, after 2026.6", () => {
     const published = AGREEMENTS.map((name) => {
-      assert.deepEqual(COMPILED_VERSIONS[name]!.map((v) => v.version), ["2026.6"], name);
-      return COMPILED_VERSIONS[name]![0]!;
+      assert.deepEqual(COMPILED_VERSIONS[name]!.map((v) => v.version).sort(), ["2026.6", "2026.7"], name);
+      return COMPILED_VERSIONS[name]!.find((v) => v.version === VERSION)!;
     });
     for (const found of published) {
       assert.equal(found.contentHash, published[0]!.contentHash);
@@ -93,6 +94,21 @@ describe("public works agreements — contributions", () => {
     assert.equal(insurance("etam", 2500, "employeur"), percentOf(2500, 1.25));
     assert.equal(insurance("cadre", 6000, "employeur"), Math.round(CEILING * 1.5 + (6000 - CEILING) * 1.2) / 100);
     assert.equal(insurance("cadre", 6000, "salarié"), Math.round((6000 - CEILING) * 1.2) / 100);
+  });
+
+  it("adds 3,60 % of the executives' tranche C, shared equally, with the option « Tranche C »", () => {
+    const insurance = (share: "employeur" | "salarié", option: string) =>
+      evaluate(`salarié . cotisations . prévoyances . incapacité invalidité décès . ${share}`, {
+        [`${BTP} . catégorie`]: "'cadre'",
+        [`${BTP} . catégorie . cadre . prévoyance RNPC . option tranche C`]: option,
+        "salarié . contrat . salaire brut": "20000 €/mois",
+      }) as number;
+    const cents = (value: number) => Math.round(value * 100) / 100;
+    // 4 005 € at 1,50 %, 12 015 € at 2,40 % by halves; with the option, 3 980 € at 3,60 % by halves.
+    assert.equal(cents(insurance("salarié", "non")), 144.18);
+    assert.equal(cents(insurance("salarié", "oui")), 215.82);
+    // The employer's share rises by as much (its 1,50 % of the ceiling ends on a half cent).
+    assert.equal(cents(insurance("employeur", "oui") - insurance("employeur", "non")), 71.64);
   });
 });
 

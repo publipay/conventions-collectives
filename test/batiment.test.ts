@@ -1,5 +1,5 @@
 /**
- * Building agreements (IDCC 1596, 1597, 2609 and 2420), shared version 2026.7
+ * Building agreements (IDCC 1596, 1597, 2609 and 2420), shared version 2026.8
  * (rules/commun/batiment), under its own rule value `bâtiment et travaux publics`: the BTP schemes
  * and the regional grids of every region.
  *
@@ -7,7 +7,8 @@
  * - CIBTP paid leave rates, read on the funds' sites (October 2026);
  * - bad weather contribution, 0,68 % or 0,13 % of the salary capped at the ceiling (4 005 € in
  *   2026, code du travail D. 5424-36 to D. 5424-40, campaign 2026-2027);
- * - RNPC (PRO BTP notice 2026): 1,50 % of tranche A for the employer, 2,40 % of tranche B shared;
+ * - RNPC (PRO BTP notice 2026): 1,50 % of tranche A for the employer, 2,40 % of tranche B shared,
+ *   and 3,60 % of tranche C (4 to 8 ceilings) with the option « Tranche C »;
  * - Centre-Val de Loire, workers up to 10 employees: avenant du 10 avril 2026 (KALITEXT000054936694),
  *   extended in the JORF of 4 August 2026;
  * - Nouvelle-Aquitaine, workers above 10 employees: accord du 22 octobre 2025
@@ -36,7 +37,7 @@ const AGREEMENTS = [
   "2609-batiment-etam",
   "2420-batiment-cadres",
 ];
-const VERSION = "2026.7";
+const VERSION = "2026.8";
 const BTP = "salarié . convention collective . bâtiment et travaux publics";
 const CEILING = 4005;
 
@@ -69,10 +70,10 @@ const amount = (rule: string, situation: Situation = {}) => {
 const percentOf = (base: number, rate: number) => Math.round(base * rate) / 100;
 
 describe("building agreements — one shared version", () => {
-  it("publishes 2026.7 identically for the four agreements, their only version", () => {
+  it("publishes 2026.8 identically for the four agreements, after 2026.7", () => {
     const published = AGREEMENTS.map((name) => {
-      assert.deepEqual(COMPILED_VERSIONS[name]!.map((v) => v.version), ["2026.7"], name);
-      return COMPILED_VERSIONS[name]![0]!;
+      assert.deepEqual(COMPILED_VERSIONS[name]!.map((v) => v.version).sort(), ["2026.7", "2026.8"], name);
+      return COMPILED_VERSIONS[name]!.find((v) => v.version === VERSION)!;
     });
     for (const found of published) {
       assert.equal(found.contentHash, published[0]!.contentHash);
@@ -142,7 +143,7 @@ describe("building agreements — bad weather contribution", () => {
 });
 
 describe("building agreements — executives' prévoyance (RNPC)", () => {
-  it("counts 1,50 % of tranche A once, and no tranche C", () => {
+  it("counts 1,50 % of tranche A once, and no tranche C without its option", () => {
     const executive = (gross: number) => ({
       [`${BTP} . catégorie`]: "'cadre'",
       "salarié . contrat . salaire brut": `${gross} €/mois`,
@@ -153,6 +154,30 @@ describe("building agreements — executives' prévoyance (RNPC)", () => {
     assert.equal(amount(employee, executive(6000)), Math.round((6000 - CEILING) * 1.2) / 100);
     // Above 4 ceilings, nothing more.
     assert.equal(amount(employer, executive(20000)), Math.round((CEILING * 1.5 + 3 * CEILING * 1.2)) / 100);
+  });
+
+  it("adds 3,60 % of tranche C, shared equally, with the option « Tranche C »", () => {
+    const executive = (gross: number, option: "oui" | "non" = "oui") => ({
+      [`${BTP} . catégorie`]: "'cadre'",
+      [`${BTP} . catégorie . cadre . prévoyance RNPC . option tranche C`]: option,
+      "salarié . contrat . salaire brut": `${gross} €/mois`,
+    });
+    const employer = "salarié . cotisations . prévoyances . incapacité invalidité décès . employeur";
+    const employee = "salarié . cotisations . prévoyances . incapacité invalidité décès . salarié";
+    /** What the option adds to the employer's share (whose 1,50 % of the ceiling ends on a half cent). */
+    const added = (gross: number) =>
+      Math.round(
+        ((evaluate(employer, executive(gross)) as number) - (evaluate(employer, executive(gross, "non")) as number)) * 100,
+      ) / 100;
+    // Up to 4 ceilings (16 020 €), the option adds nothing: 1 995 € of tranche B at 1,20 %.
+    assert.equal(amount(employee, executive(6000)), 23.94);
+    assert.equal(added(6000), 0);
+    // 20 000 €: 12 015 € of tranche B at 1,20 % and 3 980 € of tranche C at 1,80 % for each.
+    assert.equal(amount(employee, executive(20000)), 215.82);
+    assert.equal(added(20000), 71.64);
+    // Above 8 ceilings (32 040 €), nothing more: 16 020 € of tranche C at 1,80 % for each.
+    assert.equal(amount(employee, executive(40000)), 432.54);
+    assert.equal(added(40000), 288.36);
   });
 });
 

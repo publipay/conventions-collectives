@@ -55,7 +55,9 @@ par douze ni sortie mensuelle n'est introduite.
 Le modèle ajoute uniquement, dans son propre espace de noms, la correction du
 **régime national de prévoyance des cadres (RNPC)** : tranche A employeur à
 1,50 %, et tranche B partagée à 50 % de 2,40 % jusqu'à quatre plafonds de
-sécurité sociale. La tranche C optionnelle à 3,60 % n'est pas calculée. La
+sécurité sociale. La tranche C optionnelle à 3,60 %, de quatre à huit plafonds, est
+partagée de même quand l'entreprise a souscrit l'option (`prévoyance RNPC . option
+tranche C`, version `2026.7`). La
 correction remplace les endpoints de prévoyance cadre de droit commun lorsque
 le statut cadre est explicitement `oui`.
 

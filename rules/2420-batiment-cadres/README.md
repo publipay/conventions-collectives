@@ -73,7 +73,8 @@ régime national de prévoyance des cadres du BTP :
 - tranche A employeur : **1,50 %** ;
 - tranche B : **2,40 %**, partagée à 50 % entre employeur et salarié, jusqu'à
   quatre plafonds de sécurité sociale ;
-- tranche C optionnelle : **non calculée**.
+- tranche C optionnelle (de quatre à huit plafonds) : **3,60 %**, partagée à 50 %, quand
+  l'entreprise a souscrit l'option (`prévoyance RNPC . option tranche C`, version `2026.8`).
 
 Les règles ne redéfinissent pas les clés globales de `modele-social` et
 remplacent seulement l'endpoint de prévoyance cadre lorsque le statut cadre est
