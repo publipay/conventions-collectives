@@ -28,7 +28,8 @@
     "typecheck": "npm run compile-rules && tsc --noEmit",
     "test": "npm run compile-rules && node --test \"test/**/*.test.ts\"",
     "prepare": "npm run build",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "check-new-texts": "node scripts/check-new-texts.ts"
   },
   "peerDependencies": {
     "publicodes": "^1.10.3",

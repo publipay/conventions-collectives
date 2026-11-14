@@ -143,6 +143,21 @@ npm pack --dry-run
 
 Ces commandes vérifient respectivement les types TypeScript, la construction du package et la liste des fichiers inclus dans son archive. La CI GitHub exécute les tests et ces vérifications à chaque push et pull request.
 
+### Veille des nouveaux textes
+
+`npm run check-new-texts` interroge l’[API Légifrance](https://piste.gouv.fr) de la DILA et liste, pour chaque convention, les textes en vigueur que ses sources ne citent pas encore et qui ont été signés après le plus récent des textes qu’elle cite : nouvel avenant de salaires, de prévoyance, de paritarisme… Un texte est cité quand son identifiant `KALITEXT` figure dans le dossier de la convention ou dans un fichier commun qui la concerne, ou quand ces fichiers le nomment (« avenant n° 36 du 4 juin 2026 », « accord du 17 juin 2026 »), les sources liant souvent l’arrêté d’extension plutôt que le texte. Il signale aussi les textes cités par identifiant qui ne sont plus en vigueur ou ne sont pas étendus, et ceux qui n’apparaissent dans la liste des textes d’aucune des conventions concernées. Quand l’API échoue sur un IDCC, le script essaie les identifiants `KALICONT` cités par la convention.
+
+Il faut une application PISTE abonnée à l’API Légifrance, dont l’identifiant et le secret sont passés en variables d’environnement :
+
+```sh
+PISTE_CLIENT_ID=… PISTE_CLIENT_SECRET=… npm run check-new-texts            # toutes les conventions
+PISTE_CLIENT_ID=… PISTE_CLIENT_SECRET=… npm run check-new-texts -- 2511 1486
+```
+
+Sur macOS, sans ces variables, le script les lit dans le trousseau (mots de passe génériques `piste-client-id` et `piste-client-secret`), enregistrés une fois avec `security add-generic-password -a "$USER" -s piste-client-id -w` puis `-s piste-client-secret` (la commande demande la valeur sans l’afficher).
+
+`--all` liste tous les textes en vigueur non cités, quelle que soit leur date ; `--json` produit un rapport JSON ; `--sandbox` utilise le bac à sable de PISTE. Le script ne modifie rien et ne dit pas si un texte change un montant : chaque texte signalé est à lire sur Légifrance avant d’en tirer une nouvelle version.
+
 ## Contribuer
 
 Les contributions sont les bienvenues, qu’il s’agisse d’une nouvelle convention, d’une nouvelle grille, de dispositions encore absentes ou d’une amélioration des tests et de la documentation. Vous pouvez ouvrir une issue pour discuter d’un sujet ou proposer directement une pull request.
