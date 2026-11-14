@@ -20,7 +20,7 @@ async function engineOf(revision: string) {
   return { engine, version };
 }
 
-// Monthly minimums for 151.67 hours, copied from annex 1 of avenants n° 112 and n° 114.
+// Monthly minimums for 151.67 hours, copied from annex 1 of avenants n° 112, n° 114 and n° 117.
 const GRID_2025: Record<number, number> = {
   160: 1841.27, 165: 1851.89, 170: 1873.12, 175: 1885.26, 180: 1906.49, 185: 1965.64, 190: 2011.14, 200: 2096.08,
   210: 2203.77, 220: 2308.42, 250: 2620.86, 270: 2828.65, 290: 3040.98, 310: 3250.29, 330: 3461.11, 350: 3670.41,
@@ -30,9 +30,15 @@ const GRID_2026: Record<number, number> = {
   210: 2230.21, 220: 2336.12, 250: 2652.31, 270: 2862.59, 290: 3077.48, 310: 3289.29, 330: 3502.64, 350: 3714.46,
 };
 
+const GRID_2026_06: Record<number, number> = {
+  160: 1891.32, 165: 1902.23, 170: 1924.04, 175: 1936.5, 180: 1958.31, 185: 2019.07, 190: 2065.81, 200: 2153.05,
+  210: 2263.66, 220: 2371.16, 250: 2692.09, 270: 2905.53, 290: 3123.64, 310: 3338.63, 330: 3555.18, 350: 3770.18,
+};
+
 for (const [revision, grid, validFrom, sourceIds] of [
   ["2025.1", GRID_2025, "2025-01-01", ["KALITEXT000051537691", "KALICONT000005635611"]],
   ["2026.2", GRID_2026, "2026-01-01", ["KALITEXT000054066586", "KALICONT000005635611"]],
+  ["2026.3", GRID_2026_06, "2026-06-01", ["KALITEXT000055046025", "KALICONT000005635611"]],
 ] as const) {
   describe(`IDCC 1267 ${revision} minimum salaries`, async () => {
     const { engine, version } = await engineOf(revision);
@@ -78,9 +84,10 @@ for (const [revision, grid, validFrom, sourceIds] of [
 }
 
 describe("IDCC 1267 version history", () => {
-  it("publishes 2025.1, then 2026.2 with the +1.2 % revaluation and the joint bodies contributions", () => {
+  it("publishes 2025.1, 2026.2 with the +1.2 % revaluation and the joint bodies contributions, then 2026.3", () => {
     const revisions = (COMPILED_VERSIONS[agreement] ?? []).map((entry) => entry.version);
-    assert.deepEqual(revisions, ["2025.1", "2026.2"]);
+    assert.deepEqual(revisions, ["2025.1", "2026.2", "2026.3"]);
+    assert.equal(COMPILED_VERSIONS[agreement]?.at(-1)?.extension, "2026-09-19");
     assert.equal(GRID_2026[160], 1863.37);
     assert.equal(GRID_2026[350], 3714.46);
   });

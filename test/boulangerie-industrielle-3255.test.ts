@@ -164,3 +164,49 @@ describe("IDCC 3255, version 2026.2 (avenant n° 4 from 1 March 2026)", async ()
     assert.equal(engine.evaluate(`${namespace} . salaire minimum conventionnel`).nodeValue, null);
   });
 });
+
+// Avenant n° 5 du 2 juillet 2026, from 1 Aug 2026.
+const GRID_2026_08: Record<string, number> = {
+  A1: 1870.02, A2: 1879.98, B1: 1891.05, B2: 1906.18,
+  C1: 1922.66, C2: 1939.98, C3: 1961.31, D1: 1987.11, D2: 2003.02, D3: 2025.05,
+  E1: 2060.78, E2: 2093.76, E3: 2149.23, F1: 2269.78, F2: 2291.34, F3: 2323.42,
+  G1: 2370.92, G2: 2414.78, G3: 2487.22, H1: 2622.94, H2: 2691.13, H3: 2802.81,
+  I: 2981, J1: 3153.65, J2: 3260.88, J3: 3368.48,
+  K1: 3554.91, K2: 3746.87, K3: 3937.96, L1: 4128.17, L2: 4392.37, L3: 4702.03, M: 5300.76,
+};
+
+describe("IDCC 3255, version 2026.3 (avenant n° 5 from 1 August 2026)", async () => {
+  const { version, engine } = await engineOf("2026.3");
+  const { set, minimum, outside } = helpers(engine);
+
+  it("is effective on 1 August 2026, extended on 30 September 2026, and cites the amendment", () => {
+    assert.equal(version.validFrom, "2026-08-01");
+    assert.equal(version.extension, "2026-09-30");
+    assert.ok(version.sources.some((source) => source.includes("KALITEXT000055051561")));
+  });
+
+  it("has the 33 positions of the grid", () => {
+    assert.equal(Object.keys(GRID_2026_08).length, 33);
+  });
+
+  for (const [level, expected] of Object.entries(GRID_2026_08)) {
+    it(`gives ${expected} € a month for ${level}`, () => {
+      set(level);
+      assert.equal(minimum(), expected);
+      assert.equal(outside(), false);
+    });
+  }
+
+  it("prorates the minimum for part-time work", () => {
+    set("M", "50%");
+    assert.equal(minimum(), 2650.38);
+  });
+
+  it("keeps the transitional sector grids out of the grid", () => {
+    for (const level of ["OE1", "CA5", "I-1", "Z1", "non renseigné"]) {
+      set(level);
+      assert.equal(outside(), true, level);
+      assert.equal(minimum(), 0, level);
+    }
+  });
+});

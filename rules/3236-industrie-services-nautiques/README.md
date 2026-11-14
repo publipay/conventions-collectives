@@ -21,3 +21,8 @@ Le modèle couvre la grille salariale publiée. Les primes, indemnités, frais d
 - Avenant du 16 avril 2025 relatif aux salaires minima mensuels au 1er avril 2025, IDCC 3236, KALITEXT000051927584 : https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000051927584
 - Arrêté du 19 juin 2025 portant extension de l'avenant, JORFTEXT000051832663, publié au Journal officiel du 2 juillet 2025 : https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051832663
 - Convention collective nationale de l'industrie et des services nautiques du 13 octobre 2020, IDCC 3236, KALICONT000043157451 : https://www.legifrance.gouv.fr/conv_coll/id/KALICONT000043157451
+
+## Version 2026.1
+
+`2026.1`, applicable au **1er juin 2026**, reprend les rémunérations minimales de l'avenant du 10 juillet 2026 relatif aux salaires minima mensuels ([KALITEXT000055051420](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000055051420)), base 151,67 heures, sur les mêmes 18 niveaux et échelons que la version 2025.2 : de 1 867,02 € (I.1) à 5 128,67 € (VII.4). L'avenant est étendu par arrêté du 22 septembre 2026 (JORF du 30 septembre 2026, `extension: 2026-09-30`) : avant cette date, la version ne lie que les adhérents d'une organisation signataire. Texte lu par l'API Légifrance le 14 novembre 2026.
+

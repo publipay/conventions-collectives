@@ -56,3 +56,10 @@ n° 4 ne publie plus que la grille de la nouvelle classification : leurs clés s
 ## Financement du paritarisme
 
 Les révisions 2025.2 (version 2025.1) et 2026.2 (version 2026.1), à la date d'effet de chaque version, ajoutent `financement du paritarisme` : partie variable de la contribution des entreprises au fonds de financement du paritarisme : 0,04 % des rémunérations soumises à cotisations (article 3 de l'accord du 5 avril 2022). La partie forfaitaire de 300 € par entreprise n'est pas calculée ; le montant mensuel est une provision : 0,04 % du brut du mois (KALITEXT000046100116). Lu sur Légifrance le 9 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Version 2026.3
+
+`2026.3`, applicable au **1er août 2026**, reprend la grille de l'article 21.1 dans la rédaction de l'avenant n° 5 du 2 juillet 2026 ([KALITEXT000055051561](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000055051561)), pour 151,67 heures par mois ou 218 jours par an, sur les mêmes 33 niveaux et échelons : de 1 870,02 € (A1) à 5 300,76 € (M). L'avenant est étendu par arrêté du 22 septembre 2026 (JORF du 30 septembre 2026, `extension: 2026-09-30`) : avant cette date, la version ne lie que les adhérents d'une organisation signataire. La partie variable de la contribution au fonds de financement du paritarisme de la révision 2026.2 est reprise. Texte lu par l'API Légifrance le 14 novembre 2026.
+
+L'avenant ajoute un article 21.2 : à Mayotte, les minima sont ceux de l'article 21.1 multipliés par le rapport entre le Smic mensuel brut de Mayotte et le Smic national. Ce coefficient n'est pas calculé : le modèle ne connaît pas le lieu de travail, et le minimum calculé est celui de la métropole.
+

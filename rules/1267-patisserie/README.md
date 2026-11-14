@@ -65,3 +65,8 @@ et donne un minimum nul afin que l'application appelante puisse bloquer le calcu
 ## Financement du paritarisme
 
 La révision 2026.2, à la date d'effet de la version 2026.1, ajoute `financement du paritarisme` : les contributions des employeurs au financement du dialogue social : 0,20 % de la masse salariale brute pour la branche et 0,08 % pour l'association paritaire interprofessionnelle nationale, soit 0,28 % (article 53.2 de la convention, rédigé par l'avenant n° 108 du 10 septembre 2024, KALITEXT000050792316, étendu par arrêté du 11 février 2025), collectées par l'Urssaf depuis le 1er janvier 2026. Lu sur Légifrance le 8 novembre 2026. Elle s'ajoute à `salarié . cotisations . employeur`, en provision mensuelle ; la régularisation annuelle n'est pas calculée.
+
+## Version 2026.3
+
+`2026.3`, applicable au **1er juin 2026**, reprend l'annexe 1 de l'avenant n° 117 du 30 juin 2026 ([KALITEXT000055046025](https://www.legifrance.gouv.fr/conv_coll/id/KALITEXT000055046025)) : hausse de 1,5 % sur l'ensemble de la grille (article 1er), de 1 891,32 € au coefficient 160 à 3 770,18 € au coefficient 350, pour 151,67 heures, sur les mêmes 16 coefficients. L'avenant est étendu par arrêté du 7 septembre 2026 (JORF du 19 septembre 2026, `extension: 2026-09-19`) : avant cette date, la version ne lie que les adhérents d'une organisation signataire. Les contributions au financement du dialogue social de la révision 2026.2 sont reprises sans changement. Texte lu par l'API Légifrance le 14 novembre 2026.
+
